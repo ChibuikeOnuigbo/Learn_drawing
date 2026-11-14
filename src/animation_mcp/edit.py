@@ -12,6 +12,7 @@ class Clip(Strict):
     path: str
     start: float = Field(default=0,ge=0)
     duration: float = Field(gt=0,le=600)
+    hold_last: bool = False
 
 
 class Caption(Strict):
@@ -27,6 +28,7 @@ class Edit(Strict):
     clips: list[Clip] = Field(min_length=1,max_length=40)
     captions: list[Caption] = Field(default_factory=list,max_length=40)
     audio: str | None = None
+    caption_position: float = Field(default=.8,ge=.15,le=.95)
 
     @model_validator(mode='after')
     def timeline(self):
@@ -49,13 +51,15 @@ def edit_video(spec: dict, folder: Path, root: Path):
     for i,clip in enumerate(edit.clips):
         source=confined(root,clip.path,True)
         metadata=probe(source)
-        if clip.start+clip.duration > float(metadata['format']['duration'])+1/edit.fps:
+        source_duration=float(metadata['format']['duration'])
+        if clip.start>=source_duration:raise ValueError(f'Clip {i} starts after its source ends')
+        if not clip.hold_last and clip.start+clip.duration > source_duration+1/edit.fps:
             raise ValueError(f'Clip {i} exceeds its source duration')
         frames=round(clip.duration*edit.fps)
         total+=frames
         filters=(f'scale={edit.width}:{edit.height}:force_original_aspect_ratio=decrease,'
                  f'pad={edit.width}:{edit.height}:(ow-iw)/2:(oh-ih)/2:color=0x101820,'
-                 f'setsar=1,fps={edit.fps},tpad=stop_mode=clone:stop_duration=1')
+                 f'setsar=1,fps={edit.fps},tpad=stop_mode=clone:stop_duration={clip.duration if clip.hold_last else 1}')
         subprocess.run(['ffmpeg','-y','-v','error','-ss',str(clip.start),'-i',str(source),'-an',
                         '-vf',filters,'-frames:v',str(frames),'-c:v','libx264','-threads','2',
                         '-pix_fmt','yuv420p',str(folder/f'clip-{i:03d}.mp4')],check=True,timeout=180)
@@ -82,7 +86,7 @@ def edit_video(spec: dict, folder: Path, root: Path):
         text='\n'.join(lines)
         box=draw.multiline_textbbox((0,0),text,font=font,align='center')
         w,h=box[2]-box[0],box[3]-box[1]
-        x,y=(edit.width-w)/2,edit.height*.8-h
+        x,y=(edit.width-w)/2,edit.height*edit.caption_position-h
         draw.rounded_rectangle((x-14,y-10,x+w+14,y+h+14),radius=8,fill=(5,12,22,220))
         draw.multiline_text((x,y-box[1]),text,font=font,align='center',fill='white')
         png=folder/f'caption-{i:03d}.png';im.save(png)

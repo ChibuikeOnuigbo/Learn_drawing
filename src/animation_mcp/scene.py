@@ -19,7 +19,7 @@ class Keyframe(Strict):
 
 
 class Track(Strict):
-    property: Literal["x", "y", "scale", "rotation", "opacity", "reveal"]
+    property: Literal["x", "y", "scale", "scale_x", "scale_y", "rotation", "opacity", "reveal"]
     keys: list[Keyframe] = Field(min_length=1, max_length=200)
 
     @model_validator(mode="after")
@@ -29,7 +29,7 @@ class Track(Strict):
             raise ValueError("Keyframe indices must be strictly increasing")
         if self.property in {"opacity", "reveal"} and any(not 0 <= k.value <= 1 for k in self.keys):
             raise ValueError("Opacity and reveal must be between zero and one")
-        if self.property == "scale" and any(not 0 < k.value <= 50 for k in self.keys):
+        if self.property in {"scale","scale_x","scale_y"} and any(not 0 < k.value <= 50 for k in self.keys):
             raise ValueError("Scale must be greater than zero and at most 50")
         return self
 
@@ -50,7 +50,8 @@ def sample(track: Track, frame: int) -> float:
 
 class Layer(Strict):
     id: str = Field(pattern=r"^[A-Za-z][A-Za-z0-9_-]{0,63}$")
-    kind: Literal["ellipse", "rect", "path", "text", "image"]
+    kind: Literal["ellipse", "rect", "path", "text", "image", "group"]
+    parent: str | None = None
     start: int = Field(default=0, ge=0)
     end: int | None = Field(default=None, ge=1)
     x: float = 0
@@ -67,10 +68,12 @@ class Layer(Strict):
     font_size: float = Field(default=36, gt=0, le=500)
     asset: str | None = None
     scale: float = Field(default=1, gt=0, le=50)
+    scale_x: float = Field(default=1, gt=0, le=50)
+    scale_y: float = Field(default=1, gt=0, le=50)
     rotation: float = 0
     opacity: float = Field(default=1, ge=0, le=1)
     reveal: float = Field(default=1, ge=0, le=1)
-    tracks: list[Track] = Field(default_factory=list, max_length=6)
+    tracks: list[Track] = Field(default_factory=list, max_length=8)
 
     @field_validator("fill", "stroke")
     @classmethod
@@ -116,7 +119,11 @@ class Scene(Strict):
         ids = [x.id for x in self.layers]
         if len(ids) != len(set(ids)):
             raise ValueError("Layer IDs must be unique")
+        parents={}
         for layer in self.layers:
+            if layer.parent is not None and (layer.parent not in parents or parents[layer.parent]!='group'):
+                raise ValueError('A parent must be a group declared before its children')
+            parents[layer.id]=layer.kind
             if layer.start >= self.frames or (layer.end is not None and layer.end > self.frames):
                 raise ValueError(f"{layer.id}: layer interval outside scene")
             if any(k.frame > self.frames for t in layer.tracks for k in t.keys):

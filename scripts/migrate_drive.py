@@ -30,16 +30,20 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',type=Path,default=Path('/workspace/drawing-data/drive'))
     parser.add_argument('--extract',action='store_true')
+    parser.add_argument('--manifest',type=Path,default=Path(__file__).resolve().parents[1]/'migration/drive_manifest.json')
     args=parser.parse_args()
     args.output.mkdir(parents=True,exist_ok=True)
-    manifest=Path(__file__).resolve().parents[1]/'migration/drive_manifest.json'
-    for item in json.loads(manifest.read_text()):
+    records=json.loads(args.manifest.read_text())
+    if isinstance(records,dict):records=records['files']
+    for item in records:
         name=item['name']
         if Path(name).name != name:raise ValueError('Invalid manifest basename')
-        path=args.output/name
+        path=(args.output/item.get('path',name)).resolve()
+        if not path.is_relative_to(args.output.resolve()):raise ValueError('Invalid manifest relative path')
+        path.parent.mkdir(parents=True,exist_ok=True)
         if not path.exists():
             temp=path.with_suffix(path.suffix+'.part')
-            gdown.download(id=item['id'],output=str(temp),use_cookies=False,verify=True)
+            gdown.download(id=item['id'],output=str(temp),use_cookies=False,verify=True,quiet=True)
             if not temp.is_file():raise RuntimeError(f'Download failed: {name}')
             digest=hashlib.sha256(temp.read_bytes()).hexdigest()
             if digest != item['sha256']:raise ValueError(f'Checksum mismatch: {name}')

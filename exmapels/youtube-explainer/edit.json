@@ -1,0 +1,77 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "clips": [
+    {
+      "path": "exmapels/2d-character/clean/video.mp4",
+      "start": 0.0,
+      "duration": 3.3333333333333335,
+      "hold_last": true
+    },
+    {
+      "path": "exmapels/3d/easy/video.mp4",
+      "start": 0.0,
+      "duration": 2.8333333333333335,
+      "hold_last": true
+    },
+    {
+      "path": "exmapels/3d/simple/video.mp4",
+      "start": 0.0,
+      "duration": 2.6,
+      "hold_last": true
+    },
+    {
+      "path": "exmapels/3d/medium/video.mp4",
+      "start": 0.0,
+      "duration": 3.566666666666667,
+      "hold_last": true
+    },
+    {
+      "path": "exmapels/3d/hard/video.mp4",
+      "start": 0.0,
+      "duration": 4.866666666666666,
+      "hold_last": true
+    },
+    {
+      "path": "exmapels/2d-character/clean/video.mp4",
+      "start": 8.5,
+      "duration": 3.0,
+      "hold_last": true
+    }
+  ],
+  "captions": [
+    {
+      "text": "A good animation starts with a clear pose.",
+      "start": 0.0,
+      "end": 3.3333333333333335
+    },
+    {
+      "text": "Timing gives a simple shape weight.",
+      "start": 3.3333333333333335,
+      "end": 6.166666666666667
+    },
+    {
+      "text": "A rig lets the character wave.",
+      "start": 6.166666666666667,
+      "end": 8.766666666666667
+    },
+    {
+      "text": "Inverse kinematics keeps the feet on the ground.",
+      "start": 8.766666666666667,
+      "end": 12.333333333333334
+    },
+    {
+      "text": "Finally, coordinate the hands, the prop, and the camera.",
+      "start": 12.333333333333334,
+      "end": 17.2
+    },
+    {
+      "text": "Every shot should help tell the story.",
+      "start": 17.2,
+      "end": 20.2
+    }
+  ],
+  "audio": "/workspace/Learn_drawing/exmapels/youtube-explainer/speech/narration.wav",
+  "caption_position": 0.94
+}

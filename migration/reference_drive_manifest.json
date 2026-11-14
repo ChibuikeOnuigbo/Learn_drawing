@@ -1,0 +1,608 @@
+{
+  "folder_url": "https://drive.google.com/drive/folders/1s6W-HSk3lrSeemc_dOb_jkm-prqDSGRn",
+  "scope": "62 currently visible files; 55 MP4 videos. Channel catalog lists 184 intended entries, not 184 observed uploads.",
+  "files": [
+    {
+      "id": "12Rss4ziwoGSnB2gEnZuqeGZ23fGKRRuM",
+      "name": "01_extremely-very-very-hard_X2Cv8DbygpA.mp4",
+      "path": "12Rss4ziwoGSnB2gEnZuqeGZ23fGKRRuM__01_extremely-very-very-hard_X2Cv8DbygpA.mp4",
+      "bytes": 21517031,
+      "mime": "video/mp4",
+      "sha256": "37dd4ee5d05a6f3747f71cd1940652981a1ac1235f884afbab781e335b237673",
+      "status": "downloaded"
+    },
+    {
+      "id": "1KOKXq_-CAdkqGbUpq00ernHKdSfVcTQr",
+      "name": "02_very-hard_Y2vDwR9rW-0.mp4",
+      "path": "1KOKXq_-CAdkqGbUpq00ernHKdSfVcTQr__02_very-hard_Y2vDwR9rW-0.mp4",
+      "bytes": 42707337,
+      "mime": "video/mp4",
+      "sha256": "da22210f84c2818014681fc159f51db0426f92561c2f2b8f16cd0fde15bae0f3",
+      "status": "downloaded"
+    },
+    {
+      "id": "1YmLIvP74rqV8mL3QMUn4lxeP-LPrQgpr",
+      "name": "03_simple-motion-graphics-video-editing_3q1KnXSD7Qg.mp4",
+      "path": "1YmLIvP74rqV8mL3QMUn4lxeP-LPrQgpr__03_simple-motion-graphics-video-editing_3q1KnXSD7Qg.mp4",
+      "bytes": 82482167,
+      "mime": "video/mp4",
+      "sha256": "1c3e2f96e5cc54e02cf68a9fa89b966bc5562a5c1f97b7174e953eef292a3a7c",
+      "status": "downloaded"
+    },
+    {
+      "id": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks",
+      "name": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+      "path": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks__04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+      "bytes": 7977706,
+      "mime": "video/mp4",
+      "sha256": "24067cc7d950916df387d89505b6e1d863515848c554eea9fdb399bd97976720",
+      "status": "downloaded"
+    },
+    {
+      "id": "1ej2D4QHaoLPOyXiOyOjlJZ52D2NOlBlS",
+      "name": "05_medium-baseline-animation-tween-editing_HDsziw2LuQA.mp4",
+      "path": "1ej2D4QHaoLPOyXiOyOjlJZ52D2NOlBlS__05_medium-baseline-animation-tween-editing_HDsziw2LuQA.mp4",
+      "bytes": 20831726,
+      "mime": "video/mp4",
+      "sha256": "cdd4093eb1ea645e7f294de4c2b5f75fc18eeec49885328cb5edab0e2ebee0a2",
+      "status": "downloaded"
+    },
+    {
+      "id": "1IJaO6Vy5mhvac3DUY2MrZEXA23Fk_H5T",
+      "name": "06_hard_AhICirv_6lw.mp4",
+      "path": "1IJaO6Vy5mhvac3DUY2MrZEXA23Fk_H5T__06_hard_AhICirv_6lw.mp4",
+      "bytes": 26735541,
+      "mime": "video/mp4",
+      "sha256": "b4016bf9027d6a556689e645ae88fed6d25e2feb244778f3690b210bd636ba34",
+      "status": "downloaded"
+    },
+    {
+      "id": "1y5XN5qbvvp9WuM4bEridtVsq5HV4YUwT",
+      "name": "07_easy_92ibAh-rSLk.mp4",
+      "path": "1y5XN5qbvvp9WuM4bEridtVsq5HV4YUwT__07_easy_92ibAh-rSLk.mp4",
+      "bytes": 20301583,
+      "mime": "video/mp4",
+      "sha256": "101c91b17b709b4090ef3330e6656e92d2935eed1a7857a84b74add5b0cc73c8",
+      "status": "downloaded"
+    },
+    {
+      "id": "1Ye0igawvIAqwg0dJEX3DMWSIEUfWeDSs",
+      "name": "08_very-easy-video-editing_3I0E21EOZu4.mp4",
+      "path": "1Ye0igawvIAqwg0dJEX3DMWSIEUfWeDSs__08_very-easy-video-editing_3I0E21EOZu4.mp4",
+      "bytes": 86338322,
+      "mime": "video/mp4",
+      "sha256": "c4fb57594398c3a4a31ab358821f7558113dfee6ee1d5b34971b2d6fdd502b61",
+      "status": "downloaded"
+    },
+    {
+      "id": "1pRwJsJ66hoR3oXWAvXw6exg5d1lRVGbn",
+      "name": "09_almost-hard-music-video-sketches_9w0_e9X4FDw.mp4",
+      "path": "1pRwJsJ66hoR3oXWAvXw6exg5d1lRVGbn__09_almost-hard-music-video-sketches_9w0_e9X4FDw.mp4",
+      "bytes": 4165051,
+      "mime": "video/mp4",
+      "sha256": "c2715ac525426c5d5e2fca06c84d65d6e376875641cb8763fe1ce10508eaa00d",
+      "status": "downloaded"
+    },
+    {
+      "id": "1qaVOLSGYY6geK7JYdUxK5W40a2tSButy",
+      "name": "10_complex-anime-edit-composition_s-n7xL8JxZE.mp4",
+      "path": "1qaVOLSGYY6geK7JYdUxK5W40a2tSButy__10_complex-anime-edit-composition_s-n7xL8JxZE.mp4",
+      "bytes": 9785914,
+      "mime": "video/mp4",
+      "sha256": "bf035a093e3e866a0a9ad9d5e8b368e3839c173d76cd51e7dbc111efa0e2b0e3",
+      "status": "downloaded"
+    },
+    {
+      "id": "1USWdJVIdHw2x4ExYOokKi9009TTb83jA",
+      "name": "11_medium-memes-script-visuals_rv0CZ919PFw.mp4",
+      "path": "1USWdJVIdHw2x4ExYOokKi9009TTb83jA__11_medium-memes-script-visuals_rv0CZ919PFw.mp4",
+      "bytes": 58245290,
+      "mime": "video/mp4",
+      "sha256": "ae96c6aa96cda989930ca24d13959dc91438b7b4f2a94c57a089fa3161db4757",
+      "status": "downloaded"
+    },
+    {
+      "id": "14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM",
+      "name": "12_very-simple_BAYQ2W_v08s.mp4",
+      "path": "14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM__12_very-simple_BAYQ2W_v08s.mp4",
+      "bytes": 20532623,
+      "mime": "video/mp4",
+      "sha256": "d54a263cf6c92290c310e60c36bd4f4bee68436d17d2da7394e4464630ba7c8e",
+      "status": "downloaded"
+    },
+    {
+      "id": "18L90aEHSTKY2iMjVagELOeqX4x4Bld6m",
+      "name": "14_very-extremely-hard-3d-blender_hCnsaahr2cc.mp4",
+      "path": "18L90aEHSTKY2iMjVagELOeqX4x4Bld6m__14_very-extremely-hard-3d-blender_hCnsaahr2cc.mp4",
+      "bytes": 73194833,
+      "mime": "video/mp4",
+      "sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229",
+      "status": "downloaded"
+    },
+    {
+      "id": "1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv",
+      "name": "15_hard_2Wv3p9WCs6M.mp4",
+      "path": "1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv__15_hard_2Wv3p9WCs6M.mp4",
+      "bytes": 86682963,
+      "mime": "video/mp4",
+      "sha256": "f21f2ab974710f1f25dd6f9e181478e51a86bc1559141c76e730afdac605f5e9",
+      "status": "downloaded"
+    },
+    {
+      "id": "1XmNSQNQfUyH4OBOFOjx83kVXL_5ULzTe",
+      "name": "17_tutorial-short_vNxqa8ltH20.mp4",
+      "path": "1XmNSQNQfUyH4OBOFOjx83kVXL_5ULzTe__17_tutorial-short_vNxqa8ltH20.mp4",
+      "bytes": 646674,
+      "mime": "video/mp4",
+      "sha256": "73216efcc846c7a80cd8fc9e6fd45e49988a9b90380152b84a96dcdb29f585dc",
+      "status": "downloaded"
+    },
+    {
+      "id": "176AWhb0OLC8oIBtGIKT4Q3dN4fN1EN9S",
+      "name": "18_tutorial-study-this_OSULm_VDO04.mp4",
+      "path": "176AWhb0OLC8oIBtGIKT4Q3dN4fN1EN9S__18_tutorial-study-this_OSULm_VDO04.mp4",
+      "bytes": 21056080,
+      "mime": "video/mp4",
+      "sha256": "5589c61126ec6a31783c3ec14da8ef341d20d9cc7db10d93b30acee1d2902a14",
+      "status": "downloaded"
+    },
+    {
+      "id": "1q6v5l0LmEQEJk277HHPJ1ItdOtk-pkhf",
+      "name": "channel_archive_inventory_184_videos.csv",
+      "path": "1q6v5l0LmEQEJk277HHPJ1ItdOtk-pkhf__channel_archive_inventory_184_videos.csv",
+      "bytes": 25329,
+      "mime": "text/csv",
+      "sha256": "8327d537059c52530634955ae02333d33c15b283cbfc21e0c33a6af1c7d72e64",
+      "status": "downloaded"
+    },
+    {
+      "id": "1FjfRIotarq5QlLknn9s6xMqUcT4x4wlF",
+      "name": "youtube_links_and_rankings.html",
+      "path": "1FjfRIotarq5QlLknn9s6xMqUcT4x4wlF__youtube_links_and_rankings.html",
+      "bytes": 7432,
+      "mime": "text/html",
+      "sha256": "b4fc5f477a177a756169ebff66cec5f83d49959bf11d4f4a64f196bf2efc88eb",
+      "status": "downloaded"
+    },
+    {
+      "id": "1L9umnqs08qvmEVZLJgkl0BJybVRa7mMA",
+      "name": "youtube_links_and_rankings.txt",
+      "path": "1L9umnqs08qvmEVZLJgkl0BJybVRa7mMA__youtube_links_and_rankings.txt",
+      "bytes": 4576,
+      "mime": "text/plain",
+      "sha256": "5f4b174bca3c3d4cea3f9bac67eaac0a449898e8aec3d59c8f3924a75bd5a863",
+      "status": "downloaded"
+    },
+    {
+      "id": "1I2K1y_Y5TWpyTxypTCm3NUUjs2H9vFWc",
+      "name": "youtube_links_and_rankings.txt",
+      "path": "1I2K1y_Y5TWpyTxypTCm3NUUjs2H9vFWc__youtube_links_and_rankings.txt",
+      "bytes": 2774,
+      "mime": "text/plain",
+      "sha256": "9842da05114c1dfea23038088234a64cad08a20cd993cf0e7cbbf2829e0ec564",
+      "status": "downloaded"
+    },
+    {
+      "id": "1zYhb9ZIKTu437G5WTYz7r-2bRM4zUZIp",
+      "name": "youtube_links_only.txt",
+      "path": "1zYhb9ZIKTu437G5WTYz7r-2bRM4zUZIp__youtube_links_only.txt",
+      "bytes": 832,
+      "mime": "text/plain",
+      "sha256": "22c63db82678bab146afc30c89f309580f9d504d6f947771fb31a14be727e309",
+      "status": "downloaded"
+    },
+    {
+      "id": "1TxjPiSaEKlqqHKA5aJffK54vUohczCHS",
+      "name": "00_ARCHIVE_PROGRESS.txt",
+      "path": "13_zimautanimation_channel_archive/00_ARCHIVE_PROGRESS.txt",
+      "mime": "text/plain",
+      "bytes": 205,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "c762ee93742601a530c06a14f748841cd8d5884fb4d36cf34515bda475d502e7"
+    },
+    {
+      "id": "17aZ5AyTfeZ28u65Irgvj5JwNbisTbVAk",
+      "name": "01_x5FMXSJ0M4w_CARNAGE_VS_WAR_MACHINE_Full.mp4",
+      "path": "13_zimautanimation_channel_archive/01_x5FMXSJ0M4w_CARNAGE_VS_WAR_MACHINE_Full.mp4",
+      "mime": "video/mp4",
+      "bytes": 82383529,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "aec451ec25b87ecdf55857b97460936a7f5120b73dc06890f7722b760d4bea53"
+    },
+    {
+      "id": "1Z9xIV4nO_qqmXw1GTo92pB5KB3hmZiLk",
+      "name": "02_Tq3i0wOwB4s_Carnage_vs_War_Machine_Part_2.mp4",
+      "path": "13_zimautanimation_channel_archive/02_Tq3i0wOwB4s_Carnage_vs_War_Machine_Part_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 62275030,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "e04e2c38b5f00e3ed956263131397d801a42b358e50742c10cd1ccc38fa77fff"
+    },
+    {
+      "id": "1bQ06NB2O5I43BZJMkN-K9MovWsbgmEQZ",
+      "name": "03_pSIAoxIjp3s_Carnage_vs_War_Machine_Part_1.mp4",
+      "path": "13_zimautanimation_channel_archive/03_pSIAoxIjp3s_Carnage_vs_War_Machine_Part_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 31523503,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "bcc04eaa3788bf0a54170943d1ab28f87592bcf4ad8ac6676883f26d0bf07ee2"
+    },
+    {
+      "id": "1lqw-vzZlhjqbU8q9OWQipQv5QpOgShWC",
+      "name": "04_8hjPsUDip2w_Drawing_WARMACHINE_concept.mp4",
+      "path": "13_zimautanimation_channel_archive/04_8hjPsUDip2w_Drawing_WARMACHINE_concept.mp4",
+      "mime": "video/mp4",
+      "bytes": 8536793,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "bc0635681acbbca930c185936aa6b39b61eb16742fab9b3534a23000e0203041"
+    },
+    {
+      "id": "1Q4UVva5VCnX2-EB9yuqD6i653qAOC2Ad",
+      "name": "05__BDyw1ApY-c_HULK_Vs_SAITAMA_REMASTERED.mp4",
+      "path": "13_zimautanimation_channel_archive/05__BDyw1ApY-c_HULK_Vs_SAITAMA_REMASTERED.mp4",
+      "mime": "video/mp4",
+      "bytes": 89713235,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "3855b1876f32be8584b8e1d2b9913e50bd036ed964f8005d9104b0d3f4285b80"
+    },
+    {
+      "id": "1NyhrqwRb5oqKa7yOy4W8vn_7I5w2qBSZ",
+      "name": "06_g5bpOwpL8HA_SUPERMAN_VS_HULK_Full.mp4",
+      "path": "13_zimautanimation_channel_archive/06_g5bpOwpL8HA_SUPERMAN_VS_HULK_Full.mp4",
+      "mime": "video/mp4",
+      "bytes": 100797802,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "abfa150f2f69450d417f71ddd221c6c9633d53ee048cbb3a04b44e6f5e47e9cd"
+    },
+    {
+      "id": "1Dhoj60nDZk5Bg7WY4hVwZs_2eyQe3wbE",
+      "name": "07_QPyimT4yh5A_Superman_Vs_Hulk_Part_3.mp4",
+      "path": "13_zimautanimation_channel_archive/07_QPyimT4yh5A_Superman_Vs_Hulk_Part_3.mp4",
+      "mime": "video/mp4",
+      "bytes": 34913561,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "77a1177b57240b380df3adbb4059e53a8866e25660c671569c0e95def6e250b4"
+    },
+    {
+      "id": "1arIrauprwoo1qQ5p6DWGb5vSfKCT9ikJ",
+      "name": "08_qIKzjVJoxls_Superman_Vs_Hulk_Part_2.mp4",
+      "path": "13_zimautanimation_channel_archive/08_qIKzjVJoxls_Superman_Vs_Hulk_Part_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 40836928,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "494965921768d716ae0c718fbaa3f2332d42b4181eb6a0e6868ef7656ec7335f"
+    },
+    {
+      "id": "1P16ZRljzbzif1k4DaHmvxXg77gWwyGm6",
+      "name": "09_p6JAv5bCVOc_Superman_Vs_Hulk_Part_1.mp4",
+      "path": "13_zimautanimation_channel_archive/09_p6JAv5bCVOc_Superman_Vs_Hulk_Part_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 35052848,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "d7882696bfe7b1d2a4eb918c158bc8f44e816fc57c7a31d2a5b950fcd1597f93"
+    },
+    {
+      "id": "1mcbwhrZgC2rd4B5YP__HX80DNOBTBUKA",
+      "name": "10_espnaISmbV0_WINTER_SOLDIER_Vs_GUILE_Full.mp4",
+      "path": "13_zimautanimation_channel_archive/10_espnaISmbV0_WINTER_SOLDIER_Vs_GUILE_Full.mp4",
+      "mime": "video/mp4",
+      "bytes": 99415302,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "c6c3ef08a1085a4d8adf148ca8a799a63bccb4e45ea75dbc873951883d81e1e5"
+    },
+    {
+      "id": "1LaIW7Qe7Vhl71U0pe8259V0X4u6b0arx",
+      "name": "11_LHN5ZArTQJo_Winter_Soldier_Vs_Guile_Final.mp4",
+      "path": "13_zimautanimation_channel_archive/11_LHN5ZArTQJo_Winter_Soldier_Vs_Guile_Final.mp4",
+      "mime": "video/mp4",
+      "bytes": 63216519,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "27cf9f9cf05fc790f2daa998a522247096e3b5de6fd1adbc3902f1e9d81a6675"
+    },
+    {
+      "id": "1_Mn7bZmma50JRYUuTNIxka3u-5FME2vc",
+      "name": "12_DoXedsVeR6A_Winter_Soldier_Vs_Guile_Part_2.mp4",
+      "path": "13_zimautanimation_channel_archive/12_DoXedsVeR6A_Winter_Soldier_Vs_Guile_Part_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 33305203,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "7340293f370929e34babf85ed2b9fcdd65fd1581b8fa3a27dd8c8a916efd41c8"
+    },
+    {
+      "id": "1CXM7uQ7lnPbDIpqI9Mc4IglejTNQkt4_",
+      "name": "13_cUv6ZPhHOPo_Winter_Soldier_Vs_Guile_Part_1.mp4",
+      "path": "13_zimautanimation_channel_archive/13_cUv6ZPhHOPo_Winter_Soldier_Vs_Guile_Part_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 27321515,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "bf1c85fc60698a34dd9b22fe9b35bc4035b4abb7c51e60b5c15f082f2b34cca2"
+    },
+    {
+      "id": "1v-bs-PreBdcHyhRa0sxhY_y880c9HDEm",
+      "name": "14_mZp3ylzqnv0_Drawing_Godzilla_Venom_Concept.mp4",
+      "path": "13_zimautanimation_channel_archive/14_mZp3ylzqnv0_Drawing_Godzilla_Venom_Concept.mp4",
+      "mime": "video/mp4",
+      "bytes": 41032917,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "ae3e5112fc51b72e9b63cf9802c5630c64eadda5ea50c7d8d325487de0262a20"
+    },
+    {
+      "id": "1PL7qKc9nbg5xO_SqHYmNrc5JtfSNH1Rq",
+      "name": "15_pxWl6KgLvJc_Drawing_Guile_Concept.mp4",
+      "path": "13_zimautanimation_channel_archive/15_pxWl6KgLvJc_Drawing_Guile_Concept.mp4",
+      "mime": "video/mp4",
+      "bytes": 40138501,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "a9dc0471d0f3fd357cf5d837282bbf20a74407392d300a227bcbdf47abbba5e1"
+    },
+    {
+      "id": "1p078ll1-jzy8uuu1tfqhf873equLOWMG",
+      "name": "16_5P0wHWnCDUY_Drawing_Bucky_Concept.mp4",
+      "path": "13_zimautanimation_channel_archive/16_5P0wHWnCDUY_Drawing_Bucky_Concept.mp4",
+      "mime": "video/mp4",
+      "bytes": 26989322,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "ce7aae1dfccd7f68fac3f68c6bba3d05b85aa5087e971911fabcea9927577387"
+    },
+    {
+      "id": "1W-1yPZSYGzsYbV7W3D6kQMdpMXda-MCJ",
+      "name": "17_hCnsaahr2cc_Ink_Game_Roblox_Animation.mp4",
+      "path": "13_zimautanimation_channel_archive/17_hCnsaahr2cc_Ink_Game_Roblox_Animation.mp4",
+      "mime": "video/mp4",
+      "bytes": 73194833,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229"
+    },
+    {
+      "id": "1V-9UajeZ5ZSMAzzdXxr-MoN2tFrmvigZ",
+      "name": "18_V8nkXPAtGbk_HULK_Vs_SAITAMA_Full.mp4",
+      "path": "13_zimautanimation_channel_archive/18_V8nkXPAtGbk_HULK_Vs_SAITAMA_Full.mp4",
+      "mime": "video/mp4",
+      "bytes": 86891267,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "85b3259269f7a58fa171236fae54ac5f13ba3ead02f367d00e16680b559a6df8"
+    },
+    {
+      "id": "1Nm3TbWkjNcVZ9U_KxHORhSqtlpHW4MQK",
+      "name": "19_HhovU0pkLX4_Hulk_vs_Saitama_Part_3.mp4",
+      "path": "13_zimautanimation_channel_archive/19_HhovU0pkLX4_Hulk_vs_Saitama_Part_3.mp4",
+      "mime": "video/mp4",
+      "bytes": 52981045,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "70cbac23297565d1060df77fcee7c8b76101c53342ac6622a4fb28804e683966"
+    },
+    {
+      "id": "1Bh7Jw2LnXNvweAbcdJKGtuDD3_Pr2XD0",
+      "name": "20_GlHqENKTMsI_Hulk_vs_Saitama_Teaser.mp4",
+      "path": "13_zimautanimation_channel_archive/20_GlHqENKTMsI_Hulk_vs_Saitama_Teaser.mp4",
+      "mime": "video/mp4",
+      "bytes": 19267505,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "ab2797be9a5e47f8c851aead53fd2cf45e817f886a7781be75f7ca60720f6246"
+    },
+    {
+      "id": "101y099SM0xC0Kp4pZEhT8eC1ub8GxdpH",
+      "name": "21_7Y-n0DN2_0k_Hulk_vs_Saitama_Part_2.mp4",
+      "path": "13_zimautanimation_channel_archive/21_7Y-n0DN2_0k_Hulk_vs_Saitama_Part_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 12628321,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "ad2c8a7a9fb9691d146dc9bdcdd57d17f0214d4f0818c390e6cff873abd80a23"
+    },
+    {
+      "id": "1WZYtryBwc4mfAnw9qhp_SAcZEuiLhs3a",
+      "name": "22_duKbLYn3jEo_Hulk_vs_Saitama_Part_1.mp4",
+      "path": "13_zimautanimation_channel_archive/22_duKbLYn3jEo_Hulk_vs_Saitama_Part_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 25571124,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "b6680538ef86328d327c1568183b9892d49a7c50fa898facf04d7a7994416743"
+    },
+    {
+      "id": "1DLi0aKIS_CvK24IBbclejpW3QNZG8WfH",
+      "name": "23_l-KZa7Nc_z0_Drawing_Godzilla_Vs_Kong_Thumbnail.mp4",
+      "path": "13_zimautanimation_channel_archive/23_l-KZa7Nc_z0_Drawing_Godzilla_Vs_Kong_Thumbnail.mp4",
+      "mime": "video/mp4",
+      "bytes": 29229791,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "c5c4c96291d034b7c8ca47f3d9f1b0dba1fbc5e218c8c3dce31de5f048ec701c"
+    },
+    {
+      "id": "1cjKJ6lTsl3rJbFuRy4zBaZhkvrj_DI9j",
+      "name": "24_IpCQEmmAyTY_GODZILLA_VS_KING_KONG_Full.mp4",
+      "path": "13_zimautanimation_channel_archive/24_IpCQEmmAyTY_GODZILLA_VS_KING_KONG_Full.mp4",
+      "mime": "video/mp4",
+      "bytes": 55723997,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "f5cdabede7ce93bb68221935d35bbe2b21f2bca9fef71bc0de4000b8356409a2"
+    },
+    {
+      "id": "1F2tsTed-TjKsAsk7QfHQFZMuoWuwD2z-",
+      "name": "25_wW6-2r3XE6Q_Godzilla_vs_Kong_Part_3.mp4",
+      "path": "13_zimautanimation_channel_archive/25_wW6-2r3XE6Q_Godzilla_vs_Kong_Part_3.mp4",
+      "mime": "video/mp4",
+      "bytes": 43747018,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "f95636e0fcd42424bef099320fd190fcd762aa45b8e643d4877cd0295e5ffd0a"
+    },
+    {
+      "id": "1lGlcd39TxmVsbLN7-saxs8zOBqLw4UIW",
+      "name": "26_5lMNtULECHE_GvsK_Part_3_preview.mp4",
+      "path": "13_zimautanimation_channel_archive/26_5lMNtULECHE_GvsK_Part_3_preview.mp4",
+      "mime": "video/mp4",
+      "bytes": 7058967,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "cf45a95e2c5d2a47d375369af27cd31fe6d56e550177d562493d06fe9188a943"
+    },
+    {
+      "id": "1B43DITC-0rNHuXQ_QQatIx0cUzgsUQCp",
+      "name": "27_l0IzAvpFHRk_Godzilla_vs_Kong_Part_2.mp4",
+      "path": "13_zimautanimation_channel_archive/27_l0IzAvpFHRk_Godzilla_vs_Kong_Part_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 17843124,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "e74c5cc1865c7a86eb95c7578dd7869c98f3258088aedde128c5a6a15408a617"
+    },
+    {
+      "id": "17GwQmt_bhpQRYLO_M_I91V3KWkwi3akn",
+      "name": "28_Tzoz2vzKGxY_Godzilla_vs_Kong_Part_1.mp4",
+      "path": "13_zimautanimation_channel_archive/28_Tzoz2vzKGxY_Godzilla_vs_Kong_Part_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 9310213,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "c1274d71c63b13b27c80ab3e31e8acbac9e6820a7ca8230b517ddef99fbc62fe"
+    },
+    {
+      "id": "1j16i7UY6RTOTijnS9H1FpXJ0e9uqrxFc",
+      "name": "29_vJGvSbHmeco_A_Dog_Fight_Animation.mp4",
+      "path": "13_zimautanimation_channel_archive/29_vJGvSbHmeco_A_Dog_Fight_Animation.mp4",
+      "mime": "video/mp4",
+      "bytes": 16971443,
+      "folder_id": "1gg-gpqa6TgRURdwxk9g39btKijzr6E9F",
+      "status": "downloaded",
+      "sha256": "37461532eb0445971f0f217d676dccfc8cbb369b1e87b4ea8cb8c50cf363a77c"
+    },
+    {
+      "id": "1pnePN4RN0AlhHKsmC-CeD8fkiwCZrvTz",
+      "name": "00_ARCHIVE_PROGRESS.txt",
+      "path": "16_AlanBeckerTutorials_channel_archive/00_ARCHIVE_PROGRESS.txt",
+      "mime": "text/plain",
+      "bytes": 324,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "cb10728cb4418cfadd9a16ad9de0e6465987192c51136418e2cbf2e8d951eeaa"
+    },
+    {
+      "id": "1i5Gl_nWkTye-QT5Hi6Wqi38PPq8x_Osy",
+      "name": "01_kPch-QaQ79g_Stick_Figure_Animation_Course.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/01_kPch-QaQ79g_Stick_Figure_Animation_Course.mp4",
+      "mime": "video/mp4",
+      "bytes": 10600547,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "cb14c1c236efeaf1a4e93011aa977d7cc2946c83fc91d82236b15bccb538a153"
+    },
+    {
+      "id": "1lxD2IocUrE2qKrOOGDcrymbui98-TqfC",
+      "name": "02_v_qMgkiFLRc_Roller_Coaster_Behind_Scenes.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/02_v_qMgkiFLRc_Roller_Coaster_Behind_Scenes.mp4",
+      "mime": "video/mp4",
+      "bytes": 70301313,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "c37f00f65600fb59107c0bff1c588ca5eeceb5e83c95e4df8ae17302da2350c1"
+    },
+    {
+      "id": "10leSGDb9iyqpcS3OUkFj9LlApRu6g2Kn",
+      "name": "03_PPR0jGitTgQ_Embedded_Video_Adobe_Animate.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/03_PPR0jGitTgQ_Embedded_Video_Adobe_Animate.mp4",
+      "mime": "video/mp4",
+      "bytes": 26950662,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "7f38667dc895f42a26fe22d92ee3de141c33b9f758328e9beda89db431366772"
+    },
+    {
+      "id": "1z61w8Sy3TQ_-9wJ_fv9X0qthaT_lEoIF",
+      "name": "04_L9sZJqXWc6c_Building_Contest_Behind_Scenes.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/04_L9sZJqXWc6c_Building_Contest_Behind_Scenes.mp4",
+      "mime": "video/mp4",
+      "bytes": 75167172,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "ea7080059c11d2c620c6a3e9f72bb18630ec56570e4d26aa80d499d18b0ded7d"
+    },
+    {
+      "id": "1hgCHHsunrpZzS6XcG5L37QhXDML7FfKK",
+      "name": "05_STlVAK87XWI_Rediscovery_Behind_Scenes.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/05_STlVAK87XWI_Rediscovery_Behind_Scenes.mp4",
+      "mime": "video/mp4",
+      "bytes": 75217608,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "6cc3a8da87521358d7806c831dbd439dd5d83080bb96f64ba5ba926ac3b26407"
+    },
+    {
+      "id": "1E8l04zqbmihnXzp9dQw0qRplJwy_oz-5",
+      "name": "06_g1vU6aDI-48_Huion_KAMVAS_Review.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/06_g1vU6aDI-48_Huion_KAMVAS_Review.mp4",
+      "mime": "video/mp4",
+      "bytes": 43516698,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "72d64d60686b36cbdf4e47aa3a0f04da661207b71807a89c3f808dcc4bfe6f6d"
+    },
+    {
+      "id": "1Nft3vbsIkHst3Xv3GWx0crzE_aX7svas",
+      "name": "07_BDv8KeJDEnk_Freeware_Alternatives_to_Flash.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/07_BDv8KeJDEnk_Freeware_Alternatives_to_Flash.mp4",
+      "mime": "video/mp4",
+      "bytes": 16832316,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "20b67d14af9fa32d0b7d09b9e73bf272ea0f99e7abcd3c6369dccac9dbaa3520"
+    },
+    {
+      "id": "1mzSm3z7Rc6FyN2it_6EvnrjhDc_cmU2Z",
+      "name": "08_uDqjIdI4bF4_12_Principles_of_Animation.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/08_uDqjIdI4bF4_12_Principles_of_Animation.mp4",
+      "mime": "video/mp4",
+      "bytes": 101098626,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "17febb3e8009560485b24f200c1206ec8ddb6647deab5d5d8340c947dc6a5357"
+    },
+    {
+      "id": "1D0GCjCoswpas4Bc7Jhp8gfKJuV_-A1xz",
+      "name": "09_UuqdPATU7a8_Massive_Scale_Animations.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/09_UuqdPATU7a8_Massive_Scale_Animations.mp4",
+      "mime": "video/mp4",
+      "bytes": 21204523,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "442ea734ccc2ba0132bc2934ceef43ac42c2d5d9a2ce65fbdfec1622a24acb1e"
+    },
+    {
+      "id": "14Qri4_lDqroe4HChIrC0plBiuQOeZcAd",
+      "name": "10_iga8qwm9S00_Block_Variation_in_Minecraft.mp4",
+      "path": "16_AlanBeckerTutorials_channel_archive/10_iga8qwm9S00_Block_Variation_in_Minecraft.mp4",
+      "mime": "video/mp4",
+      "bytes": 37824266,
+      "folder_id": "11PHOksPNAO6riYO161zqtLV0Xu2dJLME",
+      "status": "downloaded",
+      "sha256": "65ace996073ce5417d55001b504c8f23d0966892fb7b79b148889933a0804bbd"
+    }
+  ],
+  "remnant_visible_files": 0,
+  "alan_uploaded": 10,
+  "alan_inventory": 67
+}

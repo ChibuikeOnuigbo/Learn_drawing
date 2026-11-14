@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import numpy as np
+import pytest
 from PIL import Image
 from animation_mcp.edit import edit_video
 from animation_mcp.render import render
@@ -37,3 +38,21 @@ def test_saved_neural_curve_can_be_used_by_tool():
     values=np.asarray(learned['points'])
     assert values.shape==(17,2) and np.isfinite(values).all()
     assert np.abs(values-np.asarray(exact['points'])).mean()<.04
+
+
+def test_explicit_final_frame_hold_preserves_longer_narration_slot(tmp_path):
+    path=tmp_path/'source.json'
+    source_scene={"width":160,"height":96,"frames":6,"fps":12,"layers":[
+        {"id":"ball","kind":"ellipse","width":20,"height":20,"y":48,"fill":"#ff9900",
+         "tracks":[{"property":"x","keys":[{"frame":0,"value":20},{"frame":5,"value":130}]}]}]}
+    path.write_text(json.dumps(source_scene))
+    render(path,tmp_path/'source',tmp_path)
+    result=edit_video(dict(width=160,height=96,fps=12,clips=[
+        dict(path='source/video.mp4',duration=1,hold_last=True)]),tmp_path/'held',tmp_path)
+    assert result['technical_pass'] and result['frames']==12
+    samples=sorted((tmp_path/'held/inspection').glob('sample-*.png'))
+    first=np.array(Image.open(samples[0])).astype(float)
+    late=np.array(Image.open(samples[-1])).astype(float)
+    assert np.abs(first-late).mean()>1
+    with pytest.raises(ValueError,match='starts after'):
+        edit_video(dict(width=160,height=96,fps=12,clips=[dict(path='source/video.mp4',start=1,duration=1,hold_last=True)]),tmp_path/'bad',tmp_path)

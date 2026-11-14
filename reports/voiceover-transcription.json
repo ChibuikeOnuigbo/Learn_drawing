@@ -1,0 +1,300 @@
+{
+  "audio": "/workspace/Learn_drawing/exmapels/reaction-story/speech/narration.wav",
+  "text": "The anime hero had a perfect plan. He tried a short cut. This is absolutely messed up. He walked into the trap again. No brains at all. Then the team changed its approach. They actually won.",
+  "duration": 14.1481875,
+  "words": [
+    {
+      "text": "The",
+      "char_start": 0,
+      "char_end": 3,
+      "start": 0,
+      "end": 0.1,
+      "probability": 0.5509047508239746
+    },
+    {
+      "text": "anime",
+      "char_start": 4,
+      "char_end": 9,
+      "start": 0.1,
+      "end": 0.34,
+      "probability": 0.8135830163955688
+    },
+    {
+      "text": "hero",
+      "char_start": 10,
+      "char_end": 14,
+      "start": 0.34,
+      "end": 0.8,
+      "probability": 0.9879476428031921
+    },
+    {
+      "text": "had",
+      "char_start": 15,
+      "char_end": 18,
+      "start": 0.8,
+      "end": 1.02,
+      "probability": 0.8597365617752075
+    },
+    {
+      "text": "a",
+      "char_start": 19,
+      "char_end": 20,
+      "start": 1.02,
+      "end": 1.16,
+      "probability": 0.9948909282684326
+    },
+    {
+      "text": "perfect",
+      "char_start": 21,
+      "char_end": 28,
+      "start": 1.16,
+      "end": 1.42,
+      "probability": 0.9867337942123413
+    },
+    {
+      "text": "plan.",
+      "char_start": 29,
+      "char_end": 34,
+      "start": 1.42,
+      "end": 2.04,
+      "probability": 0.9599224925041199
+    },
+    {
+      "text": "He",
+      "char_start": 35,
+      "char_end": 37,
+      "start": 2.78,
+      "end": 2.82,
+      "probability": 0.9918035268783569
+    },
+    {
+      "text": "tried",
+      "char_start": 38,
+      "char_end": 43,
+      "start": 2.82,
+      "end": 3.02,
+      "probability": 0.9953509569168091
+    },
+    {
+      "text": "a",
+      "char_start": 44,
+      "char_end": 45,
+      "start": 3.02,
+      "end": 3.32,
+      "probability": 0.997252881526947
+    },
+    {
+      "text": "short",
+      "char_start": 46,
+      "char_end": 51,
+      "start": 3.32,
+      "end": 3.6,
+      "probability": 0.432561993598938
+    },
+    {
+      "text": "cut.",
+      "char_start": 52,
+      "char_end": 56,
+      "start": 3.6,
+      "end": 3.92,
+      "probability": 0.9928169250488281
+    },
+    {
+      "text": "This",
+      "char_start": 57,
+      "char_end": 61,
+      "start": 4.48,
+      "end": 4.58,
+      "probability": 0.9869759678840637
+    },
+    {
+      "text": "is",
+      "char_start": 62,
+      "char_end": 64,
+      "start": 4.58,
+      "end": 4.7,
+      "probability": 0.7882207036018372
+    },
+    {
+      "text": "absolutely",
+      "char_start": 65,
+      "char_end": 75,
+      "start": 4.7,
+      "end": 5.2,
+      "probability": 0.8608149290084839
+    },
+    {
+      "text": "messed",
+      "char_start": 76,
+      "char_end": 82,
+      "start": 5.2,
+      "end": 5.64,
+      "probability": 0.9998534917831421
+    },
+    {
+      "text": "up.",
+      "char_start": 83,
+      "char_end": 86,
+      "start": 5.64,
+      "end": 6.02,
+      "probability": 0.9914456605911255
+    },
+    {
+      "text": "He",
+      "char_start": 87,
+      "char_end": 89,
+      "start": 6.46,
+      "end": 6.66,
+      "probability": 0.9955049157142639
+    },
+    {
+      "text": "walked",
+      "char_start": 90,
+      "char_end": 96,
+      "start": 6.66,
+      "end": 6.88,
+      "probability": 0.9971828460693359
+    },
+    {
+      "text": "into",
+      "char_start": 97,
+      "char_end": 101,
+      "start": 6.88,
+      "end": 7.22,
+      "probability": 0.9857307076454163
+    },
+    {
+      "text": "the",
+      "char_start": 102,
+      "char_end": 105,
+      "start": 7.22,
+      "end": 7.5,
+      "probability": 0.9858760237693787
+    },
+    {
+      "text": "trap",
+      "char_start": 106,
+      "char_end": 110,
+      "start": 7.5,
+      "end": 7.76,
+      "probability": 0.9958655834197998
+    },
+    {
+      "text": "again.",
+      "char_start": 111,
+      "char_end": 117,
+      "start": 7.76,
+      "end": 8.12,
+      "probability": 0.9985255599021912
+    },
+    {
+      "text": "No",
+      "char_start": 118,
+      "char_end": 120,
+      "start": 8.8,
+      "end": 8.98,
+      "probability": 0.9859021902084351
+    },
+    {
+      "text": "brains",
+      "char_start": 121,
+      "char_end": 127,
+      "start": 8.98,
+      "end": 9.28,
+      "probability": 0.619272768497467
+    },
+    {
+      "text": "at",
+      "char_start": 128,
+      "char_end": 130,
+      "start": 9.28,
+      "end": 9.6,
+      "probability": 0.9907745718955994
+    },
+    {
+      "text": "all.",
+      "char_start": 131,
+      "char_end": 135,
+      "start": 9.6,
+      "end": 9.84,
+      "probability": 0.9988095760345459
+    },
+    {
+      "text": "Then",
+      "char_start": 136,
+      "char_end": 140,
+      "start": 10.52,
+      "end": 10.58,
+      "probability": 0.35970818996429443
+    },
+    {
+      "text": "the",
+      "char_start": 141,
+      "char_end": 144,
+      "start": 10.58,
+      "end": 10.84,
+      "probability": 0.9481877088546753
+    },
+    {
+      "text": "team",
+      "char_start": 145,
+      "char_end": 149,
+      "start": 10.84,
+      "end": 11.08,
+      "probability": 0.993960976600647
+    },
+    {
+      "text": "changed",
+      "char_start": 150,
+      "char_end": 157,
+      "start": 11.08,
+      "end": 11.44,
+      "probability": 0.9871127009391785
+    },
+    {
+      "text": "its",
+      "char_start": 158,
+      "char_end": 161,
+      "start": 11.44,
+      "end": 11.84,
+      "probability": 0.947726309299469
+    },
+    {
+      "text": "approach.",
+      "char_start": 162,
+      "char_end": 171,
+      "start": 11.84,
+      "end": 12.24,
+      "probability": 0.9990009665489197
+    },
+    {
+      "text": "They",
+      "char_start": 172,
+      "char_end": 176,
+      "start": 12.96,
+      "end": 13.06,
+      "probability": 0.8603085279464722
+    },
+    {
+      "text": "actually",
+      "char_start": 177,
+      "char_end": 185,
+      "start": 13.06,
+      "end": 13.44,
+      "probability": 0.993703305721283
+    },
+    {
+      "text": "won.",
+      "char_start": 186,
+      "char_end": 190,
+      "start": 13.44,
+      "end": 13.88,
+      "probability": 0.9895210266113281
+    }
+  ],
+  "engine": "pretrained Whisper base.en / faster-whisper CPU int8",
+  "timing": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "review_required": true,
+  "language": "en",
+  "narration_json": "/workspace/Learn_drawing/exmapels/reaction-story/asr-base/narration.json"
+}

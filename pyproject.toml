@@ -4,14 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "animation-agent-studio"
-version = "0.1.0"
+version = "0.2.0"
 description = "Editable drawing, timeline animation and render inspection over MCP"
 requires-python = ">=3.11"
-dependencies = ["mcp==1.29.0", "pydantic>=2.11,<3", "Pillow==13.0.0", "CairoSVG==2.8.2", "numpy>=2.2,<3"]
+dependencies = ["mcp==1.29.0", "pydantic>=2.11,<3", "Pillow==13.0.0", "CairoSVG==2.8.2", "numpy>=2.2,<3", "scikit-learn==1.8.0", "espeakng-loader==0.2.4", "faster-whisper==1.2.1"]
 
 [project.optional-dependencies]
 research = ["opencv-python-headless==4.13.0.92", "scikit-learn==1.8.0", "gdown==5.2.0", "yt-dlp==2026.10.26"]
 test = ["pytest>=9,<10"]
+semantic = ["onnxruntime>=1.23,<2", "tokenizers>=0.22,<1"]
 
 [project.scripts]
 animation-mcp = "animation_mcp.server:main"
@@ -19,6 +20,9 @@ animation-studio = "animation_mcp.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+animation_mcp = ["WORKFLOW.md", "models/*.json", "models/*.npz", "assets/reactions/*.png"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -56,13 +56,17 @@ def svg_frame(scene: Scene, frame: int, asset_root: Path) -> bytes:
     root = ET.Element("svg", xmlns="http://www.w3.org/2000/svg", width=str(scene.width),
                       height=str(scene.height), viewBox=f"0 0 {scene.width} {scene.height}")
     ET.SubElement(root, "rect", width="100%", height="100%", fill=scene.background)
+    containers={}
     for layer in scene.layers:
-        if not layer.start <= frame < (layer.end if layer.end is not None else scene.frames):
-            continue
-        state = {p: getattr(layer, p) for p in ["x", "y", "scale", "rotation", "opacity", "reveal"]}
+        active=layer.start <= frame < (layer.end if layer.end is not None else scene.frames)
+        state = {p: getattr(layer, p) for p in ["x", "y", "scale", "scale_x", "scale_y", "rotation", "opacity", "reveal"]}
         state.update({t.property: sample(t, frame) for t in layer.tracks})
-        g = ET.SubElement(root, "g", id=layer.id, opacity=str(state["opacity"]),
-                          transform=f"translate({state['x']} {state['y']}) rotate({state['rotation']}) scale({state['scale']})")
+        container=containers[layer.parent] if layer.parent else root
+        g = ET.SubElement(container, "g", id=layer.id, opacity=str(state["opacity"]),
+                          transform=f"translate({state['x']} {state['y']}) rotate({state['rotation']}) scale({state['scale']*state['scale_x']} {state['scale']*state['scale_y']})")
+        containers[layer.id]=g
+        if not active:
+            g.set('display','none');continue
         attrs = dict(fill=layer.fill, stroke=layer.stroke,
                      **{"stroke-width": str(layer.stroke_width), "stroke-linecap": "round", "stroke-linejoin": "round"})
         if layer.kind == "rect":

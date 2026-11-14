@@ -1,0 +1,151 @@
+{
+  "video": "/workspace/Learn_drawing/exmapels/reaction-story/video.mp4",
+  "frames": 455,
+  "fps": 30.0,
+  "duration": 15.166666666666666,
+  "width": 960,
+  "height": 540,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 39.79904073715761,
+      "luma_mean": 36.07513052983539
+    },
+    {
+      "frame": 113,
+      "stddev": 38.941303281431495,
+      "luma_mean": 35.718511445473254
+    },
+    {
+      "frame": 163,
+      "stddev": 40.16390199411002,
+      "luma_mean": 36.26167052469136
+    },
+    {
+      "frame": 164,
+      "stddev": 65.10157618209581,
+      "luma_mean": 55.47424382716049
+    },
+    {
+      "frame": 192,
+      "stddev": 65.16678902084445,
+      "luma_mean": 55.531868569958846
+    },
+    {
+      "frame": 221,
+      "stddev": 40.624615646976224,
+      "luma_mean": 36.4472550154321
+    },
+    {
+      "frame": 227,
+      "stddev": 40.54325775564284,
+      "luma_mean": 36.40821952160494
+    },
+    {
+      "frame": 264,
+      "stddev": 40.69025370417301,
+      "luma_mean": 36.468249099794235
+    },
+    {
+      "frame": 265,
+      "stddev": 67.16579237425297,
+      "luma_mean": 60.514693930041155
+    },
+    {
+      "frame": 293,
+      "stddev": 66.61365050913511,
+      "luma_mean": 59.98724022633745
+    },
+    {
+      "frame": 322,
+      "stddev": 41.58845318710504,
+      "luma_mean": 36.88737075617284
+    },
+    {
+      "frame": 341,
+      "stddev": 41.76232330290682,
+      "luma_mean": 36.97951581790124
+    },
+    {
+      "frame": 410,
+      "stddev": 40.37365506305761,
+      "luma_mean": 36.37426247427984
+    },
+    {
+      "frame": 411,
+      "stddev": 61.76755369157753,
+      "luma_mean": 55.137536008230455
+    },
+    {
+      "frame": 433,
+      "stddev": 60.97142931667504,
+      "luma_mean": 54.48643968621399
+    },
+    {
+      "frame": 454,
+      "stddev": 60.97142931667504,
+      "luma_mean": 54.48643968621399
+    }
+  ],
+  "contact_sheet": "/workspace/Learn_drawing/exmapels/reaction-story/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "timing_pass": true,
+  "timing_scope": "Cue frame rounding relative to supplied word times; ASR word times themselves are estimates",
+  "audio_sync_review_required": false,
+  "audio_peak": 0.718719482421875,
+  "cues": [
+    {
+      "intent": "disaster",
+      "phrase": "messed up",
+      "word": "messed",
+      "word_time": 5.479,
+      "frame_start": 164,
+      "frame_end": 221,
+      "asset": "anime-disaster.png",
+      "style": "anime",
+      "transcript_word_confidence": null,
+      "confidence": 0.9212991459456082,
+      "editorial_reason": "horrified disbelief at a disastrous plan",
+      "theme_note": "Theme match",
+      "timing_error_seconds": -0.012333333333333307,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    },
+    {
+      "intent": "brain_wipe",
+      "phrase": "no brain",
+      "word": "No",
+      "word_time": 8.846,
+      "frame_start": 265,
+      "frame_end": 322,
+      "asset": "brain-wipe.png",
+      "style": "cartoon",
+      "transcript_word_confidence": null,
+      "confidence": 0.8389851298091023,
+      "editorial_reason": "clueless thinking: tiny sleeping brain / polishing its helmet",
+      "theme_note": "Semantic match uses cartoon art; requested theme is anime. Review or override the asset.",
+      "timing_error_seconds": -0.01266666666666616,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    },
+    {
+      "intent": "victory",
+      "phrase": "won",
+      "word": "won",
+      "word_time": 13.688,
+      "frame_start": 411,
+      "frame_end": 455,
+      "asset": "anime-victory.png",
+      "style": "anime",
+      "transcript_word_confidence": null,
+      "confidence": 0.8543023711862472,
+      "editorial_reason": "celebratory comeback and raised fist",
+      "theme_note": "Theme match",
+      "timing_error_seconds": 0.011999999999998678,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    }
+  ],
+  "artistic_review": "pending: inspect timing, thematic fit, caption readability and humor; classifier is not a taste judge",
+  "audio_present": true
+}

@@ -14,7 +14,7 @@ def main():
     scene.render.engine = "CYCLES"
     scene.cycles.device = "CPU"
     scene.cycles.samples = spec["samples"]
-    scene.cycles.use_denoising = False
+    scene.cycles.use_denoising = spec.get('denoise',False)
     scene.render.resolution_x = spec["width"]
     scene.render.resolution_y = spec["height"]
     scene.render.resolution_percentage = 100
@@ -52,11 +52,24 @@ def main():
             obj.location,obj.rotation_euler,obj.scale = pose["location"],pose["rotation"],pose["scale"]
             for prop in ["location","rotation_euler","scale"]:
                 obj.keyframe_insert(data_path=prop,frame=pose["frame"])
+    # Build real armatures with weighted meshes and IK controls from trusted code.
+    sys.path.insert(0,str(Path(__file__).parent))
+    from rig_worker import build_rig, bake_motion, audit_rig
+    rigs=[]
+    for rig_spec in spec.get('rigs',[]):
+        rig=build_rig(rig_spec)
+        bake_motion(rig,rig_spec,spec['frames'],spec['fps'])
+        rigs.append((rig,rig_spec))
     bpy.ops.object.camera_add(location=spec["camera"])
     camera = bpy.context.object
     camera.rotation_euler = (Vector(spec["target"])-camera.location).to_track_quat('-Z','Y').to_euler()
     camera.data.lens = 48
     scene.camera = camera
+    for pose in spec.get('camera_poses',[]):
+        camera.location=pose['location']
+        camera.rotation_euler=(Vector(pose['target'])-camera.location).to_track_quat('-Z','Y').to_euler()
+        camera.keyframe_insert(data_path='location',frame=pose['frame'])
+        camera.keyframe_insert(data_path='rotation_euler',frame=pose['frame'])
     for name,position,power,color,size in [
         ("Key",(2,-4,7),1300,(.68,.84,1),5),
         ("Rim",(-4,2,5),1600,(.2,.7,1),4),
@@ -69,6 +82,9 @@ def main():
     (folder/"frames").mkdir(exist_ok=True)
     scene.render.filepath = str(folder/"frames"/"")
     bpy.ops.wm.save_as_mainfile(filepath=str(folder/"scene.blend"))
+    if rigs:
+        reports=[audit_rig(rig,rig_spec,spec['frames'],spec['fps']) for rig,rig_spec in rigs]
+        (folder/'rig-qa.json').write_text(json.dumps(reports,indent=2)+'\n')
     for frame in range(spec["frames"]):
         scene.frame_set(frame)
         scene.render.filepath = str(folder/"frames"/f"{frame:04d}.png")

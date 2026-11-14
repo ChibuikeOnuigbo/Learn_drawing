@@ -1,0 +1,83 @@
+{
+  "video": "exmapels/3d/simple/video.mp4",
+  "frames": 72,
+  "fps": 24.0,
+  "duration": 3.0,
+  "width": 480,
+  "height": 270,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 60.901996472886694,
+      "luma_mean": 64.62535751028807
+    },
+    {
+      "frame": 6,
+      "stddev": 60.86754810428241,
+      "luma_mean": 64.56205761316872
+    },
+    {
+      "frame": 12,
+      "stddev": 60.82903176274738,
+      "luma_mean": 64.38800925925926
+    },
+    {
+      "frame": 18,
+      "stddev": 60.587722574329234,
+      "luma_mean": 64.07794495884774
+    },
+    {
+      "frame": 24,
+      "stddev": 60.82556541093215,
+      "luma_mean": 64.42837962962963
+    },
+    {
+      "frame": 30,
+      "stddev": 60.837154166790356,
+      "luma_mean": 64.44021604938271
+    },
+    {
+      "frame": 36,
+      "stddev": 60.59250944052181,
+      "luma_mean": 64.07283436213991
+    },
+    {
+      "frame": 42,
+      "stddev": 60.71858541645047,
+      "luma_mean": 64.23383487654321
+    },
+    {
+      "frame": 48,
+      "stddev": 60.887470051860234,
+      "luma_mean": 64.4870524691358
+    },
+    {
+      "frame": 54,
+      "stddev": 60.78145123206996,
+      "luma_mean": 64.3242566872428
+    },
+    {
+      "frame": 60,
+      "stddev": 60.60897907090709,
+      "luma_mean": 64.09184670781893
+    },
+    {
+      "frame": 66,
+      "stddev": 60.84940354192192,
+      "luma_mean": 64.41525205761317
+    },
+    {
+      "frame": 71,
+      "stddev": 60.86854205237802,
+      "luma_mean": 64.46243055555556
+    }
+  ],
+  "contact_sheet": "exmapels/3d/simple/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "rig_pass": true,
+  "blend": "exmapels/3d/simple/scene.blend",
+  "rig_report": "exmapels/3d/simple/rig-qa.json"
+}

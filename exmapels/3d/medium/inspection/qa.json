@@ -1,0 +1,103 @@
+{
+  "video": "exmapels/3d/medium/video.mp4",
+  "frames": 96,
+  "fps": 24.0,
+  "duration": 4.0,
+  "width": 480,
+  "height": 270,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 60.98124451768788,
+      "luma_mean": 64.69818672839506
+    },
+    {
+      "frame": 6,
+      "stddev": 60.78417744563307,
+      "luma_mean": 64.66575874485596
+    },
+    {
+      "frame": 12,
+      "stddev": 60.80207221619385,
+      "luma_mean": 64.67257973251029
+    },
+    {
+      "frame": 18,
+      "stddev": 60.81116321546261,
+      "luma_mean": 64.72123713991769
+    },
+    {
+      "frame": 24,
+      "stddev": 60.944595478538446,
+      "luma_mean": 65.02875257201646
+    },
+    {
+      "frame": 30,
+      "stddev": 60.85507902573892,
+      "luma_mean": 65.2270987654321
+    },
+    {
+      "frame": 36,
+      "stddev": 60.860605512568924,
+      "luma_mean": 65.26238683127572
+    },
+    {
+      "frame": 42,
+      "stddev": 60.84835375916879,
+      "luma_mean": 65.33788580246913
+    },
+    {
+      "frame": 48,
+      "stddev": 61.02220106539519,
+      "luma_mean": 65.73265946502057
+    },
+    {
+      "frame": 54,
+      "stddev": 60.94295130827877,
+      "luma_mean": 65.95425925925926
+    },
+    {
+      "frame": 60,
+      "stddev": 60.8564695724308,
+      "luma_mean": 65.88834362139917
+    },
+    {
+      "frame": 66,
+      "stddev": 60.703538768020145,
+      "luma_mean": 65.81728395061728
+    },
+    {
+      "frame": 72,
+      "stddev": 60.86655983116571,
+      "luma_mean": 66.15053497942387
+    },
+    {
+      "frame": 78,
+      "stddev": 60.76663624965247,
+      "luma_mean": 66.27203446502058
+    },
+    {
+      "frame": 84,
+      "stddev": 60.644902077529046,
+      "luma_mean": 66.12680041152264
+    },
+    {
+      "frame": 90,
+      "stddev": 60.4371624664745,
+      "luma_mean": 65.94928497942387
+    },
+    {
+      "frame": 95,
+      "stddev": 60.62825181799037,
+      "luma_mean": 66.15875257201647
+    }
+  ],
+  "contact_sheet": "exmapels/3d/medium/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "rig_pass": true,
+  "blend": "exmapels/3d/medium/scene.blend",
+  "rig_report": "exmapels/3d/medium/rig-qa.json"
+}

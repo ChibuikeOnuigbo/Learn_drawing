@@ -11,3 +11,4 @@ if ! command -v blender >/dev/null; then
   echo 'Install Blender 4.3+ separately to enable 3D tools.' >&2
 fi
 .venv/bin/python -m pytest -q
+.venv/bin/python scripts/configure_client.py --output output/mcp-client.json

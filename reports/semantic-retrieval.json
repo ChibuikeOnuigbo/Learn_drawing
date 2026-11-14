@@ -1,0 +1,134 @@
+[
+  {
+    "query": "a three dimensional animated character in a scene",
+    "results": [
+      {
+        "name": "12_very-simple_BAYQ2W_v08s.mp4",
+        "drive_id": "14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM",
+        "time_seconds": 0.5,
+        "source_sha256": "d54a263cf6c92290c310e60c36bd4f4bee68436d17d2da7394e4464630ba7c8e",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM/view",
+        "cosine_similarity": 0.30650466680526733
+      },
+      {
+        "name": "24_IpCQEmmAyTY_GODZILLA_VS_KING_KONG_Full.mp4",
+        "drive_id": "1cjKJ6lTsl3rJbFuRy4zBaZhkvrj_DI9j",
+        "time_seconds": 0,
+        "source_sha256": "f5cdabede7ce93bb68221935d35bbe2b21f2bca9fef71bc0de4000b8356409a2",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1cjKJ6lTsl3rJbFuRy4zBaZhkvrj_DI9j/view",
+        "cosine_similarity": 0.2916290760040283
+      },
+      {
+        "name": "14_very-extremely-hard-3d-blender_hCnsaahr2cc.mp4",
+        "drive_id": "18L90aEHSTKY2iMjVagELOeqX4x4Bld6m",
+        "time_seconds": 1.5,
+        "source_sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/18L90aEHSTKY2iMjVagELOeqX4x4Bld6m/view",
+        "cosine_similarity": 0.29159367084503174
+      }
+    ],
+    "scope": "Text-to-sampled-frame CLIP retrieval; similarity is not an artistic quality score or proof the whole video matches"
+  },
+  {
+    "query": "anime motion graphics with typography",
+    "results": [
+      {
+        "name": "15_hard_2Wv3p9WCs6M.mp4",
+        "drive_id": "1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv",
+        "time_seconds": 1.5,
+        "source_sha256": "f21f2ab974710f1f25dd6f9e181478e51a86bc1559141c76e730afdac605f5e9",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv/view",
+        "cosine_similarity": 0.3117634356021881
+      },
+      {
+        "name": "07_BDv8KeJDEnk_Freeware_Alternatives_to_Flash.mp4",
+        "drive_id": "1Nft3vbsIkHst3Xv3GWx0crzE_aX7svas",
+        "time_seconds": 0.5,
+        "source_sha256": "20b67d14af9fa32d0b7d09b9e73bf272ea0f99e7abcd3c6369dccac9dbaa3520",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1Nft3vbsIkHst3Xv3GWx0crzE_aX7svas/view",
+        "cosine_similarity": 0.30200231075286865
+      },
+      {
+        "name": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+        "drive_id": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks",
+        "time_seconds": 46.8752832,
+        "source_sha256": "24067cc7d950916df387d89505b6e1d863515848c554eea9fdb399bd97976720",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks/view",
+        "cosine_similarity": 0.29306650161743164
+      }
+    ],
+    "scope": "Text-to-sampled-frame CLIP retrieval; similarity is not an artistic quality score or proof the whole video matches"
+  },
+  {
+    "query": "a simple drawing or cartoon character with speech captions",
+    "results": [
+      {
+        "name": "16_5P0wHWnCDUY_Drawing_Bucky_Concept.mp4",
+        "drive_id": "1p078ll1-jzy8uuu1tfqhf873equLOWMG",
+        "time_seconds": 1.5,
+        "source_sha256": "ce7aae1dfccd7f68fac3f68c6bba3d05b85aa5087e971911fabcea9927577387",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1p078ll1-jzy8uuu1tfqhf873equLOWMG/view",
+        "cosine_similarity": 0.30753281712532043
+      },
+      {
+        "name": "14_mZp3ylzqnv0_Drawing_Godzilla_Venom_Concept.mp4",
+        "drive_id": "1v-bs-PreBdcHyhRa0sxhY_y880c9HDEm",
+        "time_seconds": 0.5,
+        "source_sha256": "ae3e5112fc51b72e9b63cf9802c5630c64eadda5ea50c7d8d325487de0262a20",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1v-bs-PreBdcHyhRa0sxhY_y880c9HDEm/view",
+        "cosine_similarity": 0.28806090354919434
+      },
+      {
+        "name": "15_pxWl6KgLvJc_Drawing_Guile_Concept.mp4",
+        "drive_id": "1PL7qKc9nbg5xO_SqHYmNrc5JtfSNH1Rq",
+        "time_seconds": 1.5,
+        "source_sha256": "a9dc0471d0f3fd357cf5d837282bbf20a74407392d300a227bcbdf47abbba5e1",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1PL7qKc9nbg5xO_SqHYmNrc5JtfSNH1Rq/view",
+        "cosine_similarity": 0.28500017523765564
+      }
+    ],
+    "scope": "Text-to-sampled-frame CLIP retrieval; similarity is not an artistic quality score or proof the whole video matches"
+  },
+  {
+    "query": "a tutorial demonstrating animation timing",
+    "results": [
+      {
+        "name": "02_v_qMgkiFLRc_Roller_Coaster_Behind_Scenes.mp4",
+        "drive_id": "1lxD2IocUrE2qKrOOGDcrymbui98-TqfC",
+        "time_seconds": 445.5909295,
+        "source_sha256": "c37f00f65600fb59107c0bff1c588ca5eeceb5e83c95e4df8ae17302da2350c1",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1lxD2IocUrE2qKrOOGDcrymbui98-TqfC/view",
+        "cosine_similarity": 0.3100805878639221
+      },
+      {
+        "name": "05_STlVAK87XWI_Rediscovery_Behind_Scenes.mp4",
+        "drive_id": "1hgCHHsunrpZzS6XcG5L37QhXDML7FfKK",
+        "time_seconds": 261.07356,
+        "source_sha256": "6cc3a8da87521358d7806c831dbd439dd5d83080bb96f64ba5ba926ac3b26407",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1hgCHHsunrpZzS6XcG5L37QhXDML7FfKK/view",
+        "cosine_similarity": 0.30942535400390625
+      },
+      {
+        "name": "23_l-KZa7Nc_z0_Drawing_Godzilla_Vs_Kong_Thumbnail.mp4",
+        "drive_id": "1DLi0aKIS_CvK24IBbclejpW3QNZG8WfH",
+        "time_seconds": 0.5,
+        "source_sha256": "c5c4c96291d034b7c8ca47f3d9f1b0dba1fbc5e218c8c3dce31de5f048ec701c",
+        "source": "user-supplied Drive reference",
+        "url": "https://drive.google.com/file/d/1DLi0aKIS_CvK24IBbclejpW3QNZG8WfH/view",
+        "cosine_similarity": 0.30677616596221924
+      }
+    ],
+    "scope": "Text-to-sampled-frame CLIP retrieval; similarity is not an artistic quality score or proof the whole video matches"
+  }
+]

@@ -1,0 +1,1047 @@
+[
+  {
+    "name": "01_extremely-very-very-hard_X2Cv8DbygpA.mp4",
+    "drive_id": "12Rss4ziwoGSnB2gEnZuqeGZ23fGKRRuM",
+    "seconds": 480.049342,
+    "fps": 24.0,
+    "frames": 11520,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      120.0123355,
+      240.024671,
+      408.0419407
+    ],
+    "sha256": "37dd4ee5d05a6f3747f71cd1940652981a1ac1235f884afbab781e335b237673",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "02_very-hard_Y2vDwR9rW-0.mp4",
+    "drive_id": "1KOKXq_-CAdkqGbUpq00ernHKdSfVcTQr",
+    "seconds": 800.089977,
+    "fps": 24.0,
+    "frames": 19201,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      200.02249425,
+      400.0449885,
+      680.07648045
+    ],
+    "sha256": "da22210f84c2818014681fc159f51db0426f92561c2f2b8f16cd0fde15bae0f3",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "03_simple-motion-graphics-video-editing_3q1KnXSD7Qg.mp4",
+    "drive_id": "1YmLIvP74rqV8mL3QMUn4lxeP-LPrQgpr",
+    "seconds": 1250.533878,
+    "fps": 60.0,
+    "frames": 75029,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      312.6334695,
+      625.266939,
+      1062.9537963
+    ],
+    "sha256": "1c3e2f96e5cc54e02cf68a9fa89b966bc5562a5c1f97b7174e953eef292a3a7c",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+    "drive_id": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks",
+    "seconds": 55.147392,
+    "fps": 24.0,
+    "frames": 1322,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      13.786848,
+      27.573696,
+      46.8752832
+    ],
+    "sha256": "24067cc7d950916df387d89505b6e1d863515848c554eea9fdb399bd97976720",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "05_medium-baseline-animation-tween-editing_HDsziw2LuQA.mp4",
+    "drive_id": "1ej2D4QHaoLPOyXiOyOjlJZ52D2NOlBlS",
+    "seconds": 430.706939,
+    "fps": 30.0,
+    "frames": 12919,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      107.67673475,
+      215.3534695,
+      366.10089815
+    ],
+    "sha256": "cdd4093eb1ea645e7f294de4c2b5f75fc18eeec49885328cb5edab0e2ebee0a2",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "06_hard_AhICirv_6lw.mp4",
+    "drive_id": "1IJaO6Vy5mhvac3DUY2MrZEXA23Fk_H5T",
+    "seconds": 367.386122,
+    "fps": 30.0,
+    "frames": 11020,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      91.8465305,
+      183.693061,
+      312.2782037
+    ],
+    "sha256": "b4016bf9027d6a556689e645ae88fed6d25e2feb244778f3690b210bd636ba34",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "07_easy_92ibAh-rSLk.mp4",
+    "drive_id": "1y5XN5qbvvp9WuM4bEridtVsq5HV4YUwT",
+    "seconds": 638.200454,
+    "fps": 30.0,
+    "frames": 19144,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      159.5501135,
+      319.100227,
+      542.4703859
+    ],
+    "sha256": "101c91b17b709b4090ef3330e6656e92d2935eed1a7857a84b74add5b0cc73c8",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "08_very-easy-video-editing_3I0E21EOZu4.mp4",
+    "drive_id": "1Ye0igawvIAqwg0dJEX3DMWSIEUfWeDSs",
+    "seconds": 1235.835646,
+    "fps": 60.0,
+    "frames": 74146,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      308.9589115,
+      617.917823,
+      1050.4602991
+    ],
+    "sha256": "c4fb57594398c3a4a31ab358821f7558113dfee6ee1d5b34971b2d6fdd502b61",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "09_almost-hard-music-video-sketches_9w0_e9X4FDw.mp4",
+    "drive_id": "1pRwJsJ66hoR3oXWAvXw6exg5d1lRVGbn",
+    "seconds": 99.961905,
+    "fps": 10.0,
+    "frames": 999,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      24.99047625,
+      49.9809525,
+      84.96761925
+    ],
+    "sha256": "c2715ac525426c5d5e2fca06c84d65d6e376875641cb8763fe1ce10508eaa00d",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "10_complex-anime-edit-composition_s-n7xL8JxZE.mp4",
+    "drive_id": "1qaVOLSGYY6geK7JYdUxK5W40a2tSButy",
+    "seconds": 102.098141,
+    "fps": 20.0,
+    "frames": 2041,
+    "width": 1280,
+    "height": 586,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      25.52453525,
+      51.0490705,
+      86.78341985
+    ],
+    "sha256": "bf035a093e3e866a0a9ad9d5e8b368e3839c173d76cd51e7dbc111efa0e2b0e3",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "11_medium-memes-script-visuals_rv0CZ919PFw.mp4",
+    "drive_id": "1USWdJVIdHw2x4ExYOokKi9009TTb83jA",
+    "seconds": 627.960454,
+    "fps": 60.0,
+    "frames": 37673,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      156.9901135,
+      313.980227,
+      533.7663859
+    ],
+    "sha256": "ae96c6aa96cda989930ca24d13959dc91438b7b4f2a94c57a089fa3161db4757",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "12_very-simple_BAYQ2W_v08s.mp4",
+    "drive_id": "14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM",
+    "seconds": 488.269206,
+    "fps": 30.0,
+    "frames": 14646,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      122.0673015,
+      244.134603,
+      415.0288251
+    ],
+    "sha256": "d54a263cf6c92290c310e60c36bd4f4bee68436d17d2da7394e4464630ba7c8e",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "14_very-extremely-hard-3d-blender_hCnsaahr2cc.mp4",
+    "drive_id": "18L90aEHSTKY2iMjVagELOeqX4x4Bld6m",
+    "seconds": 704.888163,
+    "fps": 24.0,
+    "frames": 16917,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      176.22204075,
+      352.4440815,
+      599.15493855
+    ],
+    "sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "15_hard_2Wv3p9WCs6M.mp4",
+    "drive_id": "1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv",
+    "seconds": 1208.13424,
+    "fps": 24.0,
+    "frames": 28994,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      302.03356,
+      604.06712,
+      1026.914104
+    ],
+    "sha256": "f21f2ab974710f1f25dd6f9e181478e51a86bc1559141c76e730afdac605f5e9",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "17_tutorial-short_vNxqa8ltH20.mp4",
+    "drive_id": "1XmNSQNQfUyH4OBOFOjx83kVXL_5ULzTe",
+    "seconds": 25.100771,
+    "fps": 30.0,
+    "frames": 751,
+    "width": 360,
+    "height": 640,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      6.27519275,
+      12.5503855,
+      21.33565535
+    ],
+    "sha256": "73216efcc846c7a80cd8fc9e6fd45e49988a9b90380152b84a96dcdb29f585dc",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "18_tutorial-study-this_OSULm_VDO04.mp4",
+    "drive_id": "176AWhb0OLC8oIBtGIKT4Q3dN4fN1EN9S",
+    "seconds": 482.046259,
+    "fps": 30.0,
+    "frames": 14460,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      120.51156475,
+      241.0231295,
+      409.73932015
+    ],
+    "sha256": "5589c61126ec6a31783c3ec14da8ef341d20d9cc7db10d93b30acee1d2902a14",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "01_x5FMXSJ0M4w_CARNAGE_VS_WAR_MACHINE_Full.mp4",
+    "drive_id": "17aZ5AyTfeZ28u65Irgvj5JwNbisTbVAk",
+    "seconds": 696.970159,
+    "fps": 60.0,
+    "frames": 41815,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      174.24253975,
+      348.4850795,
+      592.42463515
+    ],
+    "sha256": "aec451ec25b87ecdf55857b97460936a7f5120b73dc06890f7722b760d4bea53",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "02_Tq3i0wOwB4s_Carnage_vs_War_Machine_Part_2.mp4",
+    "drive_id": "1Z9xIV4nO_qqmXw1GTo92pB5KB3hmZiLk",
+    "seconds": 438.067664,
+    "fps": 60.0,
+    "frames": 26280,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      109.516916,
+      219.033832,
+      372.35751439999996
+    ],
+    "sha256": "e04e2c38b5f00e3ed956263131397d801a42b358e50742c10cd1ccc38fa77fff",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "03_pSIAoxIjp3s_Carnage_vs_War_Machine_Part_1.mp4",
+    "drive_id": "1bQ06NB2O5I43BZJMkN-K9MovWsbgmEQZ",
+    "seconds": 286.8361,
+    "fps": 60.0,
+    "frames": 17206,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      71.709025,
+      143.41805,
+      243.81068499999998
+    ],
+    "sha256": "bcc04eaa3788bf0a54170943d1ab28f87592bcf4ad8ac6676883f26d0bf07ee2",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "04_8hjPsUDip2w_Drawing_WARMACHINE_concept.mp4",
+    "drive_id": "1lqw-vzZlhjqbU8q9OWQipQv5QpOgShWC",
+    "seconds": 157.547392,
+    "fps": 30.0,
+    "frames": 4725,
+    "width": 1224,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      39.386848,
+      78.773696,
+      133.9152832
+    ],
+    "sha256": "bc0635681acbbca930c185936aa6b39b61eb16742fab9b3534a23000e0203041",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "05__BDyw1ApY-c_HULK_Vs_SAITAMA_REMASTERED.mp4",
+    "drive_id": "1Q4UVva5VCnX2-EB9yuqD6i653qAOC2Ad",
+    "seconds": 923.039637,
+    "fps": 60.0,
+    "frames": 55379,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      230.75990925,
+      461.5198185,
+      784.58369145
+    ],
+    "sha256": "3855b1876f32be8584b8e1d2b9913e50bd036ed964f8005d9104b0d3f4285b80",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "06_g5bpOwpL8HA_SUPERMAN_VS_HULK_Full.mp4",
+    "drive_id": "1NyhrqwRb5oqKa7yOy4W8vn_7I5w2qBSZ",
+    "seconds": 1053.930522,
+    "fps": 30.0,
+    "frames": 31616,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      263.4826305,
+      526.965261,
+      895.8409437
+    ],
+    "sha256": "abfa150f2f69450d417f71ddd221c6c9633d53ee048cbb3a04b44e6f5e47e9cd",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "07_QPyimT4yh5A_Superman_Vs_Hulk_Part_3.mp4",
+    "drive_id": "1Dhoj60nDZk5Bg7WY4hVwZs_2eyQe3wbE",
+    "seconds": 445.730249,
+    "fps": 30.0,
+    "frames": 13370,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      111.43256225,
+      222.8651245,
+      378.87071165
+    ],
+    "sha256": "77a1177b57240b380df3adbb4059e53a8866e25660c671569c0e95def6e250b4",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "08_qIKzjVJoxls_Superman_Vs_Hulk_Part_2.mp4",
+    "drive_id": "1arIrauprwoo1qQ5p6DWGb5vSfKCT9ikJ",
+    "seconds": 282.795828,
+    "fps": 60.0,
+    "frames": 16963,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      70.698957,
+      141.397914,
+      240.37645379999998
+    ],
+    "sha256": "494965921768d716ae0c718fbaa3f2332d42b4181eb6a0e6868ef7656ec7335f",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "09_p6JAv5bCVOc_Superman_Vs_Hulk_Part_1.mp4",
+    "drive_id": "1P16ZRljzbzif1k4DaHmvxXg77gWwyGm6",
+    "seconds": 340.172336,
+    "fps": 30.0,
+    "frames": 10202,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      85.043084,
+      170.086168,
+      289.14648559999995
+    ],
+    "sha256": "d7882696bfe7b1d2a4eb918c158bc8f44e816fc57c7a31d2a5b950fcd1597f93",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "10_espnaISmbV0_WINTER_SOLDIER_Vs_GUILE_Full.mp4",
+    "drive_id": "1mcbwhrZgC2rd4B5YP__HX80DNOBTBUKA",
+    "seconds": 915.307392,
+    "fps": 23.976023976023978,
+    "frames": 21943,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      228.826848,
+      457.653696,
+      778.0112832
+    ],
+    "sha256": "c6c3ef08a1085a4d8adf148ca8a799a63bccb4e45ea75dbc873951883d81e1e5",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "11_LHN5ZArTQJo_Winter_Soldier_Vs_Guile_Final.mp4",
+    "drive_id": "1LaIW7Qe7Vhl71U0pe8259V0X4u6b0arx",
+    "seconds": 370.126077,
+    "fps": 29.97002997002997,
+    "frames": 11090,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      92.53151925,
+      185.0630385,
+      314.60716545
+    ],
+    "sha256": "27cf9f9cf05fc790f2daa998a522247096e3b5de6fd1adbc3902f1e9d81a6675",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "12_DoXedsVeR6A_Winter_Soldier_Vs_Guile_Part_2.mp4",
+    "drive_id": "1_Mn7bZmma50JRYUuTNIxka3u-5FME2vc",
+    "seconds": 300.605533,
+    "fps": 23.976023976023978,
+    "frames": 7206,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      75.15138325,
+      150.3027665,
+      255.51470304999998
+    ],
+    "sha256": "7340293f370929e34babf85ed2b9fcdd65fd1581b8fa3a27dd8c8a916efd41c8",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "13_cUv6ZPhHOPo_Winter_Soldier_Vs_Guile_Part_1.mp4",
+    "drive_id": "1CXM7uQ7lnPbDIpqI9Mc4IglejTNQkt4_",
+    "seconds": 312.14585,
+    "fps": 23.976023976023978,
+    "frames": 7484,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      78.0364625,
+      156.072925,
+      265.32397249999997
+    ],
+    "sha256": "bf1c85fc60698a34dd9b22fe9b35bc4035b4abb7c51e60b5c15f082f2b34cca2",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "14_mZp3ylzqnv0_Drawing_Godzilla_Venom_Concept.mp4",
+    "drive_id": "1v-bs-PreBdcHyhRa0sxhY_y880c9HDEm",
+    "seconds": 425.644989,
+    "fps": 23.976023976023978,
+    "frames": 10204,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      106.41124725,
+      212.8224945,
+      361.79824065
+    ],
+    "sha256": "ae3e5112fc51b72e9b63cf9802c5630c64eadda5ea50c7d8d325487de0262a20",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "15_pxWl6KgLvJc_Drawing_Guile_Concept.mp4",
+    "drive_id": "1PL7qKc9nbg5xO_SqHYmNrc5JtfSNH1Rq",
+    "seconds": 249.024,
+    "fps": 23.976023976023978,
+    "frames": 5970,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      62.256,
+      124.512,
+      211.6704
+    ],
+    "sha256": "a9dc0471d0f3fd357cf5d837282bbf20a74407392d300a227bcbdf47abbba5e1",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "16_5P0wHWnCDUY_Drawing_Bucky_Concept.mp4",
+    "drive_id": "1p078ll1-jzy8uuu1tfqhf873equLOWMG",
+    "seconds": 402.866213,
+    "fps": 23.976023976023978,
+    "frames": 9657,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      100.71655325,
+      201.4331065,
+      342.43628105
+    ],
+    "sha256": "ce7aae1dfccd7f68fac3f68c6bba3d05b85aa5087e971911fabcea9927577387",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "17_hCnsaahr2cc_Ink_Game_Roblox_Animation.mp4",
+    "drive_id": "1W-1yPZSYGzsYbV7W3D6kQMdpMXda-MCJ",
+    "seconds": 704.888163,
+    "fps": 24.0,
+    "frames": 16917,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      176.22204075,
+      352.4440815,
+      599.15493855
+    ],
+    "sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "18_V8nkXPAtGbk_HULK_Vs_SAITAMA_Full.mp4",
+    "drive_id": "1V-9UajeZ5ZSMAzzdXxr-MoN2tFrmvigZ",
+    "seconds": 1035.776,
+    "fps": 23.976023976023978,
+    "frames": 24833,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      258.944,
+      517.888,
+      880.4096000000001
+    ],
+    "sha256": "85b3259269f7a58fa171236fae54ac5f13ba3ead02f367d00e16680b559a6df8",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "19_HhovU0pkLX4_Hulk_vs_Saitama_Part_3.mp4",
+    "drive_id": "1Nm3TbWkjNcVZ9U_KxHORhSqtlpHW4MQK",
+    "seconds": 627.710417,
+    "fps": 23.976023976023978,
+    "frames": 15050,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      156.92760425,
+      313.8552085,
+      533.55385445
+    ],
+    "sha256": "70cbac23297565d1060df77fcee7c8b76101c53342ac6622a4fb28804e683966",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "20_GlHqENKTMsI_Hulk_vs_Saitama_Teaser.mp4",
+    "drive_id": "1Bh7Jw2LnXNvweAbcdJKGtuDD3_Pr2XD0",
+    "seconds": 86.401451,
+    "fps": 23.976023976023978,
+    "frames": 2069,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      21.60036275,
+      43.2007255,
+      73.44123334999999
+    ],
+    "sha256": "ab2797be9a5e47f8c851aead53fd2cf45e817f886a7781be75f7ca60720f6246",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "21_7Y-n0DN2_0k_Hulk_vs_Saitama_Part_2.mp4",
+    "drive_id": "101y099SM0xC0Kp4pZEhT8eC1ub8GxdpH",
+    "seconds": 198.391293,
+    "fps": 23.976023976023978,
+    "frames": 4755,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      49.59782325,
+      99.1956465,
+      168.63259904999998
+    ],
+    "sha256": "ad2c8a7a9fb9691d146dc9bdcdd57d17f0214d4f0818c390e6cff873abd80a23",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "22_duKbLYn3jEo_Hulk_vs_Saitama_Part_1.mp4",
+    "drive_id": "1WZYtryBwc4mfAnw9qhp_SAcZEuiLhs3a",
+    "seconds": 317.64898,
+    "fps": 23.976023976023978,
+    "frames": 7615,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      79.412245,
+      158.82449,
+      270.00163299999997
+    ],
+    "sha256": "b6680538ef86328d327c1568183b9892d49a7c50fa898facf04d7a7994416743",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "23_l-KZa7Nc_z0_Drawing_Godzilla_Vs_Kong_Thumbnail.mp4",
+    "drive_id": "1DLi0aKIS_CvK24IBbclejpW3QNZG8WfH",
+    "seconds": 374.143129,
+    "fps": 23.976023976023978,
+    "frames": 8969,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      93.53578225,
+      187.0715645,
+      318.02165965
+    ],
+    "sha256": "c5c4c96291d034b7c8ca47f3d9f1b0dba1fbc5e218c8c3dce31de5f048ec701c",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "24_IpCQEmmAyTY_GODZILLA_VS_KING_KONG_Full.mp4",
+    "drive_id": "1cjKJ6lTsl3rJbFuRy4zBaZhkvrj_DI9j",
+    "seconds": 647.302676,
+    "fps": 23.976023976023978,
+    "frames": 15518,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      161.825669,
+      323.651338,
+      550.2072746
+    ],
+    "sha256": "f5cdabede7ce93bb68221935d35bbe2b21f2bca9fef71bc0de4000b8356409a2",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "25_wW6-2r3XE6Q_Godzilla_vs_Kong_Part_3.mp4",
+    "drive_id": "1F2tsTed-TjKsAsk7QfHQFZMuoWuwD2z-",
+    "seconds": 369.475918,
+    "fps": 23.976023976023978,
+    "frames": 8857,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      92.3689795,
+      184.737959,
+      314.05453029999995
+    ],
+    "sha256": "f95636e0fcd42424bef099320fd190fcd762aa45b8e643d4877cd0295e5ffd0a",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "26_5lMNtULECHE_GvsK_Part_3_preview.mp4",
+    "drive_id": "1lGlcd39TxmVsbLN7-saxs8zOBqLw4UIW",
+    "seconds": 37.059048,
+    "fps": 23.976023976023978,
+    "frames": 887,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      9.264762,
+      18.529524,
+      31.500190799999995
+    ],
+    "sha256": "cf45a95e2c5d2a47d375369af27cd31fe6d56e550177d562493d06fe9188a943",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "27_l0IzAvpFHRk_Godzilla_vs_Kong_Part_2.mp4",
+    "drive_id": "1B43DITC-0rNHuXQ_QQatIx0cUzgsUQCp",
+    "seconds": 205.519819,
+    "fps": 23.976023976023978,
+    "frames": 4926,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      51.37995475,
+      102.7599095,
+      174.69184615
+    ],
+    "sha256": "e74c5cc1865c7a86eb95c7578dd7869c98f3258088aedde128c5a6a15408a617",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "28_Tzoz2vzKGxY_Godzilla_vs_Kong_Part_1.mp4",
+    "drive_id": "17GwQmt_bhpQRYLO_M_I91V3KWkwi3akn",
+    "seconds": 122.85678,
+    "fps": 22.0,
+    "frames": 2702,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      30.714195,
+      61.42839,
+      104.428263
+    ],
+    "sha256": "c1274d71c63b13b27c80ab3e31e8acbac9e6820a7ca8230b517ddef99fbc62fe",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "29_vJGvSbHmeco_A_Dog_Fight_Animation.mp4",
+    "drive_id": "1j16i7UY6RTOTijnS9H1FpXJ0e9uqrxFc",
+    "seconds": 196.951655,
+    "fps": 12.0,
+    "frames": 2362,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      49.23791375,
+      98.4758275,
+      167.40890674999997
+    ],
+    "sha256": "37461532eb0445971f0f217d676dccfc8cbb369b1e87b4ea8cb8c50cf363a77c",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "01_kPch-QaQ79g_Stick_Figure_Animation_Course.mp4",
+    "drive_id": "1i5Gl_nWkTye-QT5Hi6Wqi38PPq8x_Osy",
+    "seconds": 218.615873,
+    "fps": 23.976023976023978,
+    "frames": 5240,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      54.65396825,
+      109.3079365,
+      185.82349205
+    ],
+    "sha256": "cb14c1c236efeaf1a4e93011aa977d7cc2946c83fc91d82236b15bccb538a153",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "02_v_qMgkiFLRc_Roller_Coaster_Behind_Scenes.mp4",
+    "drive_id": "1lxD2IocUrE2qKrOOGDcrymbui98-TqfC",
+    "seconds": 891.181859,
+    "fps": 30.0,
+    "frames": 26734,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      222.79546475,
+      445.5909295,
+      757.50458015
+    ],
+    "sha256": "c37f00f65600fb59107c0bff1c588ca5eeceb5e83c95e4df8ae17302da2350c1",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "03_PPR0jGitTgQ_Embedded_Video_Adobe_Animate.mp4",
+    "drive_id": "10leSGDb9iyqpcS3OUkFj9LlApRu6g2Kn",
+    "seconds": 359.282358,
+    "fps": 29.97002997002997,
+    "frames": 10766,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      89.8205895,
+      179.641179,
+      305.3900043
+    ],
+    "sha256": "7f38667dc895f42a26fe22d92ee3de141c33b9f758328e9beda89db431366772",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "04_L9sZJqXWc6c_Building_Contest_Behind_Scenes.mp4",
+    "drive_id": "1z61w8Sy3TQ_-9wJ_fv9X0qthaT_lEoIF",
+    "seconds": 770.089796,
+    "fps": 30.0,
+    "frames": 23101,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      192.522449,
+      385.044898,
+      654.5763266
+    ],
+    "sha256": "ea7080059c11d2c620c6a3e9f72bb18630ec56570e4d26aa80d499d18b0ded7d",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "05_STlVAK87XWI_Rediscovery_Behind_Scenes.mp4",
+    "drive_id": "1hgCHHsunrpZzS6XcG5L37QhXDML7FfKK",
+    "seconds": 1044.29424,
+    "fps": 30.0,
+    "frames": 31327,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      261.07356,
+      522.14712,
+      887.6501039999999
+    ],
+    "sha256": "6cc3a8da87521358d7806c831dbd439dd5d83080bb96f64ba5ba926ac3b26407",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "06_g1vU6aDI-48_Huion_KAMVAS_Review.mp4",
+    "drive_id": "1E8l04zqbmihnXzp9dQw0qRplJwy_oz-5",
+    "seconds": 482.023039,
+    "fps": 29.97002997002997,
+    "frames": 14445,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      120.50575975,
+      241.0115195,
+      409.71958314999995
+    ],
+    "sha256": "72d64d60686b36cbdf4e47aa3a0f04da661207b71807a89c3f808dcc4bfe6f6d",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "07_BDv8KeJDEnk_Freeware_Alternatives_to_Flash.mp4",
+    "drive_id": "1Nft3vbsIkHst3Xv3GWx0crzE_aX7svas",
+    "seconds": 370.102857,
+    "fps": 29.97002997002997,
+    "frames": 11090,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      92.52571425,
+      185.0514285,
+      314.58742844999995
+    ],
+    "sha256": "20b67d14af9fa32d0b7d09b9e73bf272ea0f99e7abcd3c6369dccac9dbaa3520",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "08_uDqjIdI4bF4_12_Principles_of_Animation.mp4",
+    "drive_id": "1mzSm3z7Rc6FyN2it_6EvnrjhDc_cmU2Z",
+    "seconds": 1442.679002,
+    "fps": 23.976023976023978,
+    "frames": 34588,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      360.6697505,
+      721.339501,
+      1226.2771517
+    ],
+    "sha256": "17febb3e8009560485b24f200c1206ec8ddb6647deab5d5d8340c947dc6a5357",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "09_UuqdPATU7a8_Massive_Scale_Animations.mp4",
+    "drive_id": "1D0GCjCoswpas4Bc7Jhp8gfKJuV_-A1xz",
+    "seconds": 417.332245,
+    "fps": 30.0,
+    "frames": 12518,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      104.33306125,
+      208.6661225,
+      354.73240825
+    ],
+    "sha256": "442ea734ccc2ba0132bc2934ceef43ac42c2d5d9a2ce65fbdfec1622a24acb1e",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  },
+  {
+    "name": "10_iga8qwm9S00_Block_Variation_in_Minecraft.mp4",
+    "drive_id": "14Qri4_lDqroe4HChIrC0plBiuQOeZcAd",
+    "seconds": 306.94458,
+    "fps": 30.0,
+    "frames": 9207,
+    "width": 1280,
+    "height": 720,
+    "sample_times": [
+      0,
+      0.5,
+      1.5,
+      76.736145,
+      153.47229,
+      260.90289299999995
+    ],
+    "sha256": "65ace996073ce5417d55001b504c8f23d0966892fb7b79b148889933a0804bbd",
+    "scope": "6 sparse visual samples; not whole-video or audio analysis"
+  }
+]

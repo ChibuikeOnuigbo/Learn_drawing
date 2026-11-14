@@ -1,0 +1,313 @@
+{
+  "audio": "/workspace/Learn_drawing/exmapels/youtube-explainer/speech/narration.wav",
+  "text": "A good animation starts with a clear pose. Timing gives a simple shape weight. A rig lets the character wave. Inverse kinematics keeps the feet on the ground. Finally, coordinate the hands, the prop, and the camera. Every shot should help tell the story.",
+  "duration": 19.924897959183674,
+  "sample_rate": 22050,
+  "words": [
+    {
+      "text": "A",
+      "char_start": 0,
+      "char_end": 1,
+      "start": 0.0,
+      "end": 0.087
+    },
+    {
+      "text": "good",
+      "char_start": 2,
+      "char_end": 6,
+      "start": 0.087,
+      "end": 0.359
+    },
+    {
+      "text": "animation",
+      "char_start": 7,
+      "char_end": 16,
+      "start": 0.359,
+      "end": 1.049
+    },
+    {
+      "text": "starts",
+      "char_start": 17,
+      "char_end": 23,
+      "start": 1.049,
+      "end": 1.607
+    },
+    {
+      "text": "with",
+      "char_start": 24,
+      "char_end": 28,
+      "start": 1.607,
+      "end": 1.798
+    },
+    {
+      "text": "a",
+      "char_start": 29,
+      "char_end": 30,
+      "start": 1.798,
+      "end": 1.869
+    },
+    {
+      "text": "clear",
+      "char_start": 31,
+      "char_end": 36,
+      "start": 1.869,
+      "end": 2.282
+    },
+    {
+      "text": "pose",
+      "char_start": 37,
+      "char_end": 41,
+      "start": 2.282,
+      "end": 3.332
+    },
+    {
+      "text": "Timing",
+      "char_start": 43,
+      "char_end": 49,
+      "start": 3.332,
+      "end": 3.834
+    },
+    {
+      "text": "gives",
+      "char_start": 50,
+      "char_end": 55,
+      "start": 3.834,
+      "end": 4.204
+    },
+    {
+      "text": "a",
+      "char_start": 56,
+      "char_end": 57,
+      "start": 4.204,
+      "end": 4.289
+    },
+    {
+      "text": "simple",
+      "char_start": 58,
+      "char_end": 64,
+      "start": 4.289,
+      "end": 4.771
+    },
+    {
+      "text": "shape",
+      "char_start": 65,
+      "char_end": 70,
+      "start": 4.771,
+      "end": 5.242
+    },
+    {
+      "text": "weight",
+      "char_start": 71,
+      "char_end": 77,
+      "start": 5.242,
+      "end": 6.167
+    },
+    {
+      "text": "A",
+      "char_start": 79,
+      "char_end": 80,
+      "start": 6.167,
+      "end": 6.25
+    },
+    {
+      "text": "rig",
+      "char_start": 81,
+      "char_end": 84,
+      "start": 6.25,
+      "end": 6.523
+    },
+    {
+      "text": "lets",
+      "char_start": 85,
+      "char_end": 89,
+      "start": 6.523,
+      "end": 6.917
+    },
+    {
+      "text": "the",
+      "char_start": 90,
+      "char_end": 93,
+      "start": 6.917,
+      "end": 7.051
+    },
+    {
+      "text": "character",
+      "char_start": 94,
+      "char_end": 103,
+      "start": 7.051,
+      "end": 7.717
+    },
+    {
+      "text": "wave",
+      "char_start": 104,
+      "char_end": 108,
+      "start": 7.717,
+      "end": 8.752
+    },
+    {
+      "text": "Inverse",
+      "char_start": 110,
+      "char_end": 117,
+      "start": 8.752,
+      "end": 9.268
+    },
+    {
+      "text": "kinematics",
+      "char_start": 118,
+      "char_end": 128,
+      "start": 9.268,
+      "end": 10.08
+    },
+    {
+      "text": "keeps",
+      "char_start": 129,
+      "char_end": 134,
+      "start": 10.08,
+      "end": 10.554
+    },
+    {
+      "text": "the",
+      "char_start": 135,
+      "char_end": 138,
+      "start": 10.554,
+      "end": 10.691
+    },
+    {
+      "text": "feet",
+      "char_start": 139,
+      "char_end": 143,
+      "start": 10.691,
+      "end": 11.055
+    },
+    {
+      "text": "on",
+      "char_start": 144,
+      "char_end": 146,
+      "start": 11.055,
+      "end": 11.322
+    },
+    {
+      "text": "ground",
+      "char_start": 151,
+      "char_end": 157,
+      "start": 11.322,
+      "end": 12.344
+    },
+    {
+      "text": "Finally",
+      "char_start": 159,
+      "char_end": 166,
+      "start": 12.344,
+      "end": 13.175
+    },
+    {
+      "text": "coordinate",
+      "char_start": 168,
+      "char_end": 178,
+      "start": 13.175,
+      "end": 13.912
+    },
+    {
+      "text": "the",
+      "char_start": 179,
+      "char_end": 182,
+      "start": 13.912,
+      "end": 14.037
+    },
+    {
+      "text": "hands",
+      "char_start": 183,
+      "char_end": 188,
+      "start": 14.037,
+      "end": 14.915
+    },
+    {
+      "text": "the",
+      "char_start": 190,
+      "char_end": 193,
+      "start": 14.915,
+      "end": 15.047
+    },
+    {
+      "text": "prop",
+      "char_start": 194,
+      "char_end": 198,
+      "start": 15.047,
+      "end": 15.841
+    },
+    {
+      "text": "and",
+      "char_start": 200,
+      "char_end": 203,
+      "start": 15.841,
+      "end": 16.073
+    },
+    {
+      "text": "the",
+      "char_start": 204,
+      "char_end": 207,
+      "start": 16.073,
+      "end": 16.201
+    },
+    {
+      "text": "camera",
+      "char_start": 208,
+      "char_end": 214,
+      "start": 16.201,
+      "end": 17.186
+    },
+    {
+      "text": "Every",
+      "char_start": 216,
+      "char_end": 221,
+      "start": 17.186,
+      "end": 17.594
+    },
+    {
+      "text": "shot",
+      "char_start": 222,
+      "char_end": 226,
+      "start": 17.594,
+      "end": 18.015
+    },
+    {
+      "text": "should",
+      "char_start": 227,
+      "char_end": 233,
+      "start": 18.015,
+      "end": 18.346
+    },
+    {
+      "text": "help",
+      "char_start": 234,
+      "char_end": 238,
+      "start": 18.346,
+      "end": 18.839
+    },
+    {
+      "text": "tell",
+      "char_start": 239,
+      "char_end": 243,
+      "start": 18.839,
+      "end": 19.197
+    },
+    {
+      "text": "the",
+      "char_start": 244,
+      "char_end": 247,
+      "start": 19.197,
+      "end": 19.338
+    },
+    {
+      "text": "story",
+      "char_start": 248,
+      "char_end": 253,
+      "start": 19.338,
+      "end": 19.924897959183674
+    }
+  ],
+  "voice": "en-us",
+  "engine": "eSpeak NG via espeakng-loader 0.2.4",
+  "timing": "word starts from synthesis engine; ends are next-word start or audio end",
+  "voice_quality": "offline synthetic demo voice; replace with supplied voiceover for production"
+}

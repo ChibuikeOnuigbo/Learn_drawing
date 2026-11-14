@@ -1,5 +1,7 @@
 # Validation — 2026-11-14
 
+Historical v0.1 report. See [ITERATION_02.md](ITERATION_02.md) for the later speech, reaction, character and rigging work.
+
 ## Current environment
 
 Clean virtual-environment setup and the pinned Python dependencies were installed successfully. **17 tests passed**, including a real stdio MCP client calling the server to save and render a scene. One dependency emits an incomplete forward-annotation warning; initialization and tool calls still pass. FFmpeg, ffprobe and Blender are system dependencies; the tests do not install them.

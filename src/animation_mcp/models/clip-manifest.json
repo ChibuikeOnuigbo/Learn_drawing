@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "text",
+    "repo": "Qdrant/clip-ViT-B-32-text",
+    "revision": "48ca1db27cb4063eb311ec2aa7f087a808112876",
+    "file": "README.md",
+    "sha256": "bb12224648edda348234367a667a89313cb659eea481220010bcd4b308b827c9",
+    "bytes": 735,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-text/resolve/48ca1db27cb4063eb311ec2aa7f087a808112876/README.md",
+    "license": "MIT as declared by model card"
+  },
+  {
+    "kind": "text",
+    "repo": "Qdrant/clip-ViT-B-32-text",
+    "revision": "48ca1db27cb4063eb311ec2aa7f087a808112876",
+    "file": "model.onnx",
+    "sha256": "4dbe762b11e36488304471e439cde89da053ad7acaddbf9e096745d142ec8d8b",
+    "bytes": 254102519,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-text/resolve/48ca1db27cb4063eb311ec2aa7f087a808112876/model.onnx",
+    "license": "MIT as declared by model card"
+  },
+  {
+    "kind": "text",
+    "repo": "Qdrant/clip-ViT-B-32-text",
+    "revision": "48ca1db27cb4063eb311ec2aa7f087a808112876",
+    "file": "tokenizer.json",
+    "sha256": "b68d571997a1f81bf521fb73806740ddb91e4ed6666cb6e996c066bb289cf55b",
+    "bytes": 2224147,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-text/resolve/48ca1db27cb4063eb311ec2aa7f087a808112876/tokenizer.json",
+    "license": "MIT as declared by model card"
+  },
+  {
+    "kind": "vision",
+    "repo": "Qdrant/clip-ViT-B-32-vision",
+    "revision": "e0c24ed0fa57fa3e4f97f30de74c51d944036ace",
+    "file": "README.md",
+    "sha256": "b9f0246053f211b69cee073c044bd3eab27161f3c3108729e27b5501a3104bd9",
+    "bytes": 747,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-vision/resolve/e0c24ed0fa57fa3e4f97f30de74c51d944036ace/README.md",
+    "license": "MIT as declared by model card"
+  },
+  {
+    "kind": "vision",
+    "repo": "Qdrant/clip-ViT-B-32-vision",
+    "revision": "e0c24ed0fa57fa3e4f97f30de74c51d944036ace",
+    "file": "model.onnx",
+    "sha256": "c68d3d9a200ddd2a8c8a5510b576d4c94d1ae383bf8b36dd8c084f94e1fb4d63",
+    "bytes": 351686194,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-vision/resolve/e0c24ed0fa57fa3e4f97f30de74c51d944036ace/model.onnx",
+    "license": "MIT as declared by model card"
+  },
+  {
+    "kind": "vision",
+    "repo": "Qdrant/clip-ViT-B-32-vision",
+    "revision": "e0c24ed0fa57fa3e4f97f30de74c51d944036ace",
+    "file": "preprocessor_config.json",
+    "sha256": "ce945ef831c9972c135b5b198a03d8eeb70478cd69c0238f24caf1903a9965e6",
+    "bytes": 780,
+    "url": "https://huggingface.co/Qdrant/clip-ViT-B-32-vision/resolve/e0c24ed0fa57fa3e4f97f30de74c51d944036ace/preprocessor_config.json",
+    "license": "MIT as declared by model card"
+  }
+]

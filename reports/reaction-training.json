@@ -1,0 +1,160 @@
+{
+  "train_examples": 110,
+  "test_examples": 20,
+  "accuracy": 0.95,
+  "split": "fixed hand-authored sentence holdout; shares vocabulary and author with training",
+  "evaluation": {
+    "brain_wipe": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "confusion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "disappointment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "disaster": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1-score": 0.8571428571428571,
+      "support": 3.0
+    },
+    "none": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "victory": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "accuracy": 0.95,
+    "macro avg": {
+      "precision": 0.9583333333333334,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9576719576719577,
+      "support": 20.0
+    },
+    "weighted avg": {
+      "precision": 0.9625,
+      "recall": 0.95,
+      "f1-score": 0.9507936507936507,
+      "support": 20.0
+    }
+  },
+  "predictions": [
+    {
+      "text": "This whole thing is an absolute mess.",
+      "expected": "disaster",
+      "predicted": "disaster"
+    },
+    {
+      "text": "The mission became a complete catastrophe.",
+      "expected": "disaster",
+      "predicted": "disaster"
+    },
+    {
+      "text": "What a train wreck of a plan.",
+      "expected": "disaster",
+      "predicted": "disaster"
+    },
+    {
+      "text": "There is not one brain cell left.",
+      "expected": "brain_wipe",
+      "predicted": "brain_wipe"
+    },
+    {
+      "text": "That guy has zero common sense.",
+      "expected": "brain_wipe",
+      "predicted": "brain_wipe"
+    },
+    {
+      "text": "He really fell for that stupid trick twice.",
+      "expected": "brain_wipe",
+      "predicted": "brain_wipe"
+    },
+    {
+      "text": "Wait, none of this makes sense to me.",
+      "expected": "confusion",
+      "predicted": "confusion"
+    },
+    {
+      "text": "I honestly have no idea what just happened.",
+      "expected": "confusion",
+      "predicted": "confusion"
+    },
+    {
+      "text": "How am I supposed to understand this plot?",
+      "expected": "confusion",
+      "predicted": "confusion"
+    },
+    {
+      "text": "They somehow pulled off an incredible comeback.",
+      "expected": "victory",
+      "predicted": "victory"
+    },
+    {
+      "text": "We defeated the boss and saved everyone!",
+      "expected": "victory",
+      "predicted": "victory"
+    },
+    {
+      "text": "The strategy worked and the team won.",
+      "expected": "victory",
+      "predicted": "victory"
+    },
+    {
+      "text": "What a disappointing finale after all that hype.",
+      "expected": "disappointment",
+      "predicted": "disappointment"
+    },
+    {
+      "text": "They wasted the opportunity and let us down.",
+      "expected": "disappointment",
+      "predicted": "disappointment"
+    },
+    {
+      "text": "All of that hard work for such an underwhelming ending.",
+      "expected": "disappointment",
+      "predicted": "disappointment"
+    },
+    {
+      "text": "The medical student is learning about brain anatomy.",
+      "expected": "none",
+      "predicted": "none"
+    },
+    {
+      "text": "Rotate the character's arm to create a keyframe.",
+      "expected": "none",
+      "predicted": "none"
+    },
+    {
+      "text": "The camera pans over a mountain landscape.",
+      "expected": "none",
+      "predicted": "none"
+    },
+    {
+      "text": "A disaster recovery simulation is running on the computer.",
+      "expected": "none",
+      "predicted": "none"
+    },
+    {
+      "text": "This is not a dumb plan; the experiment is deliberate.",
+      "expected": "none",
+      "predicted": "disaster"
+    }
+  ],
+  "limitations": "Small synthetic English corpus. No claim of general language, audiovisual understanding, artistic quality or training from reference videos."
+}

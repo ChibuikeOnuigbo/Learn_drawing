@@ -1,0 +1,23 @@
+{
+  "strokes": {
+    "updates": 85000,
+    "best_step": 46000,
+    "segments": 1024,
+    "teacher_white_segments": 194,
+    "before_in_sample_coordinate_mae": 0.14423128962516785,
+    "after_in_sample_coordinate_mae": 2.0958963432349265e-05,
+    "before_in_sample_trace_f1_3px": 0.8578199969589466,
+    "after_in_sample_trace_f1_3px": 0.9999999999995,
+    "after_in_sample_stroke_color_accuracy": 1.0,
+    "teacher": "automatically traced edges and automatic white-court-line labels from this guide"
+  },
+  "color": {
+    "updates": 75000,
+    "best_step": 0,
+    "training_points": 62208,
+    "validation_points": 20736,
+    "before_validation_mae": 0.021403363212145896,
+    "after_validation_mae": 0.021403363212145896,
+    "note": "positions from same guide, selected repeatedly to choose checkpoint; not unseen scenes"
+  }
+}

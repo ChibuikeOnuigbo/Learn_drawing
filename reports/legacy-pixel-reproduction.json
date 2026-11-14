@@ -1,0 +1,10 @@
+{
+  "drawn_gym_from_memory.png": {
+    "mean_absolute_pixel_error": 0.0,
+    "identical_pixels": true
+  },
+  "drawn_ball_from_memory.png": {
+    "mean_absolute_pixel_error": 0.0,
+    "identical_pixels": true
+  }
+}

@@ -1,0 +1,117 @@
+Here is a curated list of 100 YouTube channels organized by your exact learning goals: 2D drawing fundamentals, visual storytelling/composition, 3D modeling/animation, and lighting/compositing.
+
+1. 2D Drawing & Fundamentals (25 Channels)
+
+These channels teach anatomy, perspective, gesture, and digital painting.
+1. Proko – The gold standard for anatomy, figure drawing, and gesture.
+2. Marc Brunet – Former Blizzard artist teaching digital art, color, and character design.
+3. Sinix Design – Great for digital painting fundamentals, anatomy quick tips, and shape appeal.
+4. Marco Bucci – Masterclasses on color theory, brushwork, light, and shadow.
+5. Draw Like a Sir – Easy-to-follow tutorials on anime/manga anatomy, faces, and dynamic poses.
+6. Sycra – Deep dives into drawing fundamentals, iteration, and overcoming art block.
+7. ethan becker – High-energy tips on shape language, stylized anatomy, and breaking bad habits.
+8. Sam Does Arts – Stylized digital portrait painting, lighting, and stylized proportions.
+9. Alphonso Dunn – Pen and ink drawing, cross-hatching, and perspective fundamentals.
+10. ModernDayJames – Advanced perspective, dynamic sketching, and constructive anatomy.
+11. Ahmed Aldoori – Digital painting, composition, and brushwork techniques.
+12. Aaron Blaise – Former Disney animator teaching animal anatomy, character design, and painting.
+13. FZD School – Industrial-grade concept art, perspective, and design thinking.
+14. Borodante – Digital painting overpaints, color fixing, and rendering textures.
+15. Ross Draws – Vibrant digital painting, color dodging, and stylized character art.
+16. Kienan Lafferty (KNKL Show) – Character design, splash art processes, and stylized rendering.
+17. Brad Colbow – Drawing hardware reviews, beginner digital art tutorials, and comics.
+18. Jazza – Fun, accessible character design, traditional art, and creative challenges.
+19. BaM Animation – Industry pros teaching character design, backgrounds, and 2D animation.
+20. Toniko Pantoja – 2D animation principles, storyboarding, and expressive drawing.
+21. Howard Wimshurst – Traditional 2D hand-drawn animation mechanics and timing.
+22. Dong Chang – Anime-style 2D animation, sakuga breakdowns, and Clip Studio Paint tips.
+23. Olof Storm – Clean linework, character design, and approachable digital sketching.
+24. Istebrak – Portrait painting critiques, form studies, and value control.
+25. Ergon Josh – Stylized digital painting, anatomy studies, and study routines.
+
+2. Composition, Storyboarding & Visual Storytelling (20 Channels)
+
+(Note: "Visual naing" is interpreted here as visual staging, framing, and storytelling.)
+26. Every Frame a Painting – Legendary video essays on cinematic framing, editing, and visual staging.
+27. StudioBinder – Comprehensive breakdowns of camera angles, shot composition, and lighting setups.
+28. The Closer Look – Storytelling structure, visual pacing, and scene construction.
+29. Lessons from the Screenplay – How visual choices translate script beats onto the screen.
+30. Nerdwriter1 – Visual essays dissecting art composition, cinema framing, and visual motifs.
+31. Thomas Flight – Deep analysis of cinematography, editing, and visual storytelling.
+32. In Depth Cine – Cinematography techniques, lens choices, and framing breakdowns.
+33. SpolierFreeReviews / Storyboard Art – Dedicated storyboarding, layout, and visual narrative lessons.
+34. Ethan Becker (Storyboarding playlists) – Specific breakdowns on staging dynamic action boards.
+35. Laura Price (Lulu Sketches) – Disney background painter teaching layout, color scripts, and staging.
+36. Toby Allen (Zombgief) – Environment composition and visual storytelling in concept art.
+37. Trent Kaniuga – Former Riot/Blizzard artist covering concept art layout and worldbuilding.
+38. Tyler Edlin – Environment concept art, focal points, and landscape composition.
+39. Walid Feghali – Environment design, perspective grids, and mood-driven composition.
+40. James Gurney – Traditional plein air painting focusing on color scripts, value, and staging.
+41. Scott Robertson – Hard-surface perspective, vehicle design, and spatial layout.
+42. Nathan Fowkes – Masterclasses on color scripts, compositional design, and mood.
+43. Gnomon – Industry talks on visual development, layout, and environment storytelling.
+44. Lightbox Expo – Recorded panels from top industry visual development and storyboard artists.
+45. Film Courage – Interviews with visual storytellers, directors, and storyboard artists.
+
+3. 3D Modeling, Sculpting & Animation (35 Channels)
+
+Focused heavily on Blender (the best free industry-standard tool) along with Maya, ZBrush, and Unreal Engine.
+46. Blender Guru (Andrew Price) – The famous Donut tutorial; essential for Blender basics and photorealism.
+47. Grant Abbitt – Beginner-friendly 3D modeling, low-poly art, and sculpting.
+48. CG Cookie – Structured, professional Blender fundamentals, rigging, and topology.
+49. Ducky 3D – Abstract 3D motion graphics, procedural materials, and looping animations.
+50. Default Cube / CG Matter – Procedural nodes, geometry nodes, and creative Blender hacks.
+51. Ian Hubert – "Lazy Tutorials" for rapid photorealistic environments, crowds, and VFX.
+52. FlippedNormals – Industry veterans teaching sculpting, UV mapping, ZBrush, and Blender.
+53. YanSculpts – Character sculpting, stylized anatomy in 3D, and ZBrush/Blender workflows.
+54. SpeedChar – Realistic 3D character sculpting, anatomy, and facial modeling.
+55. Dikko! – Character modeling specifically tailored for clean animation topology and rigging.
+56. Pierrick Picaut (P2Design) – Masterclasses in 3D character rigging and animation in Blender.
+57. Royal Skies – Fast, no-fluff tutorials on Blender rigging, weight painting, and game assets.
+58. Sir Wade Neistadt – Maya and Blender 3D character animation, career advice, and reel reviews.
+59. Rusty Animator – Core 3D character animation principles, body mechanics, and acting.
+60. Alessandro Camporota – Feature-quality 3D character animation workflows in Maya.
+61. Harvey Newman – Stylized 3D animation workflows and Disney-style character motion.
+62. Kevin Parry – Stop-motion and 3D animation principles, timing, and visual illusions.
+63. Alan Becker Tutorials – The 12 Principles of Animation explained clearly for both 2D and 3D.
+64. Joey Carlino – Procedural rigging, geometry nodes, and stylized 3D characters.
+65. SouthernShotty – Stylized 3D character creation, clay shaders, and stop-motion looks in Blender.
+66. Josh Gambrell – Hard-surface modeling, booleans, and clean bevel workflows.
+67. Ponte Ryuurui – Sci-fi hard-surface modeling and complex mechanical design in Blender.
+68. Arrimus 3D – Legendary hard-surface topology and complex subdivision modeling.
+69. Polygon Runway – Isometric 3D illustrations, cozy environments, and stylized lighting.
+70. Max Hay – Large-scale 3D environment creation, atmospheric renders, and kitbashing.
+71. pwnisher (Clint Jones) – 3D environment challenges, motion capture, and Unreal Engine workflows.
+72. William Faucher – Unreal Engine 5 lighting, rendering, and cinematic environment setup.
+73. Unreal Sensei – Beginner-to-pro Unreal Engine 5 worldbuilding and real-time animation.
+74. JHill – Realistic 3D game character art, skin texturing, and hair cards.
+75. Michael Pavlovich – The ultimate encyclopedia for ZBrush sculpting and hard-surface tools.
+76. Follygon – Stylized 3D character sculpting and appealing shapes in ZBrush.
+77. Stylized Station – Stylized 3D environments, hand-painted textures, and Substance Painter.
+78. CG Boost – High-production Blender courses, sculpting, and scene assembly.
+79. CrossMind Studio – Multi-part beginner courses on Blender modeling, physics, and animation.
+80. Derek Elliott – Product visualization, sleek camera animations, and studio lighting in Blender.
+
+4. Visual Setup, Lighting, Shading & Compositing (20 Channels)
+
+These channels teach you how to light your scenes, build shaders, and composite final renders.
+81. Gleb Alexandrov (Creative Shrimp) – The master of 3D lighting, atmospheric effects, and procedural shading.
+82. Lighting Mentor – Former Pixar/Blue Sky lighting artist teaching cinematic 3D lighting principles.
+83. CG Geek – Photorealistic environments, VFX compositing, and nature scenes in Blender.
+84. Polyfjord – Mechanical rigging, physics simulations, and polished final render setups.
+85. Bad Normals – Advanced geometry nodes, shader tricks, and sleek visual aesthetics.
+86. Erindale – Deep technical mastery of Blender shader nodes and procedural textures.
+87. Curtis Holt – Blender technical setups, procedural workflows, and render optimization.
+88. InLightVFX – Blender compositing, render passes (AOVs), and color grading.
+89. Hugo's Desk – Industry-standard Nuke compositing, keying, and VFX integration.
+90. Josh Parks – Practical Nuke compositing tutorials for film and 3D CG integration.
+91. Ben Marriott – 2D motion design, After Effects compositing, and stylized visual effects.
+92. School of Motion – Motion graphics, visual pacing, and After Effects compositing workflows.
+93. Video Copilot (Andrew Kramer) – Classic After Effects compositing, lighting flares, and 3D integration.
+94. Corridor Crew – VFX Artists React; great for learning what makes compositing and lighting look real.
+95. ActionVFX – Compositing stock elements, color matching, and realistic lighting integration.
+96. Film Riot – Practical lighting setups, DIY cinematography, and post-production compositing.
+97. Aputure – Real-world film lighting setups that translate directly to 3D virtual lighting.
+98. Wandering DP – Breakdowns of cinematic lighting ratios, mood, and exposure.
+99. Cullen Kelly – Professional color grading, ACES workflows, and color management.
+100. Darren Mostyn – DaVinci Resolve color grading, node trees, and finishing your final renders.

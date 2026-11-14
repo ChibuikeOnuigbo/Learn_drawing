@@ -1,0 +1,7 @@
+changed training / validation 5438 1779
+10000 all 0.029273588470961332 changed 0.03342934719784018 best 0.03259819545246441
+20000 all 0.026478924133159495 changed 0.030595332691234798 best 0.02977205097961974
+30000 all 0.025170644124348957 changed 0.030257772724794185 best 0.029171984660504593
+40000 all 0.024416597537052484 changed 0.02934465771068096 best 0.02806642722740674
+50000 all 0.024099906530890444 changed 0.02914672624267441 best 0.027965987646859113
+{'updates': 50000, 'best_step': 41000, 'validation_all_before_mae': 0.022202623233873658, 'validation_all_after_mae': 0.024226956406738533, 'validation_changed_before_mae': 0.10969369769297402, 'validation_changed_after_mae': 0.028900745456889258, 'validation_changed_pixels': 1779, 'note': 'changed pixels are automatically defined using both guides; validation is same image and was used to select checkpoints; not independent test'}

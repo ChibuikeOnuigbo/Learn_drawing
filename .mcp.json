@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "animation-studio": {
+      "command": "animation-mcp",
+      "args": [],
+      "env": {
+        "ANIMATION_WORKSPACE": "/workspace/Learn_drawing"
+      }
+    }
+  }
+}

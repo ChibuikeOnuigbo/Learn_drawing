@@ -1,0 +1,8 @@
+{
+  "additional_updates": 45000,
+  "best_step": 6000,
+  "validation_points": 3600,
+  "before_mae": 0.02091269940137863,
+  "after_mae": 0.01943572610616684,
+  "note": "same-image held-out coordinates, used to select checkpoint, not new ball views"
+}

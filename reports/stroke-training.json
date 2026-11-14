@@ -1,0 +1,86 @@
+{
+  "task": "Given four control points and progress t, predict a cubic Bezier point",
+  "training": "supervised Adam; not reinforcement learning",
+  "train_curves": 600,
+  "validation_curves": 120,
+  "test_curves": 120,
+  "split": "independent whole curves from seeds 100/200/300; fixed test evaluated once",
+  "epochs": 160,
+  "validation_log": [
+    {
+      "epoch": 1,
+      "validation_mae": 0.10207608836854455
+    },
+    {
+      "epoch": 10,
+      "validation_mae": 0.04956759726678213
+    },
+    {
+      "epoch": 20,
+      "validation_mae": 0.026433324374266105
+    },
+    {
+      "epoch": 30,
+      "validation_mae": 0.02306481474816576
+    },
+    {
+      "epoch": 40,
+      "validation_mae": 0.02086668860229328
+    },
+    {
+      "epoch": 50,
+      "validation_mae": 0.016552949530581493
+    },
+    {
+      "epoch": 60,
+      "validation_mae": 0.01624901681292228
+    },
+    {
+      "epoch": 70,
+      "validation_mae": 0.012367966168314802
+    },
+    {
+      "epoch": 80,
+      "validation_mae": 0.011095756968734423
+    },
+    {
+      "epoch": 90,
+      "validation_mae": 0.009838052580210862
+    },
+    {
+      "epoch": 100,
+      "validation_mae": 0.010478159613890772
+    },
+    {
+      "epoch": 110,
+      "validation_mae": 0.010154440307756888
+    },
+    {
+      "epoch": 120,
+      "validation_mae": 0.009780985919550497
+    },
+    {
+      "epoch": 130,
+      "validation_mae": 0.009487005677070434
+    },
+    {
+      "epoch": 140,
+      "validation_mae": 0.009263260632474683
+    },
+    {
+      "epoch": 150,
+      "validation_mae": 0.00910445392165848
+    },
+    {
+      "epoch": 160,
+      "validation_mae": 0.009013509315442371
+    }
+  ],
+  "selected_validation_mae": 0.009013509315442371,
+  "test_mae": 0.008949708359988089,
+  "test_error_pixels_at_256": 2.2911253401569507,
+  "stationary_start_point_test_mae": 0.19308979646891417,
+  "analytic_bezier_baseline_mae": 0.0,
+  "seconds": 3.111984640999708,
+  "limits": "Synthetic curves only. Cannot choose subjects, draw anatomy, compose scenes or animate characters. Exact geometry remains better for production."
+}

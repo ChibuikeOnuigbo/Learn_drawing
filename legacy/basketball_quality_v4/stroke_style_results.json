@@ -1,0 +1,6 @@
+{
+  "updates": 15000,
+  "sunlit_edge_labels": 161,
+  "in_sample_label_accuracy": 1.0,
+  "note": "automatic same-scene labels; not new scene generalization"
+}

@@ -1,0 +1,130 @@
+newmtl cream
+Kd 0.88627 0.78039 0.61569
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl cream2
+Kd 0.83529 0.71765 0.55294
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl padding
+Kd 0.19608 0.30196 0.36863
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl padding2
+Kd 0.23137 0.34902 0.41569
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl wood0
+Kd 0.79216 0.53725 0.29804
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl wood1
+Kd 0.80784 0.55686 0.31765
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl wood2
+Kd 0.76863 0.50196 0.27451
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl wood3
+Kd 0.82745 0.57647 0.33725
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl mark
+Kd 0.95686 0.89804 0.77647
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl beam
+Kd 0.35686 0.26275 0.22353
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl roof
+Kd 0.29804 0.25098 0.22745
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl beamlight
+Kd 0.47451 0.34510 0.26275
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl window
+Kd 0.80392 0.88627 0.85490
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl windowshine
+Kd 0.91373 0.92549 0.84314
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl frame
+Kd 0.25882 0.24314 0.22353
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl sunlight
+Kd 0.90980 0.66667 0.38431
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl sunlight2
+Kd 0.94510 0.72157 0.44706
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl steel
+Kd 0.22353 0.20784 0.20000
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl lamp
+Kd 0.98039 0.91373 0.76078
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl bleacher
+Kd 0.59608 0.36863 0.23137
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl bleachertop
+Kd 0.74118 0.49020 0.29412
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl backboard
+Kd 0.95686 0.93333 0.85098
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl boardline
+Kd 0.23529 0.25098 0.23529
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl metal
+Kd 0.72157 0.30980 0.16863
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl net
+Kd 0.90588 0.88627 0.81176
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+
+newmtl door
+Kd 0.36078 0.31373 0.27451
+Ka 0.1 0.1 0.1
+Ks 0 0 0
+

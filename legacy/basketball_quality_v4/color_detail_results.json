@@ -1,0 +1,10 @@
+{
+  "updates": 50000,
+  "best_step": 48000,
+  "validation_all_before_mae": 0.021541788499541734,
+  "validation_all_after_mae": 0.020759766239197657,
+  "validation_changed_before_mae": 0.10343294341790919,
+  "validation_changed_after_mae": 0.026533646290021008,
+  "validation_changed_pixels": 1749,
+  "note": "changed pixels are automatically defined using both guides; validation is same image and was used to select checkpoints; not independent test"
+}

@@ -12,7 +12,7 @@ import subprocess
 import wave
 
 import numpy as np
-from PIL import Image,ImageDraw,ImageFont,ImageOps
+from PIL import Image,ImageDraw,ImageFont,ImageOps,ImageSequence
 
 from .render import confined,inspect,probe
 
@@ -21,11 +21,11 @@ ASSETS={
     'disaster':('anime-disaster.png','anime','horrified disbelief at a disastrous plan'),
     'confusion':('anime-disaster.png','anime','a puzzled/horrified reaction; review intensity'),
     'disappointment':('anime-disaster.png','anime','facepalm reaction; may be too intense for quiet disappointment'),
-    'brain_wipe':('brain-wipe.png','cartoon','clueless thinking: tiny sleeping brain / polishing its helmet'),
+    'brain_wipe':('squidward-brain-erase.gif','cartoon','Squidward opens his head and erases his brain: visual punchline for an absent-brain joke'),
     'victory':('anime-victory.png','anime','celebratory comeback and raised fist')}
 ANCHORS={
     'disaster':['messed up','mess','disaster','catastrophe','chaos','nightmare','cooked','exploded','fell apart','wrong'],
-    'brain_wipe':['no brain','brain cell','zero common sense','brain has','stupid','dumb','idiotic','same trick'],
+    'brain_wipe':['no brains at all','no brain at all','no brain','brain cell','zero common sense','brain has','stupid','dumb','idiotic','same trick'],
     'confusion':['what just happened','no idea','no sense','how does','confused','what am','understand','questions'],
     'victory':['won','did it','comeback','win','saved','victory','nailed','defeated','pulled it off','celebrate','worked'],
     'disappointment':['disappointing','nothing','let everyone down','expected','sad','heartbreaking','wasted','underwhelming','letdown']}
@@ -89,16 +89,18 @@ def plan_cues(narration: dict, fps=30, threshold=.40, theme='anime') -> dict:
         if not matches:
             # Avoid filling every narrative sentence with an unrelated reaction.
             continue
-        offset,phrase=min(matches,key=lambda pair:pair[0])
+        offset,phrase=min(matches,key=lambda pair:(-len(pair[1]),pair[0]) if intent=='brain_wipe' else (pair[0],-len(pair[1])))
         sentence_start=match.start()+len(match.group())-len(match.group().lstrip())
         anchor=sentence_start+offset
-        candidates=[w for w in words if w['char_end']>anchor and w['char_start']<match.end()]
+        # Let the short verbal setup land before the visual eraser punchline.
+        trigger=sentence_start+offset+len(phrase)-len(phrase.split()[-1]) if intent=='brain_wipe' and phrase in {'no brains at all','no brain at all'} else anchor
+        candidates=[w for w in words if w['char_end']>trigger and w['char_start']<match.end()]
         if not candidates:continue
         word=candidates[0];frame=round(word['start']*fps)
         if cues and frame < cues[-1]['frame_start']+round(fps*.8):continue
         name,style,meaning=ASSETS[intent]
         cues.append(dict(intent=intent,phrase=phrase,word=word['text'],word_time=word['start'],
-                         frame_start=frame,frame_end=frame+round(1.9*fps),asset=name,style=style,
+                         frame_start=frame,frame_end=frame+round((3.1 if intent=='brain_wipe' else 1.9)*fps),asset=name,style=style,
                          transcript_word_confidence=word.get('probability'),
                          confidence=prediction['confidence'],editorial_reason=meaning,
                          theme_note=f'Semantic match uses {style} art; requested theme is {theme}. Review or override the asset.' if style!=theme else 'Theme match'))
@@ -126,14 +128,23 @@ def _caption(draw,text,font,max_width):
 
 def _asset_frames(path: Path, folder: Path):
     if path.suffix.lower() in {'.png','.jpg','.jpeg'}:
-        return [Image.open(path).convert('RGB')],1
+        return [Image.open(path).convert('RGB')],1,[0.]
     folder.mkdir(parents=True,exist_ok=True)
+    # Pillow composites GIF disposal correctly; raw FFmpeg GIF frames can retain
+    # transparent holes. Respect source frame durations instead of inventing 15fps.
+    source=Image.open(path)
+    if getattr(source,'n_frames',1)>1:
+        frames=[];times=[];elapsed=0.
+        for frame in ImageSequence.Iterator(source):
+            frames.append(frame.convert('RGB').copy());times.append(elapsed)
+            elapsed+=frame.info.get('duration',source.info.get('duration',80))/1000
+        return (frames,1/(sum(i.info.get('duration',80) for i in ImageSequence.Iterator(Image.open(path)))/1000/len(frames)),times)
     subprocess.run(['ffmpeg','-y','-v','error','-i',str(path),'-t','6','-vf',
                     'fps=15,scale=960:540:force_original_aspect_ratio=decrease',
                     '-frames:v','90',str(folder/'asset-%03d.png')],check=True,timeout=120)
     frames=[Image.open(p).convert('RGB') for p in sorted(folder.glob('asset-*.png'))]
     if not frames:raise ValueError('Reaction asset has no decodable frames')
-    return frames,15
+    return frames,15,[i/15 for i in range(len(frames))]
 
 
 def compose_reactions(narration_path: Path, folder: Path, root: Path, theme='anime',
@@ -166,16 +177,16 @@ def compose_reactions(narration_path: Path, folder: Path, root: Path, theme='ani
     assets={}
     for cue in plan['cues']:
         custom=(overrides or {}).get(cue['intent'])
-        cue['asset_origin']='caller-supplied local asset' if custom else 'original AI-generated reaction illustration bundled with toolkit'
+        cue['asset_origin']='caller-supplied local asset; rights remain caller responsibility' if custom else ('third-party reaction GIF; review rights before publication (see assets/reactions/PROVENANCE.md)' if cue['asset'].endswith('.gif') else 'original AI-generated reaction illustration bundled with toolkit')
         if cue['intent'] in assets:continue
         path=confined(root,custom,True) if custom else PACKAGE/'assets/reactions'/cue['asset']
         assets[cue['intent']]=_asset_frames(path,folder/('asset-'+cue['intent']))
     scale=width/960
-    font=ImageFont.truetype('DejaVuSans.ttf',round(29*scale))
-    small=ImageFont.truetype('DejaVuSans.ttf',round(15*scale))
-    title=ImageFont.truetype('DejaVuSans-Bold.ttf',round(30*scale))
+    font=ImageFont.truetype(str(PACKAGE/'assets/fonts/inter-400.ttf'),round(29*scale))
+    small=ImageFont.truetype(str(PACKAGE/'assets/fonts/inter-400.ttf'),round(15*scale))
+    title=ImageFont.truetype(str(PACKAGE/'assets/fonts/space-grotesk-700.ttf'),round(30*scale))
     while title.getlength(heading)>width*.9 and title.size>12:
-        title=ImageFont.truetype('DejaVuSans-Bold.ttf',title.size-1)
+        title=ImageFont.truetype(str(PACKAGE/'assets/fonts/space-grotesk-700.ttf'),title.size-1)
     video=folder/'video.mp4'
     cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{width}x{height}',
          '-r',str(fps),'-i','pipe:0','-i',str(mixed),'-c:v','libx264','-threads','2','-crf','18',
@@ -190,8 +201,11 @@ def compose_reactions(narration_path: Path, folder: Path, root: Path, theme='ani
                 cue=next((c for c in plan['cues'] if c['frame_start']<=frame<c['frame_end']),None)
                 box=(round(width*.12),round(height*.15),round(width*.88),round(height*.77))
                 if cue:
-                    sequence,asset_fps=assets[cue['intent']]
-                    image=sequence[int((frame-cue['frame_start'])/fps*asset_fps)%len(sequence)]
+                    sequence,asset_fps,asset_times=assets[cue['intent']]
+                    elapsed=(frame-cue['frame_start'])/fps
+                    cycle_duration=asset_times[-1]+1/asset_fps
+                    image_index=max(i for i,t in enumerate(asset_times) if t<=elapsed%cycle_duration)
+                    image=sequence[image_index]
                     # Contain the source; important faces are never auto-cropped.
                     card=ImageOps.contain(image,(box[2]-box[0],box[3]-box[1]))
                     im.paste(card,((width-card.width)//2,(box[1]+box[3]-card.height)//2))

@@ -1,0 +1,2626 @@
+{
+  "version": 1,
+  "title": "Moonlight — a small discovery",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frames": 240,
+  "background": "#112b42",
+  "layers": [
+    {
+      "id": "background",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 360.0,
+      "width": 1320.0,
+      "height": 743.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "observatory.jpg",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "scale",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 1.02,
+              "easing": "smooth"
+            },
+            {
+              "frame": 72,
+              "value": 1.06,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 1.025,
+              "easing": "smooth"
+            },
+            {
+              "frame": 239,
+              "value": 1.07,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 640.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 239,
+              "value": 625.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact-shadow",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 602.0,
+      "y": 650.0,
+      "width": 175.0,
+      "height": 25.0,
+      "fill": "#102c3c",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.48,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "scale_x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 52,
+              "value": 1.05,
+              "easing": "smooth"
+            },
+            {
+              "frame": 66,
+              "value": 0.85,
+              "easing": "smooth"
+            },
+            {
+              "frame": 82,
+              "value": 1.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 190,
+              "value": 0.9,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performer",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 592.0,
+      "y": 431.0,
+      "width": 307.0,
+      "height": 430.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "rig-frames/%04d.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 460.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 40,
+              "value": 570.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 60,
+              "value": 582.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 100,
+              "value": 592.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 620.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 190,
+              "value": 620.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 239,
+              "value": 635.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "rotation",
+          "keys": [
+            {
+              "frame": 0,
+              "value": -4.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 40,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 60,
+              "value": 3.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 82,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": -3.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 190,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orb-halo",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 725.0,
+      "y": 333.0,
+      "width": 105.0,
+      "height": 105.0,
+      "fill": "#eabb73",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 58,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 70,
+              "value": 0.18,
+              "easing": "smooth"
+            },
+            {
+              "frame": 100,
+              "value": 0.1,
+              "easing": "smooth"
+            },
+            {
+              "frame": 140,
+              "value": 0.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 174,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "scale",
+          "keys": [
+            {
+              "frame": 58,
+              "value": 0.3,
+              "easing": "smooth"
+            },
+            {
+              "frame": 75,
+              "value": 1.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 120,
+              "value": 1.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 160,
+              "value": 1.8,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orb",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 725.0,
+      "y": 333.0,
+      "width": 34.0,
+      "height": 34.0,
+      "fill": "#ffe3a1",
+      "stroke": "#fff4d2",
+      "stroke_width": 3.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 58,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 65,
+              "value": 1.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 135,
+              "value": 1.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 165,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 58,
+              "value": 360.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 78,
+              "value": 322.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 120,
+              "value": 312.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 155,
+              "value": 220.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 58,
+              "value": 712.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 120,
+              "value": 730.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 155,
+              "value": 800.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-00",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 880.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 245.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-01",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 727.7380637504366,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 311.1982822244206,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-02",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 146,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 149,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 810.140637638936,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 129.44409375425334,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-03",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 150,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 881.5318377396048,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 351.3417107009416,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-04",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 151,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 650.3232082078001,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 218.5262772018279,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-05",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 943.4369266363299,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 153.75391472986843,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-06",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 779.2331527306504,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 322.25760839225813,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-07",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 146,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 149,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 754.8291453643461,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 158.03107513896344,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-08",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 150,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 908.9622984885598,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 284.78966584541763,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-09",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 151,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 676.1391817122011,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 296.1321590887464,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-10",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 864.4201447942653,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 107.32630990386761,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-11",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 850.8840196860607,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 407.2060927973687,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-12",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 146,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 149,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 730.7815486377123,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 204.89007615306897,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-13",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 150,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 895.7133422306787,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 223.95347726979645,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-14",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 151,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 733.2892770903339,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 339.8982584079906,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-15",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 782.7731296613796,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 112.11194584035644,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-16",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 916.2317090919026,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 342.9499351790256,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-17",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 146,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 149,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 630.1455567318951,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 252.03335638810924,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-18",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 150,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 856.7030724608878,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 188.56630817060335,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-19",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 151,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 795.4792456420668,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 342.89567293826235,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-20",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 725.6719863587634,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 155.9418931924322,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-21",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 932.8045129190743,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 145,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 183,
+              "value": 262.85948902761277,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-22",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 5.0,
+      "height": 5.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 146,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 149,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 675.2357014415595,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 146,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 184,
+              "value": 331.82090649849454,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-23",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 6.0,
+      "height": 6.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 150,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 837.2995123481675,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 147,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 185,
+              "value": 79.14239125506211,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-24",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 3.0,
+      "height": 3.0,
+      "fill": "#bcebe2",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 148,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 151,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 839.7798502248348,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 148,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 186,
+              "value": 314.40867032359654,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-25",
+      "kind": "ellipse",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 800.0,
+      "y": 220.0,
+      "width": 4.0,
+      "height": 4.0,
+      "fill": "#ffe0a0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 147,
+              "value": 0.9,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 0.0,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 800.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 706.6337031516574,
+              "easing": "smooth"
+            }
+          ]
+        },
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 144,
+              "value": 220.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 182,
+              "value": 215.22191052422633,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foreground",
+      "kind": "path",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#0c2432",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [
+        [
+          0.0,
+          675.0
+        ],
+        [
+          80.0,
+          686.0
+        ],
+        [
+          170.0,
+          700.0
+        ],
+        [
+          350.0,
+          714.0
+        ],
+        [
+          500.0,
+          720.0
+        ],
+        [
+          0.0,
+          720.0
+        ]
+      ],
+      "closed": true,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.75,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 239,
+              "value": -45.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": "audio.wav"
+}

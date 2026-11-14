@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "animation-agent-studio"
-version = "0.2.0"
-description = "Editable drawing, timeline animation and render inspection over MCP"
+version = "0.4.0"
+description = "Editable 2D/3D animation, video editing, reaction timing and render inspection over MCP"
 requires-python = ">=3.11"
-dependencies = ["mcp==1.29.0", "pydantic>=2.11,<3", "Pillow==13.0.0", "CairoSVG==2.8.2", "numpy>=2.2,<3", "scikit-learn==1.8.0", "espeakng-loader==0.2.4", "faster-whisper==1.2.1"]
+dependencies = ["mcp==1.29.0", "pydantic>=2.11,<3", "Pillow==13.0.0", "resvg-py==0.5.0", "numpy>=2.2,<3", "scikit-learn==1.8.0", "espeakng-loader==0.2.4", "faster-whisper==1.2.1"]
 
 [project.optional-dependencies]
-research = ["opencv-python-headless==4.13.0.92", "scikit-learn==1.8.0", "gdown==5.2.0", "yt-dlp==2026.10.26"]
+research = ["av==18.1.0", "gdown==5.2.0"]
 test = ["pytest>=9,<10"]
 semantic = ["onnxruntime>=1.23,<2", "tokenizers>=0.22,<1"]
 
@@ -18,11 +18,18 @@ semantic = ["onnxruntime>=1.23,<2", "tokenizers>=0.22,<1"]
 animation-mcp = "animation_mcp.server:main"
 animation-studio = "animation_mcp.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["animation_mcp", "animation_mcp.skills", "animation_mcp.templates"]
+
+[tool.setuptools.package-dir]
+animation_mcp = "src/animation_mcp"
+"animation_mcp.skills" = "skills"
+"animation_mcp.templates" = "templates"
 
 [tool.setuptools.package-data]
-animation_mcp = ["WORKFLOW.md", "models/*.json", "models/*.npz", "assets/reactions/*.png"]
+animation_mcp = ["models/*.json", "models/*.npz", "assets/reactions/*.png", "assets/reactions/*.gif", "assets/reactions/*.json", "assets/reactions/*.md", "assets/fonts/*.ttf", "assets/fonts/*.txt", "assets/art/*.jpg", "knowledge/*.json"]
+"animation_mcp.skills" = ["index.json", "*/SKILL.md"]
+"animation_mcp.templates" = ["*.json", "*.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

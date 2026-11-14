@@ -1,0 +1,120 @@
+{
+  "video": "/home/user/Learn_drawing/examples/02-semantic-reactions/victory/video.mp4",
+  "frames": 245,
+  "fps": 30.0,
+  "duration": 8.166666666666666,
+  "width": 960,
+  "height": 540,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 34.05801080094932,
+      "luma_mean": 33.81755208333333
+    },
+    {
+      "frame": 61,
+      "stddev": 36.7533279955606,
+      "luma_mean": 34.81930041152263
+    },
+    {
+      "frame": 75,
+      "stddev": 36.99125297605537,
+      "luma_mean": 34.921577932098764
+    },
+    {
+      "frame": 76,
+      "stddev": 60.04026744341407,
+      "luma_mean": 53.69725308641976
+    },
+    {
+      "frame": 104,
+      "stddev": 58.96824301700706,
+      "luma_mean": 52.86844393004115
+    },
+    {
+      "frame": 122,
+      "stddev": 60.81876130648972,
+      "luma_mean": 54.32860789609054
+    },
+    {
+      "frame": 133,
+      "stddev": 38.61852235845388,
+      "luma_mean": 35.5813554526749
+    },
+    {
+      "frame": 147,
+      "stddev": 38.84833504371125,
+      "luma_mean": 35.686548353909465
+    },
+    {
+      "frame": 148,
+      "stddev": 60.94442253470945,
+      "luma_mean": 54.43834812242798
+    },
+    {
+      "frame": 176,
+      "stddev": 61.07653075162587,
+      "luma_mean": 54.552893518518516
+    },
+    {
+      "frame": 183,
+      "stddev": 61.10924835620781,
+      "luma_mean": 54.580854552469134
+    },
+    {
+      "frame": 205,
+      "stddev": 35.831809810339585,
+      "luma_mean": 34.49023919753086
+    },
+    {
+      "frame": 244,
+      "stddev": 35.85992391183605,
+      "luma_mean": 34.49569187242798
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/02-semantic-reactions/victory/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "timing_pass": true,
+  "timing_scope": "Cue frame rounding relative to supplied word times; ASR word times themselves are estimates",
+  "audio_sync_review_required": true,
+  "audio_peak": 0.83935546875,
+  "cues": [
+    {
+      "intent": "victory",
+      "phrase": "worked",
+      "word": "worked.",
+      "word_time": 2.54,
+      "frame_start": 76,
+      "frame_end": 133,
+      "asset": "anime-victory.png",
+      "style": "anime",
+      "transcript_word_confidence": 0.9948457479476929,
+      "confidence": 0.7190539257927209,
+      "editorial_reason": "celebratory comeback and raised fist",
+      "theme_note": "Theme match",
+      "timing_error_seconds": -0.006666666666666821,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    },
+    {
+      "intent": "victory",
+      "phrase": "comeback",
+      "word": "comeback",
+      "word_time": 4.92,
+      "frame_start": 148,
+      "frame_end": 205,
+      "asset": "anime-victory.png",
+      "style": "anime",
+      "transcript_word_confidence": 0.8968049883842468,
+      "confidence": 0.6386755511153662,
+      "editorial_reason": "celebratory comeback and raised fist",
+      "theme_note": "Theme match",
+      "timing_error_seconds": 0.013333333333333641,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    }
+  ],
+  "artistic_review": "pending: inspect timing, thematic fit, caption readability and humor; classifier is not a taste judge",
+  "audio_present": true
+}

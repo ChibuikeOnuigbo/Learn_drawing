@@ -1,0 +1,46 @@
+{
+  "fps": 30,
+  "frames": 274,
+  "cues": [
+    {
+      "intent": "disaster",
+      "phrase": "messed up",
+      "word": "messed",
+      "word_time": 4.84,
+      "frame_start": 145,
+      "frame_end": 202,
+      "asset": "anime-disaster.png",
+      "style": "anime",
+      "transcript_word_confidence": 0.9941788911819458,
+      "confidence": 0.9212991459456082,
+      "editorial_reason": "horrified disbelief at a disastrous plan",
+      "theme_note": "Theme match",
+      "timing_error_seconds": -0.006666666666666821,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    }
+  ],
+  "decisions": [
+    {
+      "text": "I asked the hero to save my animation.",
+      "intent": "none",
+      "confidence": 0.44161518010234085,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    },
+    {
+      "text": "This is absolutely messed up.",
+      "intent": "disaster",
+      "confidence": 0.9212991459456082,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    },
+    {
+      "text": "He deleted the entire scene.",
+      "intent": "none",
+      "confidence": 0.38645831747332876,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    }
+  ],
+  "timing_source": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "alignment_review_required": true,
+  "transcript_review_required": true,
+  "evaluation": "Technical timing can be measured; whether this is the best meme needs viewer review"
+}

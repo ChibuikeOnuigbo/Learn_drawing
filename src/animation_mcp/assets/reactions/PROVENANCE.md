@@ -1,0 +1,6 @@
+# Reaction asset provenance
+
+- `anime-disaster.png`, `anime-victory.png`: original AI-generated illustrations made for this project. They are not frames from an existing anime. They establish style-consistent reaction choices; their humor still requires editorial review.
+- `squidward-brain-erase.gif`: third-party GIF obtained through image search from GIFDB, https://gifdb.com/gif/squidward-erasing-brain-meme-8m2b2vahuc5sr8fn.html . original download 500×504, 38 frames, 80 ms/frame (3.04-second cycle). Bundled copy is cropped to 500×269 to remove the source's large blank upper canvas; timing and GIFDB watermark retained. The sequence visibly opens Squidward's head and erases the brain; it replaces the old unrelated sleeping-brain still. **No republication license is asserted.** SpongeBob/Squidward rights belong to their respective owners. This is a local semantic/timing test asset, not clearance to monetize or redistribute the GIF. Replace with a licensed or original equivalent before public publication.
+
+The classifier selects intent. Asset choice and phrase anchors are explicit editorial rules, not claims that a small classifier understands comedy. No reference-film frames are included in this directory.

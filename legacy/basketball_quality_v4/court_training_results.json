@@ -1,8 +1,0 @@
-{
-  "steps": 65000,
-  "best_step": 36500,
-  "segments": 313,
-  "mean_absolute_coordinate_and_width_error": 4.046641066679513e-08,
-  "same_teacher_3px_f1": 0.9999999999995,
-  "note": "in-sample 3D-projected paths, not a test on a new court"
-}

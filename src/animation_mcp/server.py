@@ -3,8 +3,6 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-import shutil
-import subprocess
 import uuid
 
 from mcp.server.fastmcp import FastMCP
@@ -15,6 +13,8 @@ from .edit import edit_video
 from .speech import synthesize
 from .reactions import classify,plan_cues,compose_reactions
 from .presets import scene_preset
+from .doctor import resolve_command, run_checks
+from .skills_index import index as skill_index, read_skill
 
 ROOT = Path(os.environ.get("ANIMATION_WORKSPACE", os.getcwd())).resolve()
 ROOT.mkdir(parents=True,exist_ok=True)
@@ -30,12 +30,15 @@ def new_folder(prefix):
 @mcp.tool()
 def capabilities() -> dict:
     """Check installed render engines and the supported scene format."""
-    return {"workspace": str(ROOT), "ffmpeg":bool(shutil.which("ffmpeg")),
-            "ffprobe":bool(shutil.which("ffprobe")),"blender":bool(shutil.which("blender")),
+    return {"workspace": str(ROOT), "ffmpeg":bool(resolve_command("ffmpeg")),
+            "ffprobe":bool(resolve_command("ffprobe")),
+            "blender":bool(resolve_command("blender")),
+            "agent_entry":"studio://workflow", "skill_catalog":"studio://skills",
+            "skills":[entry["name"] for entry in skill_index()["skills"]],
             "features":["editable SVG", "2D keyframes", "stroke reveal", "layered image parallax",
-                        "voiceover mux", "clip assembly", "timed captions", "frame inspection",
-                        "primitive 3D scenes", "Bezier stroke sampling", "offline speech with word events",
-                        "learned reaction intent", "timed local meme compositing", "weighted humanoid rig and IK"],
+                        "nested vector character rig", "voiceover mux", "clip assembly", "timed captions", "frame inspection",
+                        "primitive and art-directed 3D scenes", "Bezier stroke sampling", "offline speech with word events",
+                        "learned reaction intent", "timed local meme/GIF compositing", "weighted humanoid rig and IK"],
             "limits":["agent authors scene; no universal text-to-art model bundled",
                       "rigging is a procedural humanoid preset, not universal auto-rigging",
                       "no automatic lip sync or hosted AI image provider bundled",
@@ -109,7 +112,11 @@ def inspect_video(video_path: str, frames: list[int] | None = None) -> dict:
 
 @mcp.tool()
 def render_3d_scene(scene: dict) -> dict:
-    """Render constrained sphere/cube/cone/cylinder/torus animation in CPU Blender; save .blend."""
+    """Render constrained 3D animation in CPU Blender; save editable .blend.
+
+    Basic mode accepts primitives. art_direction presets (easy/simple/medium/hard)
+    add authored sets, materials, lighting and rigged characters.
+    """
     return render_3d(scene,new_folder("blender"))
 
 
@@ -139,7 +146,8 @@ def select_reaction(text: str) -> dict:
     if result['intent'] in ASSETS:
         name,style,meaning=ASSETS[result['intent']]
         result.update(asset=str(PACKAGE/'assets/reactions'/name),style=style,meaning=meaning,
-                      provenance='original generated illustration; not a retrieved franchise GIF')
+                      provenance=('third-party reaction GIF; review rights before publication' if name.endswith('.gif')
+                                  else 'original generated illustration; not a retrieved franchise GIF'))
     return result
 
 
@@ -204,10 +212,42 @@ def search_reference_library(query: str, limit: int = 5) -> dict:
     return search_references(query,limit)
 
 
+@mcp.tool()
+def get_skill(name: str = 'animation-director') -> dict:
+    """Read a packaged production playbook by name; start with animation-director.
+
+    Available names are listed by capabilities and studio://skills. Guidance does
+    not install engines or change the host agent's weights.
+    """
+    return read_skill(name)
+
+
+@mcp.tool()
+def check_environment(smoke: bool = False, smoke_3d: bool = False) -> dict:
+    """Check actual engines/packages/templates; optionally render tiny temporary proofs.
+
+    No downloads or installation. Blender is optional unless smoke_3d is requested.
+    This is environment readiness, not artistic QA.
+    """
+    return run_checks(smoke=smoke, smoke_3d=smoke_3d, workspace=ROOT)
+
+
 @mcp.resource('studio://workflow')
 def workflow() -> str:
-    """Production workflow available to any connected MCP client."""
-    return Path(__file__).with_name('WORKFLOW.md').read_text()
+    """Canonical production operating contract, identical to the director skill."""
+    return read_skill('animation-director')['content']
+
+
+@mcp.resource('studio://skills')
+def skills() -> str:
+    """Machine-readable routing catalog for the packaged skill library."""
+    return json.dumps(skill_index(), indent=2)
+
+
+@mcp.resource('studio://skills/{name}')
+def skill_resource(name: str) -> str:
+    """Read one allow-listed skill; unknown names cannot access arbitrary files."""
+    return read_skill(name)['content']
 
 
 @mcp.prompt()

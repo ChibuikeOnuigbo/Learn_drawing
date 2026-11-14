@@ -36,7 +36,9 @@ def main():
                 evaluation=classification_report(target,pred,output_dict=True,zero_division=0),
                 predictions=[dict(text=t,expected=y,predicted=str(p)) for t,y,p in zip(test,target,pred)],
                 limitations='Small synthetic English corpus. No claim of general language, audiovisual understanding, artistic quality or training from reference videos.')
-    (root/'reports/reaction-training.json').write_text(json.dumps(report,indent=2)+'\n')
+    report_path=root/'output/research/reaction-training.json'
+    report_path.parent.mkdir(parents=True,exist_ok=True)
+    report_path.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
 
 

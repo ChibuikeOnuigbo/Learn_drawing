@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "entry_skill": "animation-director",
+  "operating_contract": "animation-director/SKILL.md",
+  "skills": [
+    {"name": "animation-director", "path": "animation-director/SKILL.md", "description": "Brief, route, produce, inspect and deliver; read first.", "triggers": ["new project", "animation request", "production plan", "any animation"]},
+    {"name": "drawing", "path": "drawing/SKILL.md", "description": "Construction, character sheets, stroke art and animation-ready layers.", "triggers": ["draw", "character design", "illustration", "SVG", "pose"]},
+    {"name": "composition", "path": "composition/SKILL.md", "description": "Focal hierarchy, staging, depth, camera and continuity.", "triggers": ["composition", "storyboard", "camera", "framing", "cinematography"]},
+    {"name": "2d-animation", "path": "2d-animation/SKILL.md", "description": "Editable vector/cut-out motion, parallax, reveals and animatics.", "triggers": ["2D", "motion graphics", "explainer", "cut-out", "stroke reveal"]},
+    {"name": "3d-animation", "path": "3d-animation/SKILL.md", "description": "Blender primitives, staged presets, cameras and render budgets.", "triggers": ["3D", "Blender", "model", "lighting", "render"]},
+    {"name": "character-rigging", "path": "character-rigging/SKILL.md", "description": "2D hierarchies and weighted 3D humanoid IK/contact.", "triggers": ["rig", "IK", "walk", "wave", "reach", "grasp", "foot contact"]},
+    {"name": "video-editing", "path": "video-editing/SKILL.md", "description": "Shot assembly, captions, narration and final audio mix.", "triggers": ["edit", "assemble", "captions", "voiceover", "music", "Shorts"]},
+    {"name": "reaction-timing", "path": "reaction-timing/SKILL.md", "description": "Semantic reaction selection at reviewed spoken beats.", "triggers": ["reaction", "meme", "GIF", "punchline", "commentary"]},
+    {"name": "quality-review", "path": "quality-review/SKILL.md", "description": "Exact-frame inspection, measured QA and honest delivery.", "triggers": ["review", "QA", "validate", "fix", "deliver", "quality"]}
+  ],
+  "scope": "Methods and local tools, not model-weight training or a universal text-to-video generator. Load relevant skills; verify engines before claiming renders."
+}

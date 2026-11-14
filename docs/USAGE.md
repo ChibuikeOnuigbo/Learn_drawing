@@ -1,5 +1,7 @@
 # Author, render, inspect, revise
 
+Read [AGENTS.md](../AGENTS.md) and the [task playbooks](../skills/README.md) first. Run `animation-studio doctor --smoke` or MCP `check_environment` before claiming readiness. Validated starter scenes and brief/review forms are in [templates](../templates/README.md).
+
 Start with `capabilities`, then ask the agent to write a shot plan with exact frame intervals. Use `save_scene`, `preview_frame`, `render_scene` and `inspect_video`. Inspect the resulting PNGs and video before accepting artistic quality. Record concrete defects using `record_lesson` and revise the scene under a new filename.
 
 ## Minimal 2D scene
@@ -19,53 +21,51 @@ Start with `capabilities`, then ask the agent to write a shot plan with exact fr
 }
 ```
 
-Layers are ordered from back to front. Shapes are centered on `x,y`; paths use local point coordinates. Rotation uses degrees around the layer origin. Image paths and audio paths are relative to `ANIMATION_WORKSPACE`. Image transforms allow parallax using separate background/midground/foreground PNGs.
+Layers are ordered back to front. Shapes are centered on `x,y`; paths use local point coordinates. Rotation is degrees around the layer origin. MCP image/audio paths are relative to `ANIMATION_WORKSPACE`. The CLI uses `--workspace` (default: current directory); pass the scene's asset directory explicitly when needed. Image transforms allow parallax using separate background/midground/foreground plates. An image asset containing `%04d` is expanded with the current frame number, which supports pre-rasterized rig sequences.
 
 Visibility is `[start,end)`. Keyframe easing on a key describes motion **into that key**. Values hold before the first and after the last key. A key at `scene.frames` supplies the endpoint of a transition; the last rendered frame is `scene.frames - 1`.
 
-Animate `x`, `y`, `scale`, `scale_x`, `scale_y`, `rotation`, `opacity` or `reveal`. Independent X/Y scale supports eye blinks and squash/stretch. A `group` layer can parent other layers: declare it first and set each child's `parent` to its ID. Transforms and visibility inherit through groups. See `exmapels/2d-character/scene.json` for a complete editable character.
+Animate `x`, `y`, `scale`, `scale_x`, `scale_y`, `rotation`, `opacity` or `reveal`. Independent X/Y scale supports blinks and squash/stretch. A `group` layer can parent other layers: declare it first and set each child's `parent` to its ID. Transforms and visibility inherit through groups. See `examples/01-2d-moonlight/scene.json` and `character.svg` for a complete nested cut-out rig.
 
-`reveal` trims a point path by its actual length. Paths stay open and unfilled until fully revealed; this is a stroke animation, not a fill morph. Curves can be sampled using `curve_points`. Colors use `#rrggbb` or `none`. Text is escaped, single-line vector text; use separate layers for lines.
+`reveal` trims a point path by actual length. Paths stay open and unfilled until fully revealed; this is stroke animation, not a fill morph. Curves can be sampled with `curve_points`. Colors use `#rrggbb` or `none`. Text is escaped single-line vector text; use separate layers for lines.
 
-Set `audio` to a local voiceover path to mux narration. The renderer rejects narration longer than the scene and pads shorter tracks with silence; it does not align speech or generate captions automatically.
+Set `audio` to a local voiceover/music path to mux it. The renderer rejects narration longer than the scene and pads shorter tracks with silence; it does not align speech or generate captions automatically.
 
 ## Edit clips and add captions
 
-Call `assemble_video` with:
+Call `assemble_video` with the edit object directly:
 
 ```json
 {
-  "edit": {
-    "width": 1080, "height": 1920, "fps": 30,
-    "clips": [
-      {"path": "output/shot-a/video.mp4", "start": 0, "duration": 3},
-      {"path": "output/shot-b/video.mp4", "start": 1, "duration": 2}
-    ],
-    "captions": [{"text": "One idea at a time.", "start": 0.5, "end": 2.8}],
-    "audio": "assets/narration.wav"
-  }
+  "width": 1080, "height": 1920, "fps": 30,
+  "clips": [
+    {"path": "output/shot-a/video.mp4", "start": 0, "duration": 3},
+    {"path": "output/shot-b/video.mp4", "start": 1, "duration": 2}
+  ],
+  "captions": [{"text": "One idea at a time.", "start": 0.5, "end": 2.8}],
+  "audio": "assets/narration.wav"
 }
 ```
 
-Clips use aspect-fit padding rather than cropping important content. Durations round to the output frame grid. Source clip audio is discarded; provide a separate narration/music mix if needed. Caption intervals are half-open, positioned near the lower center. Automatic typography only wraps on whitespace; shorten long unbroken words and use short cues. Cuts are supported; cross-dissolves, music ducking, beat detection and forced alignment remain future work.
+Clips use aspect-fit padding rather than cropping important content. Durations round to the output frame grid. Source clip audio is discarded; provide a separate narration/music mix if needed. Caption intervals are half-open, positioned near the lower center. Automatic typography wraps on whitespace; shorten long unbroken words and use short cues. Cuts are supported; cross-dissolves, music ducking, beat detection and forced alignment remain future work.
 
-Set a clip's `hold_last` to `true` to freeze its final frame when the narration slot exceeds the source duration. The default rejects an overlong source interval. Use clean visual masters when adding new captions; the example explainer avoids duplicating the character study's burned captions.
-
-`caption_position` sets the caption block's lower edge as a fraction of frame height (default `0.8`). The landscape explainer uses `0.94` so captions leave the character's feet visible. Check the intended platform's safe area before reusing that position in vertical Shorts.
+Set a clip's `hold_last` to `true` to freeze its final frame when the slot exceeds the source duration. The default rejects an overlong source interval. `caption_position` sets the caption block's lower edge as a fraction of frame height (default `0.8`). Check the intended platform's safe area before reusing a position in vertical Shorts.
 
 ## 3D
 
-Use `examples/orbital-3d.json` for primitive scenes or `exmapels/3d/*/scene3d.json` for rigged examples. Call `get_scene_schema` with `kind: "3d"` for the full schema. Supported primitives are sphere, cube, cylinder, cone and torus. The studio adds three area lights, a world and materials. Object poses specify frame, location, rotation **in radians**, and scale. Camera keys specify location and look target.
+Call `get_scene_schema` with `kind: "3d"` for the full schema. Basic mode supports sphere, cube, cylinder, cone and torus primitives with frame/location/rotation(radians)/scale poses and camera look-target keys. `art_direction` presets (`easy`, `simple`, `medium`, `hard`) add authored sets, materials, lighting and rigged characters; `render_3d_exercise` exposes them directly.
 
-`rigs` can add a weighted humanoid with `idle`, `wave`, `walk` or `pickup` actions. `target_keys` can animate `hand.R`, `hand.L`, `foot.R` and `foot.L` IK controls. A key location is relative to the rig's configured origin; constraints are solved in world space. The presets are editable starting points, not arbitrary mesh auto-rigging or learned acting. Output includes `.blend`, video and evaluated rig QA. The current cloud Blender build lacks OpenImageDenoise, so supported presets use `denoise: false`.
+`rigs` add a weighted humanoid with `idle`, `wave`, `walk`, `pickup` or `reach` actions. `target_keys` animate `hand.R`, `hand.L`, `foot.R`, `foot.L` IK controls relative to the rig origin. Presets are editable starting points, not arbitrary mesh auto-rigging or learned acting. Output includes `.blend`, video and evaluated rig QA (foot height, IK target error, payload attachment). Difficulty labels describe these exercises, not parity with professional reference films.
+
+Blender must be on PATH or selected with `ANIMATION_BLENDER`. In headless sandboxes without system Blender, an isolated `bpy` 4.5 environment can be used through `src/animation_mcp/blender_launcher.py`; keep it separate from the project venv because `bpy` requires NumPy 1.x while the project uses NumPy 2.x. The launcher accepts only the trusted worker and validated scene JSON.
 
 ## Narration and reactions
 
 Call `synthesize_narration` to generate a test voice and engine word events. For supplied audio, prepare the pinned speech model, call `transcribe_voiceover`, and review uncertain words. Pass the returned `narration_json` to `plan_reaction_cues` or `render_reaction_video`.
 
-The selector uses six narrow learned intents plus editorial abstention/negation rules. Three original reaction asset families are bundled. Optional `asset_overrides` maps intents such as `brain_wipe` to local image, GIF or video paths. Animated assets use a bounded six-second decoded loop. The tool does not download memes from external services.
+The selector uses six narrow learned intents plus editorial abstention/negation rules. Bundled assets include original anime-style disaster/victory illustrations and a third-party Squidward brain-erase GIF for the `brain_wipe` intent. Optional `asset_overrides` maps intents to local image/GIF/video paths. GIF frame durations are respected; video assets use a bounded six-second decoded loop. The tool does not download memes from external services.
 
-Cue frames round supplied word times to the frame grid. Engine timestamps and ASR estimates have different accuracy: ASR onset offsets reached 0.279 seconds in the measured story. Inspect the exported audio/video before treating synchronization or humor as accepted.
+Cue frames round supplied word times to the frame grid. Engine timestamps and ASR estimates have different accuracy; inspect exported audio/video before treating synchronization or humor as accepted. The brain-erase cue is deliberately placed after the short verbal setup (“No brains at all”) so the visual punchline lands rather than covering the words.
 
 ## Reproducible practice
 

@@ -1,88 +1,117 @@
 # Animation Agent Studio
 
-A local MCP production toolkit for narration-led videos, editable 2D characters, reaction edits and procedural rigged 3D animation. Includes rendered examples and the user's recovered basketball project.
+**One repository that tells an agent how to make animation—and gives it the tools to do the work.**
 
-**Start with the videos in [exmapels](exmapels/README.md)** — that folder uses the spelling requested by the user. It includes a 20.2-second narrated explainer, two reaction-video workflows, a 2D character study, and four 3D exercises. Sources and QA accompany the exports.
+Start with a brief, load the right creative playbook, author editable 2D/3D scenes, render locally, inspect real frames and deliver source plus honest QA. Works as repository guidance for a browsing chat, a local CLI, or an MCP-connected agent.
 
-## Install and connect
+> A repository link provides methods, schemas and examples. It does not change model weights or magically install engines. This is a production toolkit, not a universal text-to-video model.
 
-Tested on Linux, Python 3.12, FFmpeg, Cairo and Blender 4.3.2 with CPU rendering. Blender enables the optional 3D tools.
+## Start in the way you work
+
+| Mode | Start here | What the agent can do |
+|---|---|---|
+| **Link a chat** | [Connect guide](docs/CONNECT.md#1-link-only-chat-methods-and-source-guidance) | Read the playbooks, critique/design, author SVG/JSON and plan shots |
+| **Open in a coding agent** | [AGENTS.md](AGENTS.md) → `python3 scripts/bootstrap.py` | Author, render, inspect and revise with local tools |
+| **Connect MCP** | [Connect guide](docs/CONNECT.md#3-mcp-host-actual-local-production-tools) | Use validated scene tools, speech/reactions, Blender and QA |
+
+### One-command local setup
+
+Python 3.11+, FFmpeg and ffprobe. Blender 4.5+ is optional for 3D.
 
 ```bash
-cd /workspace/Learn_drawing
-bash scripts/setup.sh
-.venv/bin/python scripts/prepare_models.py
+python3 scripts/bootstrap.py
+# Windows: py -3 scripts/bootstrap.py
+# Prove Blender too: python3 scripts/bootstrap.py --smoke-3d
 ```
 
-Setup writes `output/mcp-client.json` with the current interpreter, workspace and model-cache paths. Copy that server entry into an MCP-capable client's configuration and reconnect it. The tracked [.mcp.json](.mcp.json) is configured for this cloud checkout. On another machine, run `scripts/configure_client.py` there to generate the correct paths. Hosts differ in how they register MCP servers; the repository file alone does not connect every agent automatically.
+Bootstrap creates/reuses `.venv`, installs the toolkit and runs a tiny real SVG→H.264 encode/decode check. It does **not** download models or reference corpora. Then:
 
-Ask the connected agent to read `studio://workflow` or invoke the `produce_video` prompt. Start with `capabilities`, `get_model_catalog` and `get_scene_schema`. The host agent supplies creative reasoning; connecting the server does not alter its weights.
+```bash
+.venv/bin/animation-studio doctor --smoke
+.venv/bin/python scripts/configure_client.py --output output/mcp-client.json
+```
 
-## Available workflows
+## The agent's skill library
 
-| Goal | Tools |
+Read [the operating contract](skills/animation-director/SKILL.md) first; then route through [skills/index.json](skills/index.json).
+
+| Skill | What it teaches |
 |---|---|
-| Create test speech | `synthesize_narration`: offline eSpeak audio and engine word events |
-| Use an uploaded English voiceover | `prepare_voiceover_model`, then `transcribe_voiceover`: local Whisper base.en and estimated word times |
-| Choose and time reactions | `select_reaction`, `plan_reaction_cues`, `render_reaction_video` |
-| Use your own memes | Pass local image/GIF/video paths as `asset_overrides`; original bundled reaction art works without accounts |
-| Search supplied references | `prepare_reference_models`, then `search_reference_library`: local pretrained CLIP retrieval |
-| Draw and animate 2D | `save_scene`, `preview_frame`, `render_scene`: SVG paths, nested groups, keyframes, blinks, stroke reveals and image layers |
-| Rig and animate 3D | `render_3d_scene`, `render_3d_exercise`: weighted humanoid mesh, armature, IK, custom target keys, camera motion and editable `.blend` |
-| Edit a YouTube video | `assemble_video`: timed cuts, aspect fitting, explicit final-frame holds, captions and narration |
-| Inspect and retain lessons | `inspect_video`, `record_lesson` |
+| [Animation director](skills/animation-director/SKILL.md) | Brief → storyboard → proof → production → review → delivery |
+| [Drawing](skills/drawing/SKILL.md) | Gesture, construction, proportions, values, character sheets, layered art |
+| [Composition](skills/composition/SKILL.md) | Focal hierarchy, staging, depth, camera continuity, color scripts |
+| [2D animation](skills/2d-animation/SKILL.md) | Timing/spacing, cut-out rigs, parallax, stroke reveals, animatics |
+| [3D animation](skills/3d-animation/SKILL.md) | Blender scenes, object keys, cameras, lighting, render budgets |
+| [Character rigging](skills/character-rigging/SKILL.md) | Pivot hierarchies, weighted humanoid IK, foot/prop contact |
+| [Video editing](skills/video-editing/SKILL.md) | Shot assembly, captions, narration, music, safe areas |
+| [Reaction timing](skills/reaction-timing/SKILL.md) | Semantic intent, word anchors, gag holds, asset rights |
+| [Quality review](skills/quality-review/SKILL.md) | Exact-frame evidence, technical gates, separate artistic review |
 
-`concept_brief` prepares a prompt for the host's image generator. This MCP does not bundle a hosted image-generation service. Giphy/Tenor search and account access are not implemented; local licensed reaction assets are supported.
+The same playbooks are packaged into MCP: `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`. No competing per-client rulebooks.
 
-## Models and actual training
+## What actually works
 
-| Model | Origin and scope |
-|---|---|
-| Reaction intent classifier | Trained here on 110 original synthetic English examples; 19/20 on a fixed sentence holdout. Six editorial intents, not a general humor or language model. Probabilities are uncalibrated. |
-| Curve interpolator | Earlier bounded supervised experiment; predicts points from supplied Bezier controls. Exact mathematics remains better and is the production default. |
-| CLIP ViT-B/32 | Pretrained upstream, reused unchanged. Searches 330 sampled frames from 55 supplied videos. Similarity is not an artistic score. |
-| Whisper base.en | Pretrained upstream, reused unchanged. Transcribes English speech; word timing and uncertain words need review. |
-| Basketball checkpoints | Recovered scene-specific reconstruction models, preserved with original source in `legacy/`; not a general artist or learned animation system. |
+- **2D:** strict SVG/JSON scenes, keyframes/easing, nested groups, image/SVG assets, frame sequences, stroke reveal and resvg rasterization; no system Cairo.
+- **3D:** constrained Blender primitives and authored sets, camera keys, editable `.blend`, weighted 15-bone humanoid with four IK chains and measured contact/attachment QA.
+- **Edit/sound:** local cuts, aspect-fit padding, timed captions, final audio mux, synthetic English test speech and pinned Whisper transcription.
+- **Reactions:** narrow learned intent selection, editorial guards, word-timed local image/GIF/video inserts.
+- **Evidence:** exact-frame extraction, contact sheets, export checks and reproducible examples.
 
-Small models, reference embeddings and original reaction art are bundled in the Python wheel. Large upstream models remain outside Git. Preparation tools fetch pinned revisions and verify SHA-256 checksums, about 750 MB total. Model cards declare MIT licenses; manifests record the origins. No API key or paid training service was used.
+**Not bundled:** universal text-to-art/3D generation, arbitrary mesh auto-rigging, automatic lip sync, cloth/fluid simulation or a full node compositor. The agent can plan those workflows and hand off editable source, but must not pretend unsupported tools exist.
 
-Actual new training was supervised reaction classification. Reference indexing is not fine-tuning, and no general visual model or reinforcement-learning policy was trained in this iteration. See [training/LESSONS.md](training/LESSONS.md), [training/ROADMAP.md](training/ROADMAP.md) and [the evaluation report](reports/ITERATION_02.md).
+## Verified examples, not placeholder wrappers
 
-## Reproduce the examples
+| Example | Skill proof | Source + evidence |
+|---|---|---|
+| [2D moonlight](examples/01-2d-moonlight/) | Nested character rig, painted plate, parallax, FX, music | SVG/JSON, 10 s video, QA |
+| [Semantic reactions](examples/02-semantic-reactions/) | Correct insert at a reviewed spoken beat | Voice, transcript, cue plans, videos, QA |
+| [3D exercises](examples/README.md) | Bounce, wave, walk, reach/grasp | `.blend`, scene JSON, videos, rig QA |
+| [Asset-based short](examples/04-asset-based-short/) | Cross-engine multi-shot edit | Edit JSON, music, 9 s video, QA |
 
-```bash
-.venv/bin/python scripts/render_reaction_example.py
-.venv/bin/python scripts/render_character_example.py
-.venv/bin/python scripts/render_exercise_suite.py
-.venv/bin/python scripts/render_explainer_example.py
-```
+![2D moonlight inspection sheet](examples/01-2d-moonlight/render/inspection/contact-sheet.jpg)
 
-The explainer uses the character's clean visual master to avoid duplicated burned captions. The 3D suite limits concurrency to two CPU workers. The default exercises use short, modest-resolution previews. Difficulty labels describe these exercises, not parity with the user's advanced reference films.
+![Hard 3D reach/grasp inspection sheet](examples/03-3d-hard/inspection/contact-sheet.jpg)
 
-Run the full local model checks with:
+Technical checks passed for these exports; sampled visual review is documented separately. They are original stylized exercises, **not** claims of reference-film parity. See [example notes](examples/README.md) and the [measured rebuild report](reports/REBUILD_VALIDATION.md).
 
-```bash
-ANIMATION_MODEL_CACHE=/workspace/drawing-models/clip \
-ANIMATION_ASR_CACHE=/workspace/drawing-models/whisper-base.en \
-.venv/bin/python -m pytest -q
-```
-
-Tests that need unfetched pretrained models or an absent Blender executable skip explicitly. CI does not claim to validate models it has not downloaded. See [docs/USAGE.md](docs/USAGE.md) for schema conventions and limits.
-
-## Supplied Drive material
-
-The first Drive folder's 13 files remain recorded in [its manifest](migration/drive_manifest.json). The new folder currently exposed **62 files, including 55 videos**, all downloaded and hashed. Six frames per video were decoded and indexed. [The new manifest](migration/reference_drive_manifest.json) records the files actually available. The channel catalog lists 184 intended videos; it is not evidence that all were uploaded. Alan Becker's progress file reports 10/67, and no files were visible in Remnant777's folder at inspection.
+Regenerate selectively:
 
 ```bash
-.venv/bin/python scripts/migrate_drive.py \
-  --manifest migration/reference_drive_manifest.json \
-  --output /workspace/drawing-data/new-drive
+.venv/bin/python scripts/build_showcase.py --stage author
+.venv/bin/python scripts/build_showcase.py --stage 2d
+.venv/bin/python scripts/build_showcase.py --stage 3d --level hard
 ```
 
-Original third-party videos and study boards remain outside Git. Source metadata, observations, checksums and restoration instructions are versioned. The uploaded master prompt is retained as reference text rather than activated as repository instructions. Cookies were not needed or read. [Study notes](references/STUDY_02.md) distinguish observed frames, an ASR-assisted audio excerpt, and unreviewed content.
+## Repository layout
 
-## Current limits
+```text
+AGENTS.md                 # short agent entry point
+skills/                   # canonical operating contract + task playbooks
+templates/                # validated starter scenes, brief and review forms
+projects/                 # your new editable work
+src/animation_mcp/        # MCP server, schemas, render/edit/rig engines
+examples/                 # real source, exports and inspection evidence
+scripts/                  # bootstrap, client config, showcase builder
+  research/               # optional reference scan/restoration utilities
+docs/                     # connect, usage, architecture, headless Blender
+references/               # current scan evidence + manifests
+  archive/                # historical notes, not active instructions
+training/                 # narrow experiments and evidence-linked lessons
+tests/                    # pipeline, rig, edit, audio and agent-kit regressions
+reports/                  # measured validation reports
+```
 
-The examples demonstrate working tools and bounded exercises. They do not establish general drawing intelligence, arbitrary mesh auto-rigging, expressive lip sync, feature-film character acting or the user's advanced reference quality. ASR estimates are not frame-accurate ground truth; the measured demo onset error reached about 0.28 seconds. The synthetic voice is a test voice. Full playback, humor and artistic acceptance remain viewer review; contact-sheet and metadata checks are reported separately.
+New source goes in `projects/`; regenerable output goes in `output/`. Local corpora, caches, Blender fallback tools and scratch files are ignored. The core toolkit does not require the 2.2 GB Drive mirror.
 
-The server is a trusted local stdio tool, not a hardened public render service. Render budgets are bounded. External dependencies retain their licenses; the original FSRCNN license and user project provenance are preserved. No new license is asserted over recovered or third-party materials.
+## Tests and limits
+
+```bash
+.venv/bin/pytest -q
+.venv/bin/animation-studio doctor --smoke-3d --json
+```
+
+3D tests skip when Blender is absent. Optional model integrations skip when weights have not been fetched. `doctor` distinguishes required failures from optional 3D/model availability and can prove tiny real renders.
+
+The Squidward GIF is a third-party local timing test with no asserted republication license; replace it with original/licensed art before publication. Reference scans are sampled evidence, not claims of watching every tutorial or training a general animator.
+
+[Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Changelog](CHANGELOG.md)

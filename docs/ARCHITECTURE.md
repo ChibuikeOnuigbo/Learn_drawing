@@ -1,0 +1,44 @@
+# Repository architecture
+
+## Instruction layer
+
+`AGENTS.md` is the short repository entry point. `skills/animation-director/SKILL.md` is the single detailed operating contract; `skills/index.json` routes to eight task playbooks. Client-specific files point back instead of duplicating rules.
+
+Setuptools maps root `skills/` and `templates/` into the installed package as `animation_mcp.skills` and `animation_mcp.templates`. `skills_index.py` reads only catalog-listed resources. MCP exposes the same contract through `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`.
+
+The former `src/animation_mcp/WORKFLOW.md` duplicate was removed. Update the director skill once; repository and MCP readers then receive the same guidance.
+
+## Production layer
+
+```text
+brief/shot plan
+  ├─ scene.py → render.py (resvg SVG/raster → FFmpeg → inspect)
+  ├─ blender_scene.py → trusted launcher → blender_worker / rig_worker / cinematic
+  ├─ edit.py (local clips → captions + final audio → inspect)
+  └─ speech/asr → reactions.py (reviewed intent + word cues → composite)
+                         ↓
+                 video + editable source + measured QA
+```
+
+- `server.py`: stdio MCP surface, workspace confinement and packaged guidance.
+- `cli.py`: local render/render3d/inspect plus `doctor` subcommands.
+- `doctor.py`: offline package/engine/template checks and optional tiny real renders; no downloads.
+- `scene.py`, `blender_scene.py`, `edit.py`: strict current schemas and budget guards.
+- `character.py`, `cinematic.py`, `presets.py`: original example art/staging, not general generators.
+- `blender_launcher.py`: trusted repository worker entry; scene JSON is not executable code.
+- `semantic.py`, `asr.py`: pinned pretrained retrieval/ASR with explicit preparation and checksums.
+- `reactions.py`: narrow project-trained intent classifier plus editorial/timing guards.
+
+## Evidence and source layer
+
+`examples/` contains actual source, exports and inspection evidence. `references/` separates the current measured scan from historical archives/manifests. `training/` contains narrow reproducible experiments and lessons; it is not host-model fine-tuning. `reports/REBUILD_VALIDATION.md` records a specific historical run, not automatic approval of future work.
+
+`projects/` is for new editable user work; `output/` is ignored regenerable material. Local corpora, models, Blender fallback tools and scratch boards stay in ignored directories. The repository does not require the 2.2 GB Drive mirror to run its core tools.
+
+## Maintenance rules
+
+1. Change schemas and tests together; update the affected skill and usage example.
+2. Keep one canonical operating contract; do not revive per-client copies.
+3. Add a skill to both its directory and `index.json`; package/link tests must pass.
+4. Keep historical claims scoped to their evidence and date.
+5. Run bootstrap/doctor, pytest and a relevant proof before reporting readiness.

@@ -1,0 +1,41 @@
+{
+  "video": "/home/user/Learn_drawing/examples/04-asset-based-short/video.mp4",
+  "frames": 216,
+  "fps": 24.0,
+  "duration": 9.0,
+  "width": 1280,
+  "height": 720,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 54.827851638893705,
+      "luma_mean": 74.79441767939815
+    },
+    {
+      "frame": 54,
+      "stddev": 58.15089342895797,
+      "luma_mean": 76.45506293402778
+    },
+    {
+      "frame": 108,
+      "stddev": 57.16725086685882,
+      "luma_mean": 67.05754123263888
+    },
+    {
+      "frame": 162,
+      "stddev": 59.724714397526505,
+      "luma_mean": 69.50456127025463
+    },
+    {
+      "frame": 215,
+      "stddev": 54.002193070308046,
+      "luma_mean": 60.20831633391204
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/04-asset-based-short/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "source_audio": "Source-clip audio is intentionally dropped; provide an audio track to include narration."
+}

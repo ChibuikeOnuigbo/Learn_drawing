@@ -1,15 +1,10 @@
 {
   "mcpServers": {
     "animation-studio": {
-      "command": "/workspace/Learn_drawing/.venv/bin/python",
-      "args": [
-        "-m",
-        "animation_mcp.server"
-      ],
+      "command": "python",
+      "args": ["-m", "animation_mcp.server"],
       "env": {
-        "ANIMATION_WORKSPACE": "/workspace/Learn_drawing",
-        "ANIMATION_MODEL_CACHE": "/workspace/drawing-models/clip",
-        "ANIMATION_ASR_CACHE": "/workspace/drawing-models/whisper-base.en"
+        "ANIMATION_WORKSPACE": "."
       }
     }
   }

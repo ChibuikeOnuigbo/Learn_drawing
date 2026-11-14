@@ -1,0 +1,41 @@
+{
+  "video": "/home/user/Learn_drawing/examples/03-3d-easy/video.mp4",
+  "frames": 96,
+  "fps": 24.0,
+  "duration": 4.0,
+  "width": 800,
+  "height": 450,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 58.06175825997853,
+      "luma_mean": 60.57429907407408
+    },
+    {
+      "frame": 24,
+      "stddev": 59.19541640731441,
+      "luma_mean": 63.16409537037037
+    },
+    {
+      "frame": 48,
+      "stddev": 59.32011582507027,
+      "luma_mean": 63.77001574074074
+    },
+    {
+      "frame": 72,
+      "stddev": 59.027368709671,
+      "luma_mean": 63.964362037037034
+    },
+    {
+      "frame": 95,
+      "stddev": 58.64244293233792,
+      "luma_mean": 63.811421296296295
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/03-3d-easy/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "blend": "/home/user/Learn_drawing/examples/03-3d-easy/scene.blend"
+}

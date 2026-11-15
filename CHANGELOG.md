@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.7.0 — deeper Drive studies: solved cloth, real blink, measured alignment, aura + licensed strokes
+
+### Verified
+- Curtain rebuilt as a 2D position-based distance-constraint solve at 17 Hz, exported both as a 60 fps cubic-interpolated comparison (240f) and a true 17 fps file (68f); zero inverted render triangles, solver strain/projection/fallback reported in `mesh-qa.json`.
+- Eye study now ships a procedural blink from traced apertures; `max_pixel_diff_outside_eye_boxes = 0`; upper lid travels farther than lower; lid skin labelled as an estimate.
+- Flashlight plates rigidly aligned from 8 hand-picked landmarks; `alignment-qa.json` reports RMSE before/after (improved) and per-landmark residuals.
+- New examples 08 (aura/rain/breath, 192f) and 09 (CC0 OpenSketch stroke trace, 144f) rendered and frame-inspected; technical QA pass.
+- New `tests/test_cloth_eye.py`; example regression extended to all five studies.
+
+### Added
+- `animation_mcp.cloth`: coloured Gauss-Seidel PBD distance constraints, rail/tieback pins, centre-seam collision, monotonic projection, slack-driven fold shading.
+- `animation_mcp.eye_rig`: hand-traced aperture rasterisation, per-column lid closure, lashes on moving lids, smooth skin-estimate underlay, outside-box identity.
+- `scripts/build_drive_recreations.py --only aura|strokes`; examples 08–09 with provenance and QA.
+- `assets/open-sketch/`: one CC0 OpenSketch SVG + licence note (Gryaditskaya et al.).
+
+### Changed
+- Curtain `control_rate_hz` label now matches the actual 17 Hz solve; first-pass renders preserved under `previous-0.6/` instead of overwritten.
+- Docs, provenance and validation report updated to describe solved cloth, blink scope, alignment measurement and the new studies.
+
+### Limits
+- Cloth is 2D PBD, not 3D XPBD; horizontal gathering follows hung span and fold risk falls back to a reported analytic blend. Blink lid skin is estimated, not recovered. Alignment is rigid landmark RMSE, not a structural-deviation certificate. Aura rain is evaluated continuously (not 8 Hz sampled) and the clip is not a seamless loop. OpenSketch example is product linework, not character animation.
+
 ## 0.6.0 — Drive-informed recreations replace generic starters
 
 ### Verified

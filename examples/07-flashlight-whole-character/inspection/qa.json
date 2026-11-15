@@ -11,28 +11,28 @@
   "samples": [
     {
       "frame": 0,
-      "stddev": 44.59118452991712,
-      "luma_mean": 28.576624228395062
+      "stddev": 44.47074236001719,
+      "luma_mean": 28.5550591563786
     },
     {
       "frame": 63,
-      "stddev": 39.52947542292205,
-      "luma_mean": 26.483356481481483
+      "stddev": 39.31549737464118,
+      "luma_mean": 26.510675797325103
     },
     {
       "frame": 126,
-      "stddev": 33.19940447464058,
-      "luma_mean": 23.933114068930042
+      "stddev": 33.006853795645235,
+      "luma_mean": 23.90535686728395
     },
     {
       "frame": 189,
-      "stddev": 39.38434639100999,
-      "luma_mean": 26.400306069958848
+      "stddev": 39.1684429948746,
+      "luma_mean": 26.438460648148148
     },
     {
       "frame": 251,
-      "stddev": 33.19285084451361,
-      "luma_mean": 23.95461033950617
+      "stddev": 33.005074649524495,
+      "luma_mean": 23.924851466049383
     }
   ],
   "contact_sheet": "/home/user/Learn_drawing/examples/07-flashlight-whole-character/inspection/contact-sheet.jpg",

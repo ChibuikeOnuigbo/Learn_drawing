@@ -1,0 +1,40 @@
+{
+  "video": "/home/user/Learn_drawing/examples/09-opensketch-stroke-trace/video.mp4",
+  "frames": 144,
+  "fps": 24.0,
+  "duration": 6.0,
+  "width": 690,
+  "height": 690,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 6.2729213973012525,
+      "luma_mean": 242.7774431141917
+    },
+    {
+      "frame": 36,
+      "stddev": 28.885295466657276,
+      "luma_mean": 238.9943373240916
+    },
+    {
+      "frame": 72,
+      "stddev": 40.01204790990246,
+      "luma_mean": 235.21871945669676
+    },
+    {
+      "frame": 108,
+      "stddev": 35.0741003633106,
+      "luma_mean": 235.7627921305048
+    },
+    {
+      "frame": 143,
+      "stddev": 35.178497945141,
+      "luma_mean": 235.6845046558846
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/09-opensketch-stroke-trace/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

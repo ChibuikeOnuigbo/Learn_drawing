@@ -3,7 +3,8 @@
     "cols": 13,
     "rows": 17
   },
-  "pins": "outer stop + rail; inner gliders meet center",
+  "solver": "position-based distance constraints, coloured Gauss-Seidel",
+  "pins": "rail gliders + releasable tieback; centre-seam collision",
   "timing": {
     "hold": [
       0,
@@ -26,5 +27,5 @@
       4
     ]
   },
-  "texture": "single stable procedural atlas per panel; no temporal photo blending"
+  "texture": "single stable procedural atlas per panel with baked irregular fold shading; no temporal photo blending"
 }

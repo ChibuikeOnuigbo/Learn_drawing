@@ -50,27 +50,43 @@ Assembles the 2D moonlight render and hard/simple 3D renders into a 9-second 128
 
 ## 05 — Curtain mesh recreation (`05-curtain-mesh/`)
 
-**Skill:** localized distortion, anchored secondary motion, stable material coordinates.
+**Skill:** constraint-solved secondary motion, anchored deformation, stable material coordinates.
 
-Restages the pinned-drape/wind-wave lesson from the research Drive with an original generated empty-window plate and one procedural fabric atlas per panel. A fixed 13×17 triangle mesh keeps the same topology every frame; outer stops and rail are pinned, inner gliders meet at center, the tieback releases, and the hem lags then settles. `mesh-qa.json` records fold/compression checks; `rig.json` records timing and pins. Render: `video.mp4`, 1280×720, 24 fps, 96 frames / 4.0 s.
+Restages the pinned-drape/wind-wave lesson with an original generated empty-window plate and one procedural fabric atlas per panel (baked irregular fold shading). Motion comes from a 2D position-based distance-constraint solve (`animation_mcp.cloth`) at **17 Hz**, cubic-interpolated to a **60 fps** comparison (`video.mp4`, 240 frames) plus a **true 17 fps** export (`video-17fps.mp4`, 68 frames). Rail gliders and outer stops are pinned, the tieback releases, panels collide at the centre seam, and the hem lags then settles. `mesh-qa.json` records fold checks, solver strain, projection magnitude and fallback count; `rig.json` records timing/pins.
 
-**Measured:** technical pass; zero inverted triangles in sampled frames. **Review required:** fold spacing is still regular; this is a 2D warp, not cloth physics or recovered source fabric.
+**Measured:** technical pass on both exports; zero inverted render triangles. **Scope:** not 3D cloth. Horizontal gathering follows the hung span (out-of-plane buckling is shading, not solved depth); a reported fallback blend to an analytic safe pose guards fold risk. `previous-0.6/` preserves the first analytic-warp pass.
 
 ## 06 — Eye/face performance (`06-eye-face-performance/`)
 
-**Skill:** traced apertures, original-pixel iris gaze, protected face, hair follow-through.
+**Skill:** traced apertures, original-pixel iris gaze, procedural blink, protected face, hair follow-through.
 
-An original generated portrait is decomposed into traced eye apertures and a colour-masked iris layer. Gaze shifts the original iris over an inpainted sclera estimate; hair tips lag with protected roots; a local ellipse warp raises the mouth corners. `rig.json` stores the traced controls; `eye-qa.json` records scope. Render: `video.mp4`, 720×720, 24 fps, 144 frames / 6.0 s.
+An original generated portrait is decomposed into traced eye apertures and a colour-masked iris layer. Gaze shifts the original iris over an inpainted sclera estimate; hair tips lag with protected roots; a local ellipse warp raises the mouth corners. A **procedural blink** (`animation_mcp.eye_rig`) closes traced apertures per column — upper lid travels farther, lashes ride the lid, and revealed lid skin is a smooth estimate sampled from the surrounding face. Pixels outside the eye neighbourhoods are asserted bit-identical. Render: `video.mp4`, 720×720, 24 fps, 144 frames / 6.0 s.
 
-**Scope:** no full blink. A squint prototype duplicated brow pixels and was removed; hidden closed-lid skin is not claimed. The inpainted sclera under the iris is an estimate.
+**Measured:** `max_pixel_diff_outside_eye_boxes = 0`; aperture area decreases monotonically with closure. **Scope:** lid skin is an estimate, not recovered hidden artwork; no generated closed-lid plate. Earlier generated-underlay and squint prototypes were abandoned and are documented in PROVENANCE. `previous-0.6/` preserves the no-blink pass.
 
 ## 07 — Whole-character flashlight (`07-flashlight-whole-character/`)
 
-**Skill:** two complete same-canvas layers, one pixelwise mask, body-first reveal timing.
+**Skill:** two complete same-canvas layers, one pixelwise mask, body-first reveal timing, measured plate alignment.
 
-Two original generated matched detectives are composited with a single feathered circle: outside the beam the base character stays visible at reduced gain; inside it the alternate character's hair, face, clothing and hands appear together. `rig.json` stores the cubic-Hermite path; `beam-qa.json` measures face alpha before/after the intended reveal. Render: `video.mp4`, 720×720, 24 fps, 252 frames / 10.5 s.
+Two original generated matched detectives are composited with a single feathered circle: outside the beam the base stays visible at reduced gain; inside it the alternate's hair, face, clothing and hands appear together. B is first rigidly aligned to A via a similarity transform from 8 hand-picked landmarks; `alignment-qa.json` reports per-landmark residuals and RMSE before/after. `beam-qa.json` measures face alpha before/after the intended reveal. Render: `video.mp4`, 720×720, 24 fps, 252 frames / 10.5 s.
 
-**Measured:** technical pass; max face alpha before 4.5 s = 0; first mean face alpha > 0.5 at 4.667 s; no face gate. **Review required:** generated plate alignment is approximate; inspect fingers, strawberry, neckline and shoulder at 100%.
+**Measured:** technical pass; max face alpha before 4.5 s = 0; first mean face alpha > 0.5 at 4.667 s; no face gate; alignment RMSE reduced vs. unaligned. **Review required:** landmark alignment is not a structural certificate — hair silhouette, strawberry and hands still differ by design; inspect at 100%. `previous-0.6/` preserves the unaligned pass.
+
+## 08 — Aura / rain / breath (`08-aura-rain-breath/`)
+
+**Skill:** silhouette-derived effects behind subject, depth-banded rain, face protection, breath timing.
+
+An original generated hooded figure on chroma green is keyed/despilled and placed over a procedural dark alley. A red aura is derived from the dilated silhouette at three blur scales and screened **behind** the subject; three rain depth bands fall at different speeds/lengths with reduced coverage over the protected face; a periodic breath puff originates near the mouth, drifts and fades; tiny masked warps suggest breathing/cloth sway. Render: `video.mp4`, 576×864, 24 fps, 192 frames / 8.0 s.
+
+**Scope:** graphic effects, not fluid simulation. Rain paths are evaluated continuously at 24 fps here (the Drive playbook sampled at 8 Hz); this difference is labelled in `aura-qa.json`. The clip is a weather ramp, **not** a seamless loop.
+
+## 09 — OpenSketch stroke trace (`09-opensketch-stroke-trace/`)
+
+**Skill:** licensed human-stroke tracing, geometry replay, labelled derived variant.
+
+Replays one **CC0** OpenSketch human-drawn product-design sketch (Gryaditskaya et al.) stroke-by-stroke in SVG path order, then shows a red geometric twist variant explicitly labelled "not original". Render: `video.mp4`, 690×690, 24 fps, 144 frames / 6.0 s. Source SVG bundled under `assets/open-sketch/` with licence note.
+
+**Scope:** product-design linework, not character/face animation; path order is stored geometry, not recorded stylus timing. No model weights from the prior Drive stroke-MLP experiment are used (that experiment lost to a linear baseline on unseen houses).
 
 ## Regeneration
 
@@ -81,6 +97,8 @@ PATH="/path/to/ffmpeg/bin:$PATH" python scripts/build_drive_recreations.py
 python scripts/build_drive_recreations.py --only curtain
 python scripts/build_drive_recreations.py --only eye
 python scripts/build_drive_recreations.py --only flashlight
+python scripts/build_drive_recreations.py --only aura
+python scripts/build_drive_recreations.py --only strokes
 ```
 
-Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Blender is required for 3D. The reaction stage re-renders from stored `voice.wav` and `narration.json`; re-transcribing requires the pinned Whisper model. `build_drive_recreations.py` requires FFmpeg/ffprobe and `pip install -e '.[research]'` (OpenCV). It uses the bundled generated plates; private Drive references are study-only and are not required. See `reports/DRIVE_RECREATION_VALIDATION.md` and `references/DRIVE_RESEARCH_DIGEST.md`.
+Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Blender is required for 3D. The reaction stage re-renders from stored `voice.wav` and `narration.json`; re-transcribing requires the pinned Whisper model. `build_drive_recreations.py` requires FFmpeg/ffprobe and `pip install -e '.[research]'` (OpenCV). It uses the bundled generated plates and the CC0 OpenSketch SVG; private Drive references are study-only and are not required. See `reports/DRIVE_RECREATION_VALIDATION.md` and `references/DRIVE_RESEARCH_DIGEST.md`.

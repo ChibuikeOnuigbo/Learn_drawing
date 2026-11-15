@@ -99,7 +99,7 @@ Examples 05–07 restage techniques from the user's research Drive using origina
 ```bash
 pip install -e '.[research]'
 PATH="/path/to/ffmpeg/bin:$PATH" python scripts/build_drive_recreations.py
-python scripts/build_drive_recreations.py --only curtain --only eye --only flashlight
+python scripts/build_drive_recreations.py --only curtain --only eye --only flashlight --only aura --only strokes
 ```
 
 Read `references/DRIVE_RESEARCH_DIGEST.md` for the source IDs/lessons and `reports/DRIVE_RECREATION_VALIDATION.md` for measured checks. The builder does not need the private Drive videos at render time; they were study-only. Inspect `mesh-qa.json`, `eye-qa.json` and `beam-qa.json` plus actual frames before accepting a result.

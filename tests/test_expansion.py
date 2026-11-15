@@ -135,17 +135,33 @@ def test_drive_recreation_examples_have_passing_qa_and_honest_scope():
     curtain = ROOT / "examples/05-curtain-mesh"
     qa = json.loads((curtain / "inspection/qa.json").read_text())
     mesh = json.loads((curtain / "mesh-qa.json").read_text())
-    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (96, 1280, 720)
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"], qa["fps"]) == (240, 1280, 720, 60)
     assert mesh["max_inverted"] == 0 and mesh["min_area_ratio"] > 0
+    assert mesh["control_rate_hz"] == 17 and mesh["true_control_frames"] == 68
+    qa17 = json.loads((curtain / "inspection-17fps/qa.json").read_text())
+    assert qa17["technical_pass"] and (qa17["frames"], qa17["fps"]) == (68, 17)
     eye = ROOT / "examples/06-eye-face-performance"
     qa = json.loads((eye / "inspection/qa.json").read_text())
     eye_qa = json.loads((eye / "eye-qa.json").read_text())
     assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (144, 720, 720)
-    assert "no blink warp" in eye_qa["blink_scope"]
+    assert eye_qa["max_pixel_diff_outside_eye_boxes"] == 0
+    assert "procedural lid blink" in eye_qa["blink_scope"]
     flash = ROOT / "examples/07-flashlight-whole-character"
     qa = json.loads((flash / "inspection/qa.json").read_text())
     beam = json.loads((flash / "beam-qa.json").read_text())
+    align = json.loads((flash / "alignment-qa.json").read_text())
     assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (252, 720, 720)
     assert beam["max_face_alpha_before_4_5"] == 0
     assert beam["first_face_alpha_gt_0_5"] >= 4.5
     assert "no face gate" in beam["mask"]
+    assert align["rmse_px_after"] < align["rmse_px_before"]
+    aura = ROOT / "examples/08-aura-rain-breath"
+    qa = json.loads((aura / "inspection/qa.json").read_text())
+    aura_qa = json.loads((aura / "aura-qa.json").read_text())
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (192, 576, 864)
+    assert aura_qa["face_protected"] and aura_qa["rain_bands"] == 3
+    strokes = ROOT / "examples/09-opensketch-stroke-trace"
+    qa = json.loads((strokes / "inspection/qa.json").read_text())
+    stroke_qa = json.loads((strokes / "stroke-qa.json").read_text())
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (144, 690, 690)
+    assert stroke_qa["strokes"] > 0 and "CC0" in stroke_qa["source"]

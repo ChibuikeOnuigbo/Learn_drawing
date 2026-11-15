@@ -1,0 +1,40 @@
+{
+  "video": "/home/user/Learn_drawing/examples/08-aura-rain-breath/video.mp4",
+  "frames": 192,
+  "fps": 24.0,
+  "duration": 8.0,
+  "width": 576,
+  "height": 864,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 16.225527677866378,
+      "luma_mean": 25.234093685699587
+    },
+    {
+      "frame": 48,
+      "stddev": 15.483309081934616,
+      "luma_mean": 24.780481744041495
+    },
+    {
+      "frame": 96,
+      "stddev": 15.115050054401589,
+      "luma_mean": 24.538138851380314
+    },
+    {
+      "frame": 144,
+      "stddev": 15.34327310755246,
+      "luma_mean": 24.814928680126886
+    },
+    {
+      "frame": 191,
+      "stddev": 16.49628280623313,
+      "luma_mean": 25.42613959083505
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/08-aura-rain-breath/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

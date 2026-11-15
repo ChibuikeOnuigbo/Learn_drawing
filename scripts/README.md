@@ -8,12 +8,12 @@ Run from the repository root with the bootstrap interpreter (`.venv/bin/python`,
 | `bootstrap.sh` | POSIX wrapper; `setup.sh` remains a compatibility alias |
 | `configure_client.py` | Emit an absolute-path stdio MCP client entry for this interpreter |
 | `build_showcase.py` | Regenerate verified examples by stage; `--stage 3d --level hard` selects one |
-| `build_drive_recreations.py` | Regenerate Drive-informed examples 05–07; repeat `--only curtain`, `--only eye` or `--only flashlight` to select |
+| `build_drive_recreations.py` | Regenerate Drive-informed examples 05–09; repeat `--only curtain|eye|flashlight|aura|strokes` to select |
 | `prepare_models.py` | Explicitly download/verify optional CLIP + Whisper; large network operation |
 
 Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Run `author` before `2d` when rig frames are absent. `edit` requires the source renders. Long Blender jobs should use the host's background-process mechanism.
 
-`build_drive_recreations.py` rebuilds the curtain mesh, eye/face and whole-character flashlight studies from the bundled generated plates. It requires FFmpeg/ffprobe and the research extra (`opencv-python-headless`). Drive reference videos are study-only and are not needed at render time.
+`build_drive_recreations.py` rebuilds the curtain mesh (17 Hz PBD → 60 fps + true 17 fps), eye/face with procedural blink, aligned whole-character flashlight, aura/rain/breath and a CC0 OpenSketch stroke trace from bundled assets. It requires FFmpeg/ffprobe and the research extra (`opencv-python-headless`). Drive reference videos are study-only and are not needed at render time.
 
 ## Optional research utilities
 

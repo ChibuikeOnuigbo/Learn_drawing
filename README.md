@@ -91,7 +91,7 @@ Regenerate selectively:
 .venv/bin/python scripts/build_showcase.py --stage author
 .venv/bin/python scripts/build_showcase.py --stage 2d
 .venv/bin/python scripts/build_showcase.py --stage 3d --level hard
-.venv/bin/python scripts/build_drive_recreations.py       # examples 05–07
+.venv/bin/python scripts/build_drive_recreations.py       # examples 05–09
 .venv/bin/python scripts/build_drive_recreations.py --only curtain
 ```
 

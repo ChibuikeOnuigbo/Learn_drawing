@@ -2,7 +2,7 @@
 
 Source folder: <https://drive.google.com/drive/folders/1prGI_23hOqgjXHfZd_nc0BEf3DGfIVoI>
 
-This digest records what informed the 0.6.0 recreation pass. It is not a copy of the private Drive library and does not assert redistribution rights. File IDs are kept so the user can reopen the exact source.
+This digest records what informed the 0.6.0 recreation pass and the 0.7.0 deepening. It is not a copy of the private Drive library and does not assert redistribution rights. File IDs are kept so the user can reopen the exact source.
 
 ## Curtains / room
 
@@ -15,7 +15,7 @@ This digest records what informed the 0.6.0 recreation pass. It is not a copy of
 | `REFERENCE_02_WIND_WAVE_720p.mp4` | `1lz0t3X6yXBjIQJqchr1saRCff30vGiui` | Decoded 240 frames @60 fps; similar trajectory with stronger wave. |
 | `RECOVERED_V7_13s_60fps_720p.mp4` | `1OJSIO1CKpTrVVMRmFagRDa5rYG6yeT_h` | Decoded 780 frames; rejected ghosting/appearance-mixing evidence. |
 
-Implemented analogy: `examples/05-curtain-mesh/` uses a generated empty-window plate and one procedural fabric atlas per panel, fixed 13×17 topology, fold checks, tieback release and damped settle. It does not reuse the room/curtain pixels.
+Implemented analogy: `examples/05-curtain-mesh/` uses a generated empty-window plate and one procedural fabric atlas per panel. 0.7.0 replaces the analytic warp with a 2D PBD distance-constraint solve at 17 Hz, cubic-interpolated to 60 fps (240f) plus a true 17 fps export (68f), with reported strain/projection/fallback. It does not reuse the room/curtain pixels.
 
 ## Eyes, hair, distortion
 
@@ -27,7 +27,7 @@ Implemented analogy: `examples/05-curtain-mesh/` uses a generated empty-window p
 | `LEARNED_GTA_LOADING_MEME.md` | `1O8Y6fZSdgknLZnJJgSyZbpeBzNhffTXL` | Diagnostic masks before rendering; pinned borders; heavy liquify and painted eyelids were rejected. |
 | `PROJECT_HISTORY.md` | `13PUvQULNTjapkWMyJPjtepRrgSs_MdUc` | Preserve identity; do not sell generated alternatives as source; keep editable layers. |
 
-Implemented analogy: `examples/06-eye-face-performance/` traces apertures/iris on an original generated portrait, moves original iris pixels for gaze, adds anchored hair lag and a local smile warp. A full blink was deliberately not shipped.
+Implemented analogy: `examples/06-eye-face-performance/` traces apertures/iris on an original generated portrait, moves original iris pixels for gaze, adds anchored hair lag and a local smile warp. 0.7.0 adds a procedural per-column blink (upper lid travels farther, lashes ride the lid, lid skin is a labelled estimate) with outside-eye-box pixels asserted bit-identical.
 
 ## Flashlight / whole-character reveal
 
@@ -39,7 +39,7 @@ Implemented analogy: `examples/06-eye-face-performance/` traces apertures/iris o
 | `01_LIGHT_FULL_IMAGE.png` | `13Kbr7HTJ5_SNL42_6OXC2IwSLawOaUp1` | Base complete layer study. |
 | `02_L_FULL_IMAGE_AI.png` | `1GzJUr0TszFTyt78_oi4IJuSvhPQId5Ew` | Alternate complete layer study; generated hand/pose compromises. |
 
-Implemented analogy: `examples/07-flashlight-whole-character/` uses two original generated matched detectives and the same smoothstep circle over every pixel. QA measures face alpha before/after the intended reveal.
+Implemented analogy: `examples/07-flashlight-whole-character/` uses two original generated matched detectives and the same smoothstep circle over every pixel. 0.7.0 rigidly aligns B to A from 8 hand-picked landmarks and reports RMSE before/after in `alignment-qa.json`. QA measures face alpha before/after the intended reveal.
 
 ## General guardrails
 
@@ -49,6 +49,25 @@ Implemented analogy: `examples/07-flashlight-whole-character/` uses two original
 | `ANIME_AURA_MOTION_RESEARCH_PLAYBOOK.md` | `14IjIsllAStFJ6SUhTlHdfm28gNL5OXah` | Silhouette-derived effects behind subject; independent phases; protect face; premultiplied alpha; review whole contour. |
 | `Composition_Motion_Research_Report.md` | `1uHuRtkkZ3sJF2TX4aVXydTvWzV3YCtK9` | Tiny RL/PCA experiments are not drawing models; do not overclaim learned capability. |
 | `Motion_RL_Followup_README.md` | `1JwhWzt7vvFmzz9p-_at-dUjHnyTUCZbZ` | A learned scalar policy lost to a hold baseline; metrics must be compared to simple baselines. |
+
+
+## Aura / rain / breath (0.7.0)
+
+| File | ID | Lesson used |
+|---|---|---|
+| `ANIME_AURA_MOTION_RESEARCH_PLAYBOOK.md` | `14IjIsllAStFJ6SUhTlHdfm28gNL5OXah` | Full text read: silhouette-derived aura behind subject (dilate + multi-scale blur, subtract subject), depth-banded rain with independent speeds, face protection, breath puff ease/drift/fade, premultiplied compositing, not a seamless loop unless tested. |
+
+Implemented analogy: `examples/08-aura-rain-breath/` keys an original generated chroma figure, screens a red silhouette aura behind it, falls three rain bands, protects the face from warp/aura, and emits a periodic breath puff. Rain is evaluated continuously at 24 fps here (playbook used 8 Hz path samples); labelled in QA.
+
+## Licensed human strokes (0.7.0)
+
+| File | ID | Lesson used |
+|---|---|---|
+| `OpenSketch_Human_Design_Strokes_CC0.zip` | `1NfMF6iJJwi7gLMRxFo3i1fWl78Abot5H` | 357 human-drawn product-design SVGs, CC0 (Gryaditskaya et al.). Safe to bundle a derived trace with attribution. |
+| `OpenSketch_Stroke_Experiment_Research.zip` | `13640cJ04nqh90qFIJQjnzsct3bIn-fpx` | Prior supervised MLP stroke continuation; held-out by designer/object. On unseen houses the selected blend lost to a linear baseline — a caution against overclaiming learned drawing. |
+| `01_VIDEO_CHANNELS_AND_SITES.md` | `1HqS9lDCjKOr3UAbGNDIOw8XPltV8qTdF` | Confirms OpenSketch project page says CC0; references are research leads, not blanket training permission. |
+
+Implemented analogy: `examples/09-opensketch-stroke-trace/` replays one CC0 house sketch stroke-by-stroke, then shows a labelled derived twist variant. No model weights from the failed experiment are used.
 
 ## Not used as training data
 

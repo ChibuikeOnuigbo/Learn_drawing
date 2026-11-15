@@ -1,0 +1,22 @@
+{
+  "figure": "generated chroma-key plate, green-screen keyed + despill",
+  "aura": "dilated alpha, 3 Gaussian scales, screen behind subject",
+  "rain": {
+    "bands": [
+      {
+        "n": 60,
+        "speed": 260
+      },
+      {
+        "n": 35,
+        "speed": 420
+      },
+      {
+        "n": 14,
+        "speed": 640
+      }
+    ]
+  },
+  "breath_period_s": 3.8,
+  "cloth_sway_period_s": 5.1
+}

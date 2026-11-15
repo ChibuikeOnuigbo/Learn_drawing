@@ -1,0 +1,153 @@
+{
+  "fps": 24,
+  "frames": 96,
+  "control_rate_hz": 17,
+  "max_inverted": 0,
+  "min_area_ratio": 0.22677188930696235,
+  "samples": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.23307576380569023,
+        "max_area_ratio": 0.4599339419367025,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.2477329507947963,
+        "max_area_ratio": 0.45994875851486244,
+        "max_vertex_displacement": 1032.3103551000975
+      }
+    },
+    {
+      "frame": 12,
+      "time": 0.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.2371686798418977,
+        "max_area_ratio": 0.4682585668966579,
+        "max_vertex_displacement": 391.61187523599864
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.24485384886077766,
+        "max_area_ratio": 0.4406192531676489,
+        "max_vertex_displacement": 1032.1421978351882
+      }
+    },
+    {
+      "frame": 24,
+      "time": 1.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.41178120923602235,
+        "max_area_ratio": 0.476049854401832,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.41945988386825733,
+        "max_area_ratio": 0.4729122250338641,
+        "max_vertex_displacement": 956.5824449466006
+      }
+    },
+    {
+      "frame": 36,
+      "time": 1.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.5716322038910602,
+        "max_area_ratio": 0.6016681725803632,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.571343824422054,
+        "max_area_ratio": 0.6023429786808016,
+        "max_vertex_displacement": 891.9256578165748
+      }
+    },
+    {
+      "frame": 48,
+      "time": 2.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.723668339699678,
+        "max_area_ratio": 0.7474512618748083,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.7196761551426902,
+        "max_area_ratio": 0.7440313871564637,
+        "max_vertex_displacement": 827.5817652829492
+      }
+    },
+    {
+      "frame": 60,
+      "time": 2.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8478438448922148,
+        "max_area_ratio": 0.8660253903805776,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8496497798027225,
+        "max_area_ratio": 0.8672779265201871,
+        "max_vertex_displacement": 776.3908662197412
+      }
+    },
+    {
+      "frame": 72,
+      "time": 3.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8521066357485915,
+        "max_area_ratio": 0.9258124083455846,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.845880817428212,
+        "max_area_ratio": 0.9321782491690156,
+        "max_vertex_displacement": 763.2168761236874
+      }
+    },
+    {
+      "frame": 84,
+      "time": 3.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8214055071511137,
+        "max_area_ratio": 0.9571196465875897,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.826672835846427,
+        "max_area_ratio": 0.9516396343725702,
+        "max_vertex_displacement": 763.2168761236874
+      }
+    }
+  ]
+}

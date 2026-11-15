@@ -87,7 +87,8 @@ def test_mcp_production_tools_and_prompt(tmp_path):
             async with ClientSession(read,write) as session:
                 await session.initialize()
                 names={t.name for t in (await session.list_tools()).tools}
-                assert {'synthesize_narration','select_reaction','render_reaction_video','transcribe_voiceover','search_reference_library','render_3d_exercise'}<=names
+                assert {'synthesize_narration','select_reaction','render_reaction_video','transcribe_voiceover','search_reference_library','render_3d_exercise',
+                        'plan_shots','color_palette','timing_sheet','create_project'}<=names
                 result=await session.call_tool('select_reaction',{'text':'No brains at all.'})
                 assert not result.isError
                 payload=result.structuredContent or json.loads(result.content[0].text)
@@ -114,6 +115,21 @@ def test_mcp_production_tools_and_prompt(tmp_path):
                 assert 'rigs' in data['properties']
                 catalog=await session.call_tool('get_model_catalog',{})
                 assert not catalog.isError
+                shots=await session.call_tool('plan_shots',{'beats':[{'title':'A','weight':1},{'title':'B','weight':2}],'fps':24,'duration_seconds':1})
+                assert not shots.isError
+                payload=shots.structuredContent or json.loads(shots.content[0].text)
+                assert payload['frames']==24 and payload['shots'][0]['end_frame']==payload['shots'][1]['start_frame']
+                palette=await session.call_tool('color_palette',{'base':'#4f8cff','harmony':'triadic'})
+                assert not palette.isError
+                sheet=await session.call_tool('timing_sheet',{'frames':12,'fps':24,'exposure_step':2})
+                assert not sheet.isError
+                payload=sheet.structuredContent or json.loads(sheet.content[0].text)
+                assert payload['drawing_count']==6
+                project=await session.call_tool('create_project',{'name':'mcp-proof','brief':'A tiny proof','width':320,'height':180})
+                assert not project.isError
+                payload=project.structuredContent or json.loads(project.content[0].text)
+                assert (tmp_path/'projects/mcp-proof/scenes/scene-2d.json').is_file()
+                assert payload['shot_plan']['frames']==168
                 prompt=await session.get_prompt('produce_video',arguments={'brief':'Make a timed reaction clip.'})
                 assert prompt.messages
     asyncio.run(run())

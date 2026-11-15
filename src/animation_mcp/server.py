@@ -38,7 +38,8 @@ def capabilities() -> dict:
             "features":["editable SVG", "2D keyframes", "stroke reveal", "layered image parallax",
                         "nested vector character rig", "voiceover mux", "clip assembly", "timed captions", "frame inspection",
                         "primitive and art-directed 3D scenes", "Bezier stroke sampling", "offline speech with word events",
-                        "learned reaction intent", "timed local meme/GIF compositing", "weighted humanoid rig and IK"],
+                        "learned reaction intent", "timed local meme/GIF compositing", "weighted humanoid rig and IK",
+                        "frame-accurate shot planning", "role-based palette/contrast", "exposure/dope sheets", "project scaffolding"],
             "limits":["agent authors scene; no universal text-to-art model bundled",
                       "rigging is a procedural humanoid preset, not universal auto-rigging",
                       "no automatic lip sync or hosted AI image provider bundled",
@@ -210,6 +211,52 @@ def search_reference_library(query: str, limit: int = 5) -> dict:
     """Find supplied reference frames by text using pretrained CLIP; not a quality score."""
     from .semantic import search_references
     return search_references(query,limit)
+
+
+@mcp.tool()
+def plan_shots(beats: list[dict], fps: int = 24, duration_seconds: float | None = None) -> dict:
+    """Allocate contiguous half-open shot intervals on an exact frame grid.
+
+    Each beat: title, optional visual_brief/narration/acceptance, and seconds OR
+    weight. Without duration_seconds every beat needs seconds. With a total,
+    hints become proportional. This is planning, not forced audio alignment.
+    """
+    from .production import plan_shots as plan
+    return plan(beats, fps, duration_seconds)
+
+
+@mcp.tool()
+def color_palette(base: str, harmony: str = 'complementary', dark: bool = True) -> dict:
+    """Derive role-based colors and measured contrast from a #rrggbb base.
+
+    Harmonies: complementary, analogous, triadic, split_complementary.
+    Deterministic color math; not an artistic quality score.
+    """
+    from .production import color_palette as palette
+    return palette(base, harmony, dark)
+
+
+@mcp.tool()
+def timing_sheet(frames: int, fps: int = 24, keys: list[dict] | None = None,
+                 exposure_step: int = 2) -> dict:
+    """Build an exposure/dope sheet with drawing numbers, key labels and intervals.
+
+    keys are ordered {frame,label}; exposure_step 1/2/3/4 = ones/twos/threes/fours.
+    Schedules drawings only; it does not draw inbetweens or accept spacing.
+    """
+    from .production import timing_sheet as sheet
+    return sheet(frames, fps, keys, exposure_step)
+
+
+@mcp.tool()
+def create_project(name: str, brief: str = '', fps: int = 24, width: int = 1280,
+                   height: int = 720, engine: str = '2d') -> dict:
+    """Scaffold projects/<slug>/ with brief, shot plan, starter scene and review.
+
+    Refuses existing projects. Creates editable source only, not a finished film.
+    """
+    from .scaffold import scaffold_project
+    return scaffold_project(ROOT, name, brief, fps, width, height, engine)
 
 
 @mcp.tool()

@@ -1,0 +1,62 @@
+{
+  "fps": 24,
+  "frames": 96,
+  "duration_seconds": 4.0,
+  "interval_convention": "[start_frame,end_frame)",
+  "alignment": "explicit beat durations rounded to frames; not audio alignment",
+  "shots": [
+    {
+      "id": "shot-01",
+      "title": "PLAN",
+      "visual_brief": "Readable hold for PLAN",
+      "narration": "",
+      "acceptance": "",
+      "start_frame": 0,
+      "end_frame": 32,
+      "frames": 32,
+      "start_seconds": 0.0,
+      "end_seconds": 1.3333333333333333,
+      "review_frames": [
+        0,
+        16,
+        31
+      ]
+    },
+    {
+      "id": "shot-02",
+      "title": "BUILD",
+      "visual_brief": "Readable hold for BUILD",
+      "narration": "",
+      "acceptance": "",
+      "start_frame": 32,
+      "end_frame": 64,
+      "frames": 32,
+      "start_seconds": 1.3333333333333333,
+      "end_seconds": 2.6666666666666665,
+      "review_frames": [
+        32,
+        48,
+        63
+      ]
+    },
+    {
+      "id": "shot-03",
+      "title": "REFINE",
+      "visual_brief": "Readable hold for REFINE",
+      "narration": "",
+      "acceptance": "",
+      "start_frame": 64,
+      "end_frame": 96,
+      "frames": 32,
+      "start_seconds": 2.6666666666666665,
+      "end_seconds": 4.0,
+      "review_frames": [
+        64,
+        80,
+        95
+      ]
+    }
+  ],
+  "warnings": [],
+  "next": "Author/preview each shot; replace estimated timing with reviewed audio events when needed."
+}

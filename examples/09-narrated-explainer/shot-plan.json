@@ -1,0 +1,28 @@
+{
+  "fps": 24,
+  "frames": 219,
+  "shots": [
+    {
+      "shot": 1,
+      "start_frame": 0,
+      "end_frame": 68,
+      "title": "Start with a clear pose",
+      "technical_pass": true
+    },
+    {
+      "shot": 2,
+      "start_frame": 68,
+      "end_frame": 123,
+      "title": "Timing gives it weight",
+      "technical_pass": true
+    },
+    {
+      "shot": 3,
+      "start_frame": 123,
+      "end_frame": 219,
+      "title": "Review, then refine",
+      "technical_pass": true
+    }
+  ],
+  "timing_source": "eSpeak engine word events plus sentence handles; synthetic demo voice"
+}

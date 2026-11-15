@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "title": "Review, then refine",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frames": 96,
+  "background": "#0c1017",
+  "layers": [
+    {
+      "id": "background",
+      "kind": "rect",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 360.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "fill": "#0c1017",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "kicker",
+      "kind": "text",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 90.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#a5aec0",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "SHORT LESSON 03",
+      "font_size": 22.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 150.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#f3f4f7",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "Review, then refine",
+      "font_size": 44.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "sheet",
+      "kind": "rect",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 390.0,
+      "width": 520.0,
+      "height": 260.0,
+      "fill": "#171e2c",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "check-1",
+      "kind": "path",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "#f3c368",
+      "stroke_width": 8.0,
+      "points": [
+        [
+          480.0,
+          340.0
+        ],
+        [
+          510.0,
+          370.0
+        ],
+        [
+          570.0,
+          310.0
+        ]
+      ],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "reveal",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 32,
+              "value": 1.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "kind": "path",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "#f3c368",
+      "stroke_width": 8.0,
+      "points": [
+        [
+          480.0,
+          420.0
+        ],
+        [
+          510.0,
+          450.0
+        ],
+        [
+          570.0,
+          390.0
+        ]
+      ],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "reveal",
+          "keys": [
+            {
+              "frame": 32,
+              "value": 0.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 64,
+              "value": 1.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": null
+}

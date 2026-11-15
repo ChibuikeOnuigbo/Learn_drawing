@@ -1,0 +1,220 @@
+{
+  "video": "/home/user/Learn_drawing/examples/05-kinetic-typography/render/video.mp4",
+  "frames": 96,
+  "fps": 24.0,
+  "duration": 4.0,
+  "width": 960,
+  "height": 540,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 9.978628425137371,
+      "luma_mean": 16.52064943415638
+    },
+    {
+      "frame": 1,
+      "stddev": 10.292113562259267,
+      "luma_mean": 16.702094907407407
+    },
+    {
+      "frame": 4,
+      "stddev": 20.637256606104042,
+      "luma_mean": 18.278254886831277
+    },
+    {
+      "frame": 5,
+      "stddev": 22.934920965635587,
+      "luma_mean": 18.60941808127572
+    },
+    {
+      "frame": 6,
+      "stddev": 23.39964198294022,
+      "luma_mean": 18.732905092592592
+    },
+    {
+      "frame": 7,
+      "stddev": 23.781529736894594,
+      "luma_mean": 18.81893197016461
+    },
+    {
+      "frame": 8,
+      "stddev": 23.973335547943027,
+      "luma_mean": 18.841174125514403
+    },
+    {
+      "frame": 9,
+      "stddev": 23.96821119599009,
+      "luma_mean": 18.84085262345679
+    },
+    {
+      "frame": 24,
+      "stddev": 23.99395811394804,
+      "luma_mean": 18.84342142489712
+    },
+    {
+      "frame": 25,
+      "stddev": 23.993966976899593,
+      "luma_mean": 18.843375128600822
+    },
+    {
+      "frame": 26,
+      "stddev": 23.994240642761792,
+      "luma_mean": 18.843792438271606
+    },
+    {
+      "frame": 27,
+      "stddev": 22.40948739027781,
+      "luma_mean": 18.661181841563785
+    },
+    {
+      "frame": 30,
+      "stddev": 13.417246062257002,
+      "luma_mean": 17.1949029063786
+    },
+    {
+      "frame": 31,
+      "stddev": 13.272215819094727,
+      "luma_mean": 17.00324074074074
+    },
+    {
+      "frame": 32,
+      "stddev": 9.942414501148273,
+      "luma_mean": 16.515048225308643
+    },
+    {
+      "frame": 33,
+      "stddev": 10.254305966488785,
+      "luma_mean": 16.718772505144035
+    },
+    {
+      "frame": 36,
+      "stddev": 21.61666542110298,
+      "luma_mean": 18.468946116255143
+    },
+    {
+      "frame": 37,
+      "stddev": 23.930986498720326,
+      "luma_mean": 18.810004501028807
+    },
+    {
+      "frame": 38,
+      "stddev": 24.42737174899529,
+      "luma_mean": 18.923628472222223
+    },
+    {
+      "frame": 39,
+      "stddev": 24.723797416655987,
+      "luma_mean": 19.006563143004115
+    },
+    {
+      "frame": 40,
+      "stddev": 24.94194518987702,
+      "luma_mean": 19.03553176440329
+    },
+    {
+      "frame": 41,
+      "stddev": 25.014009433126088,
+      "luma_mean": 19.041668595679013
+    },
+    {
+      "frame": 48,
+      "stddev": 25.001732003027033,
+      "luma_mean": 19.039591692386832
+    },
+    {
+      "frame": 57,
+      "stddev": 25.015280975537255,
+      "luma_mean": 19.040525977366254
+    },
+    {
+      "frame": 58,
+      "stddev": 25.01530650278474,
+      "luma_mean": 19.040587705761318
+    },
+    {
+      "frame": 59,
+      "stddev": 22.91728796285324,
+      "luma_mean": 18.802847222222223
+    },
+    {
+      "frame": 62,
+      "stddev": 12.940153822291782,
+      "luma_mean": 17.124063143004115
+    },
+    {
+      "frame": 63,
+      "stddev": 12.760610991564796,
+      "luma_mean": 16.902383616255143
+    },
+    {
+      "frame": 64,
+      "stddev": 10.073653420588546,
+      "luma_mean": 16.528023405349796
+    },
+    {
+      "frame": 65,
+      "stddev": 10.543174033225847,
+      "luma_mean": 16.79288515946502
+    },
+    {
+      "frame": 68,
+      "stddev": 24.116455400204497,
+      "luma_mean": 19.06536908436214
+    },
+    {
+      "frame": 69,
+      "stddev": 26.9565399502755,
+      "luma_mean": 19.56465084876543
+    },
+    {
+      "frame": 70,
+      "stddev": 27.62137140678274,
+      "luma_mean": 19.708289609053498
+    },
+    {
+      "frame": 71,
+      "stddev": 27.944381936003783,
+      "luma_mean": 19.82767489711934
+    },
+    {
+      "frame": 72,
+      "stddev": 28.181052775543403,
+      "luma_mean": 19.8524704218107
+    },
+    {
+      "frame": 73,
+      "stddev": 28.191536355098535,
+      "luma_mean": 19.854037422839507
+    },
+    {
+      "frame": 89,
+      "stddev": 28.19587834118268,
+      "luma_mean": 19.85412744341564
+    },
+    {
+      "frame": 90,
+      "stddev": 28.195885005453636,
+      "luma_mean": 19.854192386831276
+    },
+    {
+      "frame": 91,
+      "stddev": 26.14568768416114,
+      "luma_mean": 19.56909979423868
+    },
+    {
+      "frame": 94,
+      "stddev": 15.016004119238461,
+      "luma_mean": 17.458029835390946
+    },
+    {
+      "frame": 95,
+      "stddev": 14.829155338770375,
+      "luma_mean": 17.177840149176955
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/05-kinetic-typography/render/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

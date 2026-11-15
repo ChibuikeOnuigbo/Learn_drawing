@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.5.0 — deeper creative playbooks, planning tools and rendered starters
+
+### Verified
+- Full suite: 50 passed, 1 skipped (CLIP weights not fetched), with verified Whisper cache and real Blender rig regression.
+- `animation-studio doctor --smoke-3d`: 16 readable playbooks, expanded template checks, real 2D and 3D smoke proofs.
+- Five new examples rendered and frame-inspected: kinetic typography, 2D walk cycle, particle burst, vertical Short and narrated explainer. Scaffolded 2D/3D projects and the portrait template also rendered successfully.
+
+### Added
+- Seven portable skills: storyboarding/animatics, color & lighting, motion graphics/kinetic typography, physics & secondary motion, sound design, reference analysis and platform delivery. The catalog now contains 16 playbooks.
+- Deterministic MCP/Python pre-production helpers: `plan_shots` (exact half-open frame grid), `color_palette` (role colors + measured contrast), `timing_sheet` (exposure/dope schedule).
+- No-overwrite project scaffolder: CLI `animation-studio new <slug>` and MCP `create_project`, with brief, shot plan, starter scene, asset provenance and review form.
+- Starter/planning templates: `scene-vertical.json`, `shot-plan.json`, `exposure-sheet.json`, `palette.json`.
+- `scripts/build_skill_examples.py` and examples 05–09 with editable source, real exports and measured QA.
+- `tests/test_expansion.py` plus MCP assertions for the new planning/scaffold tools.
+
+### Changed
+- Director skill, AGENTS, README, connect/usage/architecture docs, skill/template indexes and doctor now route to the expanded library and planning tools.
+- Scaffolder restages portrait/landscape starters without distorting shape aspect ratios and retimes keys onto the requested frame grid without duplicate indices.
+- Narrated explainer captions are non-overlapping and cuts follow sentence-level engine word events; redundant shot notes that collided with captions were removed.
+
+### Limits
+- Planning helpers are deterministic schedules/color math, not forced alignment, generative art or artistic acceptance.
+- The particle burst is authored keyframes, not a physics simulator. The explainer voice is offline synthetic demo speech, not a human narrator.
+
 ## 0.4.0 — agent-ready repository structure
 
 ### Verified

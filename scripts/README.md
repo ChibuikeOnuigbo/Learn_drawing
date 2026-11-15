@@ -8,9 +8,12 @@ Run from the repository root with the bootstrap interpreter (`.venv/bin/python`,
 | `bootstrap.sh` | POSIX wrapper; `setup.sh` remains a compatibility alias |
 | `configure_client.py` | Emit an absolute-path stdio MCP client entry for this interpreter |
 | `build_showcase.py` | Regenerate verified examples by stage; `--stage 3d --level hard` selects one |
+| `build_skill_examples.py` | Regenerate examples 05–09; repeat `--only kinetic`, `--only walk`, `--only particles`, `--only vertical` or `--only explainer` to select |
 | `prepare_models.py` | Explicitly download/verify optional CLIP + Whisper; large network operation |
 
 Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Run `author` before `2d` when rig frames are absent. `edit` requires the source renders. Long Blender jobs should use the host's background-process mechanism.
+
+`build_skill_examples.py` authors original kinetic type, walk, particle, portrait and narrated-explainer proofs. It requires FFmpeg/ffprobe; the explainer uses bundled offline eSpeak NG. Regenerable frame sequences and encode intermediates are gitignored.
 
 ## Optional research utilities
 

@@ -1,0 +1,7 @@
+{
+  "cycle_frames": 24,
+  "rendered_frames": 48,
+  "max_stance_foot_y_error": 0.0,
+  "ground_y": 248.0,
+  "scope": "Geometric treadmill contact check; not artistic gait approval"
+}

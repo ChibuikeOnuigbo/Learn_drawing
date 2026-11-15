@@ -14,6 +14,14 @@ def main() -> int:
         command.add_argument("source", type=Path)
         command.add_argument("--output", type=Path, required=True)
         command.add_argument("--workspace", type=Path, default=Path.cwd())
+    new = commands.add_parser("new", help="Scaffold an editable project without overwriting")
+    new.add_argument("name", help="lowercase slug")
+    new.add_argument("--brief", default="")
+    new.add_argument("--engine", choices=["2d", "3d"], default="2d")
+    new.add_argument("--fps", type=int, default=24)
+    new.add_argument("--width", type=int, default=1280)
+    new.add_argument("--height", type=int, default=720)
+    new.add_argument("--workspace", type=Path, default=Path.cwd())
     doctor = commands.add_parser("doctor", help="Check engines/packages/templates; optionally render tiny proofs")
     doctor.add_argument("--smoke", action="store_true", help="Render and decode a temporary 3-frame 2D proof")
     doctor.add_argument("--smoke-3d", action="store_true", help="Require Blender and render a temporary 2-frame proof")
@@ -25,6 +33,11 @@ def main() -> int:
         report = run_checks(args.smoke, args.smoke_3d, args.workspace)
         print(json.dumps(report, indent=2) if args.json else format_report(report))
         return 0 if report["ok"] else 1
+    if args.command == "new":
+        from .scaffold import scaffold_project
+        result = scaffold_project(args.workspace, args.name, args.brief, args.fps, args.width, args.height, args.engine)
+        print(json.dumps(result, indent=2))
+        return 0
     if args.command == "render":
         from .render import render
         result = render(args.source, args.output, args.workspace)

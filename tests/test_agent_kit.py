@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_skill_catalog_and_frontmatter_are_consistent():
     catalog = index()
     names = [entry['name'] for entry in catalog['skills']]
-    assert len(names) == len(set(names)) == 9
+    assert len(names) == len(set(names)) == 16
     assert catalog['entry_skill'] == 'animation-director'
     assert {p.name for p in (ROOT/'skills').iterdir() if p.is_dir() and p.name != '__pycache__'} == set(names)
     for entry in catalog['skills']:

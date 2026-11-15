@@ -1,0 +1,159 @@
+{
+  "audio": "/home/user/Learn_drawing/examples/09-narrated-explainer/speech/narration.wav",
+  "text": "Good animation starts with a clear pose. Timing gives that pose weight. Review the result, then refine one thing at a time.",
+  "duration": 8.500725623582767,
+  "sample_rate": 22050,
+  "words": [
+    {
+      "text": "Good",
+      "char_start": 0,
+      "char_end": 4,
+      "start": 0.0,
+      "end": 0.205
+    },
+    {
+      "text": "animation",
+      "char_start": 5,
+      "char_end": 14,
+      "start": 0.205,
+      "end": 0.821
+    },
+    {
+      "text": "starts",
+      "char_start": 15,
+      "char_end": 21,
+      "start": 0.821,
+      "end": 1.324
+    },
+    {
+      "text": "with",
+      "char_start": 22,
+      "char_end": 26,
+      "start": 1.324,
+      "end": 1.496
+    },
+    {
+      "text": "a",
+      "char_start": 27,
+      "char_end": 28,
+      "start": 1.496,
+      "end": 1.566
+    },
+    {
+      "text": "clear",
+      "char_start": 29,
+      "char_end": 34,
+      "start": 1.566,
+      "end": 1.929
+    },
+    {
+      "text": "pose",
+      "char_start": 35,
+      "char_end": 39,
+      "start": 1.929,
+      "end": 2.85
+    },
+    {
+      "text": "Timing",
+      "char_start": 41,
+      "char_end": 47,
+      "start": 2.85,
+      "end": 3.306
+    },
+    {
+      "text": "gives",
+      "char_start": 48,
+      "char_end": 53,
+      "start": 3.306,
+      "end": 3.687
+    },
+    {
+      "text": "that",
+      "char_start": 54,
+      "char_end": 58,
+      "start": 3.687,
+      "end": 3.953
+    },
+    {
+      "text": "pose",
+      "char_start": 59,
+      "char_end": 63,
+      "start": 3.953,
+      "end": 4.318
+    },
+    {
+      "text": "weight",
+      "char_start": 64,
+      "char_end": 70,
+      "start": 4.318,
+      "end": 5.134
+    },
+    {
+      "text": "Review",
+      "char_start": 72,
+      "char_end": 78,
+      "start": 5.134,
+      "end": 5.541
+    },
+    {
+      "text": "the",
+      "char_start": 79,
+      "char_end": 82,
+      "start": 5.541,
+      "end": 5.663
+    },
+    {
+      "text": "result",
+      "char_start": 83,
+      "char_end": 89,
+      "start": 5.663,
+      "end": 6.43
+    },
+    {
+      "text": "then",
+      "char_start": 91,
+      "char_end": 95,
+      "start": 6.43,
+      "end": 6.748
+    },
+    {
+      "text": "refine",
+      "char_start": 96,
+      "char_end": 102,
+      "start": 6.748,
+      "end": 7.209
+    },
+    {
+      "text": "one",
+      "char_start": 103,
+      "char_end": 106,
+      "start": 7.209,
+      "end": 7.499
+    },
+    {
+      "text": "thing",
+      "char_start": 107,
+      "char_end": 112,
+      "start": 7.499,
+      "end": 7.744
+    },
+    {
+      "text": "at",
+      "char_start": 113,
+      "char_end": 115,
+      "start": 7.744,
+      "end": 7.975
+    },
+    {
+      "text": "time",
+      "char_start": 118,
+      "char_end": 122,
+      "start": 7.975,
+      "end": 8.500725623582767
+    }
+  ],
+  "voice": "en-us",
+  "engine": "eSpeak NG via espeakng-loader 0.2.4",
+  "timing": "word starts from synthesis engine; ends are next-word start or audio end",
+  "voice_quality": "offline synthetic demo voice; replace with supplied voiceover for production"
+}

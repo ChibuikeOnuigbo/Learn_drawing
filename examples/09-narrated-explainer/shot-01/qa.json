@@ -1,0 +1,60 @@
+{
+  "video": "/home/user/Learn_drawing/examples/09-narrated-explainer/shot-01/render/video.mp4",
+  "frames": 68,
+  "fps": 24.0,
+  "duration": 2.8333333333333335,
+  "width": 1280,
+  "height": 720,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 23.902031147194183,
+      "luma_mean": 19.055425347222222
+    },
+    {
+      "frame": 1,
+      "stddev": 23.905572950181536,
+      "luma_mean": 19.05611255787037
+    },
+    {
+      "frame": 17,
+      "stddev": 23.895720094813754,
+      "luma_mean": 19.055530598958335
+    },
+    {
+      "frame": 33,
+      "stddev": 23.902032897199426,
+      "luma_mean": 19.05473488136574
+    },
+    {
+      "frame": 34,
+      "stddev": 23.901212045482385,
+      "luma_mean": 19.054705222800926
+    },
+    {
+      "frame": 35,
+      "stddev": 23.902248939039723,
+      "luma_mean": 19.054991681134258
+    },
+    {
+      "frame": 51,
+      "stddev": 23.900897933758063,
+      "luma_mean": 19.05465241608796
+    },
+    {
+      "frame": 66,
+      "stddev": 23.907883196160576,
+      "luma_mean": 19.055424623842594
+    },
+    {
+      "frame": 67,
+      "stddev": 23.906421166305215,
+      "luma_mean": 19.055277416087964
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/09-narrated-explainer/shot-01/render/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

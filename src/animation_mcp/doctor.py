@@ -98,9 +98,15 @@ def run_checks(smoke: bool = False, smoke_3d: bool = False, workspace: Path | No
         from .edit import Edit
         templates = importlib.resources.files("animation_mcp.templates")
         Scene.model_validate(json.loads(templates.joinpath("scene-2d.json").read_text(encoding="utf-8")))
+        Scene.model_validate(json.loads(templates.joinpath("scene-vertical.json").read_text(encoding="utf-8")))
         Scene3D.model_validate(json.loads(templates.joinpath("scene-3d.json").read_text(encoding="utf-8")))
         Edit.model_validate(json.loads(templates.joinpath("edit.json").read_text(encoding="utf-8")))
-        _check(checks, "templates", "pass", "2D, 3D and edit templates validate")
+        shot = json.loads(templates.joinpath("shot-plan.json").read_text(encoding="utf-8"))
+        sheet = json.loads(templates.joinpath("exposure-sheet.json").read_text(encoding="utf-8"))
+        palette = json.loads(templates.joinpath("palette.json").read_text(encoding="utf-8"))
+        if shot["shots"][-1]["end_frame"] != shot["frames"] or len(sheet["rows"]) != sheet["frames"] or "roles" not in palette:
+            raise ValueError("Planning template structure is inconsistent")
+        _check(checks, "templates", "pass", "2D, portrait, 3D, edit and planning templates validate")
     except Exception as exc:
         _check(checks, "agent-package", "fail", f"{type(exc).__name__}: {exc}")
 

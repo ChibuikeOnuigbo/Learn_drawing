@@ -4,6 +4,21 @@ Read [AGENTS.md](../AGENTS.md) and the [task playbooks](../skills/README.md) fir
 
 Start with `capabilities`, then ask the agent to write a shot plan with exact frame intervals. Use `save_scene`, `preview_frame`, `render_scene` and `inspect_video`. Inspect the resulting PNGs and video before accepting artistic quality. Record concrete defects using `record_lesson` and revise the scene under a new filename.
 
+## Pre-production and scaffolding
+
+```bash
+animation-studio new my-film --brief "A 7-second proof about weight" --engine 2d
+animation-studio new my-solid --engine 3d --width 640 --height 360
+```
+
+MCP: `create_project(name, brief, fps, width, height, engine)`. Both refuse an existing project and create `brief.md`, `shot-plan.json`, a starter scene, `assets/PROVENANCE.md` and `review.md`. The starter is a proof to edit, not a finished film.
+
+- `plan_shots(beats, fps, duration_seconds=None)`: contiguous `[start,end)` shot intervals. Without a total, every beat needs `seconds`; with a total, `seconds`/`weight` hints are allocated proportionally. This is not forced audio alignment.
+- `color_palette(base, harmony, dark)`: role colors plus measured luminance contrast. Harmonies: complementary, analogous, triadic, split_complementary. Contrast warnings are legibility checks, not artistic approval.
+- `timing_sheet(frames, fps, keys, exposure_step)`: drawing numbers, held frames, key labels and interval spans. It schedules exposure; it does not draw poses or accept spacing.
+
+Planning templates live in `templates/shot-plan.json`, `templates/exposure-sheet.json` and `templates/palette.json`; `templates/scene-vertical.json` is a portrait-safe starter.
+
 ## Minimal 2D scene
 
 ```json

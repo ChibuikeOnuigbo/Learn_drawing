@@ -46,8 +46,15 @@ Read [the operating contract](skills/animation-director/SKILL.md) first; then ro
 | [Video editing](skills/video-editing/SKILL.md) | Shot assembly, captions, narration, music, safe areas |
 | [Reaction timing](skills/reaction-timing/SKILL.md) | Semantic intent, word anchors, gag holds, asset rights |
 | [Quality review](skills/quality-review/SKILL.md) | Exact-frame evidence, technical gates, separate artistic review |
+| [Storyboarding](skills/storyboarding/SKILL.md) | Beats, shot plans, animatics, exposure/dope sheets |
+| [Color & lighting](skills/color-lighting/SKILL.md) | Role palettes, value scripts, light direction, measured contrast |
+| [Motion graphics](skills/motion-graphics/SKILL.md) | Kinetic type, explainers, diagrams, readable holds |
+| [Physics & secondary motion](skills/physics-secondary-motion/SKILL.md) | Weight, arcs, overlap, follow-through, authored bursts |
+| [Sound design](skills/sound-design/SKILL.md) | Spotting, narration, sync, final mix handoff |
+| [Reference analysis](skills/reference-analysis/SKILL.md) | Scoped observation, transferable mechanics, provenance |
+| [Platform delivery](skills/platform-delivery/SKILL.md) | Landscape/portrait/square staging, safe areas, delivery packets |
 
-The same playbooks are packaged into MCP: `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`. No competing per-client rulebooks.
+The same 16 playbooks are packaged into MCP: `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`. No competing per-client rulebooks.
 
 ## What actually works
 
@@ -56,6 +63,7 @@ The same playbooks are packaged into MCP: `studio://workflow`, `studio://skills`
 - **Edit/sound:** local cuts, aspect-fit padding, timed captions, final audio mux, synthetic English test speech and pinned Whisper transcription.
 - **Reactions:** narrow learned intent selection, editorial guards, word-timed local image/GIF/video inserts.
 - **Evidence:** exact-frame extraction, contact sheets, export checks and reproducible examples.
+- **Pre-production:** frame-accurate shot plans, role-based palette/contrast helpers, exposure/dope sheets and a no-overwrite project scaffolder (`animation-studio new <slug>` / MCP `create_project`).
 
 **Not bundled:** universal text-to-art/3D generation, arbitrary mesh auto-rigging, automatic lip sync, cloth/fluid simulation or a full node compositor. The agent can plan those workflows and hand off editable source, but must not pretend unsupported tools exist.
 
@@ -67,6 +75,11 @@ The same playbooks are packaged into MCP: `studio://workflow`, `studio://skills`
 | [Semantic reactions](examples/02-semantic-reactions/) | Correct insert at a reviewed spoken beat | Voice, transcript, cue plans, videos, QA |
 | [3D exercises](examples/README.md) | Bounce, wave, walk, reach/grasp | `.blend`, scene JSON, videos, rig QA |
 | [Asset-based short](examples/04-asset-based-short/) | Cross-engine multi-shot edit | Edit JSON, music, 9 s video, QA |
+| [Kinetic typography](examples/05-kinetic-typography/) | Readable type cues, palette roles, staggered holds | Scene JSON, palette, shot plan, 4 s video, QA |
+| [2D walk cycle](examples/06-2d-walk-cycle/) | Planted stance, swing arc, counter-swing, exposure sheet | SVG generator, scene JSON, walk QA, 2 s video |
+| [Particle burst](examples/07-particle-burst/) | Anticipation, impact, drag/gravity-like authored keys | Scene JSON, palette, 3 s video, QA |
+| [Vertical Short](examples/08-vertical-short/) | Portrait-first staging and safe-area text | Scene JSON, palette, delivery notes, 5 s video, QA |
+| [Narrated explainer](examples/09-narrated-explainer/) | Multi-shot layout synced to engine word events | Shot scenes, edit JSON, synthetic voice, captions, 9.125 s video, QA |
 
 ![2D moonlight inspection sheet](examples/01-2d-moonlight/render/inspection/contact-sheet.jpg)
 
@@ -80,6 +93,8 @@ Regenerate selectively:
 .venv/bin/python scripts/build_showcase.py --stage author
 .venv/bin/python scripts/build_showcase.py --stage 2d
 .venv/bin/python scripts/build_showcase.py --stage 3d --level hard
+.venv/bin/python scripts/build_skill_examples.py            # examples 05–09
+.venv/bin/python scripts/build_skill_examples.py --only walk
 ```
 
 ## Repository layout
@@ -91,7 +106,7 @@ templates/                # validated starter scenes, brief and review forms
 projects/                 # your new editable work
 src/animation_mcp/        # MCP server, schemas, render/edit/rig engines
 examples/                 # real source, exports and inspection evidence
-scripts/                  # bootstrap, client config, showcase builder
+scripts/                  # bootstrap, client config, showcase/skill-example builders
   research/               # optional reference scan/restoration utilities
 docs/                     # connect, usage, architecture, headless Blender
 references/               # current scan evidence + manifests
@@ -114,4 +129,4 @@ New source goes in `projects/`; regenerable output goes in `output/`. Local corp
 
 The Squidward GIF is a third-party local timing test with no asserted republication license; replace it with original/licensed art before publication. Reference scans are sampled evidence, not claims of watching every tutorial or training a general animator.
 
-[Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Changelog](CHANGELOG.md)
+[Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Expansion validation](reports/EXPANSION_VALIDATION.md) · [Changelog](CHANGELOG.md)

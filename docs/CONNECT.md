@@ -10,7 +10,7 @@ Give a browsing-capable chat this repository:
 
 Copy this prompt:
 
-> Read `AGENTS.md` in this repository first, then `skills/animation-director/SKILL.md`. Use `skills/index.json` to load the drawing, composition, 2D, 3D, rigging, editing, reaction and QA playbooks relevant to my request. Check which tools you actually have. Help me design and author editable animation source; do not claim rendering or playback unless you actually performed it. My project is: …
+> Read `AGENTS.md` in this repository first, then `skills/animation-director/SKILL.md`. Use `skills/index.json` to load the drawing, composition, 2D, 3D, rigging, editing, reaction, QA, storyboarding, color/lighting, motion-graphics, physics/secondary-motion, sound, reference-analysis and platform-delivery playbooks relevant to my request. Check which tools you actually have. Help me design and author editable animation source; do not claim rendering or playback unless you actually performed it. My project is: …
 
 A chat that cannot browse should ask you to paste/upload those files. A GitHub URL does not automatically grant repository access, install plugins or change model weights. If the default branch has not yet received this structure, use the active working branch or the merged commit containing `AGENTS.md`.
 
@@ -68,7 +68,7 @@ First calls/resources:
 6. `get_model_catalog`
 7. `produce_video` prompt with the user's brief
 
-The nine playbooks and starter templates are packaged with the server, not read from an uncertain client cwd. `studio://workflow` returns the same director skill stored in the repository.
+The 16 playbooks and starter/planning templates are packaged with the server, not read from an uncertain client cwd. `studio://workflow` returns the same director skill stored in the repository. Pre-production tools include `plan_shots`, `color_palette`, `timing_sheet` and `create_project`.
 
 ## Engines, caches and boundaries
 

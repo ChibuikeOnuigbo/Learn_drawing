@@ -1,0 +1,24 @@
+{
+  "base": "#4f8cff",
+  "harmony": "complementary",
+  "mode": "dark",
+  "roles": {
+    "background": "#0c1017",
+    "surface": "#171e2c",
+    "primary": "#3978ef",
+    "secondary": "#eda51d",
+    "accent": "#f3c368",
+    "text": "#f3f4f7",
+    "muted": "#a5aec0"
+  },
+  "contrast_ratios": {
+    "text/background": 17.325,
+    "text/surface": 15.172,
+    "muted/background": 8.543,
+    "primary/background": 4.634,
+    "accent/background": 11.629
+  },
+  "warnings": [],
+  "usage": "Assign roles before adding detail; keep the strongest contrast at the focal point.",
+  "scope": "Deterministic HLS harmony + luminance contrast; not an artistic quality score."
+}

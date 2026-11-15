@@ -37,6 +37,13 @@ Default to a short proof shot before a long film. For example: 3 seconds, 320×1
 | Assemble shots, captions, narration or music | [video-editing](../video-editing/SKILL.md) | `assemble_video`, `synthesize_narration`, `transcribe_voiceover` |
 | A reaction gag at a spoken beat | [reaction-timing](../reaction-timing/SKILL.md) | `select_reaction`, `plan_reaction_cues`, `render_reaction_video` |
 | Decide whether the output is acceptable | [quality-review](../quality-review/SKILL.md) | `inspect_video`, returned QA, `record_lesson` |
+| Beats, animatic, shot grid, exposure sheet | [storyboarding](../storyboarding/SKILL.md) | `plan_shots`, `timing_sheet`, `create_project` |
+| Palette, value script, light direction, contrast | [color-lighting](../color-lighting/SKILL.md) | `color_palette`, `preview_frame`, `inspect_video` |
+| Kinetic type, explainer, diagram, UI-style motion | [motion-graphics](../motion-graphics/SKILL.md) | `save_scene`, `preview_frame`, `render_scene`, `assemble_video` |
+| Weight, arcs, overlap, follow-through, burst | [physics-secondary-motion](../physics-secondary-motion/SKILL.md) | `timing_sheet`, `save_scene`, `render_scene`, `render_3d_exercise` |
+| Narration, music/SFX spotting, sync, mix handoff | [sound-design](../sound-design/SKILL.md) | `synthesize_narration`, `transcribe_voiceover`, `assemble_video` |
+| Study a supplied reference without copying | [reference-analysis](../reference-analysis/SKILL.md) | `inspect_video`, `search_reference_library`, `record_lesson` |
+| Landscape/portrait/square delivery and safe areas | [platform-delivery](../platform-delivery/SKILL.md) | `assemble_video`, `inspect_video`, `create_project` |
 
 Most requests use several skills. A narrated character explainer normally needs director → drawing/composition → 2D or 3D → editing → quality review.
 
@@ -51,7 +58,9 @@ Most requests use several skills. A narrated character explainer normally needs 
 7. **Render/inspect:** small proof first, then final export. Inspect boundary frames and actual playback if the host supports it.
 8. **Revise/deliver:** fix observed defects, rerender affected shots, and deliver video plus editable source, asset provenance and an honest review report.
 
-Use `templates/review.md`. Do not stop at a promising script when an authorized renderer can produce the actual result. Do not claim a render exists when only JSON was authored.
+Use `templates/review.md`. For a new folder, `animation-studio new <slug>` or MCP `create_project` lays out brief, shot plan, starter scene, asset provenance and review without overwriting. `plan_shots`, `color_palette` and `timing_sheet` produce deterministic planning structures; they do not align audio, judge harmony or create inbetweens.
+
+Do not stop at a promising script when an authorized renderer can produce the actual result. Do not claim a render exists when only JSON was authored.
 
 ## 5. Keep projects reproducible
 
@@ -60,8 +69,8 @@ Suggested layout for new work:
 ```text
 projects/<project-name>/
   brief.md
-  shot-plan.md
-  assets/                 # supplied or original licensed sources
+  shot-plan.json          # or shot-plan.md; exact half-open intervals
+  assets/                 # supplied or original licensed sources + PROVENANCE.md
   scenes/                 # editable 2D/3D JSON and SVG
   edits/                  # edit decision JSON
   review.md

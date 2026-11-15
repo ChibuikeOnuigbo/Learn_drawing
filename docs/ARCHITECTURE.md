@@ -2,7 +2,7 @@
 
 ## Instruction layer
 
-`AGENTS.md` is the short repository entry point. `skills/animation-director/SKILL.md` is the single detailed operating contract; `skills/index.json` routes to eight task playbooks. Client-specific files point back instead of duplicating rules.
+`AGENTS.md` is the short repository entry point. `skills/animation-director/SKILL.md` is the single detailed operating contract; `skills/index.json` routes to 15 task playbooks. Client-specific files point back instead of duplicating rules.
 
 Setuptools maps root `skills/` and `templates/` into the installed package as `animation_mcp.skills` and `animation_mcp.templates`. `skills_index.py` reads only catalog-listed resources. MCP exposes the same contract through `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`.
 
@@ -12,6 +12,8 @@ The former `src/animation_mcp/WORKFLOW.md` duplicate was removed. Update the dir
 
 ```text
 brief/shot plan
+  ├─ production.py (shot grid, palette/contrast, exposure sheet)
+  ├─ scaffold.py (no-overwrite project starter from packaged templates)
   ├─ scene.py → render.py (resvg SVG/raster → FFmpeg → inspect)
   ├─ blender_scene.py → trusted launcher → blender_worker / rig_worker / cinematic
   ├─ edit.py (local clips → captions + final audio → inspect)
@@ -21,7 +23,8 @@ brief/shot plan
 ```
 
 - `server.py`: stdio MCP surface, workspace confinement and packaged guidance.
-- `cli.py`: local render/render3d/inspect plus `doctor` subcommands.
+- `cli.py`: local render/render3d/inspect plus `new` and `doctor` subcommands.
+- `production.py`, `scaffold.py`: deterministic pre-production helpers and project scaffolding; planning output is not artistic acceptance.
 - `doctor.py`: offline package/engine/template checks and optional tiny real renders; no downloads.
 - `scene.py`, `blender_scene.py`, `edit.py`: strict current schemas and budget guards.
 - `character.py`, `cinematic.py`, `presets.py`: original example art/staging, not general generators.

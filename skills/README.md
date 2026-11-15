@@ -13,6 +13,13 @@ Start with [animation-director](animation-director/SKILL.md), the production ope
 | [video-editing](video-editing/SKILL.md) | Cuts, captions, narration, music |
 | [reaction-timing](reaction-timing/SKILL.md) | Semantic inserts at spoken beats |
 | [quality-review](quality-review/SKILL.md) | Evidence-based review and delivery |
+| [storyboarding](storyboarding/SKILL.md) | Beats, shot plans, animatics, exposure sheets |
+| [color-lighting](color-lighting/SKILL.md) | Palettes, value scripts, lighting, contrast |
+| [motion-graphics](motion-graphics/SKILL.md) | Kinetic type, explainers, diagrams |
+| [physics-secondary-motion](physics-secondary-motion/SKILL.md) | Weight, arcs, overlap, authored bursts |
+| [sound-design](sound-design/SKILL.md) | Spotting, narration, sync, mix handoff |
+| [reference-analysis](reference-analysis/SKILL.md) | Scoped study, mechanics, provenance |
+| [platform-delivery](platform-delivery/SKILL.md) | Aspect ratios, safe areas, delivery packets |
 
 `index.json` is the machine-readable router. These are repository instructions, not plugins that automatically install themselves into every chat. See [connect instructions](../docs/CONNECT.md).
 

@@ -5,7 +5,7 @@ This repository is an animation production kit: reusable creative methods, stric
 ## Start here, in order
 
 1. Read [skills/animation-director/SKILL.md](skills/animation-director/SKILL.md) — the single operating contract.
-2. Use [skills/index.json](skills/index.json) to load only the relevant drawing, composition, 2D, 3D, rigging, editing, reaction and QA playbooks.
+2. Use [skills/index.json](skills/index.json) to load only the relevant drawing, composition, 2D, 3D, rigging, editing, reaction, QA, storyboarding, color/lighting, motion-graphics, physics/secondary-motion, sound, reference-analysis and platform-delivery playbooks.
 3. Check the actual environment: `python -m animation_mcp.cli doctor` after installation, or MCP `capabilities` / `check_environment`.
 4. Inspect the closest [example](examples/README.md) and current schema before authoring. Use [templates](templates/README.md) for new work.
 

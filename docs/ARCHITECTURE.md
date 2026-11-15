@@ -2,7 +2,7 @@
 
 ## Instruction layer
 
-`AGENTS.md` is the short repository entry point. `skills/animation-director/SKILL.md` is the single detailed operating contract; `skills/index.json` routes to 15 task playbooks. Client-specific files point back instead of duplicating rules.
+`AGENTS.md` is the short repository entry point. `skills/animation-director/SKILL.md` is the single detailed operating contract; `skills/index.json` routes to 16 task playbooks. Client-specific files point back instead of duplicating rules.
 
 Setuptools maps root `skills/` and `templates/` into the installed package as `animation_mcp.skills` and `animation_mcp.templates`. `skills_index.py` reads only catalog-listed resources. MCP exposes the same contract through `studio://workflow`, `studio://skills`, `studio://skills/{name}` and `get_skill`.
 
@@ -20,7 +20,10 @@ brief/shot plan
   ├─ scene.py → render.py (resvg SVG/raster → FFmpeg → inspect)
   ├─ blender_scene.py → trusted launcher → blender_worker / rig_worker / cinematic
   ├─ edit.py (local clips → captions + final audio → inspect)
-  └─ speech/asr → reactions.py (reviewed intent + word cues → composite)
+  ├─ speech/asr → reactions.py (reviewed intent + word cues → composite)
+  ├─ tracing.py (per-frame PyAV decode → LK tracks/contours → chunked NPZ + catalog)
+  ├─ styles.py / planner.py (measured+reviewed style catalog, seeded scene plan)
+  └─ procedural.py (deterministic assets/overlay loops) → composite_scene → render
                          ↓
                  video + editable source + measured QA
 ```
@@ -36,11 +39,13 @@ brief/shot plan
 - `character.py`, `cinematic.py`, `presets.py`: original example art/staging, not general generators.
 - `blender_launcher.py`: trusted repository worker entry; scene JSON is not executable code.
 - `semantic.py`, `asr.py`: pinned pretrained retrieval/ASR with explicit preparation and checksums.
-- `reactions.py`: narrow project-trained intent classifier plus editorial/timing guards.
+- `reactions.py`: transparent phrase-rule intent selection plus editorial/timing guards.
+- `tracing.py`: every-frame index, sparse forward/backward optical-flow tracks, simplified contours, shot-cut candidates, confirmed insert exclusions and local template-hash origin matching. Unknown origins stay unknown.
+- `styles.py`, `planner.py`, `procedural.py`: style catalog, seeded concept planning/image briefs, code-generated assets and depth-layer compositing. These are planning/geometry aids, not generative art models.
 
 ## Evidence and source layer
 
-`examples/` contains actual source, exports and inspection evidence. `references/` separates the current measured scan from historical archives/manifests. `training/` contains narrow reproducible experiments and lessons; it is not host-model fine-tuning. `reports/REBUILD_VALIDATION.md` records a specific historical run, not automatic approval of future work.
+`examples/` contains actual source, exports and inspection evidence. `references/` separates the current measured scan from historical archives/manifests. `reports/` contains validation evidence and production lessons; no project-trained weights are bundled. `reports/REBUILD_VALIDATION.md` records a specific historical run, not automatic approval of future work.
 
 `projects/` is for new editable user work; `output/` is ignored regenerable material. Local corpora, models, Blender fallback tools and scratch boards stay in ignored directories. The repository does not require the 2.2 GB Drive mirror to run its core tools.
 

@@ -95,4 +95,4 @@ Extract transferable mechanics—silhouette, value grouping, spacing, coverage, 
 
 ## 8. Report truthfully
 
-Separate **implemented**, **rendered**, **technically verified**, **visually reviewed** and **artistically accepted**. No invented quality score, training claim, reference parity or full-playback claim. Record a concrete lesson only when linked to an artifact; `record_lesson` updates project memory, not neural weights.
+Separate **implemented**, **rendered**, **technically verified**, **visually reviewed** and **artistically accepted**. No invented quality score, reference parity or full-playback claim. Record a concrete lesson only when linked to an artifact; `record_lesson` updates project memory, not neural weights.

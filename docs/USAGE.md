@@ -70,7 +70,7 @@ Set a clip's `hold_last` to `true` to freeze its final frame when the slot excee
 
 Call `get_scene_schema` with `kind: "3d"` for the full schema. Basic mode supports sphere, cube, cylinder, cone and torus primitives with frame/location/rotation(radians)/scale poses and camera look-target keys. `art_direction` presets (`easy`, `simple`, `medium`, `hard`) add authored sets, materials, lighting and rigged characters; `render_3d_exercise` exposes them directly.
 
-`rigs` add a weighted humanoid with `idle`, `wave`, `walk`, `pickup` or `reach` actions. `target_keys` animate `hand.R`, `hand.L`, `foot.R`, `foot.L` IK controls relative to the rig origin. Presets are editable starting points, not arbitrary mesh auto-rigging or learned acting. Output includes `.blend`, video and evaluated rig QA (foot height, IK target error, payload attachment). Difficulty labels describe these exercises, not parity with professional reference films.
+`rigs` add a weighted humanoid with `idle`, `wave`, `walk`, `pickup` or `reach` actions. `target_keys` animate `hand.R`, `hand.L`, `foot.R`, `foot.L` IK controls relative to the rig origin. Presets are editable starting points, not arbitrary mesh auto-rigging or authored acting. Output includes `.blend`, video and evaluated rig QA (foot height, IK target error, payload attachment). Difficulty labels describe these exercises, not parity with professional reference films.
 
 Blender must be on PATH or selected with `ANIMATION_BLENDER`. In headless sandboxes without system Blender, an isolated `bpy` 4.5 environment can be used through `src/animation_mcp/blender_launcher.py`; keep it separate from the project venv because `bpy` requires NumPy 1.x while the project uses NumPy 2.x. The launcher accepts only the trusted worker and validated scene JSON.
 
@@ -78,7 +78,7 @@ Blender must be on PATH or selected with `ANIMATION_BLENDER`. In headless sandbo
 
 Call `synthesize_narration` to generate a test voice and engine word events. For supplied audio, prepare the pinned speech model, call `transcribe_voiceover`, and review uncertain words. Pass the returned `narration_json` to `plan_reaction_cues` or `render_reaction_video`.
 
-The selector uses six narrow learned intents plus editorial abstention/negation rules. Bundled assets include original anime-style disaster/victory illustrations and a third-party Squidward brain-erase GIF for the `brain_wipe` intent. Optional `asset_overrides` maps intents to local image/GIF/video paths. GIF frame durations are respected; video assets use a bounded six-second decoded loop. The tool does not download memes from external services.
+The selector uses six transparent phrase-rule intents plus editorial abstention/negation rules; no fitted intent weights are bundled. Bundled assets include original anime-style disaster/victory illustrations and a third-party Squidward brain-erase GIF for the `brain_wipe` intent. Optional `asset_overrides` maps intents to local image/GIF/video paths. GIF frame durations are respected; video assets use a bounded six-second decoded loop. The tool does not download memes from external services.
 
 Cue frames round supplied word times to the frame grid. Engine timestamps and ASR estimates have different accuracy; inspect exported audio/video before treating synchronization or humor as accepted. The brain-erase cue is deliberately placed after the short verbal setup (“No brains at all”) so the visual punchline lands rather than covering the words.
 
@@ -91,6 +91,26 @@ Cue frames round supplied word times to the frame grid. Engine timestamps and AS
 5. Fix concrete defects, rerender affected work, save a lesson linked to evidence.
 
 Use the existing checkout in each isolated cloud task. Do not create Git worktrees unless requested. Live server/render processes do not survive environment publication; start the MCP server again through the host configuration.
+
+## Per-frame trace library, styles, planner and procedural assets
+
+Restore authorized Drive videos locally first; the tools never download from YouTube.
+
+```bash
+pip install -e '.[research]'
+python scripts/build_trace_library.py google_drive/clip.mp4 --output data/traces
+python scripts/build_asset_kit.py
+```
+
+MCP surface:
+
+- `trace_video_file`, `list_trace_library`, `get_trace_frame`, `get_trace_track`, `identify_video_insert`, `exclude_trace_inserts`.
+- `search_art_styles`, `plan_new_scene`, `generate_procedural_asset`, `list_procedural_assets`, `build_composite_scene`.
+- Resources: `studio://traces`, `studio://traces/{video_id}`, `studio://styles`, `studio://assets`.
+
+Every decoded frame gets an index record. Sparse tracks/contours are normalized image evidence, not recovered brush strokes or rigs. Confirmed meme/insert ranges are excluded and carry `source_url` evidence; low-motion static shots are only review candidates. The local hash catalog identifies known templates (e.g. the bundled Squidward GIF), not exact episodes/uploads. Unknown origins require review and must not be invented.
+
+`plan_new_scene` consumes reviewed style/trace evidence and emits a shot grid, seeded variations, asset suggestions and an image prompt for the connected agent's own image tool. It does not call a hosted generator. `build_composite_scene` creates editable depth-ordered parallax layers; overlay sequences use `%04d` frame tokens.
 
 ## Drive-informed recreation studies
 

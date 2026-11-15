@@ -21,7 +21,7 @@ Subject, viewpoint, style, proportions, emotion/action, palette, output size and
 6. **Refine edges and line weight.** Use heavier edges at contact/occlusion, lighter edges for internal form. Keep facial features readable at the final display size.
 7. **Make a continuity sheet.** Front/side/three-quarter views, expression extremes, palette swatches, prop scale and distinctive costume landmarks. Reuse the same source assets across shots.
 
-These are drawing methods, not a claim that the toolkit contains a general learned drawing model.
+These are drawing methods, not a claim that the toolkit contains a general drawing model.
 
 ## Choose an editable representation
 
@@ -30,7 +30,7 @@ These are drawing methods, not a claim that the toolkit contains a general learn
 - **Separate raster plates:** background, midground, character and foreground. Supply PNG/JPEG/SVG files with appropriate rights. Transparent character plates are useful for parallax.
 - **Pose sequence:** rasterize genuinely different drawings to `pose-%04d.png`, starting at 0000. A scene image layer can use that exact token. Moving one flat drawing is not the same as drawing new poses.
 
-The scene path format is a polyline, not arbitrary SVG path commands. `curve_points` samples a cubic Bezier from four normalized control points; scale those points into the layer's local coordinates. Analytic geometry is preferred over the narrow learned curve baseline.
+The scene path format is a polyline, not arbitrary SVG path commands. Trace-library contours can seed editable paths, but they are raster-derived approximations and need cleanup/retopology before final art. `curve_points` samples a cubic Bezier from four normalized control points; scale those points into the layer's local coordinates. The sampling is exact analytic geometry.
 
 ## Minimal native drawing
 

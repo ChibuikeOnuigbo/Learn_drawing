@@ -1,9 +1,8 @@
-"""Learned narration-intent retrieval plus explicit editorial and timing rules.
+"""Transparent narration-intent rules and word-timed editorial cues.
 
-The classifier is deliberately small; asset taste and strong phrase anchoring
-remain editorial choices. No hosted service, arbitrary pickle or account is used.
+Intent selection is an explicit phrase-rule lookup, not a fitted model. Asset
+taste and punchline placement remain editorial choices reviewed by the caller.
 """
-from functools import lru_cache
 import json
 import math
 from pathlib import Path
@@ -31,38 +30,23 @@ ANCHORS={
     'disappointment':['disappointing','nothing','let everyone down','expected','sad','heartbreaking','wasted','underwhelming','letdown']}
 
 
-@lru_cache(maxsize=1)
-def classifier():
-    from sklearn.feature_extraction.text import TfidfVectorizer,TfidfTransformer
-    meta=json.loads((PACKAGE/'models/reaction_classifier.json').read_text())
-    vectorizers=[]
-    for name,analyzer,ngram in [('word','word',(1,2)),('char','char_wb',(3,5))]:
-        v=TfidfVectorizer(analyzer=analyzer,ngram_range=ngram,sublinear_tf=True,
-                         vocabulary=meta[name+'_vocabulary'])
-        v.vocabulary_=meta[name+'_vocabulary'];v.fixed_vocabulary_=True
-        v._tfidf=TfidfTransformer(sublinear_tf=True)
-        v._tfidf.idf_=np.asarray(meta[name+'_idf'])
-        vectorizers.append(v)
-    with np.load(PACKAGE/'models/reaction_classifier.npz',allow_pickle=False) as weights:
-        coef=weights['coef'].copy();intercept=weights['intercept'].copy()
-    return meta,vectorizers,coef,intercept
-
-
 def classify(text: str) -> dict:
-    from scipy.sparse import hstack
     if not text.strip() or len(text)>4000:raise ValueError('Provide 1–4000 characters')
-    # Literal medical/scientific contexts are not a stupidity gag.
     if re.search(r'\b(neurons?|tumou?r|medical|anatomy|neuroscience|brain tissue|recovery simulation)\b',text,re.I):
-        return dict(intent='none',confidence=1.0,reason='literal/scientific editorial guard; not classifier probability')
+        return dict(intent='none',confidence=1.0,reason='literal/scientific editorial guard')
     if re.search(r'\bnot (?:a |an )?(?:dumb|stupid|disaster)\b',text,re.I):
-        return dict(intent='none',confidence=1.0,reason='explicit negation guard; not classifier probability')
-    meta,vs,coef,bias=classifier()
-    x=hstack([v.transform([text]) for v in vs])
-    score=np.asarray(x@coef.T+bias)[0]
-    probability=np.exp(score-score.max());probability/=probability.sum()
-    index=int(np.argmax(probability))
-    return dict(intent=meta['classes'][index],confidence=float(probability[index]),
-                reason='small supervised English intent classifier; confidence is not calibrated')
+        return dict(intent='none',confidence=1.0,reason='explicit negation guard')
+    lowered=text.lower()
+    matches=[]
+    for intent,anchors in ANCHORS.items():
+        for anchor in anchors:
+            if re.search(r'(?<![A-Za-z0-9])'+re.escape(anchor)+r'(?![A-Za-z0-9])',lowered):
+                matches.append((len(anchor),intent,anchor))
+    if not matches:
+        return dict(intent='none',confidence=1.0,reason='no explicit editorial anchor; abstain')
+    _,intent,anchor=max(matches)
+    return dict(intent=intent,confidence=1.0,matched_anchor=anchor,
+                reason='transparent phrase rule; confidence marks a rule match, not a calibrated probability')
 
 
 def plan_cues(narration: dict, fps=30, threshold=.40, theme='anime') -> dict:

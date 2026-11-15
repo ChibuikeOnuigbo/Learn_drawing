@@ -38,11 +38,16 @@ def capabilities() -> dict:
             "features":["editable SVG", "2D keyframes", "stroke reveal", "layered image parallax",
                         "nested vector character rig", "voiceover mux", "clip assembly", "timed captions", "frame inspection",
                         "primitive and art-directed 3D scenes", "Bezier stroke sampling", "offline speech with word events",
-                        "learned reaction intent", "timed local meme/GIF compositing", "weighted humanoid rig and IK",
-                        "frame-accurate shot planning", "role-based palette/contrast", "exposure/dope sheets", "project scaffolding"],
+                        "transparent reaction-intent rules", "timed local meme/GIF compositing", "weighted humanoid rig and IK",
+                        "frame-accurate shot planning", "role-based palette/contrast", "exposure/dope sheets", "project scaffolding",
+                        "per-frame point/contour trace library", "insert/meme exclusion with origin evidence", "art-style catalog",
+                        "seeded scene planner/randomizer", "procedural assets and overlay loops", "depth-layer compositing"],
             "limits":["agent authors scene; no universal text-to-art model bundled",
                       "rigging is a procedural humanoid preset, not universal auto-rigging",
                       "no automatic lip sync or hosted AI image provider bundled",
+                      "trace features are sparse image evidence, not recovered brush strokes/rigs",
+                      "meme origin matches identify local templates; unknown origins require review",
+                      "trace/asset libraries are local data, not bundled third-party media",
                       "stdio transport; local trusted client"],
             "scene_schema": Scene.model_json_schema()}
 
@@ -63,13 +68,9 @@ def get_model_catalog() -> dict:
     from .semantic import model_cache
     from .asr import asr_cache
     return dict(models=[
-        dict(name='reaction-intent',source='trained in this project',bundled=True,
-             scope='6 English editorial intents; small synthetic corpus, not a general reasoning model'),
-        dict(name='curve-interpolation',source='trained in this project',bundled=True,
-             scope='predicts points along provided Bezier controls; exact geometry is better'),
         dict(name='CLIP ViT-B/32',source='pretrained upstream; reused unchanged',bundled=False,
              files_present=(model_cache()/'text/model.onnx').exists() and (model_cache()/'vision/model.onnx').exists(),
-             prepare_tool='prepare_reference_models',scope='text-to-sampled-frame retrieval; 330 samples from 55 supplied videos'),
+             prepare_tool='prepare_reference_models',scope='text-to-sampled-frame retrieval; 330 samples from 55 supplied videos; separate trace library records per-frame geometry'),
         dict(name='Whisper base.en',source='pretrained upstream; reused unchanged',bundled=False,
              files_present=(asr_cache()/'model.bin').exists(),prepare_tool='prepare_voiceover_model',
              scope='English ASR with estimated word times; review low confidence and sync')],
@@ -141,7 +142,7 @@ def synthesize_narration(text: str, speed: int = 155, voice: str = 'en-us') -> d
 
 @mcp.tool()
 def select_reaction(text: str) -> dict:
-    """Classify a phrase's meme intent. May abstain; synthetic training has limited coverage."""
+    """Select a reaction intent with transparent phrase rules; may abstain."""
     from .reactions import ASSETS,PACKAGE
     result=classify(text)
     if result['intent'] in ASSETS:
@@ -211,6 +212,131 @@ def search_reference_library(query: str, limit: int = 5) -> dict:
     """Find supplied reference frames by text using pretrained CLIP; not a quality score."""
     from .semantic import search_references
     return search_references(query,limit)
+
+
+@mcp.tool()
+def trace_video_file(video_path: str, video_id: str | None = None, annotations_path: str | None = None,
+                     analysis_width: int = 480, max_tracks: int = 192) -> dict:
+    """Decode every frame of a local authorized video into persistent point tracks/contours.
+
+    Confirmed meme/insert annotation ranges are excluded and carry origin evidence.
+    Static low-motion shots are flagged for review, not silently called memes.
+    Long job; for batches use scripts/build_trace_library.py. Output: data/traces.
+    """
+    from .tracing import trace_video, library_root
+    path = confined(ROOT, video_path, True)
+    annotations = confined(ROOT, annotations_path, True) if annotations_path else None
+    vid = video_id or path.stem
+    return trace_video(path, library_root(ROOT)/vid, video_id=vid, annotations=annotations,
+                       analysis_width=analysis_width, max_tracks=max_tracks)
+
+
+@mcp.tool()
+def list_trace_library() -> dict:
+    """List locally built per-frame traces, coverage, measured style stats and pending reviews."""
+    from .tracing import read_catalog
+    return read_catalog(ROOT)
+
+
+@mcp.tool()
+def get_trace_frame(video_id: str, frame: int) -> dict:
+    """Read one indexed frame: normalized points, track ids, confidence, contours, motion, insert origin."""
+    from .tracing import get_frame
+    return get_frame(video_id, frame, ROOT)
+
+
+@mcp.tool()
+def get_trace_track(video_id: str, track_id: int, start_frame: int = 0, end_frame: int | None = None) -> dict:
+    """Read a sparse feature trajectory across a frame range (max 20000 frames)."""
+    from .tracing import get_track
+    return get_track(video_id, track_id, start_frame, end_frame, ROOT)
+
+
+@mcp.tool()
+def identify_video_insert(video_id: str, frame: int) -> dict:
+    """Check a frame against excluded annotations and the local known-template hash catalog.
+
+    Unknown origins are returned as unknown with a review path; the tool does not invent sources.
+    """
+    from .tracing import identify_insert
+    return identify_insert(video_id, frame, ROOT)
+
+
+@mcp.tool()
+def exclude_trace_inserts(video_id: str, ranges: list[dict]) -> dict:
+    """Apply reviewed meme/insert exclusions to an existing trace and clear their geometry.
+
+    ranges: {start_frame, end_frame, kind, label, origin:{source_url,...}, evidence}.
+    A claimed origin requires source_url. Use only after visual/source review.
+    """
+    from .tracing import apply_exclusions
+    return apply_exclusions(video_id, ranges, ROOT)
+
+
+@mcp.tool()
+def search_art_styles(query: str = '', limit: int = 10) -> dict:
+    """Search the art-style catalog built from trace statistics plus reviewed tags/notes."""
+    from .styles import search
+    return search(query, ROOT, limit)
+
+
+@mcp.tool()
+def plan_new_scene(concept: str, style_id: str | None = None, seed: int | str = 0,
+                   duration_seconds: float = 8.0, fps: int = 24, weather: str | None = None,
+                   reference_video: str | None = None, reference_frame: int | None = None) -> dict:
+    """Plan an original scene from a concept using local style/trace evidence, seeded variations,
+    procedural asset suggestions and an image-generation brief for the connected agent's image tool.
+    Does not call a hosted image model or produce finished artwork."""
+    from .planner import plan_scene
+    return plan_scene(concept, style_id=style_id, seed=seed, duration_seconds=duration_seconds, fps=fps,
+                      weather=weather, reference_video=reference_video, reference_frame=reference_frame, workspace=ROOT)
+
+
+@mcp.tool()
+def generate_procedural_asset(kind: str, seed: int = 0, width: int = 512, height: int = 512,
+                              frames: int = 48, variant: int = 0, blur: float = 0.0) -> dict:
+    """Generate a deterministic code-based asset/overlay loop (trees, snow, rain, wind, fog, sparks,
+    bokeh, vignette, depth blur, etc.). Returns manifest and PNG paths under data/assets."""
+    from .procedural import generate, KINDS
+    if kind not in KINDS:
+        raise ValueError(f"Unknown kind; available: {', '.join(sorted(KINDS))}")
+    folder = ROOT/'data/assets'/f'{kind}-s{seed}-v{variant}-{width}x{height}'
+    result = generate(kind, folder, seed=seed, width=width, height=height, frames=frames, variant=variant, blur=blur)
+    result['directory'] = str(folder)
+    return result
+
+
+@mcp.tool()
+def list_procedural_assets() -> dict:
+    """List built-in procedural kinds and locally generated asset manifests."""
+    from .procedural import KINDS
+    built = []
+    root = ROOT/'data/assets'
+    if root.exists():
+        for manifest in sorted(root.glob('*/manifest.json')):
+            built.append(json.loads(manifest.read_text()) | {'directory': str(manifest.parent)})
+    return {'kinds': KINDS, 'generated': built, 'scope': 'Original procedural code output; regenerate with generate_procedural_asset.'}
+
+
+@mcp.tool()
+def build_composite_scene(layers: list[dict], width: int = 1280, height: int = 720, fps: int = 24,
+                          frames: int = 192, background: str = '#101827', title: str = 'Composite',
+                          save_path: str | None = None) -> dict:
+    """Create an editable depth-layered 2D composite scene with parallax from local image/overlay assets.
+
+    layers: {id, asset, depth 0..1, x, y, width, height, scale, opacity, parallax}.
+    Overlay sequences may use %04d frame tokens. Returns scene JSON; optionally saves it.
+    """
+    from .planner import composite_scene
+    scene = composite_scene(layers, width=width, height=height, fps=fps, frames=frames, background=background, title=title)
+    if save_path:
+        target = confined(ROOT, save_path)
+        if target.exists():
+            raise ValueError('File already exists; use a new versioned path')
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(scene, indent=2))
+        return {'scene': scene, 'path': str(target)}
+    return {'scene': scene}
 
 
 @mcp.tool()
@@ -297,6 +423,34 @@ def skill_resource(name: str) -> str:
     return read_skill(name)['content']
 
 
+@mcp.resource('studio://traces')
+def trace_resource() -> str:
+    """Local per-frame trace catalog and coverage."""
+    from .tracing import read_catalog
+    return json.dumps(read_catalog(ROOT), indent=2)
+
+
+@mcp.resource('studio://traces/{video_id}')
+def trace_video_resource(video_id: str) -> str:
+    """One trace manifest (source, coverage, shots, cuts, style stats, insert candidates)."""
+    from .tracing import _load_manifest
+    _, manifest = _load_manifest(video_id, ROOT)
+    return json.dumps(manifest, indent=2)
+
+
+@mcp.resource('studio://styles')
+def styles_resource() -> str:
+    """Art-style catalog: measured stats plus reviewed tags/mechanics."""
+    from .styles import catalog
+    return json.dumps(catalog(ROOT), indent=2)
+
+
+@mcp.resource('studio://assets')
+def assets_resource() -> str:
+    """Procedural asset kinds and locally generated manifests."""
+    return json.dumps(list_procedural_assets(), indent=2)
+
+
 @mcp.prompt()
 def produce_video(brief: str) -> str:
     """Guide a connected agent through actual production and evidence-based review."""
@@ -304,11 +458,8 @@ def produce_video(brief: str) -> str:
 
 
 @mcp.tool()
-def curve_points(controls: list[list[float]], samples: int = 64, learned: bool = False) -> dict:
-    """Create a cubic Bezier stroke from 4 control points. Optional narrow learned baseline.
-
-    Controls use normalized 0–1 coordinates. Analytic geometry is exact and preferred.
-    """
+def curve_points(controls: list[list[float]], samples: int = 64) -> dict:
+    """Sample an exact cubic Bezier stroke from four normalized 0–1 control points."""
     import numpy as np
     c=np.asarray(controls,dtype=float)
     if c.shape != (4,2) or not np.isfinite(c).all() or (c<0).any() or (c>1).any():
@@ -316,18 +467,9 @@ def curve_points(controls: list[list[float]], samples: int = 64, learned: bool =
     if not 2<=samples<=1000:
         raise ValueError('Use 2–1000 samples')
     t=np.linspace(0,1,samples)
-    if learned:
-        path=Path(__file__).with_name('models')/'stroke_policy.npz'
-        h=np.concatenate([np.broadcast_to(c.reshape(1,8),(samples,8)),t[:,None]],axis=1)*2-1
-        with np.load(path,allow_pickle=False) as z:
-            for i in range(3):
-                h=h@z[f'coef_{i}']+z[f'intercept_{i}']
-                if i<2:h=np.tanh(h)
-        points=h
-    else:
-        basis=np.stack([(1-t)**3,3*(1-t)**2*t,3*(1-t)*t*t,t**3],axis=1)
-        points=basis@c
-    return {'points':points.tolist(),'method':'learned synthetic-curve baseline' if learned else 'exact geometry',
+    basis=np.stack([(1-t)**3,3*(1-t)**2*t,3*(1-t)*t*t,t**3],axis=1)
+    points=basis@c
+    return {'points':points.tolist(),'method':'exact geometry',
             'scope':'Interpolates supplied controls; does not invent subjects or artwork'}
 
 
@@ -371,7 +513,9 @@ def concept_brief(subject: str, style: str = "layered editorial illustration") -
 def record_lesson(task: str, observation: str, artifact_path: str, verified: bool = False) -> dict:
     """Append evidence-linked practice memory. Does not update model weights."""
     artifact = confined(ROOT,artifact_path,True)
-    folder = ROOT/"training"
+    folder = ROOT/"reports"
+    folder.mkdir(exist_ok=True)
+    folder = folder
     folder.mkdir(exist_ok=True)
     entry = {"task":task,"observation":observation,"artifact":str(artifact),"verified_by_caller":verified}
     with (folder/"lessons.jsonl").open("a") as f:

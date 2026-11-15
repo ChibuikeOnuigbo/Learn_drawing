@@ -61,8 +61,10 @@ The same 16 playbooks are packaged into MCP: `studio://workflow`, `studio://skil
 - **2D:** strict SVG/JSON scenes, keyframes/easing, nested groups, image/SVG assets, frame sequences, stroke reveal and resvg rasterization; no system Cairo.
 - **3D:** constrained Blender primitives and authored sets, camera keys, editable `.blend`, weighted 15-bone humanoid with four IK chains and measured contact/attachment QA.
 - **Edit/sound:** local cuts, aspect-fit padding, timed captions, final audio mux, synthetic English test speech and pinned Whisper transcription.
-- **Reactions:** narrow learned intent selection, editorial guards, word-timed local image/GIF/video inserts.
+- **Reactions:** transparent phrase-rule intent selection, editorial guards, word-timed local image/GIF/video inserts.
 - **Evidence:** exact-frame extraction, contact sheets, export checks and reproducible examples.
+- **Trace library:** per-frame decoded point tracks/contours, shot cuts, insert/meme exclusion with origin evidence, and a measured art-style catalog (`data/traces`, local/ignored).
+- **Scene planning:** seeded concept planner/randomizer, image-generation briefs for the connected agent, procedural asset/overlay generation and depth-layer compositing.
 - **Pre-production:** frame-accurate shot plans, role-based palette/contrast helpers, exposure/dope sheets and a no-overwrite project scaffolder (`animation-studio new <slug>` / MCP `create_project`).
 
 **Not bundled:** universal text-to-art/3D generation, arbitrary mesh auto-rigging, automatic lip sync, cloth/fluid simulation or a full node compositor. The agent can plan those workflows and hand off editable source, but must not pretend unsupported tools exist.
@@ -78,6 +80,9 @@ The same 16 playbooks are packaged into MCP: `studio://workflow`, `studio://skil
 | [Curtain mesh recreation](examples/05-curtain-mesh/) | Pinned rail/tieback release, stable texture, no photo crossfade | Generated plate, mesh rig, fold QA, 4 s video |
 | [Eye/face performance](examples/06-eye-face-performance/) | Traced apertures, original-iris gaze, hair lag, local smile | Generated portrait, rig JSON, QA, 6 s video |
 | [Whole-character flashlight](examples/07-flashlight-whole-character/) | One circle mask over two complete matched characters | Matched generated plates, beam path, timing QA, 10.5 s video |
+| [Aura/rain/breath](examples/08-aura-rain-breath/) | Silhouette FX behind subject, depth-banded rain, breath | Generated plate, QA, 8 s video |
+| [OpenSketch stroke trace](examples/09-opensketch-stroke-trace/) | Licensed stroke-order reveal + labelled variant | CC0 SVG, QA, 6 s video |
+| [Procedural asset kit](examples/10-procedural-assets/) | Code-generated trees/weather/overlays + layered composite | Contact sheet, scene JSON, demo video, QA |
 
 ![2D moonlight inspection sheet](examples/01-2d-moonlight/render/inspection/contact-sheet.jpg)
 
@@ -93,6 +98,8 @@ Regenerate selectively:
 .venv/bin/python scripts/build_showcase.py --stage 3d --level hard
 .venv/bin/python scripts/build_drive_recreations.py       # examples 05–09
 .venv/bin/python scripts/build_drive_recreations.py --only curtain
+.venv/bin/python scripts/build_trace_library.py google_drive/clip.mp4   # per-frame traces
+.venv/bin/python scripts/build_asset_kit.py                             # procedural kit + demo
 ```
 
 ## Repository layout
@@ -109,9 +116,9 @@ scripts/                  # bootstrap, client config, showcase/skill-example bui
 docs/                     # connect, usage, architecture, headless Blender
 references/               # current scan evidence + manifests
   archive/                # historical notes, not active instructions
-training/                 # narrow experiments and evidence-linked lessons
-tests/                    # pipeline, rig, edit, audio and agent-kit regressions
-reports/                  # measured validation reports
+reports/                  # validation reports and evidence-linked production lessons
+data/                     # local trace/asset libraries (ignored; rebuild from authorized media)
+tests/                    # pipeline, rig, edit, audio, trace/asset and agent-kit regressions
 ```
 
 New source goes in `projects/`; regenerable output goes in `output/`. Local corpora, caches, Blender fallback tools and scratch files are ignored. The core toolkit does not require the 2.2 GB Drive mirror.
@@ -125,6 +132,6 @@ New source goes in `projects/`; regenerable output goes in `output/`. Local corp
 
 3D tests skip when Blender is absent. Optional model integrations skip when weights have not been fetched. `doctor` distinguishes required failures from optional 3D/model availability and can prove tiny real renders.
 
-The Squidward GIF is a third-party local timing test with no asserted republication license; replace it with original/licensed art before publication. Reference scans are sampled evidence, not claims of watching every tutorial or training a general animator.
+The Squidward GIF is a third-party local timing test with no asserted republication license; replace it with original/licensed art before publication. Reference scans are sampled evidence; the trace library separately records which videos were decoded frame-by-frame.
 
 [Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Drive recreation validation](reports/DRIVE_RECREATION_VALIDATION.md) · [Changelog](CHANGELOG.md)

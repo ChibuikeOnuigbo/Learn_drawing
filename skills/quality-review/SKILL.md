@@ -17,7 +17,7 @@ Use these labels precisely:
 4. **Visually reviewed:** actual frames or playback were inspected; state which.
 5. **Artistically accepted:** the user/reviewer approved the creative result. Do not infer this from a metric.
 
-Never claim full playback, listening, model training, reference parity or a calibrated quality score without the corresponding evidence.
+Never claim full playback, listening, reference parity or a calibrated quality score without the corresponding evidence.
 
 ## Technical checks
 

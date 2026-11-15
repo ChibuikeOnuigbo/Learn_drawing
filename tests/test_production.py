@@ -88,15 +88,19 @@ def test_mcp_production_tools_and_prompt(tmp_path):
                 await session.initialize()
                 names={t.name for t in (await session.list_tools()).tools}
                 assert {'synthesize_narration','select_reaction','render_reaction_video','transcribe_voiceover','search_reference_library','render_3d_exercise',
-                        'plan_shots','color_palette','timing_sheet','create_project'}<=names
+                        'plan_shots','color_palette','timing_sheet','create_project',
+                        'trace_video_file','list_trace_library','get_trace_frame','get_trace_track','identify_video_insert',
+                        'exclude_trace_inserts','search_art_styles','plan_new_scene','generate_procedural_asset',
+                        'list_procedural_assets','build_composite_scene'}<=names
                 result=await session.call_tool('select_reaction',{'text':'No brains at all.'})
                 assert not result.isError
                 payload=result.structuredContent or json.loads(result.content[0].text)
                 assert payload['intent']=='brain_wipe'
                 prompts=await session.list_prompts();assert 'produce_video' in {p.name for p in prompts.prompts}
-                resources=await session.list_resources();assert {'studio://workflow','studio://skills'} <= {str(r.uri) for r in resources.resources}
+                resources=await session.list_resources();assert {'studio://workflow','studio://skills','studio://traces','studio://styles','studio://assets'} <= {str(r.uri) for r in resources.resources}
                 templates=await session.list_resource_templates()
                 assert any(t.uriTemplate=='studio://skills/{name}' for t in templates.resourceTemplates)
+                assert any(t.uriTemplate=='studio://traces/{video_id}' for t in templates.resourceTemplates)
                 guide=await session.read_resource('studio://skills/drawing')
                 assert 'name: drawing' in guide.contents[0].text
                 skill=await session.call_tool('get_skill',{'name':'3d-animation'})

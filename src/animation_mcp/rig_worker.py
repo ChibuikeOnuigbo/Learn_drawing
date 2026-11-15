@@ -195,4 +195,4 @@ def audit_rig(rig,spec,frames,fps):
                 minimum_foot_vertex_z=minimum,max_payload_hold_error=max(hold_errors,default=0),
                 max_ik_target_error=max(ik_errors,default=0),
                 geometry_pass=minimum>=-.025 and max(hold_errors,default=0)<.001 and max(ik_errors,default=0)<.03,
-                trace=trace,limits='Procedural stylized humanoid rig. Preset/baked motion, not learned acting or universal auto-rigging.')
+                trace=trace,limits='Procedural stylized humanoid rig. Preset/baked motion, not authored acting or universal auto-rigging.')

@@ -6,7 +6,7 @@ Use actual word events when synthesizing test speech. Word-count estimates drift
 
 Whisper base.en recovered the required reaction phrases in the generated tests, but word starts are estimates and can differ from synthesis events. Short speech sometimes loses the plural s in “brains”; semantic matching accepts the singular variant and keeps a real audio-timing regression. The brain-erase cue is anchored to the final word of “No brain(s) at all” so the verbal setup lands before the visual gag. Low confidence and ASR-based sync remain flagged for review.
 
-A literal medical/scientific brain reference should abstain rather than use a stupidity gag. The classifier's raw fixed holdout score is 19/20; explicit negation handling is an editorial guard, not learned language understanding. The bundled library is small, not a universal best-meme oracle. The old sleeping-brain still was semantically wrong for “no brains at all”; it was replaced with the verified Squidward eraser GIF. GIF disposal and frame durations must be respected; the source's blank upper canvas was cropped without changing timing.
+A literal medical/scientific brain reference should abstain rather than use a stupidity gag. Explicit phrase rules and negation handling are editorial guards, not language understanding. The bundled library is small, not a universal best-meme oracle. The old sleeping-brain still was semantically wrong for “no brains at all”; it was replaced with the verified Squidward eraser GIF. GIF disposal and frame durations must be respected; the source's blank upper canvas was cropped without changing timing.
 
 ## Rendering portability
 
@@ -28,10 +28,10 @@ Equal-quarter acting beats did not align with narration sentences. Character exe
 
 ## 3D rigging
 
-The humanoid uses 15 actual bones, 5,994 weighted mesh vertices and four IK chains. Foot orientation needs its own control so shin rotations do not point the feet into the floor. Measured floor minima, IK target error and attachment errors are in each rig report. The simple wave measured max IK target error ≈0.000145 and minimum foot vertex z ≈0.0. The prop follows the evaluated hand after grasp; this is baked procedural animation, not a learned manipulation policy or physics simulation.
+The humanoid uses 15 actual bones, 5,994 weighted mesh vertices and four IK chains. Foot orientation needs its own control so shin rotations do not point the feet into the floor. Measured floor minima, IK target error and attachment errors are in each rig report. The simple wave measured max IK target error ≈0.000145 and minimum foot vertex z ≈0.0. The prop follows the evaluated hand after grasp; this is baked procedural animation, not a manipulation policy or physics simulation.
 
 Art direction matters: a primitive on a gray void is not a finished scene. Modeled sets, beveled materials, area lights, camera coverage and color contrast make the rig readable. Blender 4.5 Cycles CPU denoising succeeded in the isolated environment; earlier missing-denoiser failures were environment-specific. Still inspect low-sample renders for grain and do not claim a denoiser ran unless the log/output supports it.
 
 ## Learning scope
 
-Repeated renders and these notes improve reproducible workflows, not neural weights. The small supervised narration-intent classifier is the only project-trained model in this iteration. General drawing-policy training, advanced character animation and reinforcement learning remain separate research work requiring appropriate data, models and evaluation.
+Repeated renders and these notes improve reproducible workflows, not neural weights. No project-trained weights are bundled. Reusable video evidence lives in the per-frame trace library; general drawing/acting remains authored work guided by reviewed traces, not a claimed trained animator.

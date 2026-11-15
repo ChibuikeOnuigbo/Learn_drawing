@@ -102,3 +102,11 @@ python scripts/build_drive_recreations.py --only strokes
 ```
 
 Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Blender is required for 3D. The reaction stage re-renders from stored `voice.wav` and `narration.json`; re-transcribing requires the pinned Whisper model. `build_drive_recreations.py` requires FFmpeg/ffprobe and `pip install -e '.[research]'` (OpenCV). It uses the bundled generated plates and the CC0 OpenSketch SVG; private Drive references are study-only and are not required. See `reports/DRIVE_RECREATION_VALIDATION.md` and `references/DRIVE_RESEARCH_DIGEST.md`.
+
+## 10 — Procedural asset kit (`10-procedural-assets/`)
+
+**Skill:** deterministic code-generated assets, seamless overlay loops, depth-layer compositing.
+
+Original procedural PNGs/SVG-style raster assets: oak/pine/bare trees, palm, bush, grass, rock, cloud; snow/rain/wind/fog/dust/leaves/sparks/bokeh loops; light rays, vignette and depth-blur overlays. `contact-sheet.jpg` previews the kit; `scene.json` is an editable 9-layer winter composite with parallax; `render/video.mp4` is a 144-frame / 6 s demo. Bulky generated sequences live in gitignored `data/assets/kit` and regenerate with `scripts/build_asset_kit.py`.
+
+**Measured:** technical QA pass; overlay loops wrap modulo the canvas. **Scope:** stylized code output, not photogrammetry or a Remnant777 study. Inspect suitability per shot.

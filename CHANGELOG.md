@@ -1,3 +1,21 @@
+## 0.8.0 — per-frame trace library, style/asset access, planner and procedural kit
+
+### Removed
+- Deleted the `training/` directory and all project-trained weights (`stroke_policy.npz`, `reaction_classifier.*`). `curve_points` is exact geometry only; reaction intent uses transparent phrase rules. No “trained animator” claims remain.
+
+### Added
+- `animation_mcp.tracing`: PyAV every-frame decode, forward/backward LK point tracks with persistent IDs, simplified contours, shot-cut candidates, chunked NPZ storage, catalog, insert/meme exclusion with origin evidence and local template-hash matching.
+- MCP tools/resources: `trace_video_file`, `list_trace_library`, `get_trace_frame`, `get_trace_track`, `identify_video_insert`, `exclude_trace_inserts`, `search_art_styles`, `plan_new_scene`, `generate_procedural_asset`, `list_procedural_assets`, `build_composite_scene`; `studio://traces`, `studio://traces/{video_id}`, `studio://styles`, `studio://assets`.
+- `styles.py`, `planner.py`, `procedural.py`: measured/reviewed style catalog, seeded concept planner/randomizer + image brief, deterministic trees/weather/overlay assets and depth-layer compositing.
+- Scripts `build_trace_library.py`, `build_asset_kit.py`; example 10 procedural kit/contact sheet/demo; `references/TRACE_LIBRARY_PLAN.json`; Remnant777 access-blocked report.
+- Tests for trace coverage/exclusion/tracks, procedural determinism/loops, planner seeding and composite schema.
+
+### Verified
+- Initial local batch decoded/indexed the supplied short/tutorial/sketch/2.5D/anime-edit/fight-preview/meme-script videos frame-by-frame (see trace catalog and status report). Remnant777 folder remained empty; no Remnant study is claimed.
+
+### Limits
+- Tracks are sparse image features, not recovered vector strokes/rigs. Meme origin matching identifies local templates; unknown origins require review. Trace/asset data are local and gitignored, not bundled third-party media. Planner emits briefs/structure, not finished hosted AI art. Remnant777 compositing awaits accessible source files.
+
 # Changelog
 
 ## 0.7.0 — deeper Drive studies: solved cloth, real blink, measured alignment, aura + licensed strokes

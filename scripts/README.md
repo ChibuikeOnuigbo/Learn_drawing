@@ -10,6 +10,8 @@ Run from the repository root with the bootstrap interpreter (`.venv/bin/python`,
 | `build_showcase.py` | Regenerate verified examples by stage; `--stage 3d --level hard` selects one |
 | `build_drive_recreations.py` | Regenerate Drive-informed examples 05–09; repeat `--only curtain|eye|flashlight|aura|strokes` to select |
 | `prepare_models.py` | Explicitly download/verify optional CLIP + Whisper; large network operation |
+| `build_trace_library.py` | Decode authorized local videos frame-by-frame into point/contour traces (`data/traces`) |
+| `build_asset_kit.py` | Generate procedural asset kit, contact sheet and layered demo composite |
 
 Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Run `author` before `2d` when rig frames are absent. `edit` requires the source renders. Long Blender jobs should use the host's background-process mechanism.
 
@@ -17,6 +19,6 @@ Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Run `author` 
 
 ## Optional research utilities
 
-`research/analyze_drive.py` scans authorized local videos with PyAV; install `.[research]`. `research/migrate_drive.py` restores manifest files with checksum verification using gdown; it does not use cookies or execute downloaded code. These are not bootstrap steps.
+`build_trace_library.py` requires the research extra (PyAV + OpenCV) and writes chunked NPZ traces plus a catalog. `research/analyze_drive.py` scans authorized local videos with PyAV; install `.[research]`. `research/migrate_drive.py` restores manifest files with checksum verification using gdown; it does not use cookies or execute downloaded code. These are not bootstrap steps.
 
 The seven old generators targeting deleted `exmapels/` paths and the failing OpenCV reference sampler were removed. Git history preserves them; `build_showcase.py` and the current examples replace their production role.

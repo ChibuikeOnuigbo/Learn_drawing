@@ -49,7 +49,7 @@ def test_starter_templates_match_current_schemas():
 
 def test_active_markdown_links_resolve():
     files = [ROOT/name for name in ('README.md', 'AGENTS.md', 'CLAUDE.md', 'CHANGELOG.md')]
-    for folder in ('docs', 'skills', 'templates', 'training'):
+    for folder in ('docs', 'skills', 'templates', 'reports'):
         files.extend((ROOT/folder).rglob('*.md'))
     files.extend(ROOT/path for path in ('scripts/README.md', 'references/README.md',
                                          'examples/README.md', 'projects/README.md',

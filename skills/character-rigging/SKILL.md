@@ -18,7 +18,7 @@ Native scene groups inherit transforms and visibility. An SVG asset can contain 
 5. Check eyes/props remain attached and limb lengths read consistently.
 6. Rasterize actual pose variants when using an image sequence; name frames `%04d` from zero.
 
-This is cut-out animation, not automatic mesh skinning or learned drawing. A flattened PNG cannot acquire articulated limbs through a transform track.
+This is cut-out animation, not automatic mesh skinning or automatic drawing. A flattened PNG cannot acquire articulated limbs through a transform track.
 
 ## B. 3D weighted humanoid
 

@@ -71,3 +71,8 @@ Check:
 - The final frame resolves the shot rather than stopping mid-gesture.
 
 A contact sheet can reveal composition and continuity problems, but it cannot prove temporal smoothness. Review playback when available; otherwise label that limitation.
+
+
+## Local compositing path
+
+Use `build_composite_scene` for depth-ordered background/midground/subject/foreground/overlay layers with parallax. Generate weather/blur/vignette assets with `generate_procedural_asset`. A Remnant777-specific study requires accessible source videos; see `reports/REMNANT777_COMPOSITING.md`. Do not label a generic composite as his technique.

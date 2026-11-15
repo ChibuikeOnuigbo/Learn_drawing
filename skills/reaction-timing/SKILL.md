@@ -12,7 +12,7 @@ Use for narration-led commentary and meme inserts. The goal is the right reactio
 1. Read the whole sentence and surrounding story. Identify intent, negation, sarcasm and whether a gag is appropriate at all.
 2. Obtain real narration and word events. Supplied English audio: prepare Whisper, transcribe, review uncertain words. Demo audio: `synthesize_narration` returns engine events.
 3. Call `select_reaction` for candidate intent, then `plan_reaction_cues` on the narration JSON.
-4. Review every decision, including abstentions. The small classifier is trained on a narrow synthetic English corpus; its confidence is not calibrated.
+4. Review every decision, including abstentions. Selection uses explicit English phrase rules; a rule match is not a calibrated probability or proof that the insert is funny.
 5. Choose the semantic anchor. For a verbal setup/punchline, let the setup land before the visual gag. The brain-erase example anchors after “all.”
 6. Check asset style, intensity, duration, transparency/disposal and rights. Override with licensed/original local art when needed.
 7. Render, inspect cue onset/hold/offset and listen when possible.

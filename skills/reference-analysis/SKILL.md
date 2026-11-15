@@ -32,6 +32,8 @@ Translate observations into transferable rules: “increase value contrast at th
 
 CLIP retrieval finds sampled frames by text; it does not recover production files, brush histories or a creator’s process. Similarity is not a quality score.
 
+For per-frame geometry use `trace_video_file` / `scripts/build_trace_library.py`, then `get_trace_frame` and `get_trace_track`. Tracks are sparse optical-flow features, contours are raster approximations, and IDs reset at cuts. Exclude confirmed meme/insert ranges with `exclude_trace_inserts` only after source review; `identify_video_insert` returns unknown rather than guessing. Record reviewed style tags/mechanics in the style catalog with evidence frames.
+
 ## Comparative proof
 
 Author an original shot using the extracted mechanic. Render a proof and compare specific evidence: silhouette readability, contact spacing, cue offset, focal hierarchy. Record what improved and what remains different. Avoid vague “reference parity” claims.

@@ -32,7 +32,8 @@ If you are connected over MCP, `studio://workflow` returns the operating contrac
 | `scripts/` | Bootstrap, client config, showcase; research utilities below |
 | `docs/` | Connection, usage, architecture and headless setup |
 | `references/` | Current scan evidence; historical material under `archive/` |
-| `training/` | Narrow reproducible experiments and evidence-linked lessons |
+| `reports/` | Validation evidence and production lessons |
+| `data/` | Local per-frame trace and procedural asset libraries (ignored) |
 | `tests/`, `reports/` | Regressions and measured validation |
 
  Historical notes do not override the operating contract or current code. When docs and schema disagree, inspect the schema/code, fix the documentation, and report the discrepancy.

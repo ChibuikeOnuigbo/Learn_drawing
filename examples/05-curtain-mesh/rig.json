@@ -1,0 +1,30 @@
+{
+  "topology": {
+    "cols": 13,
+    "rows": 17
+  },
+  "pins": "outer stop + rail; inner gliders meet center",
+  "timing": {
+    "hold": [
+      0,
+      0.75
+    ],
+    "release": [
+      0.75,
+      1.1
+    ],
+    "travel": [
+      1.1,
+      2.85
+    ],
+    "contact": [
+      2.85,
+      3.2
+    ],
+    "settle": [
+      3.2,
+      4
+    ]
+  },
+  "texture": "single stable procedural atlas per panel; no temporal photo blending"
+}

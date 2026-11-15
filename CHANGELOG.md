@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.6.0 — Drive-informed recreations replace generic starters
+
+### Verified
+- Decoded and reviewed the user's Drive curtain, eye/distortion and flashlight evidence (see `references/DRIVE_RESEARCH_DIGEST.md`); reference media stays local/ignored.
+- Three new examples rendered and frame-inspected: curtain mesh (96f), eye/face performance (144f), whole-character flashlight (252f). All technical QA pass.
+- Curtain mesh: zero inverted triangles in sampled frames. Flashlight: max face alpha before 4.5 s = 0, first mean face reveal > 0.5 at 4.667 s, one mask with no face gate.
+- New `tests/test_deformation.py`; example regression replaced with Drive-recreation QA assertions.
+
+### Added
+- `animation_mcp.deformation`: fixed-topology piecewise-affine mesh warp with premultiplied alpha and fold/compression rejection; cubic Hermite keys with zero velocity at repeated pauses; single-mask whole-image flashlight composite.
+- `scripts/build_drive_recreations.py` and examples 05–07 with original generated plates, editable rig/path JSON, provenance and QA.
+- `references/DRIVE_RESEARCH_DIGEST.md`, `reports/DRIVE_RECREATION_VALIDATION.md`.
+
+### Removed
+- Generic 0.5.0 starter demos 05–09 (kinetic type, walk cycle, particle burst, vertical Short, narrated explainer) and `scripts/build_skill_examples.py`. They did not address the user's actual Drive references.
+
+### Changed
+- README, examples/scripts docs and affected skills now route to the recreation studies. Research extra includes OpenCV for the recreation builder.
+
+### Limits
+- Recreations are technique restagings with original model-assisted art, not pixel recovery of Drive videos. Curtain is a 2D warp, not cloth physics. Eye study ships no full blink after a squint prototype duplicated brow pixels. Flashlight plates are approximately matched generated characters, not authentic source frames.
+
 ## 0.5.0 — deeper creative playbooks, planning tools and rendered starters
 
 ### Verified

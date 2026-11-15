@@ -75,11 +75,9 @@ The same 16 playbooks are packaged into MCP: `studio://workflow`, `studio://skil
 | [Semantic reactions](examples/02-semantic-reactions/) | Correct insert at a reviewed spoken beat | Voice, transcript, cue plans, videos, QA |
 | [3D exercises](examples/README.md) | Bounce, wave, walk, reach/grasp | `.blend`, scene JSON, videos, rig QA |
 | [Asset-based short](examples/04-asset-based-short/) | Cross-engine multi-shot edit | Edit JSON, music, 9 s video, QA |
-| [Kinetic typography](examples/05-kinetic-typography/) | Readable type cues, palette roles, staggered holds | Scene JSON, palette, shot plan, 4 s video, QA |
-| [2D walk cycle](examples/06-2d-walk-cycle/) | Planted stance, swing arc, counter-swing, exposure sheet | SVG generator, scene JSON, walk QA, 2 s video |
-| [Particle burst](examples/07-particle-burst/) | Anticipation, impact, drag/gravity-like authored keys | Scene JSON, palette, 3 s video, QA |
-| [Vertical Short](examples/08-vertical-short/) | Portrait-first staging and safe-area text | Scene JSON, palette, delivery notes, 5 s video, QA |
-| [Narrated explainer](examples/09-narrated-explainer/) | Multi-shot layout synced to engine word events | Shot scenes, edit JSON, synthetic voice, captions, 9.125 s video, QA |
+| [Curtain mesh recreation](examples/05-curtain-mesh/) | Pinned rail/tieback release, stable texture, no photo crossfade | Generated plate, mesh rig, fold QA, 4 s video |
+| [Eye/face performance](examples/06-eye-face-performance/) | Traced apertures, original-iris gaze, hair lag, local smile | Generated portrait, rig JSON, QA, 6 s video |
+| [Whole-character flashlight](examples/07-flashlight-whole-character/) | One circle mask over two complete matched characters | Matched generated plates, beam path, timing QA, 10.5 s video |
 
 ![2D moonlight inspection sheet](examples/01-2d-moonlight/render/inspection/contact-sheet.jpg)
 
@@ -93,8 +91,8 @@ Regenerate selectively:
 .venv/bin/python scripts/build_showcase.py --stage author
 .venv/bin/python scripts/build_showcase.py --stage 2d
 .venv/bin/python scripts/build_showcase.py --stage 3d --level hard
-.venv/bin/python scripts/build_skill_examples.py            # examples 05–09
-.venv/bin/python scripts/build_skill_examples.py --only walk
+.venv/bin/python scripts/build_drive_recreations.py       # examples 05–07
+.venv/bin/python scripts/build_drive_recreations.py --only curtain
 ```
 
 ## Repository layout
@@ -129,4 +127,4 @@ New source goes in `projects/`; regenerable output goes in `output/`. Local corp
 
 The Squidward GIF is a third-party local timing test with no asserted republication license; replace it with original/licensed art before publication. Reference scans are sampled evidence, not claims of watching every tutorial or training a general animator.
 
-[Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Expansion validation](reports/EXPANSION_VALIDATION.md) · [Changelog](CHANGELOG.md)
+[Usage](docs/USAGE.md) · [Architecture](docs/ARCHITECTURE.md) · [Headless Blender](docs/HEADLESS_BLENDER.md) · [Agent-kit validation](reports/AGENT_KIT_VALIDATION.md) · [Drive recreation validation](reports/DRIVE_RECREATION_VALIDATION.md) · [Changelog](CHANGELOG.md)

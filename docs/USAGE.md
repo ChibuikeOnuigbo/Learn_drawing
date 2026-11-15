@@ -91,3 +91,15 @@ Cue frames round supplied word times to the frame grid. Engine timestamps and AS
 5. Fix concrete defects, rerender affected work, save a lesson linked to evidence.
 
 Use the existing checkout in each isolated cloud task. Do not create Git worktrees unless requested. Live server/render processes do not survive environment publication; start the MCP server again through the host configuration.
+
+## Drive-informed recreation studies
+
+Examples 05–07 restage techniques from the user's research Drive using original generated plates:
+
+```bash
+pip install -e '.[research]'
+PATH="/path/to/ffmpeg/bin:$PATH" python scripts/build_drive_recreations.py
+python scripts/build_drive_recreations.py --only curtain --only eye --only flashlight
+```
+
+Read `references/DRIVE_RESEARCH_DIGEST.md` for the source IDs/lessons and `reports/DRIVE_RECREATION_VALIDATION.md` for measured checks. The builder does not need the private Drive videos at render time; they were study-only. Inspect `mesh-qa.json`, `eye-qa.json` and `beam-qa.json` plus actual frames before accepting a result.

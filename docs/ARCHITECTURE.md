@@ -13,6 +13,7 @@ The former `src/animation_mcp/WORKFLOW.md` duplicate was removed. Update the dir
 ```text
 brief/shot plan
   ├─ production.py (shot grid, palette/contrast, exposure sheet)
+  ├─ deformation.py (fixed-topology mesh warp, fold checks, whole-image reveal)
   ├─ scaffold.py (no-overwrite project starter from packaged templates)
   ├─ scene.py → render.py (resvg SVG/raster → FFmpeg → inspect)
   ├─ blender_scene.py → trusted launcher → blender_worker / rig_worker / cinematic
@@ -25,6 +26,7 @@ brief/shot plan
 - `server.py`: stdio MCP surface, workspace confinement and packaged guidance.
 - `cli.py`: local render/render3d/inspect plus `new` and `doctor` subcommands.
 - `production.py`, `scaffold.py`: deterministic pre-production helpers and project scaffolding; planning output is not artistic acceptance.
+- `deformation.py`: traced-control mesh warps and one-mask character reveals used by `scripts/build_drive_recreations.py`; geometry checks are not artistic approval.
 - `doctor.py`: offline package/engine/template checks and optional tiny real renders; no downloads.
 - `scene.py`, `blender_scene.py`, `edit.py`: strict current schemas and budget guards.
 - `character.py`, `cinematic.py`, `presets.py`: original example art/staging, not general generators.

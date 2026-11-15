@@ -29,4 +29,4 @@ Verify codec, dimensions, fps, decoded frame count, duration and expected audio.
 
 Use versioned filenames and preserve a known-good source. Record what changed between exports. Technical pass is not platform approval or artistic acceptance. If playback/listening was unavailable, state exactly what remains pending.
 
-See `examples/08-vertical-short/` for a portrait-safe staging proof and `examples/09-narrated-explainer/` for a multi-shot narrated layout.
+See `templates/scene-vertical.json` for portrait-safe staging and `examples/04-asset-based-short/` for a multi-shot layout.

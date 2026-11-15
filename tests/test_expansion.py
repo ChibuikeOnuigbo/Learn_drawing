@@ -131,23 +131,21 @@ def test_expanded_catalog_and_new_templates():
     assert palette["roles"]["text"] != palette["roles"]["background"]
 
 
-def test_new_example_sources_match_schemas_and_qa():
-    cases = [
-        ("05-kinetic-typography", "scene.json", "render/inspection/qa.json", 96, 960, 540),
-        ("06-2d-walk-cycle", "scene.json", "render/inspection/qa.json", 48, 640, 360),
-        ("07-particle-burst", "scene.json", "render/inspection/qa.json", 72, 960, 540),
-        ("08-vertical-short", "scene.json", "render/inspection/qa.json", 120, 540, 960),
-    ]
-    for folder, scene_name, qa_name, frames, width, height in cases:
-        p = ROOT / "examples" / folder
-        scene = Scene.model_validate_json((p / scene_name).read_text())
-        qa = json.loads((p / qa_name).read_text())
-        assert (scene.frames, scene.width, scene.height) == (frames, width, height)
-        assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (frames, width, height)
-    p = ROOT / "examples/09-narrated-explainer"
-    edit = Edit.model_validate_json((p / "edit.json").read_text())
-    assert all(a.end <= b.start + 1e-9 for a, b in zip(edit.captions, edit.captions[1:]))
-    qa = json.loads((p / "qa.json").read_text())
-    assert qa["technical_pass"] and qa["audio_present"] and qa["frames"] == 219
-    walk = json.loads((ROOT / "examples/06-2d-walk-cycle/walk-qa.json").read_text())
-    assert walk["max_stance_foot_y_error"] == 0
+def test_drive_recreation_examples_have_passing_qa_and_honest_scope():
+    curtain = ROOT / "examples/05-curtain-mesh"
+    qa = json.loads((curtain / "inspection/qa.json").read_text())
+    mesh = json.loads((curtain / "mesh-qa.json").read_text())
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (96, 1280, 720)
+    assert mesh["max_inverted"] == 0 and mesh["min_area_ratio"] > 0
+    eye = ROOT / "examples/06-eye-face-performance"
+    qa = json.loads((eye / "inspection/qa.json").read_text())
+    eye_qa = json.loads((eye / "eye-qa.json").read_text())
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (144, 720, 720)
+    assert "no blink warp" in eye_qa["blink_scope"]
+    flash = ROOT / "examples/07-flashlight-whole-character"
+    qa = json.loads((flash / "inspection/qa.json").read_text())
+    beam = json.loads((flash / "beam-qa.json").read_text())
+    assert qa["technical_pass"] and (qa["frames"], qa["width"], qa["height"]) == (252, 720, 720)
+    assert beam["max_face_alpha_before_4_5"] == 0
+    assert beam["first_face_alpha_gt_0_5"] >= 4.5
+    assert "no face gate" in beam["mask"]

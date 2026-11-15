@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "animation-agent-studio"
-version = "0.5.0"
-description = "Editable 2D/3D animation, pre-production planning, video editing, reaction timing and render inspection over MCP"
+version = "0.6.0"
+description = "Editable 2D/3D animation, reference-driven deformation studies, pre-production planning, video editing and render inspection over MCP"
 requires-python = ">=3.11"
 dependencies = ["mcp==1.29.0", "pydantic>=2.11,<3", "Pillow==13.0.0", "resvg-py==0.5.0", "numpy>=2.2,<3", "scikit-learn==1.8.0", "espeakng-loader==0.2.4", "faster-whisper==1.2.1"]
 
 [project.optional-dependencies]
-research = ["av==18.1.0", "gdown==5.2.0"]
+research = ["av==18.1.0", "gdown==5.2.0", "opencv-python-headless>=4.10,<5"]
 test = ["pytest>=9,<10"]
 semantic = ["onnxruntime>=1.23,<2", "tokenizers>=0.22,<1"]
 

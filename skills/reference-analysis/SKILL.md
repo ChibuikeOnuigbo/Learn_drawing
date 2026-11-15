@@ -39,3 +39,7 @@ Author an original shot using the extracted mechanic. Render a proof and compare
 ## Deliverables
 
 Provide an observation log with scope/timestamps, extracted mechanics, original proof and provenance/rights notes. Keep third-party media out of Git unless redistribution is clearly authorized.
+
+## Worked Drive digest
+
+`references/DRIVE_RESEARCH_DIGEST.md` maps the user's curtain, eye/distortion and flashlight research to exact Drive IDs and the mechanics used in examples 05–07. Rebuild those proofs with `scripts/build_drive_recreations.py`; inspect `mesh-qa.json`, `eye-qa.json` and `beam-qa.json` before claiming a fix. The recurring failures to avoid are photo crossfades sold as cloth, face-only body reveals, unanchored warps and invented detail sold as recovered source.

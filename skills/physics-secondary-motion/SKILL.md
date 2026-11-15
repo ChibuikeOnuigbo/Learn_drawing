@@ -35,7 +35,7 @@ The toolkit can animate many explicit ellipse/path/image layers. A burst recipe:
 4. Stagger birth/death so the effect does not pop as one rigid group.
 5. Keep particle count bounded; preview before scaling up.
 
-See `examples/07-particle-burst/` for a deterministic authored burst. It is keyframed geometry, not a particle simulator, fire/fluid solve or learned VFX model.
+See `examples/05-curtain-mesh/` for anchored secondary motion with fold checks. It is a fixed-topology 2D mesh warp, not a cloth simulator.
 
 ## Validation
 

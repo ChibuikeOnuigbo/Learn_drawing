@@ -31,6 +31,6 @@ For narrated explainers, plan shots from real speech events where possible. `pla
 
 ## Proof route
 
-Start from `templates/scene-2d.json` or the kinetic example in `examples/05-kinetic-typography/`. Preview first/middle/last and each text onset. Render a small proof, inspect legibility at target display size, then finalize.
+Start from `templates/scene-2d.json`. Preview first/middle/last and each text onset. Render a small proof, inspect legibility at target display size, then finalize.
 
 Accept only after checking reading order, hold duration, safe areas, contrast and export timing. Motion energy is not a substitute for clarity.

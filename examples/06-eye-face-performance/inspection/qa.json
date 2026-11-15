@@ -1,0 +1,40 @@
+{
+  "video": "/home/user/Learn_drawing/examples/06-eye-face-performance/video.mp4",
+  "frames": 144,
+  "fps": 24.0,
+  "duration": 6.0,
+  "width": 720,
+  "height": 720,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 44.94551482036659,
+      "luma_mean": 46.1775675154321
+    },
+    {
+      "frame": 36,
+      "stddev": 44.83347164793237,
+      "luma_mean": 46.2815245627572
+    },
+    {
+      "frame": 72,
+      "stddev": 44.923613764738356,
+      "luma_mean": 46.40286972736625
+    },
+    {
+      "frame": 108,
+      "stddev": 44.682584803331984,
+      "luma_mean": 46.16815329218107
+    },
+    {
+      "frame": 143,
+      "stddev": 44.88220292490632,
+      "luma_mean": 46.192093621399174
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/06-eye-face-performance/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

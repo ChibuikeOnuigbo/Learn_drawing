@@ -12,7 +12,7 @@ import sys
 import tempfile
 
 REQUIRED_DISTRIBUTIONS = (
-    "mcp", "pydantic", "Pillow", "resvg-py", "numpy", "scikit-learn",
+    "mcp", "pydantic", "Pillow", "resvg-py", "numpy",
     "espeakng-loader", "faster-whisper",
 )
 

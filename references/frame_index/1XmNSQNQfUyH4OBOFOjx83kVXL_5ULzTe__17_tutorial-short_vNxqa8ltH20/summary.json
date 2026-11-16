@@ -1,0 +1,16 @@
+{
+ "video": "17_tutorial-short_vNxqa8ltH20.mp4",
+ "drive_id": "1XmNSQNQfUyH4OBOFOjx83kVXL_5ULzTe",
+ "sha256": "73216efcc846c7a80cd8fc9e6fd45e49988a9b90380152b84a96dcdb29f585dc",
+ "bytes": 646674,
+ "width": 360,
+ "height": 640,
+ "fps": 30.0,
+ "duration_seconds": 25.033,
+ "frames_indexed": 751,
+ "every_frame_indexed": true,
+ "shots": 1,
+ "cut_frames": [],
+ "cut_count": 0,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

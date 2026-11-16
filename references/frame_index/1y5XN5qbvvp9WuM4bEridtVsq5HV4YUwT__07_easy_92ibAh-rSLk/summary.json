@@ -1,0 +1,31 @@
+{
+ "video": "07_easy_92ibAh-rSLk.mp4",
+ "drive_id": "1y5XN5qbvvp9WuM4bEridtVsq5HV4YUwT",
+ "sha256": "101c91b17b709b4090ef3330e6656e92d2935eed1a7857a84b74add5b0cc73c8",
+ "bytes": 20301583,
+ "width": 1280,
+ "height": 720,
+ "fps": 30.0,
+ "duration_seconds": 638.133,
+ "frames_indexed": 19144,
+ "every_frame_indexed": true,
+ "shots": 15,
+ "cut_frames": [
+  1883,
+  3864,
+  4143,
+  5398,
+  6397,
+  6966,
+  7450,
+  8554,
+  9176,
+  11627,
+  13650,
+  16968,
+  17180,
+  17845
+ ],
+ "cut_count": 14,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

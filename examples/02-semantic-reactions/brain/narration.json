@@ -1,0 +1,115 @@
+{
+  "audio": "voice.wav",
+  "text": "No brains at all. He forgot to check which file he was deleting.",
+  "duration": 5.027125,
+  "words": [
+    {
+      "text": "No",
+      "char_start": 0,
+      "char_end": 2,
+      "start": 0,
+      "end": 0.4,
+      "probability": 0.7162067890167236
+    },
+    {
+      "text": "brains",
+      "char_start": 3,
+      "char_end": 9,
+      "start": 0.4,
+      "end": 0.82,
+      "probability": 0.9711588621139526
+    },
+    {
+      "text": "at",
+      "char_start": 10,
+      "char_end": 12,
+      "start": 0.82,
+      "end": 1.2,
+      "probability": 0.9942674040794373
+    },
+    {
+      "text": "all.",
+      "char_start": 13,
+      "char_end": 17,
+      "start": 1.2,
+      "end": 1.44,
+      "probability": 0.9988834261894226
+    },
+    {
+      "text": "He",
+      "char_start": 18,
+      "char_end": 20,
+      "start": 2.1,
+      "end": 2.26,
+      "probability": 0.994478702545166
+    },
+    {
+      "text": "forgot",
+      "char_start": 21,
+      "char_end": 27,
+      "start": 2.26,
+      "end": 2.56,
+      "probability": 0.9967252612113953
+    },
+    {
+      "text": "to",
+      "char_start": 28,
+      "char_end": 30,
+      "start": 2.56,
+      "end": 2.84,
+      "probability": 0.9960381984710693
+    },
+    {
+      "text": "check",
+      "char_start": 31,
+      "char_end": 36,
+      "start": 2.84,
+      "end": 3.1,
+      "probability": 0.9976645708084106
+    },
+    {
+      "text": "which",
+      "char_start": 37,
+      "char_end": 42,
+      "start": 3.1,
+      "end": 3.42,
+      "probability": 0.9889055490493774
+    },
+    {
+      "text": "file",
+      "char_start": 43,
+      "char_end": 47,
+      "start": 3.42,
+      "end": 3.74,
+      "probability": 0.9953588843345642
+    },
+    {
+      "text": "he",
+      "char_start": 48,
+      "char_end": 50,
+      "start": 3.74,
+      "end": 4.08,
+      "probability": 0.996929943561554
+    },
+    {
+      "text": "was",
+      "char_start": 51,
+      "char_end": 54,
+      "start": 4.08,
+      "end": 4.2,
+      "probability": 0.9990684390068054
+    },
+    {
+      "text": "deleting.",
+      "char_start": 55,
+      "char_end": 64,
+      "start": 4.2,
+      "end": 4.46,
+      "probability": 0.9981732368469238
+    }
+  ],
+  "engine": "pretrained Whisper base.en / faster-whisper CPU int8",
+  "timing": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "review_required": false,
+  "language": "en"
+}

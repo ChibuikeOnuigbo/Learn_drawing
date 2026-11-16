@@ -2,7 +2,6 @@ import asyncio
 import json
 import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 import wave
@@ -17,6 +16,7 @@ from animation_mcp.reactions import classify,plan_cues,compose_reactions
 from animation_mcp.speech import synthesize
 from animation_mcp.blender_scene import Scene3D,render_3d
 from animation_mcp.presets import scene_preset
+from animation_mcp.doctor import resolve_command
 
 
 @pytest.mark.parametrize('text,intent',[
@@ -61,14 +61,23 @@ def test_bad_word_timing_is_rejected():
         plan_cues(dict(text='Hello',duration=1,words=[dict(text='Hello',char_start=0,char_end=5,start=float('nan'),end=1)]))
 
 
-@pytest.mark.skipif(not shutil.which('blender'),reason='Optional Blender executable is not installed')
+@pytest.mark.skipif(not resolve_command('blender'),reason='Optional Blender executable is not installed')
 def test_real_armature_skin_and_ik_render(tmp_path):
-    spec=scene_preset('simple',96,96,1);spec.update(frames=4,fps=4)
+    spec=scene_preset('simple',96,96,1);spec.update(frames=4,fps=4,camera_poses=[])
     qa=render_3d(spec,tmp_path/'blender')
     rig=json.loads((tmp_path/'blender/rig-qa.json').read_text())[0]
     assert qa['technical_pass'] and qa['rig_pass']
     assert rig['armature_modifier'] and rig['bones']==15 and rig['weighted_vertices']>5000
     assert rig['ik_chains']==4 and rig['minimum_foot_vertex_z']>=-.025
+
+
+def test_character_rig_is_layered_and_posed():
+    from animation_mcp.character import character_svg
+    a=character_svg(0);b=character_svg(65)
+    assert a!=b
+    for token in ['id="body-pivot"','id="head-pivot"','id="arm-right"','id="eye-left"']:
+        assert token in a
+    assert 'transform="translate(0 ' in b
 
 
 def test_mcp_production_tools_and_prompt(tmp_path):
@@ -78,19 +87,53 @@ def test_mcp_production_tools_and_prompt(tmp_path):
             async with ClientSession(read,write) as session:
                 await session.initialize()
                 names={t.name for t in (await session.list_tools()).tools}
-                assert {'synthesize_narration','select_reaction','render_reaction_video','transcribe_voiceover','search_reference_library','render_3d_exercise'}<=names
+                assert {'synthesize_narration','select_reaction','render_reaction_video','transcribe_voiceover','search_reference_library','render_3d_exercise',
+                        'plan_shots','color_palette','timing_sheet','create_project',
+                        'trace_video_file','list_trace_library','get_trace_frame','get_trace_track','identify_video_insert',
+                        'exclude_trace_inserts','search_art_styles','plan_new_scene','generate_procedural_asset',
+                        'list_procedural_assets','build_composite_scene'}<=names
                 result=await session.call_tool('select_reaction',{'text':'No brains at all.'})
                 assert not result.isError
                 payload=result.structuredContent or json.loads(result.content[0].text)
                 assert payload['intent']=='brain_wipe'
                 prompts=await session.list_prompts();assert 'produce_video' in {p.name for p in prompts.prompts}
-                resources=await session.list_resources();assert any(str(r.uri)=='studio://workflow' for r in resources.resources)
+                resources=await session.list_resources();assert {'studio://workflow','studio://skills','studio://traces','studio://styles','studio://assets'} <= {str(r.uri) for r in resources.resources}
+                templates=await session.list_resource_templates()
+                assert any(t.uriTemplate=='studio://skills/{name}' for t in templates.resourceTemplates)
+                assert any(t.uriTemplate=='studio://traces/{video_id}' for t in templates.resourceTemplates)
+                guide=await session.read_resource('studio://skills/drawing')
+                assert 'name: drawing' in guide.contents[0].text
+                skill=await session.call_tool('get_skill',{'name':'3d-animation'})
+                assert not skill.isError
+                payload=skill.structuredContent or json.loads(skill.content[0].text)
+                assert 'name: 3d-animation' in payload['content']
+                bad=await session.call_tool('get_skill',{'name':'../server'})
+                assert bad.isError
+                health=await session.call_tool('check_environment',{})
+                assert not health.isError
+                payload=health.structuredContent or json.loads(health.content[0].text)
+                assert payload['workspace']==str(tmp_path) and 'scope' in payload
                 schema=await session.call_tool('get_scene_schema',{'kind':'3d'})
                 assert not schema.isError
                 data=schema.structuredContent or json.loads(schema.content[0].text)
                 assert 'rigs' in data['properties']
                 catalog=await session.call_tool('get_model_catalog',{})
                 assert not catalog.isError
+                shots=await session.call_tool('plan_shots',{'beats':[{'title':'A','weight':1},{'title':'B','weight':2}],'fps':24,'duration_seconds':1})
+                assert not shots.isError
+                payload=shots.structuredContent or json.loads(shots.content[0].text)
+                assert payload['frames']==24 and payload['shots'][0]['end_frame']==payload['shots'][1]['start_frame']
+                palette=await session.call_tool('color_palette',{'base':'#4f8cff','harmony':'triadic'})
+                assert not palette.isError
+                sheet=await session.call_tool('timing_sheet',{'frames':12,'fps':24,'exposure_step':2})
+                assert not sheet.isError
+                payload=sheet.structuredContent or json.loads(sheet.content[0].text)
+                assert payload['drawing_count']==6
+                project=await session.call_tool('create_project',{'name':'mcp-proof','brief':'A tiny proof','width':320,'height':180})
+                assert not project.isError
+                payload=project.structuredContent or json.loads(project.content[0].text)
+                assert (tmp_path/'projects/mcp-proof/scenes/scene-2d.json').is_file()
+                assert payload['shot_plan']['frames']==168
                 prompt=await session.get_prompt('produce_video',arguments={'brief':'Make a timed reaction clip.'})
                 assert prompt.messages
     asyncio.run(run())

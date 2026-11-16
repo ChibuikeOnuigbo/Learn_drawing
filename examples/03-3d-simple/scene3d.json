@@ -1,0 +1,65 @@
+{
+  "width": 800,
+  "height": 450,
+  "fps": 24,
+  "frames": 96,
+  "samples": 12,
+  "denoise": true,
+  "art_direction": "simple",
+  "camera": [
+    3.0,
+    -6.8,
+    2.7
+  ],
+  "target": [
+    0.0,
+    0.0,
+    1.18
+  ],
+  "objects": [],
+  "rigs": [
+    {
+      "name": "Nova",
+      "action": "wave",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.055,
+        0.5,
+        0.56
+      ],
+      "target_keys": []
+    }
+  ],
+  "camera_poses": [
+    {
+      "frame": 0,
+      "location": [
+        3.0,
+        -6.8,
+        2.7
+      ],
+      "target": [
+        0.0,
+        0.0,
+        1.18
+      ]
+    },
+    {
+      "frame": 95,
+      "location": [
+        2.1,
+        -6.2,
+        2.5
+      ],
+      "target": [
+        0.0,
+        0.0,
+        1.22
+      ]
+    }
+  ]
+}

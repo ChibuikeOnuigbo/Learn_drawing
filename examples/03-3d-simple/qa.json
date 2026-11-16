@@ -1,0 +1,103 @@
+{
+  "video": "/home/user/Learn_drawing/examples/03-3d-simple/video.mp4",
+  "frames": 96,
+  "fps": 24.0,
+  "duration": 4.0,
+  "width": 800,
+  "height": 450,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 55.38974659953562,
+      "luma_mean": 60.61648148148148
+    },
+    {
+      "frame": 6,
+      "stddev": 55.354653500493136,
+      "luma_mean": 60.64881851851852
+    },
+    {
+      "frame": 12,
+      "stddev": 55.33101435160672,
+      "luma_mean": 60.61065833333333
+    },
+    {
+      "frame": 18,
+      "stddev": 55.2262092169877,
+      "luma_mean": 60.47045462962963
+    },
+    {
+      "frame": 24,
+      "stddev": 55.19596180003104,
+      "luma_mean": 60.554425
+    },
+    {
+      "frame": 30,
+      "stddev": 55.09409561682962,
+      "luma_mean": 60.58102592592593
+    },
+    {
+      "frame": 36,
+      "stddev": 54.84726497962637,
+      "luma_mean": 60.27650462962963
+    },
+    {
+      "frame": 42,
+      "stddev": 54.85739470978477,
+      "luma_mean": 60.44903425925926
+    },
+    {
+      "frame": 48,
+      "stddev": 54.57723998439642,
+      "luma_mean": 60.33502037037037
+    },
+    {
+      "frame": 54,
+      "stddev": 54.46831821259421,
+      "luma_mean": 60.309348148148146
+    },
+    {
+      "frame": 60,
+      "stddev": 54.12790472739946,
+      "luma_mean": 59.919790740740744
+    },
+    {
+      "frame": 66,
+      "stddev": 54.17015530010363,
+      "luma_mean": 60.188084259259256
+    },
+    {
+      "frame": 72,
+      "stddev": 54.02793100880184,
+      "luma_mean": 60.084066666666665
+    },
+    {
+      "frame": 78,
+      "stddev": 53.98843243288246,
+      "luma_mean": 60.000690740740744
+    },
+    {
+      "frame": 84,
+      "stddev": 53.92802081299978,
+      "luma_mean": 59.94399166666667
+    },
+    {
+      "frame": 90,
+      "stddev": 53.912734161525734,
+      "luma_mean": 60.07227037037037
+    },
+    {
+      "frame": 95,
+      "stddev": 53.883352490505324,
+      "luma_mean": 60.02086851851852
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/03-3d-simple/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "blend": "/home/user/Learn_drawing/examples/03-3d-simple/scene.blend",
+  "rig_pass": true,
+  "rig_report": "/home/user/Learn_drawing/examples/03-3d-simple/rig-qa.json"
+}

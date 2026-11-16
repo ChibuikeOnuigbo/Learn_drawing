@@ -81,6 +81,16 @@ def test_actual_encode_decode_and_scene_metadata(tmp_path):
     assert Path(qa['contact_sheet']).exists()
 
 
+def test_frame_token_image_sequence_asset(tmp_path):
+    Image.new('RGB',(20,20),'red').save(tmp_path/'seq-0000.png')
+    Image.new('RGB',(20,20),'blue').save(tmp_path/'seq-0001.png')
+    scene=Scene.model_validate(dict(width=64,height=64,frames=2,layers=[
+        dict(id='plate',kind='image',asset='seq-%04d.png',x=32,y=32,width=64,height=64)]))
+    first=np.array(draw_frame(scene,0,tmp_path));second=np.array(draw_frame(scene,1,tmp_path))
+    assert first[32,32,0]>200 and first[32,32,2]<50
+    assert second[32,32,2]>200 and second[32,32,0]<50
+
+
 def test_stdio_mcp_client_render_and_error(tmp_path):
     async def run():
         params=StdioServerParameters(command=sys.executable,args=['-m','animation_mcp.server'],

@@ -1,7 +1,7 @@
 """Constrained 3D scene format; the server never accepts executable Blender code."""
 from pathlib import Path
 import json
-import shutil
+import os
 import subprocess
 from typing import Literal
 from pydantic import Field, model_validator
@@ -44,7 +44,7 @@ class RigTarget(Strict):
 
 class Rig(Strict):
     name: str = Field(pattern=r'^[A-Za-z][A-Za-z0-9_-]{0,63}$')
-    action: Literal['idle','wave','walk','pickup'] = 'wave'
+    action: Literal['idle','wave','walk','pickup','reach'] = 'wave'
     position: tuple[float,float,float] = (0,0,0)
     color: tuple[float,float,float] = (.10,.55,.62)
     target_keys: list[RigTarget] = Field(default_factory=list,max_length=400)
@@ -75,6 +75,7 @@ class Scene3D(Strict):
     frames: int = Field(default=48,ge=1,le=600)
     samples: int = Field(default=16,ge=1,le=128)
     denoise: bool = False
+    art_direction: Literal['basic','easy','simple','medium','hard'] = 'basic'
     camera: tuple[float,float,float] = (7,-10,6)
     target: tuple[float,float,float] = (0,0,1)
     objects: list[Object3D] = Field(default_factory=list,max_length=100)
@@ -87,7 +88,8 @@ class Scene3D(Strict):
             raise ValueError("Video dimensions must be even")
         if self.camera == self.target:
             raise ValueError("Camera and target must differ")
-        if not self.objects and not self.rigs:raise ValueError('Supply an object or rig')
+        if not self.objects and not self.rigs and self.art_direction=='basic':
+            raise ValueError('Supply an object or rig, or choose an art_direction preset')
         names = [o.name for o in self.objects]+[r.name for r in self.rigs]
         if len(names) != len(set(names)):
             raise ValueError("Object names must be unique")
@@ -105,16 +107,19 @@ def render_3d(spec: dict, folder: Path) -> dict:
     scene = Scene3D.model_validate(spec)
     if scene.width*scene.height*scene.frames*scene.samples > 1_500_000_000:
         raise ValueError("3D render exceeds preview budget; reduce resolution, frames or samples")
-    blender = shutil.which("blender")
+    from .doctor import resolve_command
+    blender = resolve_command("blender")
     if not blender:
-        raise RuntimeError("Blender must be installed for 3D rendering")
+        raise RuntimeError("Blender must be installed for 3D rendering (or set ANIMATION_BLENDER)")
     folder.mkdir(parents=True,exist_ok=True)
     path = folder/"scene3d.json"
     path.write_text(scene.model_dump_json(indent=2))
     with (folder/"blender.log").open("w") as log:
         subprocess.run([blender,"--background","--threads","2","--python",
-                        str(Path(__file__).with_name("blender_worker.py")),"--",str(path.resolve()),
-                        str(folder.resolve())],stdout=log,stderr=subprocess.STDOUT,check=True,timeout=900)
+                        str(Path(__file__).with_name("blender_launcher.py")),"--",
+                        str(Path(__file__).with_name("blender_worker.py")),str(path.resolve()),
+                        str(folder.resolve())],stdout=log,stderr=subprocess.STDOUT,check=True,
+                       timeout=int(os.environ.get('ANIMATION_BLENDER_TIMEOUT','3600')))
     video = folder/"video.mp4"
     subprocess.run(["ffmpeg","-y","-v","error","-framerate",str(scene.fps),"-start_number","0",
                     "-i",str(folder/"frames"/"%04d.png"),"-frames:v",str(scene.frames),"-c:v","libx264",

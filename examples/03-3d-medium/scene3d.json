@@ -1,0 +1,65 @@
+{
+  "width": 800,
+  "height": 450,
+  "fps": 24,
+  "frames": 120,
+  "samples": 12,
+  "denoise": true,
+  "art_direction": "medium",
+  "camera": [
+    1.25,
+    -6.2,
+    2.5
+  ],
+  "target": [
+    0.0,
+    -0.45,
+    1.15
+  ],
+  "objects": [],
+  "rigs": [
+    {
+      "name": "Nova",
+      "action": "walk",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.055,
+        0.5,
+        0.56
+      ],
+      "target_keys": []
+    }
+  ],
+  "camera_poses": [
+    {
+      "frame": 0,
+      "location": [
+        1.25,
+        -6.2,
+        2.5
+      ],
+      "target": [
+        0.0,
+        0.0,
+        1.15
+      ]
+    },
+    {
+      "frame": 119,
+      "location": [
+        1.0,
+        -7.7,
+        2.35
+      ],
+      "target": [
+        0.0,
+        -1.35,
+        1.15
+      ]
+    }
+  ]
+}

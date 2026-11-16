@@ -1,0 +1,40 @@
+{
+  "video": "/home/user/Learn_drawing/examples/07-flashlight-whole-character/video.mp4",
+  "frames": 252,
+  "fps": 24.0,
+  "duration": 10.5,
+  "width": 720,
+  "height": 720,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 44.47074236001719,
+      "luma_mean": 28.5550591563786
+    },
+    {
+      "frame": 63,
+      "stddev": 39.31549737464118,
+      "luma_mean": 26.510675797325103
+    },
+    {
+      "frame": 126,
+      "stddev": 33.006853795645235,
+      "luma_mean": 23.90535686728395
+    },
+    {
+      "frame": 189,
+      "stddev": 39.1684429948746,
+      "luma_mean": 26.438460648148148
+    },
+    {
+      "frame": 251,
+      "stddev": 33.005074649524495,
+      "luma_mean": 23.924851466049383
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/07-flashlight-whole-character/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

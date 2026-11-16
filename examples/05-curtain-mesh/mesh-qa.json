@@ -1,0 +1,341 @@
+{
+  "control_rate_hz": 17,
+  "comparison_fps": 60,
+  "comparison_frames": 240,
+  "true_control_fps": 17,
+  "true_control_frames": 68,
+  "max_inverted": 0,
+  "min_area_ratio": 0.0300063336844458,
+  "solver_fallback_controls": 18,
+  "max_solver_edge_strain": 0.8758300873826116,
+  "max_projection_px": 25.79877016976951,
+  "scope": "2D PBD distance constraints + monotonic projection; horizontal gathering follows hung span (out-of-plane buckling is shading, not solved depth); fallback blend to analytic safe pose on fold risk is reported per control",
+  "samples": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.05001014498268704,
+        "max_area_ratio": 0.43916238348776065,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.050015462713688175,
+        "max_area_ratio": 0.4387013445329327,
+        "max_vertex_displacement": 1032.040192069792
+      }
+    },
+    {
+      "frame": 30,
+      "time": 0.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.05005900239498228,
+        "max_area_ratio": 0.43817180006829326,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.2497139943067234,
+        "max_area_ratio": 0.4565549527904293,
+        "max_vertex_displacement": 1044.676666220436
+      }
+    },
+    {
+      "frame": 60,
+      "time": 1.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.4056270346469182,
+        "max_area_ratio": 0.43580547988291696,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.40216257898437613,
+        "max_area_ratio": 0.44441404654246325,
+        "max_vertex_displacement": 1016.587752896712
+      }
+    },
+    {
+      "frame": 90,
+      "time": 1.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.4988266261301275,
+        "max_area_ratio": 0.5321496241173329,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.49712555359163946,
+        "max_area_ratio": 0.5388640341143545,
+        "max_vertex_displacement": 951.0501770975258
+      }
+    },
+    {
+      "frame": 120,
+      "time": 2.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.6699855057975417,
+        "max_area_ratio": 0.6885727036593443,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.6682701696260553,
+        "max_area_ratio": 0.692984106371021,
+        "max_vertex_displacement": 858.5289889710732
+      }
+    },
+    {
+      "frame": 150,
+      "time": 2.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8238776181685462,
+        "max_area_ratio": 0.8281421792177068,
+        "max_vertex_displacement": 391.3522458010946
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8242932238029913,
+        "max_area_ratio": 0.8276796850170354,
+        "max_vertex_displacement": 783.4136062132186
+      }
+    },
+    {
+      "frame": 180,
+      "time": 3.0,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8716650665472621,
+        "max_area_ratio": 0.8748818054488072,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8716954417923934,
+        "max_area_ratio": 0.875156313627598,
+        "max_vertex_displacement": 763.2168761236874
+      }
+    },
+    {
+      "frame": 210,
+      "time": 3.5,
+      "left": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.8731741232836663,
+        "max_area_ratio": 0.8735225217321272,
+        "max_vertex_displacement": 391.3118960624632
+      },
+      "right": {
+        "triangles": 384,
+        "inverted": 0,
+        "min_area_ratio": 0.873194327444334,
+        "max_area_ratio": 0.8735351662739392,
+        "max_vertex_displacement": 763.2168761236874
+      }
+    }
+  ],
+  "solver_samples": [
+    {
+      "control": 0,
+      "time": 0.0,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.7974923263042818,
+        "mean_edge_strain": 0.02272536234580628,
+        "projection_px": 0.0,
+        "fallback_blend": 0.33258056640625
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.8102084965418517,
+        "mean_edge_strain": 0.02030456887866748,
+        "projection_px": 0.0,
+        "fallback_blend": 0.5006103515625
+      }
+    },
+    {
+      "control": 8,
+      "time": 0.47058823529411764,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.7824524784701871,
+        "mean_edge_strain": 0.013299157021026187,
+        "projection_px": 13.87604737729123,
+        "fallback_blend": 0.3798828125
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.4583922113884899,
+        "mean_edge_strain": 0.015215982674583527,
+        "projection_px": 1.1368683772161603e-13,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 16,
+      "time": 0.9411764705882353,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.07317912404976724,
+        "mean_edge_strain": 0.009924475124656294,
+        "projection_px": 10.199092053993354,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.09388913065636495,
+        "mean_edge_strain": 0.013063158381635779,
+        "projection_px": 0.0,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 24,
+      "time": 1.411764705882353,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.015601433865457797,
+        "mean_edge_strain": 0.00219038204437785,
+        "projection_px": 5.684341886080802e-14,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.015295590841926233,
+        "mean_edge_strain": 0.0021240042729958,
+        "projection_px": 1.1368683772161603e-13,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 32,
+      "time": 1.8823529411764706,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.006462357347560304,
+        "mean_edge_strain": 0.0007290098069049958,
+        "projection_px": 5.684341886080802e-14,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.009269026367328004,
+        "mean_edge_strain": 0.0009247192009807303,
+        "projection_px": 1.1368683772161603e-13,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 40,
+      "time": 2.3529411764705883,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.004005818994848186,
+        "mean_edge_strain": 0.0007022211695894398,
+        "projection_px": 0.0,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.0039890342751448815,
+        "mean_edge_strain": 0.0007308472958226546,
+        "projection_px": 1.1368683772161603e-13,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 48,
+      "time": 2.823529411764706,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.0014995299219791917,
+        "mean_edge_strain": 0.00021021037853428119,
+        "projection_px": 5.684341886080802e-14,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.0026973954580078708,
+        "mean_edge_strain": 0.00033506248839680467,
+        "projection_px": 0.0,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 56,
+      "time": 3.2941176470588234,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.0008195634667729397,
+        "mean_edge_strain": 8.698504676020741e-05,
+        "projection_px": 5.684341886080802e-14,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 0.0009458287968722836,
+        "mean_edge_strain": 0.0001005625929641774,
+        "projection_px": 0.0,
+        "fallback_blend": 0.0
+      }
+    },
+    {
+      "control": 64,
+      "time": 3.764705882352941,
+      "left": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 7.669326159019577e-05,
+        "mean_edge_strain": 8.864383135585416e-06,
+        "projection_px": 5.684341886080802e-14,
+        "fallback_blend": 0.0
+      },
+      "right": {
+        "particles": 221,
+        "constraints": 1178,
+        "max_edge_strain": 9.424812497388052e-05,
+        "mean_edge_strain": 1.0759884224404193e-05,
+        "projection_px": 0.0,
+        "fallback_blend": 0.0
+      }
+    }
+  ]
+}

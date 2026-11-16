@@ -7,7 +7,7 @@ from animation_mcp.asr import prepare_speech_model
 
 
 def main():
-    root=Path(__file__).resolve().parents[1];cache=root.parent/'drawing-models'
+    root=Path(__file__).resolve().parents[1];cache=root/'.work/models'
     os.environ.setdefault('ANIMATION_MODEL_CACHE',str(cache/'clip'))
     os.environ.setdefault('ANIMATION_ASR_CACHE',str(cache/'whisper-base.en'))
     result=dict(reference=prepare_models(),voiceover=prepare_speech_model())

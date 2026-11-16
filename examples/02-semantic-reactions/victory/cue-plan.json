@@ -1,0 +1,62 @@
+{
+  "fps": 30,
+  "frames": 245,
+  "cues": [
+    {
+      "intent": "victory",
+      "phrase": "worked",
+      "word": "worked.",
+      "word_time": 2.54,
+      "frame_start": 76,
+      "frame_end": 133,
+      "asset": "anime-victory.png",
+      "style": "anime",
+      "transcript_word_confidence": 0.9948457479476929,
+      "confidence": 0.7190539257927209,
+      "editorial_reason": "celebratory comeback and raised fist",
+      "theme_note": "Theme match",
+      "timing_error_seconds": -0.006666666666666821,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    },
+    {
+      "intent": "victory",
+      "phrase": "comeback",
+      "word": "comeback",
+      "word_time": 4.92,
+      "frame_start": 148,
+      "frame_end": 205,
+      "asset": "anime-victory.png",
+      "style": "anime",
+      "transcript_word_confidence": 0.8968049883842468,
+      "confidence": 0.6386755511153662,
+      "editorial_reason": "celebratory comeback and raised fist",
+      "theme_note": "Theme match",
+      "timing_error_seconds": 0.013333333333333641,
+      "asset_origin": "original AI-generated reaction illustration bundled with toolkit"
+    }
+  ],
+  "decisions": [
+    {
+      "text": "Wait.",
+      "intent": "confusion",
+      "confidence": 0.5385704908868,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    },
+    {
+      "text": "The backup actually worked.",
+      "intent": "victory",
+      "confidence": 0.7190539257927209,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    },
+    {
+      "text": "Now that is a comeback worth celebrating.",
+      "intent": "victory",
+      "confidence": 0.6386755511153662,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    }
+  ],
+  "timing_source": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "alignment_review_required": true,
+  "transcript_review_required": false,
+  "evaluation": "Technical timing can be measured; whether this is the best meme needs viewer review"
+}

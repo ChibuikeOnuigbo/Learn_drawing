@@ -1,0 +1,84 @@
+{
+  "video": "/home/user/Learn_drawing/examples/02-semantic-reactions/brain/video.mp4",
+  "frames": 181,
+  "fps": 30.0,
+  "duration": 6.033333333333333,
+  "width": 960,
+  "height": 540,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 35.75284267677397,
+      "luma_mean": 34.45205568415638
+    },
+    {
+      "frame": 35,
+      "stddev": 36.3560157991071,
+      "luma_mean": 34.687692258230456
+    },
+    {
+      "frame": 36,
+      "stddev": 80.16011923692659,
+      "luma_mean": 83.4225803755144
+    },
+    {
+      "frame": 45,
+      "stddev": 80.17114858685532,
+      "luma_mean": 83.1331841563786
+    },
+    {
+      "frame": 82,
+      "stddev": 76.19844084351581,
+      "luma_mean": 80.90579153806584
+    },
+    {
+      "frame": 90,
+      "stddev": 78.76858488064171,
+      "luma_mean": 83.29165766460905
+    },
+    {
+      "frame": 129,
+      "stddev": 40.094937032929195,
+      "luma_mean": 36.22252443415638
+    },
+    {
+      "frame": 135,
+      "stddev": 36.5784499224709,
+      "luma_mean": 34.80106802983539
+    },
+    {
+      "frame": 180,
+      "stddev": 36.66194840502396,
+      "luma_mean": 34.826419110082306
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/02-semantic-reactions/brain/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "timing_pass": true,
+  "timing_scope": "Cue frame rounding relative to supplied word times; ASR word times themselves are estimates",
+  "audio_sync_review_required": true,
+  "audio_peak": 0.829803466796875,
+  "cues": [
+    {
+      "intent": "brain_wipe",
+      "phrase": "no brains at all",
+      "word": "all.",
+      "word_time": 1.2,
+      "frame_start": 36,
+      "frame_end": 129,
+      "asset": "squidward-brain-erase.gif",
+      "style": "cartoon",
+      "transcript_word_confidence": 0.9988834261894226,
+      "confidence": 0.8389851298091023,
+      "editorial_reason": "Squidward opens his head and erases his brain: visual punchline for an absent-brain joke",
+      "theme_note": "Theme match",
+      "timing_error_seconds": 0.0,
+      "asset_origin": "third-party reaction GIF; review rights before publication (see assets/reactions/PROVENANCE.md)"
+    }
+  ],
+  "artistic_review": "pending: inspect timing, thematic fit, caption readability and humor; classifier is not a taste judge",
+  "audio_present": true
+}

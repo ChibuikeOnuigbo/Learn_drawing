@@ -1,0 +1,68 @@
+{
+  "fps": 24,
+  "frames": 144,
+  "blink_scope": "no blink warp in this pass; earlier squint test duplicated brow pixels and was removed",
+  "iris": "original iris pixels separated by traced colour mask; sclera hole inpainted estimate",
+  "samples": [
+    {
+      "frame": 0,
+      "gaze": 0.0,
+      "smile": 0.0
+    },
+    {
+      "frame": 12,
+      "gaze": 0.0,
+      "smile": 0.0
+    },
+    {
+      "frame": 24,
+      "gaze": 0.15624999999999994,
+      "smile": 0.0
+    },
+    {
+      "frame": 36,
+      "gaze": 0.9570312499999998,
+      "smile": 0.0
+    },
+    {
+      "frame": 48,
+      "gaze": 1.0,
+      "smile": 0.0
+    },
+    {
+      "frame": 60,
+      "gaze": 0.9787499999999999,
+      "smile": 0.0
+    },
+    {
+      "frame": 72,
+      "gaze": 0.45999999999999985,
+      "smile": 0.15625000000000014
+    },
+    {
+      "frame": 84,
+      "gaze": -0.0745535714285715,
+      "smile": 0.95703125
+    },
+    {
+      "frame": 96,
+      "gaze": -0.4071428571428572,
+      "smile": 1.0
+    },
+    {
+      "frame": 108,
+      "gaze": -0.5909226190476191,
+      "smile": 1.0
+    },
+    {
+      "frame": 120,
+      "gaze": -0.5233236151603498,
+      "smile": 1.0
+    },
+    {
+      "frame": 132,
+      "gaze": -0.26758381924198243,
+      "smile": 0.7749999999999999
+    }
+  ]
+}

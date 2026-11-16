@@ -1,0 +1,50 @@
+{
+  "video": "/home/user/Learn_drawing/examples/10-procedural-assets/render/video.mp4",
+  "frames": 144,
+  "fps": 24.0,
+  "duration": 6.0,
+  "width": 960,
+  "height": 540,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 25.92354477323728,
+      "luma_mean": 41.523542952674894
+    },
+    {
+      "frame": 1,
+      "stddev": 25.94690880313308,
+      "luma_mean": 41.53271733539095
+    },
+    {
+      "frame": 36,
+      "stddev": 25.904667141296194,
+      "luma_mean": 41.463532664609055
+    },
+    {
+      "frame": 72,
+      "stddev": 25.879068107100025,
+      "luma_mean": 41.44650527263374
+    },
+    {
+      "frame": 108,
+      "stddev": 25.826774560971575,
+      "luma_mean": 41.42367605452675
+    },
+    {
+      "frame": 142,
+      "stddev": 25.783140272006882,
+      "luma_mean": 41.48933834876543
+    },
+    {
+      "frame": 143,
+      "stddev": 25.792664191474906,
+      "luma_mean": 41.50172325102881
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/10-procedural-assets/render/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

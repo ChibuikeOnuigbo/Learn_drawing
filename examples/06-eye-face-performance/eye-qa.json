@@ -1,0 +1,266 @@
+{
+  "fps": 24,
+  "frames": 144,
+  "blink_scope": "procedural lid blink from traced aperture; lid skin is a smooth estimate sampled from surrounding face, not recovered hidden artwork; no generated closed-lid plate",
+  "blink_centers_s": [
+    1.35,
+    4.25
+  ],
+  "blink_duration_s": 0.28,
+  "max_pixel_diff_outside_eye_boxes": 0,
+  "iris": "original iris pixels separated by traced colour mask; sclera hole inpainted estimate",
+  "samples": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "gaze": 0.0,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 12,
+      "time": 0.5,
+      "gaze": 0.0,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 24,
+      "time": 1.0,
+      "gaze": 0.15624999999999994,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 36,
+      "time": 1.5,
+      "gaze": 0.9570312499999998,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 48,
+      "time": 2.0,
+      "gaze": 1.0,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 60,
+      "time": 2.5,
+      "gaze": 0.9787499999999999,
+      "smile": 0.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 72,
+      "time": 3.0,
+      "gaze": 0.45999999999999985,
+      "smile": 0.15625000000000014,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 84,
+      "time": 3.5,
+      "gaze": -0.0745535714285715,
+      "smile": 0.95703125,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 96,
+      "time": 4.0,
+      "gaze": -0.4071428571428572,
+      "smile": 1.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 108,
+      "time": 4.5,
+      "gaze": -0.5909226190476191,
+      "smile": 1.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 120,
+      "time": 5.0,
+      "gaze": -0.5233236151603498,
+      "smile": 1.0,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    },
+    {
+      "frame": 132,
+      "time": 5.5,
+      "gaze": -0.26758381924198243,
+      "smile": 0.7749999999999999,
+      "blink_closure": 0.0,
+      "blink_left": {
+        "closure": 0.0,
+        "aperture_area_px": 2860.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      },
+      "blink_right": {
+        "closure": 0.0,
+        "aperture_area_px": 3349.0,
+        "aperture_ratio": 1.0,
+        "upper_lid_travel_px": 0.0,
+        "lower_lid_travel_px": 0.0
+      }
+    }
+  ]
+}

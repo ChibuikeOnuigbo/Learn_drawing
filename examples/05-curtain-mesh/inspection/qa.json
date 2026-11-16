@@ -1,0 +1,40 @@
+{
+  "video": "/home/user/Learn_drawing/examples/05-curtain-mesh/video.mp4",
+  "frames": 240,
+  "fps": 60.0,
+  "duration": 4.0,
+  "width": 1280,
+  "height": 720,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 24.17541056825898,
+      "luma_mean": 45.867433087384256
+    },
+    {
+      "frame": 60,
+      "stddev": 24.080064914320605,
+      "luma_mean": 45.332813585069445
+    },
+    {
+      "frame": 120,
+      "stddev": 21.978220205995147,
+      "luma_mean": 45.70328125
+    },
+    {
+      "frame": 180,
+      "stddev": 20.88368072059713,
+      "luma_mean": 46.76294921875
+    },
+    {
+      "frame": 239,
+      "stddev": 20.874443686282504,
+      "luma_mean": 46.758150318287036
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/05-curtain-mesh/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores"
+}

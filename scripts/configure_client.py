@@ -10,7 +10,7 @@ def main():
     parser.add_argument('--workspace',type=Path,default=Path(__file__).resolve().parents[1])
     parser.add_argument('--output',type=Path,default=Path('output/mcp-client.json'))
     args=parser.parse_args();root=args.workspace.resolve()
-    cache=root.parent/'drawing-models'
+    cache=root/'.work/models'
     config={'mcpServers':{'animation-studio':{'command':sys.executable,'args':['-m','animation_mcp.server'],
         'env':{'ANIMATION_WORKSPACE':str(root),'ANIMATION_MODEL_CACHE':str(cache/'clip'),
                'ANIMATION_ASR_CACHE':str(cache/'whisper-base.en')}}}}

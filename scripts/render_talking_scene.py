@@ -36,7 +36,7 @@ def linear_track(prop, keys):
 
 
 def main() -> None:
-    folder = ROOT / "exmapels/talking-scene"
+    folder = ROOT / "examples/11-talking-scene"
     folder.mkdir(parents=True, exist_ok=True)
     audio = synthesize(NARRATION, folder / "speech", 148)
     fps = 24
@@ -143,7 +143,7 @@ def main() -> None:
     scene = dict(
         version=1, title="Talking scene — scenery, clouds and a PNGTuber cutout",
         width=1280, height=720, fps=fps, frames=frames,
-        background="#8ecae6", audio="exmapels/talking-scene/speech/narration.wav",
+        background="#8ecae6", audio="examples/11-talking-scene/speech/narration.wav",
         layers=layers,
     )
     import json

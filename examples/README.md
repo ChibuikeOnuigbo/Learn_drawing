@@ -110,3 +110,19 @@ Showcase stages: `author`, `2d`, `reactions`, `3d`, `edit`, `all`. Blender is re
 Original procedural PNGs/SVG-style raster assets: oak/pine/bare trees, palm, bush, grass, rock, cloud; snow/rain/wind/fog/dust/leaves/sparks/bokeh loops; light rays, vignette and depth-blur overlays. `contact-sheet.jpg` previews the kit; `scene.json` is an editable 9-layer winter composite with parallax; `render/video.mp4` is a 144-frame / 6 s demo. Bulky generated sequences live in gitignored `data/assets/kit` and regenerate with `scripts/build_asset_kit.py`.
 
 **Measured:** technical QA pass; overlay loops wrap modulo the canvas. **Scope:** stylized code output, not photogrammetry or a Remnant777 study. Inspect suitability per shot.
+
+## 11 — Narrated talking scene (`11-talking-scene/`)
+
+**Skill:** AI-plate scenery, depth-layered cloud drift, PNGTuber cutout lip-sync, timed captions.
+
+A 19 s / 1280×720 / 24 fps narration scene in the style of Remnant777-approach talk videos: generated sky, cumulus/wispy cloud and grass-stone plates keyed and de-fringed by `scripts/prepare_talking_assets.py`, then composited with independent cloud speeds (far bands −26…−34 px, near bands −88…−118 px over the clip), 46 px grass parallax and a 1.06→1.10 sky push. The user's green-screen sticker avatar is keyed into three pixel-aligned plates (mouth open / closed / eyes closed) and swaps states from real eSpeak word timings (`speech/narration.json`), with independent blink spikes and a smooth talk bob. Five captions are timed to the narration words. `scene.json` is the editable timeline; regenerate with `scripts/render_talking_scene.py`. `render/inspection/` holds boundary-frame samples, `qa.json` and a contact sheet.
+
+**Measured:** technical pass, 457 frames, audio muxed, mouth state matches word boundaries in sampled frames. **Scope:** layered 2.5D compositing per the research playbook — cloud motion is scrolling layers, not a fluid simulation. Full playback acceptance remains viewer review.
+
+## 12 — PNGTuber interactive demo (`12-pngtuber-demo/`)
+
+**Skill:** cutout-avatar state machine, mic-reactive mouth swap.
+
+Self-contained `index.html` (states embedded, no server needed) that demonstrates PNGTuber behavior for the same cutout: expression moods (happy/excited/calm/surprised/sad affect bounce, speed and tilt), blink-interval slider, voice-energy meter, Auto Talk Demo (scripted envelope) and Manual/Mic Test (WebAudio RMS gate with adjustable sensitivity). `states.json` holds the three state PNGs as data URIs.
+
+**Measured:** states load inline; UI covers voice energy, blink, talk and mic controls. **Scope:** an interactive demo harness for the cutout, not a tracking rig or a trained model.

@@ -1,3 +1,20 @@
+## 0.9.0 — dense frame index for the full Drive corpus, narrated talking scene, PNGTuber demo
+
+### Added
+- `scripts/fetch_and_scan_videos.py` + `references/frame_index/`: every-frame bisect index for all 55 local Drive videos — per-frame dHash16, luma, motion delta and shot assignment (`index.jsonl.gz`), per-video `summary.json` (sha256, fps, duration, cuts, shots) and contact sheet, plus a `CATALOG.json`. Compact and committable, complementing the gitignored trace library; reference media remain study-only and are not committed.
+- Example 11 `11-talking-scene/`: Remnant777-style narrated scene from AI-generated plates (sky, cumulus/wispy clouds, grass-stone ground) with independent cloud drift rates, grass parallax and sky push per the research playbook; the user's keyed sticker cutout lip-syncs from eSpeak word timings (mouth-closed/eyes-closed state plates are AI edits of the same drawing), with independent blink spikes and word-timed captions. `scripts/prepare_talking_assets.py` (chroma key + despill) and `scripts/render_talking_scene.py` regenerate it.
+- Example 12 `12-pngtuber-demo/`: self-contained browser PNGTuber tester (expression moods, blink slider, voice-energy meter, auto-talk and mic-gated manual test) for the same cutout.
+- `reports/CLOUD_AND_SCENE_MOTION.md`: sources-read log and the applied cloud-motion recipe with limits.
+
+### Changed
+- `animation_mcp.render.inspect` extracts boundary samples in chunks of 64 — ffmpeg's select expression parser cannot bind hundreds of chained `eq(n,..)` terms.
+
+### Verified
+- Talking scene: technical pass, 457 frames, audio muxed; sampled frames show mouth state matching word boundaries and captions changing on narration lines (examples/11-talking-scene/render/inspection/qa.json).
+
+### Limits
+- Cloud motion is layered scrolling plates, not simulation; no Remnant777 source was available to study. The PNGTuber page is a demo harness, not tracking or a trained model. Bounded training runs requested this session were re-run with the pre-0.8.0 scripts; their records live in `reports/training/` and `reports/reaction-training.json` as measurements only — shipped behavior remains exact geometry and phrase rules.
+
 ## 0.8.0 — per-frame trace library, style/asset access, planner and procedural kit
 
 ### Removed

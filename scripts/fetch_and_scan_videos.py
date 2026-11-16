@@ -27,7 +27,8 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "migration/reference_drive_manifest.json"
+MANIFEST = next(p for p in (ROOT / "references/reference-drive-manifest.json",
+                            ROOT / "migration/reference_drive_manifest.json") if p.exists())
 VIDEO_DIR = ROOT / "data/videos"
 OUT_DIR = ROOT / "references/frame_index"
 SCAN_W = 320

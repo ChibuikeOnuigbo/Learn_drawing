@@ -1,0 +1,1106 @@
+{
+  "schema": 1,
+  "source": "User-supplied Drive archive; no YouTube download",
+  "archive_parent": "1s6W-HSk3lrSeemc_dOb_jkm-prqDSGRn",
+  "totals": {
+    "indexed_drive_videos": 55,
+    "channel_inventory_rows": 184,
+    "remnant_listed": 89,
+    "remnant_accessible_files": 0,
+    "processed_videos": 6
+  },
+  "remnant_folder": {
+    "id": "10fLLSt4MG2vGpZHwjbZdsY7Jiq6yym5o",
+    "status": "empty-in-drive-listing",
+    "evidence": "list_files under user/allDrives returned 0 children; get_file can_list_children=true; name searches for listed Remnant titles returned no video files."
+  },
+  "videos": [
+    {
+      "name": "01_extremely-very-very-hard_X2Cv8DbygpA.mp4",
+      "drive_id": "12Rss4ziwoGSnB2gEnZuqeGZ23fGKRRuM",
+      "youtube_id": null,
+      "frames": 11520,
+      "fps": 24.0,
+      "duration_seconds": 480.0,
+      "sha256": "37dd4ee5d05a6f3747f71cd1940652981a1ac1235f884afbab781e335b237673",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "01_kPch-QaQ79g_Stick_Figure_Animation_Course.mp4",
+      "drive_id": "1i5Gl_nWkTye-QT5Hi6Wqi38PPq8x_Osy",
+      "youtube_id": "kPch-QaQ79g",
+      "frames": 5240,
+      "fps": 23.976023976023978,
+      "duration_seconds": 218.552,
+      "sha256": "cb14c1c236efeaf1a4e93011aa977d7cc2946c83fc91d82236b15bccb538a153",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "01_x5FMXSJ0M4w_CARNAGE_VS_WAR_MACHINE_Full.mp4",
+      "drive_id": "17aZ5AyTfeZ28u65Irgvj5JwNbisTbVAk",
+      "youtube_id": "x5FMXSJ0M4w",
+      "frames": 41815,
+      "fps": 60.0,
+      "duration_seconds": 696.917,
+      "sha256": "aec451ec25b87ecdf55857b97460936a7f5120b73dc06890f7722b760d4bea53",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "02_Tq3i0wOwB4s_Carnage_vs_War_Machine_Part_2.mp4",
+      "drive_id": "1Z9xIV4nO_qqmXw1GTo92pB5KB3hmZiLk",
+      "youtube_id": "Tq3i0wOwB4s",
+      "frames": 26280,
+      "fps": 60.0,
+      "duration_seconds": 438.0,
+      "sha256": "e04e2c38b5f00e3ed956263131397d801a42b358e50742c10cd1ccc38fa77fff",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "02_v_qMgkiFLRc_Roller_Coaster_Behind_Scenes.mp4",
+      "drive_id": "1lxD2IocUrE2qKrOOGDcrymbui98-TqfC",
+      "youtube_id": "v_qMgkiFLRc",
+      "frames": 26734,
+      "fps": 30.0,
+      "duration_seconds": 891.133,
+      "sha256": "c37f00f65600fb59107c0bff1c588ca5eeceb5e83c95e4df8ae17302da2350c1",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "02_very-hard_Y2vDwR9rW-0.mp4",
+      "drive_id": "1KOKXq_-CAdkqGbUpq00ernHKdSfVcTQr",
+      "youtube_id": null,
+      "frames": 19201,
+      "fps": 24.0,
+      "duration_seconds": 800.042,
+      "sha256": "da22210f84c2818014681fc159f51db0426f92561c2f2b8f16cd0fde15bae0f3",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "03_PPR0jGitTgQ_Embedded_Video_Adobe_Animate.mp4",
+      "drive_id": "10leSGDb9iyqpcS3OUkFj9LlApRu6g2Kn",
+      "youtube_id": "PPR0jGitTgQ",
+      "frames": 10766,
+      "fps": 29.97002997002997,
+      "duration_seconds": 359.226,
+      "sha256": "7f38667dc895f42a26fe22d92ee3de141c33b9f758328e9beda89db431366772",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "03_pSIAoxIjp3s_Carnage_vs_War_Machine_Part_1.mp4",
+      "drive_id": "1bQ06NB2O5I43BZJMkN-K9MovWsbgmEQZ",
+      "youtube_id": "pSIAoxIjp3s",
+      "frames": 17206,
+      "fps": 60.0,
+      "duration_seconds": 286.767,
+      "sha256": "bcc04eaa3788bf0a54170943d1ab28f87592bcf4ad8ac6676883f26d0bf07ee2",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "03_simple-motion-graphics-video-editing_3q1KnXSD7Qg.mp4",
+      "drive_id": "1YmLIvP74rqV8mL3QMUn4lxeP-LPrQgpr",
+      "youtube_id": null,
+      "frames": 75029,
+      "fps": 60.0,
+      "duration_seconds": 1250.483,
+      "sha256": "1c3e2f96e5cc54e02cf68a9fa89b966bc5562a5c1f97b7174e953eef292a3a7c",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "04_8hjPsUDip2w_Drawing_WARMACHINE_concept.mp4",
+      "drive_id": "1lqw-vzZlhjqbU8q9OWQipQv5QpOgShWC",
+      "youtube_id": "8hjPsUDip2w",
+      "frames": 4725,
+      "fps": 30.0,
+      "duration_seconds": 157.5,
+      "sha256": "bc0635681acbbca930c185936aa6b39b61eb16742fab9b3534a23000e0203041",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "04_L9sZJqXWc6c_Building_Contest_Behind_Scenes.mp4",
+      "drive_id": "1z61w8Sy3TQ_-9wJ_fv9X0qthaT_lEoIF",
+      "youtube_id": "L9sZJqXWc6c",
+      "frames": 23101,
+      "fps": 30.0,
+      "duration_seconds": 770.033,
+      "sha256": "ea7080059c11d2c620c6a3e9f72bb18630ec56570e4d26aa80d499d18b0ded7d",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+      "drive_id": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks",
+      "youtube_id": null,
+      "frames": 1322,
+      "fps": 24.0,
+      "duration_seconds": 55.083,
+      "sha256": "24067cc7d950916df387d89505b6e1d863515848c554eea9fdb399bd97976720",
+      "trace_status": "processed"
+    },
+    {
+      "name": "05_STlVAK87XWI_Rediscovery_Behind_Scenes.mp4",
+      "drive_id": "1hgCHHsunrpZzS6XcG5L37QhXDML7FfKK",
+      "youtube_id": "STlVAK87XWI",
+      "frames": 31327,
+      "fps": 30.0,
+      "duration_seconds": 1044.233,
+      "sha256": "6cc3a8da87521358d7806c831dbd439dd5d83080bb96f64ba5ba926ac3b26407",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "05__BDyw1ApY-c_HULK_Vs_SAITAMA_REMASTERED.mp4",
+      "drive_id": "1Q4UVva5VCnX2-EB9yuqD6i653qAOC2Ad",
+      "youtube_id": "_BDyw1ApY-c",
+      "frames": 55379,
+      "fps": 60.0,
+      "duration_seconds": 922.983,
+      "sha256": "3855b1876f32be8584b8e1d2b9913e50bd036ed964f8005d9104b0d3f4285b80",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "05_medium-baseline-animation-tween-editing_HDsziw2LuQA.mp4",
+      "drive_id": "1ej2D4QHaoLPOyXiOyOjlJZ52D2NOlBlS",
+      "youtube_id": null,
+      "frames": 12919,
+      "fps": 30.0,
+      "duration_seconds": 430.633,
+      "sha256": "cdd4093eb1ea645e7f294de4c2b5f75fc18eeec49885328cb5edab0e2ebee0a2",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "06_g1vU6aDI-48_Huion_KAMVAS_Review.mp4",
+      "drive_id": "1E8l04zqbmihnXzp9dQw0qRplJwy_oz-5",
+      "youtube_id": "g1vU6aDI-48",
+      "frames": 14445,
+      "fps": 29.97002997002997,
+      "duration_seconds": 481.981,
+      "sha256": "72d64d60686b36cbdf4e47aa3a0f04da661207b71807a89c3f808dcc4bfe6f6d",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "06_g5bpOwpL8HA_SUPERMAN_VS_HULK_Full.mp4",
+      "drive_id": "1NyhrqwRb5oqKa7yOy4W8vn_7I5w2qBSZ",
+      "youtube_id": "g5bpOwpL8HA",
+      "frames": 31616,
+      "fps": 30.0,
+      "duration_seconds": 1053.867,
+      "sha256": "abfa150f2f69450d417f71ddd221c6c9633d53ee048cbb3a04b44e6f5e47e9cd",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "06_hard_AhICirv_6lw.mp4",
+      "drive_id": "1IJaO6Vy5mhvac3DUY2MrZEXA23Fk_H5T",
+      "youtube_id": null,
+      "frames": 11020,
+      "fps": 30.0,
+      "duration_seconds": 367.333,
+      "sha256": "b4016bf9027d6a556689e645ae88fed6d25e2feb244778f3690b210bd636ba34",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "07_BDv8KeJDEnk_Freeware_Alternatives_to_Flash.mp4",
+      "drive_id": "1Nft3vbsIkHst3Xv3GWx0crzE_aX7svas",
+      "youtube_id": "BDv8KeJDEnk",
+      "frames": 11090,
+      "fps": 29.97002997002997,
+      "duration_seconds": 370.036,
+      "sha256": "20b67d14af9fa32d0b7d09b9e73bf272ea0f99e7abcd3c6369dccac9dbaa3520",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "07_QPyimT4yh5A_Superman_Vs_Hulk_Part_3.mp4",
+      "drive_id": "1Dhoj60nDZk5Bg7WY4hVwZs_2eyQe3wbE",
+      "youtube_id": "QPyimT4yh5A",
+      "frames": 13370,
+      "fps": 30.0,
+      "duration_seconds": 445.667,
+      "sha256": "77a1177b57240b380df3adbb4059e53a8866e25660c671569c0e95def6e250b4",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "07_easy_92ibAh-rSLk.mp4",
+      "drive_id": "1y5XN5qbvvp9WuM4bEridtVsq5HV4YUwT",
+      "youtube_id": null,
+      "frames": 19144,
+      "fps": 30.0,
+      "duration_seconds": 638.133,
+      "sha256": "101c91b17b709b4090ef3330e6656e92d2935eed1a7857a84b74add5b0cc73c8",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "08_qIKzjVJoxls_Superman_Vs_Hulk_Part_2.mp4",
+      "drive_id": "1arIrauprwoo1qQ5p6DWGb5vSfKCT9ikJ",
+      "youtube_id": "qIKzjVJoxls",
+      "frames": 16963,
+      "fps": 60.0,
+      "duration_seconds": 282.717,
+      "sha256": "494965921768d716ae0c718fbaa3f2332d42b4181eb6a0e6868ef7656ec7335f",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "08_uDqjIdI4bF4_12_Principles_of_Animation.mp4",
+      "drive_id": "1mzSm3z7Rc6FyN2it_6EvnrjhDc_cmU2Z",
+      "youtube_id": "uDqjIdI4bF4",
+      "frames": 34588,
+      "fps": 23.976023976023978,
+      "duration_seconds": 1442.608,
+      "sha256": "17febb3e8009560485b24f200c1206ec8ddb6647deab5d5d8340c947dc6a5357",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "08_very-easy-video-editing_3I0E21EOZu4.mp4",
+      "drive_id": "1Ye0igawvIAqwg0dJEX3DMWSIEUfWeDSs",
+      "youtube_id": null,
+      "frames": 74146,
+      "fps": 60.0,
+      "duration_seconds": 1235.767,
+      "sha256": "c4fb57594398c3a4a31ab358821f7558113dfee6ee1d5b34971b2d6fdd502b61",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "09_UuqdPATU7a8_Massive_Scale_Animations.mp4",
+      "drive_id": "1D0GCjCoswpas4Bc7Jhp8gfKJuV_-A1xz",
+      "youtube_id": "UuqdPATU7a8",
+      "frames": 12518,
+      "fps": 30.0,
+      "duration_seconds": 417.267,
+      "sha256": "442ea734ccc2ba0132bc2934ceef43ac42c2d5d9a2ce65fbdfec1622a24acb1e",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "09_almost-hard-music-video-sketches_9w0_e9X4FDw.mp4",
+      "drive_id": "1pRwJsJ66hoR3oXWAvXw6exg5d1lRVGbn",
+      "youtube_id": null,
+      "frames": 999,
+      "fps": 10.0,
+      "duration_seconds": 99.9,
+      "sha256": "c2715ac525426c5d5e2fca06c84d65d6e376875641cb8763fe1ce10508eaa00d",
+      "trace_status": "processed"
+    },
+    {
+      "name": "09_p6JAv5bCVOc_Superman_Vs_Hulk_Part_1.mp4",
+      "drive_id": "1P16ZRljzbzif1k4DaHmvxXg77gWwyGm6",
+      "youtube_id": "p6JAv5bCVOc",
+      "frames": 10202,
+      "fps": 30.0,
+      "duration_seconds": 340.067,
+      "sha256": "d7882696bfe7b1d2a4eb918c158bc8f44e816fc57c7a31d2a5b950fcd1597f93",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "10_complex-anime-edit-composition_s-n7xL8JxZE.mp4",
+      "drive_id": "1qaVOLSGYY6geK7JYdUxK5W40a2tSButy",
+      "youtube_id": null,
+      "frames": 2041,
+      "fps": 20.0,
+      "duration_seconds": 102.05,
+      "sha256": "bf035a093e3e866a0a9ad9d5e8b368e3839c173d76cd51e7dbc111efa0e2b0e3",
+      "trace_status": "processed"
+    },
+    {
+      "name": "10_espnaISmbV0_WINTER_SOLDIER_Vs_GUILE_Full.mp4",
+      "drive_id": "1mcbwhrZgC2rd4B5YP__HX80DNOBTBUKA",
+      "youtube_id": "espnaISmbV0",
+      "frames": 21943,
+      "fps": 23.976023976023978,
+      "duration_seconds": 915.206,
+      "sha256": "c6c3ef08a1085a4d8adf148ca8a799a63bccb4e45ea75dbc873951883d81e1e5",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "10_iga8qwm9S00_Block_Variation_in_Minecraft.mp4",
+      "drive_id": "14Qri4_lDqroe4HChIrC0plBiuQOeZcAd",
+      "youtube_id": "iga8qwm9S00",
+      "frames": 9207,
+      "fps": 30.0,
+      "duration_seconds": 306.9,
+      "sha256": "65ace996073ce5417d55001b504c8f23d0966892fb7b79b148889933a0804bbd",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "11_LHN5ZArTQJo_Winter_Soldier_Vs_Guile_Final.mp4",
+      "drive_id": "1LaIW7Qe7Vhl71U0pe8259V0X4u6b0arx",
+      "youtube_id": "LHN5ZArTQJo",
+      "frames": 11090,
+      "fps": 29.97002997002997,
+      "duration_seconds": 370.036,
+      "sha256": "27cf9f9cf05fc790f2daa998a522247096e3b5de6fd1adbc3902f1e9d81a6675",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "11_medium-memes-script-visuals_rv0CZ919PFw.mp4",
+      "drive_id": "1USWdJVIdHw2x4ExYOokKi9009TTb83jA",
+      "youtube_id": null,
+      "frames": 37673,
+      "fps": 60.0,
+      "duration_seconds": 627.883,
+      "sha256": "ae96c6aa96cda989930ca24d13959dc91438b7b4f2a94c57a089fa3161db4757",
+      "trace_status": "processed"
+    },
+    {
+      "name": "12_DoXedsVeR6A_Winter_Soldier_Vs_Guile_Part_2.mp4",
+      "drive_id": "1_Mn7bZmma50JRYUuTNIxka3u-5FME2vc",
+      "youtube_id": "DoXedsVeR6A",
+      "frames": 7206,
+      "fps": 23.976023976023978,
+      "duration_seconds": 300.55,
+      "sha256": "7340293f370929e34babf85ed2b9fcdd65fd1581b8fa3a27dd8c8a916efd41c8",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "12_very-simple_BAYQ2W_v08s.mp4",
+      "drive_id": "14hDcscuxvOc2QgkE2usiYVsKRDxr-qOM",
+      "youtube_id": null,
+      "frames": 14646,
+      "fps": 30.0,
+      "duration_seconds": 488.2,
+      "sha256": "d54a263cf6c92290c310e60c36bd4f4bee68436d17d2da7394e4464630ba7c8e",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "13_cUv6ZPhHOPo_Winter_Soldier_Vs_Guile_Part_1.mp4",
+      "drive_id": "1CXM7uQ7lnPbDIpqI9Mc4IglejTNQkt4_",
+      "youtube_id": "cUv6ZPhHOPo",
+      "frames": 7484,
+      "fps": 23.976023976023978,
+      "duration_seconds": 312.145,
+      "sha256": "bf1c85fc60698a34dd9b22fe9b35bc4035b4abb7c51e60b5c15f082f2b34cca2",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "14_mZp3ylzqnv0_Drawing_Godzilla_Venom_Concept.mp4",
+      "drive_id": "1v-bs-PreBdcHyhRa0sxhY_y880c9HDEm",
+      "youtube_id": "mZp3ylzqnv0",
+      "frames": 10204,
+      "fps": 23.976023976023978,
+      "duration_seconds": 425.592,
+      "sha256": "ae3e5112fc51b72e9b63cf9802c5630c64eadda5ea50c7d8d325487de0262a20",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "14_very-extremely-hard-3d-blender_hCnsaahr2cc.mp4",
+      "drive_id": "18L90aEHSTKY2iMjVagELOeqX4x4Bld6m",
+      "youtube_id": null,
+      "frames": 16917,
+      "fps": 24.0,
+      "duration_seconds": 704.875,
+      "sha256": "740171b1639c2d25991f0b2dc61277bdef6e23399b1542b3dabec799e0aaf229",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "15_hard_2Wv3p9WCs6M.mp4",
+      "drive_id": "1Twph0wTsWUAvWsXKWmQ8HGcyKJkP_zmv",
+      "youtube_id": null,
+      "frames": 28994,
+      "fps": 24.0,
+      "duration_seconds": 1208.083,
+      "sha256": "f21f2ab974710f1f25dd6f9e181478e51a86bc1559141c76e730afdac605f5e9",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "15_pxWl6KgLvJc_Drawing_Guile_Concept.mp4",
+      "drive_id": "1PL7qKc9nbg5xO_SqHYmNrc5JtfSNH1Rq",
+      "youtube_id": "pxWl6KgLvJc",
+      "frames": 5970,
+      "fps": 23.976023976023978,
+      "duration_seconds": 248.999,
+      "sha256": "a9dc0471d0f3fd357cf5d837282bbf20a74407392d300a227bcbdf47abbba5e1",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "16_5P0wHWnCDUY_Drawing_Bucky_Concept.mp4",
+      "drive_id": "1p078ll1-jzy8uuu1tfqhf873equLOWMG",
+      "youtube_id": "5P0wHWnCDUY",
+      "frames": 9657,
+      "fps": 23.976023976023978,
+      "duration_seconds": 402.777,
+      "sha256": "ce7aae1dfccd7f68fac3f68c6bba3d05b85aa5087e971911fabcea9927577387",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "17_tutorial-short_vNxqa8ltH20.mp4",
+      "drive_id": "1XmNSQNQfUyH4OBOFOjx83kVXL_5ULzTe",
+      "youtube_id": null,
+      "frames": 751,
+      "fps": 30.0,
+      "duration_seconds": 25.033,
+      "sha256": "73216efcc846c7a80cd8fc9e6fd45e49988a9b90380152b84a96dcdb29f585dc",
+      "trace_status": "processed"
+    },
+    {
+      "name": "18_V8nkXPAtGbk_HULK_Vs_SAITAMA_Full.mp4",
+      "drive_id": "1V-9UajeZ5ZSMAzzdXxr-MoN2tFrmvigZ",
+      "youtube_id": "V8nkXPAtGbk",
+      "frames": 24833,
+      "fps": 23.976023976023978,
+      "duration_seconds": 1035.743,
+      "sha256": "85b3259269f7a58fa171236fae54ac5f13ba3ead02f367d00e16680b559a6df8",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "18_tutorial-study-this_OSULm_VDO04.mp4",
+      "drive_id": "176AWhb0OLC8oIBtGIKT4Q3dN4fN1EN9S",
+      "youtube_id": null,
+      "frames": 14460,
+      "fps": 30.0,
+      "duration_seconds": 482.0,
+      "sha256": "5589c61126ec6a31783c3ec14da8ef341d20d9cc7db10d93b30acee1d2902a14",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "19_HhovU0pkLX4_Hulk_vs_Saitama_Part_3.mp4",
+      "drive_id": "1Nm3TbWkjNcVZ9U_KxHORhSqtlpHW4MQK",
+      "youtube_id": "HhovU0pkLX4",
+      "frames": 15050,
+      "fps": 23.976023976023978,
+      "duration_seconds": 627.71,
+      "sha256": "70cbac23297565d1060df77fcee7c8b76101c53342ac6622a4fb28804e683966",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "20_GlHqENKTMsI_Hulk_vs_Saitama_Teaser.mp4",
+      "drive_id": "1Bh7Jw2LnXNvweAbcdJKGtuDD3_Pr2XD0",
+      "youtube_id": "GlHqENKTMsI",
+      "frames": 2069,
+      "fps": 23.976023976023978,
+      "duration_seconds": 86.295,
+      "sha256": "ab2797be9a5e47f8c851aead53fd2cf45e817f886a7781be75f7ca60720f6246",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "21_7Y-n0DN2_0k_Hulk_vs_Saitama_Part_2.mp4",
+      "drive_id": "101y099SM0xC0Kp4pZEhT8eC1ub8GxdpH",
+      "youtube_id": "7Y-n0DN2_0k",
+      "frames": 4755,
+      "fps": 23.976023976023978,
+      "duration_seconds": 198.323,
+      "sha256": "ad2c8a7a9fb9691d146dc9bdcdd57d17f0214d4f0818c390e6cff873abd80a23",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "22_duKbLYn3jEo_Hulk_vs_Saitama_Part_1.mp4",
+      "drive_id": "1WZYtryBwc4mfAnw9qhp_SAcZEuiLhs3a",
+      "youtube_id": "duKbLYn3jEo",
+      "frames": 7615,
+      "fps": 23.976023976023978,
+      "duration_seconds": 317.609,
+      "sha256": "b6680538ef86328d327c1568183b9892d49a7c50fa898facf04d7a7994416743",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "23_l-KZa7Nc_z0_Drawing_Godzilla_Vs_Kong_Thumbnail.mp4",
+      "drive_id": "1DLi0aKIS_CvK24IBbclejpW3QNZG8WfH",
+      "youtube_id": "l-KZa7Nc_z0",
+      "frames": 8969,
+      "fps": 23.976023976023978,
+      "duration_seconds": 374.082,
+      "sha256": "c5c4c96291d034b7c8ca47f3d9f1b0dba1fbc5e218c8c3dce31de5f048ec701c",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "24_IpCQEmmAyTY_GODZILLA_VS_KING_KONG_Full.mp4",
+      "drive_id": "1cjKJ6lTsl3rJbFuRy4zBaZhkvrj_DI9j",
+      "youtube_id": "IpCQEmmAyTY",
+      "frames": 15518,
+      "fps": 23.976023976023978,
+      "duration_seconds": 647.23,
+      "sha256": "f5cdabede7ce93bb68221935d35bbe2b21f2bca9fef71bc0de4000b8356409a2",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "25_wW6-2r3XE6Q_Godzilla_vs_Kong_Part_3.mp4",
+      "drive_id": "1F2tsTed-TjKsAsk7QfHQFZMuoWuwD2z-",
+      "youtube_id": "wW6-2r3XE6Q",
+      "frames": 8857,
+      "fps": 23.976023976023978,
+      "duration_seconds": 369.411,
+      "sha256": "f95636e0fcd42424bef099320fd190fcd762aa45b8e643d4877cd0295e5ffd0a",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "26_5lMNtULECHE_GvsK_Part_3_preview.mp4",
+      "drive_id": "1lGlcd39TxmVsbLN7-saxs8zOBqLw4UIW",
+      "youtube_id": "5lMNtULECHE",
+      "frames": 887,
+      "fps": 23.976023976023978,
+      "duration_seconds": 36.995,
+      "sha256": "cf45a95e2c5d2a47d375369af27cd31fe6d56e550177d562493d06fe9188a943",
+      "trace_status": "processed"
+    },
+    {
+      "name": "27_l0IzAvpFHRk_Godzilla_vs_Kong_Part_2.mp4",
+      "drive_id": "1B43DITC-0rNHuXQ_QQatIx0cUzgsUQCp",
+      "youtube_id": "l0IzAvpFHRk",
+      "frames": 4926,
+      "fps": 23.976023976023978,
+      "duration_seconds": 205.455,
+      "sha256": "e74c5cc1865c7a86eb95c7578dd7869c98f3258088aedde128c5a6a15408a617",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "28_Tzoz2vzKGxY_Godzilla_vs_Kong_Part_1.mp4",
+      "drive_id": "17GwQmt_bhpQRYLO_M_I91V3KWkwi3akn",
+      "youtube_id": "Tzoz2vzKGxY",
+      "frames": 2702,
+      "fps": 22.0,
+      "duration_seconds": 122.818,
+      "sha256": "c1274d71c63b13b27c80ab3e31e8acbac9e6820a7ca8230b517ddef99fbc62fe",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "29_vJGvSbHmeco_A_Dog_Fight_Animation.mp4",
+      "drive_id": "1j16i7UY6RTOTijnS9H1FpXJ0e9uqrxFc",
+      "youtube_id": "vJGvSbHmeco",
+      "frames": 2362,
+      "fps": 12.0,
+      "duration_seconds": 196.833,
+      "sha256": "37461532eb0445971f0f217d676dccfc8cbb369b1e87b4ea8cb8c50cf363a77c",
+      "trace_status": "pending-local-media"
+    },
+    {
+      "name": "Basketball_Redo.mp4",
+      "drive_id": null,
+      "youtube_id": null,
+      "frames": 180,
+      "fps": 30.0,
+      "duration_seconds": 6.0,
+      "sha256": "b186b2c09999e69a6fd91a03fb748f149dc41dafbe6d063a3645be10ca4e07a3",
+      "trace_status": "pending-local-media"
+    }
+  ],
+  "remnant_inventory": [
+    {
+      "video_id": "Q9m-WI5MQNQ",
+      "title": "How to Spot Pseudo-Intellectual Midwits",
+      "youtube_url": "https://www.youtube.com/watch?v=Q9m-WI5MQNQ",
+      "duration_seconds": 840
+    },
+    {
+      "video_id": "EytryVFfMws",
+      "title": "Why Radical Leftists Can't Stand Moderate Liberals",
+      "youtube_url": "https://www.youtube.com/watch?v=EytryVFfMws",
+      "duration_seconds": 605
+    },
+    {
+      "video_id": "-Cg10clCFyg",
+      "title": "Why do Radical Feminists LOVE Muslim Immigration So Much?",
+      "youtube_url": "https://www.youtube.com/watch?v=-Cg10clCFyg",
+      "duration_seconds": 718
+    },
+    {
+      "video_id": "PiktxOO_3wc",
+      "title": "Why Do Modern Women Hate Men So Much?",
+      "youtube_url": "https://www.youtube.com/watch?v=PiktxOO_3wc",
+      "duration_seconds": 791
+    },
+    {
+      "video_id": "scvJ6mW8g94",
+      "title": "Andrew Wilson Joined Our Livestream to Talk About Vrillium",
+      "youtube_url": "https://www.youtube.com/watch?v=scvJ6mW8g94",
+      "duration_seconds": 1358
+    },
+    {
+      "video_id": "80JMmCv0h_U",
+      "title": "The Strangest \"Groyper\" on the Internet - Vrillium / Will Sexton",
+      "youtube_url": "https://www.youtube.com/watch?v=80JMmCv0h_U",
+      "duration_seconds": 2351
+    },
+    {
+      "video_id": "4iEO72_jkyo",
+      "title": "Modern Conservative Politics in 2026 be Like:",
+      "youtube_url": "https://www.youtube.com/watch?v=4iEO72_jkyo",
+      "duration_seconds": 132
+    },
+    {
+      "video_id": "9Vl2uyDklx4",
+      "title": "Is The Angry Birds Movie \"Right-Wing Propaganda?\"",
+      "youtube_url": "https://www.youtube.com/watch?v=9Vl2uyDklx4",
+      "duration_seconds": 692
+    },
+    {
+      "video_id": "vWC1-vm0L8k",
+      "title": "Why BreadTube Video Essays are So POINTLESSLY Long",
+      "youtube_url": "https://www.youtube.com/watch?v=vWC1-vm0L8k",
+      "duration_seconds": 316
+    },
+    {
+      "video_id": "Zzg9qrNCCh0",
+      "title": "How Modern Women are Hijacking The Right",
+      "youtube_url": "https://www.youtube.com/watch?v=Zzg9qrNCCh0",
+      "duration_seconds": 696
+    },
+    {
+      "video_id": "5q3vrjBJ4os",
+      "title": "The VERY Strange \"Christian Furry\" Problem",
+      "youtube_url": "https://www.youtube.com/watch?v=5q3vrjBJ4os",
+      "duration_seconds": 495
+    },
+    {
+      "video_id": "Hzf2TbfX7Os",
+      "title": "How I Exposed the Left's Most Dishonest \"Critic\" - Anthony Gramuglia",
+      "youtube_url": "https://www.youtube.com/watch?v=Hzf2TbfX7Os",
+      "duration_seconds": 3429
+    },
+    {
+      "video_id": "AwhzNpGyDlg",
+      "title": "Radical Leftist DEMANDS Asmongold Be BANNED for \u201cRacism\u201d",
+      "youtube_url": "https://www.youtube.com/watch?v=AwhzNpGyDlg",
+      "duration_seconds": 1996
+    },
+    {
+      "video_id": "MGxoMtKLK7I",
+      "title": "How Leftist Empathy is Destroying the West",
+      "youtube_url": "https://www.youtube.com/watch?v=MGxoMtKLK7I",
+      "duration_seconds": 867
+    },
+    {
+      "video_id": "F3n3u7zrQRc",
+      "title": "Does a Woman\u2019s Body Count Matter? - A Discussion with a Vtuber",
+      "youtube_url": "https://www.youtube.com/watch?v=F3n3u7zrQRc",
+      "duration_seconds": 2162
+    },
+    {
+      "video_id": "1u9oY4DGniI",
+      "title": "Why Reddit Leftists are OBSESSED with Making EVERYTHING Gay",
+      "youtube_url": "https://www.youtube.com/watch?v=1u9oY4DGniI",
+      "duration_seconds": 679
+    },
+    {
+      "video_id": "cezrwiNOTY8",
+      "title": "Leaflit, Why Haven't You Addressed This Yet?",
+      "youtube_url": "https://www.youtube.com/watch?v=cezrwiNOTY8",
+      "duration_seconds": 597
+    },
+    {
+      "video_id": "kF-m16ESefo",
+      "title": "This SMUG Atheist LIED About Me to His Audience!",
+      "youtube_url": "https://www.youtube.com/watch?v=kF-m16ESefo",
+      "duration_seconds": 2281
+    },
+    {
+      "video_id": "n4uPA7pEB7s",
+      "title": "How to Spot GRIFTERS - The Official Guide",
+      "youtube_url": "https://www.youtube.com/watch?v=n4uPA7pEB7s",
+      "duration_seconds": 1174
+    },
+    {
+      "video_id": "UBx1a5KqPE0",
+      "title": "Your Most Asked Questions Answered in 35 Minutes!",
+      "youtube_url": "https://www.youtube.com/watch?v=UBx1a5KqPE0",
+      "duration_seconds": 2065
+    },
+    {
+      "video_id": "McIOAltPdlY",
+      "title": "Why I Hate Atheist Debate Me Bros",
+      "youtube_url": "https://www.youtube.com/watch?v=McIOAltPdlY",
+      "duration_seconds": 756
+    },
+    {
+      "video_id": "YtdM7MyhB1w",
+      "title": "Why Leftist Midwits Use Cartoons as Arguments",
+      "youtube_url": "https://www.youtube.com/watch?v=YtdM7MyhB1w",
+      "duration_seconds": 388
+    },
+    {
+      "video_id": "6EYD-Ohnnic",
+      "title": "I Can\u2019t Believe SmugAlana Betrayed Me Like This",
+      "youtube_url": "https://www.youtube.com/watch?v=6EYD-Ohnnic",
+      "duration_seconds": 60
+    },
+    {
+      "video_id": "ejLqLoWxYbo",
+      "title": "The Ghoul of Breadtube Came After Me LOL",
+      "youtube_url": "https://www.youtube.com/watch?v=ejLqLoWxYbo",
+      "duration_seconds": 1460
+    },
+    {
+      "video_id": "uBKBiWjojAY",
+      "title": "These DESPERATE Reddit Women Are Dating AI",
+      "youtube_url": "https://www.youtube.com/watch?v=uBKBiWjojAY",
+      "duration_seconds": 1394
+    },
+    {
+      "video_id": "Z9SW7mFKg30",
+      "title": "The Psychology of Women with Septum Nose Rings",
+      "youtube_url": "https://www.youtube.com/watch?v=Z9SW7mFKg30",
+      "duration_seconds": 355
+    },
+    {
+      "video_id": "r3vZLZfWksg",
+      "title": "Destiny is LYING about Immigration - Refuting Breadtube",
+      "youtube_url": "https://www.youtube.com/watch?v=r3vZLZfWksg",
+      "duration_seconds": 652
+    },
+    {
+      "video_id": "RpG8_jfQhxA",
+      "title": "The Psychology of Pseudo-Intellectual Midwits",
+      "youtube_url": "https://www.youtube.com/watch?v=RpG8_jfQhxA",
+      "duration_seconds": 683
+    },
+    {
+      "video_id": "tNdmSP6Rk8I",
+      "title": "Charlie Kirk was Just the First",
+      "youtube_url": "https://www.youtube.com/watch?v=tNdmSP6Rk8I",
+      "duration_seconds": 539
+    },
+    {
+      "video_id": "2hWBCr7X-ZU",
+      "title": "Why Breadtube Will NEVER Be Funny",
+      "youtube_url": "https://www.youtube.com/watch?v=2hWBCr7X-ZU",
+      "duration_seconds": 721
+    },
+    {
+      "video_id": "g38RXlvTq2c",
+      "title": "Why Feminists HATE Beauty - Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=g38RXlvTq2c",
+      "duration_seconds": 530
+    },
+    {
+      "video_id": "ee6JfxBd81o",
+      "title": "I WARNED YOU! - Grok \"AI Girlfriends\" Are Coming!",
+      "youtube_url": "https://www.youtube.com/watch?v=ee6JfxBd81o",
+      "duration_seconds": 551
+    },
+    {
+      "video_id": "dsWfrYZxD8E",
+      "title": "The Furries Got My Video TAKEN DOWN!!",
+      "youtube_url": "https://www.youtube.com/watch?v=dsWfrYZxD8E",
+      "duration_seconds": 223
+    },
+    {
+      "video_id": "GIrHCF0UtBs",
+      "title": "\"Contemporary Art\" is a Cult - Here is Why",
+      "youtube_url": "https://www.youtube.com/watch?v=GIrHCF0UtBs",
+      "duration_seconds": 488
+    },
+    {
+      "video_id": "d31SQODgoU4",
+      "title": "Radical Leftist Tried Playing DIRTY in Debate... So I Trolled Him Instead",
+      "youtube_url": "https://www.youtube.com/watch?v=d31SQODgoU4",
+      "duration_seconds": 1330
+    },
+    {
+      "video_id": "F9z13KtHZCk",
+      "title": "\"Explain the Joke to Me\"",
+      "youtube_url": "https://www.youtube.com/watch?v=F9z13KtHZCk",
+      "duration_seconds": 75
+    },
+    {
+      "video_id": "clUK5IRqm6k",
+      "title": "Radical Leftist CONFIRMS Everything I said \u2013 \"The Right Deserves It\"",
+      "youtube_url": "https://www.youtube.com/watch?v=clUK5IRqm6k",
+      "duration_seconds": 955
+    },
+    {
+      "video_id": "u4C57nUhpfE",
+      "title": "\"Beautiful Women Are Oppressed\" \u2014 Apparently",
+      "youtube_url": "https://www.youtube.com/watch?v=u4C57nUhpfE",
+      "duration_seconds": 306
+    },
+    {
+      "video_id": "8XcIuIZs2bs",
+      "title": "How People Unknowingly Become Political Pawns",
+      "youtube_url": "https://www.youtube.com/watch?v=8XcIuIZs2bs",
+      "duration_seconds": 638
+    },
+    {
+      "video_id": "QhN4Rimxb4A",
+      "title": "How the Radical Left Dehumanizes the Right",
+      "youtube_url": "https://www.youtube.com/watch?v=QhN4Rimxb4A",
+      "duration_seconds": 1148
+    },
+    {
+      "video_id": "Q-58eTsgyfQ",
+      "title": "\"White People\" Did NOT Own Slaves",
+      "youtube_url": "https://www.youtube.com/watch?v=Q-58eTsgyfQ",
+      "duration_seconds": 228
+    },
+    {
+      "video_id": "NIkcn-65zAc",
+      "title": "How Envy Leads to HATRED - AM Character Analysis",
+      "youtube_url": "https://www.youtube.com/watch?v=NIkcn-65zAc",
+      "duration_seconds": 692
+    },
+    {
+      "video_id": "5bi1L_h5RTo",
+      "title": "\"Men Are Simple\" According to These Women...",
+      "youtube_url": "https://www.youtube.com/watch?v=5bi1L_h5RTo",
+      "duration_seconds": 700
+    },
+    {
+      "video_id": "9ADltrtwD-8",
+      "title": "AI R#cism be like:",
+      "youtube_url": "https://www.youtube.com/watch?v=9ADltrtwD-8",
+      "duration_seconds": 56
+    },
+    {
+      "video_id": "cQKgKjYjSJc",
+      "title": "This is A DISGUSTING New Level of Evil",
+      "youtube_url": "https://www.youtube.com/watch?v=cQKgKjYjSJc",
+      "duration_seconds": 224
+    },
+    {
+      "video_id": "2a2hAfz9DaQ",
+      "title": "How to NEVER get Cancelled (Sam Hyde Edition)",
+      "youtube_url": "https://www.youtube.com/watch?v=2a2hAfz9DaQ",
+      "duration_seconds": 356
+    },
+    {
+      "video_id": "Hva44YrGp5E",
+      "title": "Why Ugly Women are INCREDIBLY Mean",
+      "youtube_url": "https://www.youtube.com/watch?v=Hva44YrGp5E",
+      "duration_seconds": 363
+    },
+    {
+      "video_id": "_LSmj979yiA",
+      "title": "The Sophistry of Jordan Peterson Examined",
+      "youtube_url": "https://www.youtube.com/watch?v=_LSmj979yiA",
+      "duration_seconds": 557
+    },
+    {
+      "video_id": "2NRelw85F64",
+      "title": "The MAN Tier List: Officially Ranked",
+      "youtube_url": "https://www.youtube.com/watch?v=2NRelw85F64",
+      "duration_seconds": 1429
+    },
+    {
+      "video_id": "1T0OoIZUWKg",
+      "title": "Do Women Actually LOVE Assholes?",
+      "youtube_url": "https://www.youtube.com/watch?v=1T0OoIZUWKg",
+      "duration_seconds": 408
+    },
+    {
+      "video_id": "r8hxDXuBt0w",
+      "title": "The Official WOMAN Tier List",
+      "youtube_url": "https://www.youtube.com/watch?v=r8hxDXuBt0w",
+      "duration_seconds": 1332
+    },
+    {
+      "video_id": "eIa7ExVarSQ",
+      "title": "How the Left Manipulates Language",
+      "youtube_url": "https://www.youtube.com/watch?v=eIa7ExVarSQ",
+      "duration_seconds": 314
+    },
+    {
+      "video_id": "IpF3QiPS8QI",
+      "title": "How to NOT Raise a Thot Daughter Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=IpF3QiPS8QI",
+      "duration_seconds": 535
+    },
+    {
+      "video_id": "7jHuPrKxSPs",
+      "title": "Why Beautiful Women are Crazy Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=7jHuPrKxSPs",
+      "duration_seconds": 410
+    },
+    {
+      "video_id": "q54lhU4mpR4",
+      "title": "Does Being Gay Have an Evolutionary Benefit?",
+      "youtube_url": "https://www.youtube.com/watch?v=q54lhU4mpR4",
+      "duration_seconds": 485
+    },
+    {
+      "video_id": "9OWjmZrtZH4",
+      "title": "Liberal FEMBOY Dean Withers Kicked out by CHAD Brother",
+      "youtube_url": "https://www.youtube.com/watch?v=9OWjmZrtZH4",
+      "duration_seconds": 184
+    },
+    {
+      "video_id": "P7mhwf88Dfw",
+      "title": "The Psychology of Single Fathers and Single Mothers",
+      "youtube_url": "https://www.youtube.com/watch?v=P7mhwf88Dfw",
+      "duration_seconds": 597
+    },
+    {
+      "video_id": "EWx1Be1TvkY",
+      "title": "2 WAYS the Red Pill Keeps Men ALONE",
+      "youtube_url": "https://www.youtube.com/watch?v=EWx1Be1TvkY",
+      "duration_seconds": 334
+    },
+    {
+      "video_id": "3B5UMYWB1Yo",
+      "title": "Don't Use the Word \"Adoption\" \u2013 They're Animals, Not Family",
+      "youtube_url": "https://www.youtube.com/watch?v=3B5UMYWB1Yo",
+      "duration_seconds": 210
+    },
+    {
+      "video_id": "QNyRqgECghs",
+      "title": "Are Women Less Funny According to Psychology?",
+      "youtube_url": "https://www.youtube.com/watch?v=QNyRqgECghs",
+      "duration_seconds": 361
+    },
+    {
+      "video_id": "7IM6FTUcB6M",
+      "title": "Why Do People Adopt Radical Ideologies?",
+      "youtube_url": "https://www.youtube.com/watch?v=7IM6FTUcB6M",
+      "duration_seconds": 482
+    },
+    {
+      "video_id": "BvW-qFG5PN8",
+      "title": "The Dark Psychology of AI Girlfriends",
+      "youtube_url": "https://www.youtube.com/watch?v=BvW-qFG5PN8",
+      "duration_seconds": 275
+    },
+    {
+      "video_id": "EWs1kB4-TtQ",
+      "title": "How to Judge People by Their Covers",
+      "youtube_url": "https://www.youtube.com/watch?v=EWs1kB4-TtQ",
+      "duration_seconds": 635
+    },
+    {
+      "video_id": "KMz-NvrPvcc",
+      "title": "How to Change Someone's Political Opinions - Persuasion Guide",
+      "youtube_url": "https://www.youtube.com/watch?v=KMz-NvrPvcc",
+      "duration_seconds": 1081
+    },
+    {
+      "video_id": "cDuNKvufmIs",
+      "title": "Why Are People Trans According to Science?",
+      "youtube_url": "https://www.youtube.com/watch?v=cDuNKvufmIs",
+      "duration_seconds": 720
+    },
+    {
+      "video_id": "BRQ6DszKR_c",
+      "title": "\"10 Phrases Manipulative Men Use\" - Debunking HILARIOUSLY Bad Article",
+      "youtube_url": "https://www.youtube.com/watch?v=BRQ6DszKR_c",
+      "duration_seconds": 690
+    },
+    {
+      "video_id": "poaL1KIrbuE",
+      "title": "The INSANE Psychology of Femcels - Female Incels Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=poaL1KIrbuE",
+      "duration_seconds": 683
+    },
+    {
+      "video_id": "lfsIndLJHto",
+      "title": "FURIOUS Leftist Streamer Insulted and Slandered Me - My Response",
+      "youtube_url": "https://www.youtube.com/watch?v=lfsIndLJHto",
+      "duration_seconds": 1941
+    },
+    {
+      "video_id": "JKqHkKEm6n0",
+      "title": "Can You Be Trans-Racial? Yes, Here is Why",
+      "youtube_url": "https://www.youtube.com/watch?v=JKqHkKEm6n0",
+      "duration_seconds": 393
+    },
+    {
+      "video_id": "giJQyU8YYfg",
+      "title": "Why do Furries Exist According to Science?",
+      "youtube_url": "https://www.youtube.com/watch?v=giJQyU8YYfg",
+      "duration_seconds": 926
+    },
+    {
+      "video_id": "H_tdAB_d2tk",
+      "title": "The Truth about \"Man Vs Bear\" - (Fun Rant)",
+      "youtube_url": "https://www.youtube.com/watch?v=H_tdAB_d2tk",
+      "duration_seconds": 823
+    },
+    {
+      "video_id": "9PkubFUQCDU",
+      "title": "Why is Patrick Bateman Relatable? - The Black Pill",
+      "youtube_url": "https://www.youtube.com/watch?v=9PkubFUQCDU",
+      "duration_seconds": 731
+    },
+    {
+      "video_id": "L63x9nsEMjc",
+      "title": "Why Therapy Is NOT Designed for Men",
+      "youtube_url": "https://www.youtube.com/watch?v=L63x9nsEMjc",
+      "duration_seconds": 593
+    },
+    {
+      "video_id": "kl3Ij72NjF8",
+      "title": "The Fascinating Psychology Behind Music Preferences",
+      "youtube_url": "https://www.youtube.com/watch?v=kl3Ij72NjF8",
+      "duration_seconds": 292
+    },
+    {
+      "video_id": "tMj2Iol65HQ",
+      "title": "What \"SATANSGUIDE\" Gets Wrong About Morality",
+      "youtube_url": "https://www.youtube.com/watch?v=tMj2Iol65HQ",
+      "duration_seconds": 544
+    },
+    {
+      "video_id": "RWRT7j0j9Qs",
+      "title": "How Political Reaction Videos are RUINING the Internet!",
+      "youtube_url": "https://www.youtube.com/watch?v=RWRT7j0j9Qs",
+      "duration_seconds": 342
+    },
+    {
+      "video_id": "hYQ5E5plF_A",
+      "title": "\"Profit is Theft\" Debunked in 2 Minutes",
+      "youtube_url": "https://www.youtube.com/watch?v=hYQ5E5plF_A",
+      "duration_seconds": 143
+    },
+    {
+      "video_id": "87CH9eECl90",
+      "title": "Marxists and Communists are Puppets of the State",
+      "youtube_url": "https://www.youtube.com/watch?v=87CH9eECl90",
+      "duration_seconds": 602
+    },
+    {
+      "video_id": "56y2NY_409U",
+      "title": "The Truth About the 50% Divorce Rate",
+      "youtube_url": "https://www.youtube.com/watch?v=56y2NY_409U",
+      "duration_seconds": 325
+    },
+    {
+      "video_id": "TR-j3sP-4Ws",
+      "title": "The Psychology of High-Profile Predators",
+      "youtube_url": "https://www.youtube.com/watch?v=TR-j3sP-4Ws",
+      "duration_seconds": 263
+    },
+    {
+      "video_id": "j0xfmiL2aTA",
+      "title": "All Excuses for Obesity Debunked",
+      "youtube_url": "https://www.youtube.com/watch?v=j0xfmiL2aTA",
+      "duration_seconds": 796
+    },
+    {
+      "video_id": "j2OnzqbNzQQ",
+      "title": "The Horrific Impact Motherlessness Has on Children",
+      "youtube_url": "https://www.youtube.com/watch?v=j2OnzqbNzQQ",
+      "duration_seconds": 645
+    },
+    {
+      "video_id": "goUS3pVZ8GM",
+      "title": "How the Red-Pilled Community is Failing Young Men",
+      "youtube_url": "https://www.youtube.com/watch?v=goUS3pVZ8GM",
+      "duration_seconds": 503
+    },
+    {
+      "video_id": "H4LtN-eHBio",
+      "title": "The Psychology of the Antisocial Adolescent Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=H4LtN-eHBio",
+      "duration_seconds": 619
+    },
+    {
+      "video_id": "jq494hRRZNw",
+      "title": "The Psychology of Fatherless Behavior in Women",
+      "youtube_url": "https://www.youtube.com/watch?v=jq494hRRZNw",
+      "duration_seconds": 788
+    },
+    {
+      "video_id": "jQMEUyFKax4",
+      "title": "Why Does Communism Attract Incels?",
+      "youtube_url": "https://www.youtube.com/watch?v=jQMEUyFKax4",
+      "duration_seconds": 478
+    },
+    {
+      "video_id": "N8_TAfMK3-s",
+      "title": "Jack Horner [Character Analysis] - How Villains Inspire Us.",
+      "youtube_url": "https://www.youtube.com/watch?v=N8_TAfMK3-s",
+      "duration_seconds": 614
+    },
+    {
+      "video_id": "z6WG5IdkLgI",
+      "title": "The Two Types of Fatherless Behavior In Men Explained",
+      "youtube_url": "https://www.youtube.com/watch?v=z6WG5IdkLgI",
+      "duration_seconds": 304
+    },
+    {
+      "video_id": "rtlxucdiPh4",
+      "title": "How to Spot Personalities",
+      "youtube_url": "https://www.youtube.com/watch?v=rtlxucdiPh4",
+      "duration_seconds": 321
+    }
+  ],
+  "scope": "Processing status reflects this checkout only. Pending videos require authorized local media restoration; Remnant files are currently inaccessible/absent, not studied."
+}

@@ -17,7 +17,7 @@ def build_rig(spec):
     bpy.context.view_layer.objects.active=rig;rig.select_set(True)
     bpy.ops.object.mode_set(mode='EDIT')
     definitions=[('root',(0,0,.95),(0,0,1.1),None),('spine',(0,0,1.05),(0,0,1.75),'root'),
-                 ('head',(0,0,1.75),(0,0,2.2),'spine')]
+                 ('head',(0,0,1.75),(0,-.22,2.04),'spine')]
     for side,sign in [('R',1),('L',-1)]:
         definitions.extend([
             ('upper_arm.'+side,(sign*.4,0,1.7),(sign*.7,0,1.35),'spine'),
@@ -116,6 +116,15 @@ def bake_motion(rig,spec,frames,fps):
             reach=smooth((u-.15)/.25);stand=smooth((u-.44)/.3)
             root.z-=.28*reach*(1-stand)
             targets['hand.R']=Vector((.75-.15*reach,-.42*reach+.12*stand,1.0+.43*stand))
+        elif spec['action']=='reach':
+            # Anticipation, approach, contact, lift and settle. Targets stay inside
+            # the limb reach envelope and translate with the body so IK does not stretch.
+            approach=smooth((t-.65)/.85);lift=smooth((t-2.6)/1.15)
+            root.y=.30*approach
+            root.z=-.045*math.sin(math.pi*approach)
+            targets['hand.R']=Vector((.75-.15*approach,root.y-.25*approach-.10*lift,1.0+.55*lift))
+            targets['hand.L']=Vector((-.75,root.y-.10*approach,1.0+.08*lift))
+            targets['foot.R'].y=root.y;targets['foot.L'].y=root.y
         rig.location=root;rig.keyframe_insert(data_path='location',frame=f)
         for name,obj in controls.items():
             local=targets[name]
@@ -130,8 +139,8 @@ def bake_motion(rig,spec,frames,fps):
             obj.location=origin+local;obj.keyframe_insert(data_path='location',frame=f)
         head=rig.pose.bones['head'];head.rotation_mode='XYZ'
         head.rotation_euler[1]=.04*math.sin(t*2);head.keyframe_insert(data_path='rotation_euler',frame=f)
-    if spec['action']=='pickup':
-        grasp=round((frames-1)*.40)
+    if spec['action'] in ('pickup','reach'):
+        grasp=round((frames-1)*.40) if spec['action']=='pickup' else round(2.55*fps)
         bpy.context.scene.frame_set(grasp);bpy.context.view_layer.update()
         hold=rig.matrix_world@rig.pose.bones['hand.R'].tail+Vector((0,-.05,.08))
         bpy.ops.mesh.primitive_cube_add(size=.28,location=hold)
@@ -142,9 +151,11 @@ def bake_motion(rig,spec,frames,fps):
             bpy.context.scene.frame_set(f);bpy.context.view_layer.update()
             prop.location=initial if f<grasp else rig.matrix_world@rig.pose.bones['hand.R'].tail+Vector((0,-.05,.08))
             prop.keyframe_insert(data_path='location',frame=f)
-        bpy.ops.mesh.primitive_cylinder_add(vertices=32,radius=.23,depth=max(.1,initial.z-.14),
-                                           location=(initial.x,initial.y,(initial.z-.14)/2))
-        bpy.context.object.name=spec['name']+'_pedestal';bpy.context.object.data.materials.append(material('Pedestal',(.05,.13,.2)))
+        if spec['action'] in ('pickup','reach'):
+            radius=.23 if spec['action']=='pickup' else .20
+            bpy.ops.mesh.primitive_cylinder_add(vertices=32,radius=radius,depth=max(.1,initial.z-.14),
+                                               location=(initial.x,initial.y,(initial.z-.14)/2))
+            bpy.context.object.name=spec['name']+'_pedestal';bpy.context.object.data.materials.append(material('Pedestal',(.05,.13,.2)))
         rig['payload']=prop.name;rig['grasp_frame']=grasp
     for obj in [rig,*controls.values()]:
         if obj.animation_data and obj.animation_data.action:
@@ -158,10 +169,14 @@ def audit_rig(rig,spec,frames,fps):
     for side in ['R','L']:
         group=skin.vertex_groups.get('foot.'+side)
         foot_indices[side]=[v.index for v in skin.data.vertices if any(g.group==group.index for g in v.groups)]
-    trace=[];minimum=float('inf');hold_errors=[]
+    trace=[];minimum=float('inf');hold_errors=[];ik_errors=[]
+    control_bones={'hand.R':'forearm.R','hand.L':'forearm.L','foot.R':'shin.R','foot.L':'shin.L'}
     for f in range(frames):
         bpy.context.scene.frame_set(f);bpy.context.view_layer.update()
         positions={name:list(rig.matrix_world@rig.pose.bones[name].tail) for name in ['hand.R','hand.L','foot.R','foot.L']}
+        for control,bone in control_bones.items():
+            obj=bpy.data.objects.get(rig.get('control_'+control,''))
+            if obj:ik_errors.append((obj.location-(rig.matrix_world@rig.pose.bones[bone].tail)).length)
         row=dict(frame=f,joints=positions)
         evaluated=skin.evaluated_get(bpy.context.evaluated_depsgraph_get());mesh=evaluated.to_mesh()
         for side,indices in foot_indices.items():
@@ -178,5 +193,6 @@ def audit_rig(rig,spec,frames,fps):
                 armature_modifier=any(m.type=='ARMATURE' and m.object==rig for m in skin.modifiers),
                 ik_chains=sum(c.type=='IK' for p in rig.pose.bones for c in p.constraints),
                 minimum_foot_vertex_z=minimum,max_payload_hold_error=max(hold_errors,default=0),
-                geometry_pass=minimum>=-.025 and max(hold_errors,default=0)<.001,
-                trace=trace,limits='Procedural stylized humanoid rig. Preset/baked motion, not learned acting or universal auto-rigging.')
+                max_ik_target_error=max(ik_errors,default=0),
+                geometry_pass=minimum>=-.025 and max(hold_errors,default=0)<.001 and max(ik_errors,default=0)<.03,
+                trace=trace,limits='Procedural stylized humanoid rig. Preset/baked motion, not authored acting or universal auto-rigging.')

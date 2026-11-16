@@ -1,0 +1,22 @@
+{
+ "video": "18_tutorial-study-this_OSULm_VDO04.mp4",
+ "drive_id": "176AWhb0OLC8oIBtGIKT4Q3dN4fN1EN9S",
+ "sha256": "5589c61126ec6a31783c3ec14da8ef341d20d9cc7db10d93b30acee1d2902a14",
+ "bytes": 21056080,
+ "width": 1280,
+ "height": 720,
+ "fps": 30.0,
+ "duration_seconds": 482.0,
+ "frames_indexed": 14460,
+ "every_frame_indexed": true,
+ "shots": 6,
+ "cut_frames": [
+  1101,
+  1154,
+  3334,
+  3408,
+  3499
+ ],
+ "cut_count": 5,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

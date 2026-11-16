@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "title": "Procedural winter composite",
+  "width": 960,
+  "height": 540,
+  "fps": 24,
+  "frames": 144,
+  "background": "#101827",
+  "layers": [
+    {
+      "id": "background",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 480.0,
+      "y": 270.0,
+      "width": 960.0,
+      "height": 540.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/background.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 484.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 476.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 700.0,
+      "y": 110.0,
+      "width": 500.0,
+      "height": 250.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/cloud/cloud.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.5,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 708.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 692.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pine-far",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 180.0,
+      "y": 330.0,
+      "width": 260.0,
+      "height": 260.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/tree_pine/tree_pine.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.7,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 187.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 172.8,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oak-mid",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 300.0,
+      "width": 420.0,
+      "height": 420.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/tree_oak/tree_oak.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 642.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 637.8,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rock",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 380.0,
+      "y": 450.0,
+      "width": 180.0,
+      "height": 180.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/rock/rock.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 374.4,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 385.6,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grass",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 120.0,
+      "y": 470.0,
+      "width": 300.0,
+      "height": 300.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/grass_clump/grass_clump.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 102.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 138.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snow",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 480.0,
+      "y": 270.0,
+      "width": 960.0,
+      "height": 540.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/snow-demo/snow-%04d.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.85,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 480.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 480.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fog",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 480.0,
+      "y": 270.0,
+      "width": 960.0,
+      "height": 540.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/fog-demo/fog-%04d.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.5,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 480.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 480.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vignette",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 480.0,
+      "y": 270.0,
+      "width": 960.0,
+      "height": 540.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "data/assets/kit/vignette-demo/vignette.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 480.0,
+              "easing": "smooth"
+            },
+            {
+              "frame": 143,
+              "value": 480.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": null
+}

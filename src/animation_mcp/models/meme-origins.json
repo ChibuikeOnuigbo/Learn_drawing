@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "scope": "Local perceptual-hash catalog for known insert templates. A match identifies a template, not necessarily the exact episode/upload. Unknown inserts must be reviewed.",
+  "entries": [
+    {
+      "id": "squidward-brain-erase",
+      "label": "Squidward brain-erase reaction GIF (SpongeBob SquarePants)",
+      "source_url": "https://gifdb.com/gif/squidward-erasing-brain-meme-8m2b2vahuc5sr8fn.html",
+      "origin_status": "catalog-confirmed",
+      "phashes": [
+        1508164851858837385,
+        1508166909150340041,
+        1499197235006350987,
+        1499157652654600075,
+        1512703498202393273,
+        1665795056809926904,
+        1683809454279467672,
+        1683809454279590089,
+        1476643871420549576,
+        1539694266203736520,
+        1539694266203736544,
+        1611751860208110049,
+        1620758578426513633,
+        2044097424468976608,
+        2062111273222906569,
+        4280535897315258598,
+        4280535897315258598,
+        4280535897315258598,
+        4280606267393193030,
+        9216480950937563332,
+        8927758096580558406,
+        8710389110307075655,
+        8782448882346702534,
+        5426165413560463972,
+        6903332902818845284,
+        2076589038385083589,
+        2073844650481302628,
+        2289944729401964135,
+        2290015098146403429,
+        2289944866841179237,
+        2290015098146403429,
+        2289944729402226278,
+        2290015098146403429,
+        2290015098146403429,
+        2062111410661854144,
+        2044096943432893317,
+        2044132059085507520,
+        2044132059085507520
+      ],
+      "evidence": "Bundled GIF frames hashed locally; template/franchise identified. Exact episode and original upload are NOT verified. No republication license asserted."
+    }
+  ]
+}

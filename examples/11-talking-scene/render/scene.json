@@ -1,0 +1,1312 @@
+{
+  "version": 1,
+  "title": "Talking scene — scenery, clouds and a PNGTuber cutout",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frames": 457,
+  "background": "#8ecae6",
+  "layers": [
+    {
+      "id": "sky",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 360.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/sky-day-clean.jpg",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "scale",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 1.06,
+              "easing": "smooth"
+            },
+            {
+              "frame": 456,
+              "value": 1.1,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds-far-a",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 330.0,
+      "y": 140.0,
+      "width": 620.0,
+      "height": 344.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/clouds-b.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.9,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 330.0,
+              "easing": "linear"
+            },
+            {
+              "frame": 456,
+              "value": 296.0,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds-far-b",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 1020.0,
+      "y": 105.0,
+      "width": 520.0,
+      "height": 288.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/clouds-b.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.8,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 1020.0,
+              "easing": "linear"
+            },
+            {
+              "frame": 456,
+              "value": 994.0,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds-near-a",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 380.0,
+      "y": 205.0,
+      "width": 560.0,
+      "height": 280.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/clouds-a.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 380.0,
+              "easing": "linear"
+            },
+            {
+              "frame": 456,
+              "value": 292.0,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds-near-b",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 1130.0,
+      "y": 170.0,
+      "width": 430.0,
+      "height": 215.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/clouds-a.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.92,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 1130.0,
+              "easing": "linear"
+            },
+            {
+              "frame": 456,
+              "value": 1012.0,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "kind": "image",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 690.0,
+      "width": 1360.0,
+      "height": 576.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/ground-cutout.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "x",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 640.0,
+              "easing": "linear"
+            },
+            {
+              "frame": 456,
+              "value": 594.0,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "kind": "group",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 1010.0,
+      "y": 420.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "y",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 9,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 18,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 27,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 36,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 45,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 54,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 63,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 72,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 81,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 90,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 99,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 108,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 117,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 126,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 135,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 144,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 153,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 162,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 171,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 180,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 189,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 198,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 207,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 216,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 225,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 234,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 243,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 252,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 261,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 270,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 279,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 288,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 297,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 306,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 315,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 324,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 333,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 342,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 351,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 360,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 369,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 378,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 387,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 396,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 405,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 414,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 423,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 432,
+              "value": 423.2,
+              "easing": "smooth"
+            },
+            {
+              "frame": 441,
+              "value": 416.8,
+              "easing": "smooth"
+            },
+            {
+              "frame": 456,
+              "value": 420.0,
+              "easing": "smooth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avatar-idle",
+      "kind": "image",
+      "parent": "avatar",
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 372.0,
+      "height": 413.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/avatar-mouth-closed.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "avatar-talk",
+      "kind": "image",
+      "parent": "avatar",
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 372.0,
+      "height": 413.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/avatar-cutout.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 0,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 1,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 8,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 9,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 12,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 13,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 14,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 15,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 26,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 27,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 36,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 37,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 57,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 58,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 60,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 61,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 73,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 74,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 78,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 79,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 81,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 82,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 89,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 90,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 93,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 94,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 107,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 108,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 115,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 116,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 138,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 139,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 142,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 143,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 155,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 156,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 163,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 164,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 168,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 169,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 180,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 181,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 200,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 201,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 206,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 207,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 209,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 210,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 221,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 222,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 230,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 231,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 253,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 254,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 258,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 259,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 270,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 271,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 285,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 286,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 305,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 306,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 325,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 326,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 331,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 332,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 341,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 342,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 348,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 349,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 358,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 359,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 362,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 363,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 368,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 369,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 390,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 391,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 401,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 402,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 417,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 418,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 425,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 426,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 438,
+              "value": 0.0,
+              "easing": "hold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avatar-blink",
+      "kind": "image",
+      "parent": "avatar",
+      "start": 0,
+      "end": null,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 372.0,
+      "height": 413.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": "examples/assets/avatar-eyes-closed.png",
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": [
+        {
+          "property": "opacity",
+          "keys": [
+            {
+              "frame": 65,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 66,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 71,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 139,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 140,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 145,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 213,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 214,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 219,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 287,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 288,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 293,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 361,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 362,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 367,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 435,
+              "value": 0.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 436,
+              "value": 1.0,
+              "easing": "hold"
+            },
+            {
+              "frame": 441,
+              "value": 0.0,
+              "easing": "hold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caption-bg",
+      "kind": "rect",
+      "parent": null,
+      "start": 0,
+      "end": null,
+      "x": 640.0,
+      "y": 662.0,
+      "width": 1180.0,
+      "height": 54.0,
+      "fill": "#101820",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "",
+      "font_size": 36.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 0.62,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "caption-0",
+      "kind": "text",
+      "parent": null,
+      "start": 0,
+      "end": 54,
+      "x": 640.0,
+      "y": 672.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "Here is a narrated story scene.",
+      "font_size": 26.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "caption-1",
+      "kind": "text",
+      "parent": null,
+      "start": 54,
+      "end": 135,
+      "x": 640.0,
+      "y": 672.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "The sky and the grass are generated art plates.",
+      "font_size": 26.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "caption-2",
+      "kind": "text",
+      "parent": null,
+      "start": 135,
+      "end": 250,
+      "x": 640.0,
+      "y": 672.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "The clouds drift at different depths, so the picture feels alive.",
+      "font_size": 26.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "caption-3",
+      "kind": "text",
+      "parent": null,
+      "start": 250,
+      "end": 387,
+      "x": 640.0,
+      "y": 672.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "Our cutout character blinks, bounces, and talks right along with this voice.",
+      "font_size": 26.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    },
+    {
+      "id": "caption-4",
+      "kind": "text",
+      "parent": null,
+      "start": 387,
+      "end": 449,
+      "x": 640.0,
+      "y": 672.0,
+      "width": 100.0,
+      "height": 100.0,
+      "fill": "#ffffff",
+      "stroke": "none",
+      "stroke_width": 2.0,
+      "points": [],
+      "closed": false,
+      "text": "Simple layers, real timing.",
+      "font_size": 26.0,
+      "asset": null,
+      "scale": 1.0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation": 0.0,
+      "opacity": 1.0,
+      "reveal": 1.0,
+      "tracks": []
+    }
+  ],
+  "audio": "exmapels/talking-scene/speech/narration.wav"
+}

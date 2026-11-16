@@ -1,5 +1,6 @@
 """Trusted worker run inside Blender, not imported by the server."""
 import json
+import os
 import sys
 from pathlib import Path
 import bpy
@@ -9,6 +10,9 @@ from mathutils import Vector
 def main():
     path, folder = map(Path, sys.argv[sys.argv.index("--")+1:])
     spec = json.loads(path.read_text())
+    for rig in spec.get("rigs",[]):
+        rig.setdefault("position",[0,0,0]);rig.setdefault("color",[.1,.55,.62]);rig.setdefault("target_keys",[])
+    spec.setdefault("art_direction","basic")
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
@@ -52,13 +56,22 @@ def main():
             obj.location,obj.rotation_euler,obj.scale = pose["location"],pose["rotation"],pose["scale"]
             for prop in ["location","rotation_euler","scale"]:
                 obj.keyframe_insert(data_path=prop,frame=pose["frame"])
-    # Build real armatures with weighted meshes and IK controls from trusted code.
+    # Authored sets replace the empty primitive stage. Generic callers retain basic mode.
     sys.path.insert(0,str(Path(__file__).parent))
+    from cinematic import light_scene, stage, walk_set, pickup_set, corridor_scene, finish_rig, bounce_scene
+    art=spec.get('art_direction','basic')
+    if art!='basic':
+        light_scene()
+        if art=='easy':bounce_scene(spec['frames'],spec['fps'])
+        elif art=='simple':stage(radius=2.25)
+        elif art=='medium':walk_set(spec['frames'],spec['fps'])
+        elif art=='hard':corridor_scene(spec['frames'],spec['fps'])
     from rig_worker import build_rig, bake_motion, audit_rig
     rigs=[]
     for rig_spec in spec.get('rigs',[]):
         rig=build_rig(rig_spec)
         bake_motion(rig,rig_spec,spec['frames'],spec['fps'])
+        if art!='basic':finish_rig(rig)
         rigs.append((rig,rig_spec))
     bpy.ops.object.camera_add(location=spec["camera"])
     camera = bpy.context.object
@@ -70,10 +83,10 @@ def main():
         camera.rotation_euler=(Vector(pose['target'])-camera.location).to_track_quat('-Z','Y').to_euler()
         camera.keyframe_insert(data_path='location',frame=pose['frame'])
         camera.keyframe_insert(data_path='rotation_euler',frame=pose['frame'])
-    for name,position,power,color,size in [
+    for name,position,power,color,size in ([] if art!='basic' else [
         ("Key",(2,-4,7),1300,(.68,.84,1),5),
         ("Rim",(-4,2,5),1600,(.2,.7,1),4),
-        ("Warm",(4,4,3),1100,(1,.44,.2),3)]:
+        ("Warm",(4,4,3),1100,(1,.44,.2),3)]):
         bpy.ops.object.light_add(type="AREA",location=position)
         lamp = bpy.context.object
         lamp.name = name
@@ -85,9 +98,13 @@ def main():
     if rigs:
         reports=[audit_rig(rig,rig_spec,spec['frames'],spec['fps']) for rig,rig_spec in rigs]
         (folder/'rig-qa.json').write_text(json.dumps(reports,indent=2)+'\n')
+    resume=os.environ.get('ANIMATION_RESUME')=='1'
     for frame in range(spec["frames"]):
+        target=folder/"frames"/f"{frame:04d}.png"
+        if resume and target.exists() and target.stat().st_size>0:
+            continue
         scene.frame_set(frame)
-        scene.render.filepath = str(folder/"frames"/f"{frame:04d}.png")
+        scene.render.filepath = str(target)
         bpy.ops.render.render(write_still=True)
 
 

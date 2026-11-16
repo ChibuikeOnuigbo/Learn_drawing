@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "title": "Starter: portrait-safe bounce",
+  "width": 540,
+  "height": 960,
+  "fps": 24,
+  "frames": 48,
+  "background": "#0b1620",
+  "layers": [
+    {"id": "headline", "kind": "text", "x": 270, "y": 150, "text": "MAKE IT MOVE", "font_size": 44, "fill": "#f3f4f7"},
+    {"id": "subtitle", "kind": "text", "x": 270, "y": 210, "text": "Keep essential content inside safe areas", "font_size": 20, "fill": "#a5aec0"},
+    {"id": "shadow", "kind": "ellipse", "x": 270, "y": 560, "width": 120, "height": 18, "fill": "#000000", "opacity": 0.35,
+     "tracks": [{"property": "scale_x", "keys": [{"frame": 0, "value": 0.7}, {"frame": 12, "value": 1.2}, {"frame": 24, "value": 0.7}, {"frame": 36, "value": 1.2}, {"frame": 47, "value": 0.9}]}]},
+    {"id": "hero", "kind": "ellipse", "x": 270, "y": 480, "width": 96, "height": 96, "fill": "#6ee7b7", "stroke": "#f3f4f7", "stroke_width": 3,
+     "tracks": [
+       {"property": "y", "keys": [{"frame": 0, "value": 430}, {"frame": 12, "value": 512, "easing": "ease_in"}, {"frame": 24, "value": 430, "easing": "ease_out"}, {"frame": 36, "value": 512, "easing": "ease_in"}, {"frame": 47, "value": 480, "easing": "ease_out"}]},
+       {"property": "scale_x", "keys": [{"frame": 0, "value": 1}, {"frame": 10, "value": 0.92}, {"frame": 12, "value": 1.22}, {"frame": 16, "value": 0.96}, {"frame": 34, "value": 0.92}, {"frame": 36, "value": 1.22}, {"frame": 40, "value": 0.96}, {"frame": 47, "value": 1}]},
+       {"property": "scale_y", "keys": [{"frame": 0, "value": 1}, {"frame": 10, "value": 1.08}, {"frame": 12, "value": 0.78}, {"frame": 16, "value": 1.04}, {"frame": 34, "value": 1.08}, {"frame": 36, "value": 0.78}, {"frame": 40, "value": 1.04}, {"frame": 47, "value": 1}]}
+     ]},
+    {"id": "caption", "kind": "text", "x": 270, "y": 780, "text": "Plan · Preview · Refine", "font_size": 24, "fill": "#f3f4f7"}
+  ]
+}

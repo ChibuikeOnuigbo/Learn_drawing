@@ -72,7 +72,7 @@ def edit_video(spec: dict, folder: Path, root: Path):
     for i,caption in enumerate(edit.captions):
         im=Image.new('RGBA',(edit.width,edit.height),(0,0,0,0))
         draw=ImageDraw.Draw(im)
-        font=ImageFont.truetype('DejaVuSans.ttf',max(14,round(edit.width/30)))
+        font=ImageFont.truetype(str(Path(__file__).parent/'assets/fonts/inter-400.ttf'),max(14,round(edit.width/30)))
         lines=[]
         line=''
         for word in caption.text.split():

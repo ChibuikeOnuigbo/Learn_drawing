@@ -1,0 +1,31 @@
+{
+ "video": "10_complex-anime-edit-composition_s-n7xL8JxZE.mp4",
+ "drive_id": "1qaVOLSGYY6geK7JYdUxK5W40a2tSButy",
+ "sha256": "bf035a093e3e866a0a9ad9d5e8b368e3839c173d76cd51e7dbc111efa0e2b0e3",
+ "bytes": 9785914,
+ "width": 1280,
+ "height": 586,
+ "fps": 20.0,
+ "duration_seconds": 102.05,
+ "frames_indexed": 2041,
+ "every_frame_indexed": true,
+ "shots": 15,
+ "cut_frames": [
+  130,
+  350,
+  363,
+  706,
+  806,
+  898,
+  904,
+  998,
+  1018,
+  1020,
+  1032,
+  1050,
+  1106,
+  1322
+ ],
+ "cut_count": 14,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

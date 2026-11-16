@@ -1,0 +1,221 @@
+{
+  "fps": 24,
+  "frames": 252,
+  "radius": 98,
+  "feather": 20,
+  "mask": "single smoothstep circle over two complete same-canvas images; no face gate",
+  "max_face_alpha_before_4_5": 0.0,
+  "first_face_alpha_gt_0_5": 4.666666666666667,
+  "samples": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "center": [
+        300.0,
+        520.0
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 12,
+      "time": 0.5,
+      "center": [
+        296.37945278709236,
+        507.16042183019874
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 24,
+      "time": 1.0,
+      "center": [
+        286.1787432570345,
+        492.99897944306747
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 36,
+      "time": 1.5,
+      "center": [
+        294.07348009913983,
+        482.4726636535938
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 48,
+      "time": 2.0,
+      "center": [
+        348.31318265634053,
+        481.2784658342553
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 60,
+      "time": 2.5,
+      "center": [
+        494.941906116643,
+        498.7830440967283
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 72,
+      "time": 3.0,
+      "center": [
+        529.3337018537895,
+        511.0749610092195
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 84,
+      "time": 3.5,
+      "center": [
+        488.54375193308726,
+        543.3572213557604
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 96,
+      "time": 4.0,
+      "center": [
+        423.98554873354,
+        535.1627741693484
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 108,
+      "time": 4.5,
+      "center": [
+        380.0,
+        420.0
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 120,
+      "time": 5.0,
+      "center": [
+        380.0,
+        235.0
+      ],
+      "face_alpha_mean": 0.9762640911401466,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 132,
+      "time": 5.5,
+      "center": [
+        380.0,
+        235.0
+      ],
+      "face_alpha_mean": 0.9762640911401466,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 144,
+      "time": 6.0,
+      "center": [
+        380.0,
+        235.0
+      ],
+      "face_alpha_mean": 0.9762640911401466,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 156,
+      "time": 6.5,
+      "center": [
+        387.1816617486202,
+        248.59385973845957
+      ],
+      "face_alpha_mean": 0.9629621421914236,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 168,
+      "time": 7.0,
+      "center": [
+        445.8363434599681,
+        359.6187929777967
+      ],
+      "face_alpha_mean": 0.1328351449028463,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 180,
+      "time": 7.5,
+      "center": [
+        508.4166447327523,
+        478.07436324413834
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 192,
+      "time": 8.0,
+      "center": [
+        510.79645669428055,
+        482.57900731417385
+      ],
+      "face_alpha_mean": 0.0,
+      "face_alpha_max": 0.0
+    },
+    {
+      "frame": 204,
+      "time": 8.5,
+      "center": [
+        454.00818807809355,
+        375.0869274335342
+      ],
+      "face_alpha_mean": 0.059526732133446975,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 216,
+      "time": 9.0,
+      "center": [
+        393.8493111203454,
+        261.2147674777966
+      ],
+      "face_alpha_mean": 0.910893298091533,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 228,
+      "time": 9.5,
+      "center": [
+        380.0,
+        235.0
+      ],
+      "face_alpha_mean": 0.9762640911401466,
+      "face_alpha_max": 1.0
+    },
+    {
+      "frame": 240,
+      "time": 10.0,
+      "center": [
+        380.0,
+        235.0
+      ],
+      "face_alpha_mean": 0.9762640911401466,
+      "face_alpha_max": 1.0
+    }
+  ]
+}

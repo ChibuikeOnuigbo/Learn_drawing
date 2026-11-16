@@ -1,0 +1,123 @@
+{
+  "video": "/home/user/Learn_drawing/examples/03-3d-medium/video.mp4",
+  "frames": 120,
+  "fps": 24.0,
+  "duration": 5.0,
+  "width": 800,
+  "height": 450,
+  "codec": "h264",
+  "technical_pass": true,
+  "errors": [],
+  "samples": [
+    {
+      "frame": 0,
+      "stddev": 59.0849457027429,
+      "luma_mean": 71.72438518518518
+    },
+    {
+      "frame": 6,
+      "stddev": 59.05730488895782,
+      "luma_mean": 71.85739074074074
+    },
+    {
+      "frame": 12,
+      "stddev": 58.840566018648715,
+      "luma_mean": 71.42505648148148
+    },
+    {
+      "frame": 18,
+      "stddev": 58.60909734831792,
+      "luma_mean": 70.98012407407407
+    },
+    {
+      "frame": 24,
+      "stddev": 58.63917363541227,
+      "luma_mean": 70.86602037037036
+    },
+    {
+      "frame": 30,
+      "stddev": 58.68540039673487,
+      "luma_mean": 70.98544814814815
+    },
+    {
+      "frame": 36,
+      "stddev": 58.38094671649506,
+      "luma_mean": 70.38952407407407
+    },
+    {
+      "frame": 42,
+      "stddev": 58.210557700721694,
+      "luma_mean": 69.98612407407407
+    },
+    {
+      "frame": 48,
+      "stddev": 58.283300878745834,
+      "luma_mean": 69.85254074074074
+    },
+    {
+      "frame": 54,
+      "stddev": 58.39422712294415,
+      "luma_mean": 69.9790324074074
+    },
+    {
+      "frame": 60,
+      "stddev": 58.13506515676645,
+      "luma_mean": 69.32760092592592
+    },
+    {
+      "frame": 66,
+      "stddev": 57.938990795693236,
+      "luma_mean": 68.84745
+    },
+    {
+      "frame": 72,
+      "stddev": 58.13934027935297,
+      "luma_mean": 68.79254444444445
+    },
+    {
+      "frame": 78,
+      "stddev": 58.233354437452384,
+      "luma_mean": 68.88738611111111
+    },
+    {
+      "frame": 84,
+      "stddev": 58.002444063725775,
+      "luma_mean": 68.36626018518518
+    },
+    {
+      "frame": 90,
+      "stddev": 57.85537182187973,
+      "luma_mean": 68.04509722222222
+    },
+    {
+      "frame": 96,
+      "stddev": 57.87613765714258,
+      "luma_mean": 68.03876666666666
+    },
+    {
+      "frame": 102,
+      "stddev": 58.00178312908097,
+      "luma_mean": 68.46060462962963
+    },
+    {
+      "frame": 108,
+      "stddev": 57.87338811487699,
+      "luma_mean": 68.3073
+    },
+    {
+      "frame": 114,
+      "stddev": 57.74061423600946,
+      "luma_mean": 68.13309722222222
+    },
+    {
+      "frame": 119,
+      "stddev": 57.908603097388244,
+      "luma_mean": 68.1978712962963
+    }
+  ],
+  "contact_sheet": "/home/user/Learn_drawing/examples/03-3d-medium/inspection/contact-sheet.jpg",
+  "visual_review": "pending: inspect actual frames and motion; statistics are not artistic scores",
+  "blend": "/home/user/Learn_drawing/examples/03-3d-medium/scene.blend",
+  "rig_pass": true,
+  "rig_report": "/home/user/Learn_drawing/examples/03-3d-medium/rig-qa.json"
+}

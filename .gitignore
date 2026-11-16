@@ -6,19 +6,21 @@ build/
 dist/
 output/
 data/
+
+# Local corpora, caches and scratch space (never commit the 2.2 GB Drive mirror)
+google_drive/
+.tools/
+.work/
+.image-search/
+image-search/
+
+# Media / binary conventions
 *.mp4
-!docs/previews/*.mp4
-!exmapels/**/*.mp4
 *.mov
 *.zip
 *.joblib
 *.blend
-!exmapels/**/*.blend
 *.blend1
-exmapels/**/frames/
-exmapels/**/inspection/sample-*.png
-exmapels/**/clip-*.mp4
-exmapels/**/assembled.mp4
 *.log
 *cookies*
 *cookie*
@@ -26,3 +28,17 @@ exmapels/**/assembled.mp4
 .env.*
 credentials*
 secrets*
+
+# Deliverable examples are tracked, but their bulky intermediate frames are not
+!examples/
+!examples/**/*.mp4
+!examples/**/*.blend
+examples/**/frames/
+examples/**/rig-frames/
+examples/**/asset-*/
+examples/**/caption-*.png
+examples/**/clip-*.mp4
+examples/**/assembled.mp4
+examples/**/mixed.wav
+examples/**/concat.txt
+examples/**/inspection/sample-*.png

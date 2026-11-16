@@ -1,0 +1,21 @@
+{
+ "video": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU.mp4",
+ "drive_id": "1WCHN82qmtA5J5QxSo-QrnfGwVMavm2Ks",
+ "sha256": "24067cc7d950916df387d89505b6e1d863515848c554eea9fdb399bd97976720",
+ "bytes": 7977706,
+ "width": 1280,
+ "height": 720,
+ "fps": 24.0,
+ "duration_seconds": 55.083,
+ "frames_indexed": 1322,
+ "every_frame_indexed": true,
+ "shots": 5,
+ "cut_frames": [
+  784,
+  1046,
+  1047,
+  1124
+ ],
+ "cut_count": 4,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

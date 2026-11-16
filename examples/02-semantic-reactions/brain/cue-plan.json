@@ -1,0 +1,40 @@
+{
+  "fps": 30,
+  "frames": 181,
+  "cues": [
+    {
+      "intent": "brain_wipe",
+      "phrase": "no brains at all",
+      "word": "all.",
+      "word_time": 1.2,
+      "frame_start": 36,
+      "frame_end": 129,
+      "asset": "squidward-brain-erase.gif",
+      "style": "cartoon",
+      "transcript_word_confidence": 0.9988834261894226,
+      "confidence": 0.8389851298091023,
+      "editorial_reason": "Squidward opens his head and erases his brain: visual punchline for an absent-brain joke",
+      "theme_note": "Theme match",
+      "timing_error_seconds": 0.0,
+      "asset_origin": "third-party reaction GIF; review rights before publication (see assets/reactions/PROVENANCE.md)"
+    }
+  ],
+  "decisions": [
+    {
+      "text": "No brains at all.",
+      "intent": "brain_wipe",
+      "confidence": 0.8389851298091023,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    },
+    {
+      "text": "He forgot to check which file he was deleting.",
+      "intent": "brain_wipe",
+      "confidence": 0.6220309469033859,
+      "reason": "small supervised English intent classifier; confidence is not calibrated"
+    }
+  ],
+  "timing_source": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "alignment_review_required": true,
+  "transcript_review_required": false,
+  "evaluation": "Technical timing can be measured; whether this is the best meme needs viewer review"
+}

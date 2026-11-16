@@ -1,0 +1,50 @@
+{
+  "fps": 24,
+  "frames": 120,
+  "duration_seconds": 5.0,
+  "interval_convention": "[start_frame,end_frame)",
+  "alignment": "example explicit durations; replace with reviewed audio events when needed",
+  "shots": [
+    {
+      "id": "shot-01",
+      "title": "Establish",
+      "visual_brief": "Show subject, place and focal point.",
+      "narration": "",
+      "acceptance": "Subject and place read in the first second.",
+      "start_frame": 0,
+      "end_frame": 48,
+      "frames": 48,
+      "start_seconds": 0.0,
+      "end_seconds": 2.0,
+      "review_frames": [0, 24, 47]
+    },
+    {
+      "id": "shot-02",
+      "title": "Change",
+      "visual_brief": "Perform the main action or reveal the idea.",
+      "narration": "",
+      "acceptance": "Action has anticipation, contact/change and settle.",
+      "start_frame": 48,
+      "end_frame": 96,
+      "frames": 48,
+      "start_seconds": 2.0,
+      "end_seconds": 4.0,
+      "review_frames": [48, 72, 95]
+    },
+    {
+      "id": "shot-03",
+      "title": "Resolve",
+      "visual_brief": "Hold the result long enough to read.",
+      "narration": "",
+      "acceptance": "Final state is readable for at least one second.",
+      "start_frame": 96,
+      "end_frame": 120,
+      "frames": 24,
+      "start_seconds": 4.0,
+      "end_seconds": 5.0,
+      "review_frames": [96, 108, 119]
+    }
+  ],
+  "warnings": [],
+  "next": "Author/preview each shot; this template is a planning skeleton, not a finished film."
+}

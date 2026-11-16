@@ -1,0 +1,13 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "clips": [
+    {"path": "output/template-2d-proof/video.mp4", "start": 0, "duration": 1},
+    {"path": "output/template-3d-proof/video.mp4", "start": 0, "duration": 1}
+  ],
+  "captions": [
+    {"text": "One clear idea at a time.", "start": 0.1, "end": 1.8}
+  ],
+  "caption_position": 0.85
+}

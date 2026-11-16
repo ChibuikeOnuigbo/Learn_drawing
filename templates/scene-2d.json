@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "title": "Starter: weight and contact",
+  "width": 320,
+  "height": 180,
+  "fps": 24,
+  "frames": 24,
+  "background": "#102030",
+  "layers": [
+    {"id": "floor", "kind": "rect", "x": 160, "y": 160, "width": 320, "height": 24, "fill": "#20394a"},
+    {"id": "shadow", "kind": "ellipse", "x": 160, "y": 148, "width": 34, "height": 7, "fill": "#08121c", "opacity": 0.6,
+     "tracks": [{"property": "scale_x", "keys": [{"frame": 0, "value": 0.6}, {"frame": 12, "value": 1.2}, {"frame": 23, "value": 0.75}]}]},
+    {"id": "ball", "kind": "ellipse", "x": 160, "y": 48, "width": 30, "height": 30, "fill": "#ffad42", "stroke": "#ffe0a8", "stroke_width": 2,
+     "tracks": [
+       {"property": "y", "keys": [{"frame": 0, "value": 48}, {"frame": 12, "value": 133, "easing": "ease_in"}, {"frame": 23, "value": 70, "easing": "ease_out"}]},
+       {"property": "scale_x", "keys": [{"frame": 0, "value": 1}, {"frame": 10, "value": 0.9}, {"frame": 12, "value": 1.25}, {"frame": 15, "value": 0.95}, {"frame": 23, "value": 1}]},
+       {"property": "scale_y", "keys": [{"frame": 0, "value": 1}, {"frame": 10, "value": 1.1}, {"frame": 12, "value": 0.7}, {"frame": 15, "value": 1.05}, {"frame": 23, "value": 1}]}
+     ]}
+  ]
+}

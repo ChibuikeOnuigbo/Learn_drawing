@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "styles": [
+    {
+      "video_id": "09_almost-hard-music-video-sketches_9w0_e9X4FDw",
+      "tags": [
+        "2D narrative animatic",
+        "music-video sketches",
+        "bold outline",
+        "muted palette",
+        "expressive face",
+        "silhouette horror"
+      ],
+      "notes": "Reviewed contact sheet: hand-drawn/animatic narrative with muted greens/browns, strong black outlines, emotional close-ups and silhouette reveals. Not a recovered brush history.",
+      "evidence_frames": [
+        41,
+        123,
+        205,
+        328,
+        369,
+        615,
+        820
+      ],
+      "mechanics": [
+        "Group values before detail; keep face readable in close-up.",
+        "Use silhouette scale for threat/reveal beats.",
+        "Hold emotional poses between sketch cuts."
+      ]
+    },
+    {
+      "video_id": "04_extremely-hard-2.5d-3d-animation_6xSD11AtCqU",
+      "tags": [
+        "2.5D/3D stylized sci-fi",
+        "neon glow",
+        "dark background",
+        "rim light",
+        "camera move",
+        "UI overlay"
+      ],
+      "notes": "Reviewed contact sheet: dark sci-fi staged animation with green/orange emissive accents, glowing rims, depth parallax and diegetic UI. Title cards identify Indie Cross/Moro branding; technique study only.",
+      "evidence_frames": [
+        165,
+        330,
+        440,
+        550,
+        715,
+        825,
+        1100
+      ],
+      "mechanics": [
+        "Separate emissive accents from dark base for focal hierarchy.",
+        "Use camera/parallax to sell 2.5D depth.",
+        "Stage impact poses with clear silhouette and glow spill."
+      ]
+    },
+    {
+      "video_id": "10_complex-anime-edit-composition_s-n7xL8JxZE",
+      "tags": [
+        "anime edit montage",
+        "mixed 2D/3D",
+        "rapid cuts",
+        "match cut",
+        "sky blue palette",
+        "foreground occlusion"
+      ],
+      "notes": "Reviewed contact sheet: fast montage mixing anime shots, 3D jets/rooms and device/phone motifs. Composition relies on scale contrast, occlusion and rhythmic cutting rather than one continuous scene.",
+      "evidence_frames": [
+        0,
+        170,
+        255,
+        595,
+        680,
+        1105,
+        1445
+      ],
+      "mechanics": [
+        "Cut on shape/motion matches across mixed media.",
+        "Use foreground occluders and scale jumps for energy.",
+        "Protect a readable focal object during rapid cuts."
+      ]
+    },
+    {
+      "video_id": "26_5lMNtULECHE_GvsK_Part_3_preview",
+      "tags": [
+        "2D fight preview",
+        "painted texture",
+        "kaiju silhouette",
+        "water splash",
+        "camera pan"
+      ],
+      "notes": "Reviewed contact sheet: stylized 2D Godzilla/Kong preview with painted fur/scales, dorsal silhouette, shoreline depth and white splash linework. Fan animation; study mechanics, not reuse characters.",
+      "evidence_frames": [
+        36,
+        108,
+        252,
+        360,
+        540,
+        684,
+        828
+      ],
+      "mechanics": [
+        "Establish scale with horizon and shoreline layers.",
+        "Anticipate heavy steps before splash/impact overlap.",
+        "Keep dorsal/fin silhouette readable against sky."
+      ]
+    },
+    {
+      "video_id": "17_tutorial-short_vNxqa8ltH20",
+      "tags": [
+        "vertical tutorial",
+        "anime speedpaint",
+        "cel shading",
+        "process zoom",
+        "red garment"
+      ],
+      "notes": "Reviewed contact sheet: portrait screen-recorded drawing tutorial constructing an anime character, flat cel passes and final rim/lighting polish. UI chrome is part of the recording.",
+      "evidence_frames": [
+        0,
+        124,
+        310,
+        465,
+        589,
+        713
+      ],
+      "mechanics": [
+        "Construct large shapes before facial detail.",
+        "Separate flat color, shadow and rim-light passes.",
+        "Zoom to the active construction region while keeping context."
+      ]
+    },
+    {
+      "video_id": "11_medium-memes-script-visuals_rv0CZ919PFw",
+      "tags": [
+        "mixed-media commentary",
+        "reaction inserts",
+        "screen recording",
+        "sponsor cards",
+        "talking head"
+      ],
+      "notes": "Reviewed candidate sheet: commentary/script visuals mixing talking heads, reaction images, anime/manga clips, screen recordings and sponsor cards. 242 low-motion insert candidates flagged; four visible brand/sponsor ranges excluded with source evidence. Remaining meme origins are not confirmed.",
+      "evidence_frames": [
+        434,
+        12237,
+        13630,
+        18766,
+        19085,
+        20023,
+        21925
+      ],
+      "mechanics": [
+        "Place reaction insert after the verbal setup.",
+        "Keep sponsor/brand cards separate from animation geometry.",
+        "Review low-motion inserts before excluding or attributing origin."
+      ]
+    }
+  ],
+  "scope": "Reviewed from local trace contact sheets/candidate frames. Tags are editorial observations, not a trained style model."
+}

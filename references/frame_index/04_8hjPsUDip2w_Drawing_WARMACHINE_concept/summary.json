@@ -1,0 +1,19 @@
+{
+ "video": "04_8hjPsUDip2w_Drawing_WARMACHINE_concept.mp4",
+ "drive_id": "1lqw-vzZlhjqbU8q9OWQipQv5QpOgShWC",
+ "sha256": "bc0635681acbbca930c185936aa6b39b61eb16742fab9b3534a23000e0203041",
+ "bytes": 8536793,
+ "width": 1224,
+ "height": 720,
+ "fps": 30.0,
+ "duration_seconds": 157.5,
+ "frames_indexed": 4725,
+ "every_frame_indexed": true,
+ "shots": 3,
+ "cut_frames": [
+  3653,
+  3997
+ ],
+ "cut_count": 2,
+ "scope": "every decoded frame indexed: perceptual hash, luma stats, motion delta, shot id; sampled contact sheet"
+}

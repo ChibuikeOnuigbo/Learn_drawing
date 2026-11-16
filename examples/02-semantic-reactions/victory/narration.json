@@ -1,0 +1,107 @@
+{
+  "audio": "voice.wav",
+  "text": "Wait. The backup actually worked. Now that is a comeback worth celebrating.",
+  "duration": 7.163375,
+  "words": [
+    {
+      "text": "Wait.",
+      "char_start": 0,
+      "char_end": 5,
+      "start": 0,
+      "end": 0.46,
+      "probability": 0.741814374923706
+    },
+    {
+      "text": "The",
+      "char_start": 6,
+      "char_end": 9,
+      "start": 1.2,
+      "end": 1.22,
+      "probability": 0.955425500869751
+    },
+    {
+      "text": "backup",
+      "char_start": 10,
+      "char_end": 16,
+      "start": 1.22,
+      "end": 1.64,
+      "probability": 0.9289796352386475
+    },
+    {
+      "text": "actually",
+      "char_start": 17,
+      "char_end": 25,
+      "start": 1.64,
+      "end": 2.54,
+      "probability": 0.9830827713012695
+    },
+    {
+      "text": "worked.",
+      "char_start": 26,
+      "char_end": 33,
+      "start": 2.54,
+      "end": 3.1,
+      "probability": 0.9948457479476929
+    },
+    {
+      "text": "Now",
+      "char_start": 34,
+      "char_end": 37,
+      "start": 3.82,
+      "end": 3.94,
+      "probability": 0.9745407700538635
+    },
+    {
+      "text": "that",
+      "char_start": 38,
+      "char_end": 42,
+      "start": 3.94,
+      "end": 4.34,
+      "probability": 0.8499487042427063
+    },
+    {
+      "text": "is",
+      "char_start": 43,
+      "char_end": 45,
+      "start": 4.34,
+      "end": 4.78,
+      "probability": 0.9334303736686707
+    },
+    {
+      "text": "a",
+      "char_start": 46,
+      "char_end": 47,
+      "start": 4.78,
+      "end": 4.92,
+      "probability": 0.9938746094703674
+    },
+    {
+      "text": "comeback",
+      "char_start": 48,
+      "char_end": 56,
+      "start": 4.92,
+      "end": 5.44,
+      "probability": 0.8968049883842468
+    },
+    {
+      "text": "worth",
+      "char_start": 57,
+      "char_end": 62,
+      "start": 5.44,
+      "end": 5.86,
+      "probability": 0.811200737953186
+    },
+    {
+      "text": "celebrating.",
+      "char_start": 63,
+      "char_end": 75,
+      "start": 5.86,
+      "end": 6.58,
+      "probability": 0.9920674562454224
+    }
+  ],
+  "engine": "pretrained Whisper base.en / faster-whisper CPU int8",
+  "timing": "ASR-estimated word boundaries; verify uncertain or critical cues",
+  "review_required": false,
+  "language": "en"
+}

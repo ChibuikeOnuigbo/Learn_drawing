@@ -1,0 +1,60 @@
+{
+  "fps": 24,
+  "frames": 192,
+  "rain_bands": 3,
+  "rain_path_evaluation": "continuous per-frame (not low-rate sampled)",
+  "output_fps": 24,
+  "face_protected": true,
+  "loop_seamless": false,
+  "scope": "procedural graphic effects, not fluid sim; generated chroma figure; aura from keyed silhouette; breath/cloth are small masked warps",
+  "samples": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "breath": 0.0,
+      "aura_pulse": 0.8
+    },
+    {
+      "frame": 24,
+      "time": 1.0,
+      "breath": 0.9965844930066698,
+      "aura_pulse": 0.8796802179692483
+    },
+    {
+      "frame": 48,
+      "time": 2.0,
+      "breath": -0.16459459028073378,
+      "aura_pulse": 0.6538328071443752
+    },
+    {
+      "frame": 72,
+      "time": 3.0,
+      "breath": -0.9694002659393305,
+      "aura_pulse": 0.9884521844237641
+    },
+    {
+      "frame": 96,
+      "time": 4.0,
+      "breath": 0.3246994692046833,
+      "aura_pulse": 0.6004662461618921
+    },
+    {
+      "frame": 120,
+      "time": 5.0,
+      "breath": 0.9157733266550575,
+      "aura_pulse": 0.9775770436804752
+    },
+    {
+      "frame": 144,
+      "time": 6.0,
+      "breath": -0.4759473930370729,
+      "aura_pulse": 0.6737824111347895
+    },
+    {
+      "frame": 168,
+      "time": 7.0,
+      "breath": -0.8371664782625284,
+      "aura_pulse": 0.8539593542314049
+    }
+  ]
+}

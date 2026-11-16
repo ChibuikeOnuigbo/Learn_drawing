@@ -1,0 +1,44 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "clips": [
+    {
+      "path": "01-2d-moonlight/render/video.mp4",
+      "start": 0.0,
+      "duration": 4.0,
+      "hold_last": false
+    },
+    {
+      "path": "03-3d-hard/video.mp4",
+      "start": 1.0,
+      "duration": 3.0,
+      "hold_last": false
+    },
+    {
+      "path": "03-3d-simple/video.mp4",
+      "start": 1.0,
+      "duration": 2.0,
+      "hold_last": false
+    }
+  ],
+  "captions": [
+    {
+      "text": "Original 2D cut-out rig + painted background",
+      "start": 0.3,
+      "end": 3.7
+    },
+    {
+      "text": "Editable Blender shot: modeled set, IK rig, camera move",
+      "start": 4.2,
+      "end": 6.8
+    },
+    {
+      "text": "Same toolkit, different engine — source projects included",
+      "start": 7.1,
+      "end": 8.8
+    }
+  ],
+  "audio": "04-asset-based-short/music.wav",
+  "caption_position": 0.88
+}

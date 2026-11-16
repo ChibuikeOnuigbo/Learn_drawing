@@ -18,7 +18,7 @@ if "XDG_CACHE_HOME" not in os.environ:
     cache.mkdir(mode=0o700, exist_ok=True)
     os.environ["XDG_CACHE_HOME"] = str(cache)
 
-import cairosvg
+import resvg_py
 import numpy as np
 from PIL import Image, ImageDraw
 
@@ -76,7 +76,7 @@ def svg_frame(scene: Scene, frame: int, asset_root: Path) -> bytes:
             ET.SubElement(g, "ellipse", rx=str(layer.width/2), ry=str(layer.height/2), **attrs)
         elif layer.kind == "text":
             e = ET.SubElement(g, "text", **attrs, **{"font-size": str(layer.font_size),
-                              "font-family": "DejaVu Sans", "text-anchor": "middle"})
+                              "font-family": "Inter", "text-anchor": "middle"})
             e.text = layer.text
         elif layer.kind == "path":
             points = list(layer.points)
@@ -89,7 +89,8 @@ def svg_frame(scene: Scene, frame: int, asset_root: Path) -> bytes:
                     attrs["fill"] = "none"
                 ET.SubElement(g, tag, points=" ".join(f"{x},{y}" for x,y in points), **attrs)
         elif layer.kind == "image":
-            path = confined(asset_root, layer.asset, must_exist=True)
+            asset_name = layer.asset % frame if "%04d" in layer.asset else layer.asset
+            path = confined(asset_root, asset_name, must_exist=True)
             stat = path.stat()
             ET.SubElement(g, "image", x=str(-layer.width/2), y=str(-layer.height/2),
                           width=str(layer.width), height=str(layer.height),
@@ -98,7 +99,10 @@ def svg_frame(scene: Scene, frame: int, asset_root: Path) -> bytes:
 
 
 def draw_frame(scene: Scene, frame: int, asset_root: Path) -> Image.Image:
-    png = cairosvg.svg2png(bytestring=svg_frame(scene, frame, asset_root))
+    fonts = Path(__file__).parent / "assets" / "fonts"
+    png = resvg_py.svg_to_bytes(svg_string=svg_frame(scene, frame, asset_root).decode(),
+                                font_files=[str(p) for p in fonts.glob("*.ttf")],
+                                sans_serif_family="Inter")
     return Image.open(io.BytesIO(png)).convert("RGB")
 
 
@@ -125,10 +129,16 @@ def inspect(video: Path, folder: Path, expected: Scene | None = None, frames=Non
                     indices.update([boundary-1, boundary, boundary+1])
     indices = sorted(x for x in indices if 0 <= x < count)
     # One sequential decode preserves exact frame indices (no approximate timestamp seeking).
-    expression = "+".join(f"eq(n,{i})" for i in indices)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vf", f"select='{expression}'",
-                    "-fps_mode", "vfr", str(folder/"sample-%04d.png")], check=True, timeout=180)
+    # Extraction is chunked because ffmpeg's expression parser cannot handle hundreds of
+    # chained terms in a single select filter.
     files = [folder/f"sample-{i+1:04d}.png" for i in range(len(indices))]
+    chunk = 64
+    for ci in range(0, len(indices), chunk):
+        part = indices[ci:ci+chunk]
+        expression = "+".join(f"eq(n,{i})" for i in part)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vf", f"select='{expression}'",
+                        "-fps_mode", "vfr", "-start_number", str(ci+1), str(folder/"sample-%04d.png")],
+                       check=True, timeout=180)
     sheet = Image.new("RGB", (4*320, ((len(files)+3)//4)*204), "#111827")
     draw = ImageDraw.Draw(sheet)
     metrics = []

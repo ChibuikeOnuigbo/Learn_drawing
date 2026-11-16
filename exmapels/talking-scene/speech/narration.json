@@ -1,0 +1,306 @@
+{
+  "audio": "/home/user/Learn_drawing/exmapels/talking-scene/speech/narration.wav",
+  "text": "Here is a narrated story scene. The sky and the grass are generated art plates. The clouds drift at different depths, so the picture feels alive. Our cutout character blinks, bounces, and talks right along with this voice. Simple layers, real timing.",
+  "duration": 18.210975056689342,
+  "sample_rate": 22050,
+  "words": [
+    {
+      "text": "Here",
+      "char_start": 0,
+      "char_end": 4,
+      "start": 0.0,
+      "end": 0.306
+    },
+    {
+      "text": "is",
+      "char_start": 5,
+      "char_end": 7,
+      "start": 0.306,
+      "end": 0.449
+    },
+    {
+      "text": "a",
+      "char_start": 8,
+      "char_end": 9,
+      "start": 0.449,
+      "end": 0.519
+    },
+    {
+      "text": "narrated",
+      "char_start": 10,
+      "char_end": 18,
+      "start": 0.519,
+      "end": 1.031
+    },
+    {
+      "text": "story",
+      "char_start": 19,
+      "char_end": 24,
+      "start": 1.031,
+      "end": 1.454
+    },
+    {
+      "text": "scene",
+      "char_start": 25,
+      "char_end": 30,
+      "start": 1.454,
+      "end": 2.318
+    },
+    {
+      "text": "The",
+      "char_start": 32,
+      "char_end": 35,
+      "start": 2.318,
+      "end": 2.45
+    },
+    {
+      "text": "sky",
+      "char_start": 36,
+      "char_end": 39,
+      "start": 2.45,
+      "end": 3.002
+    },
+    {
+      "text": "and",
+      "char_start": 40,
+      "char_end": 43,
+      "start": 3.002,
+      "end": 3.223
+    },
+    {
+      "text": "the",
+      "char_start": 44,
+      "char_end": 47,
+      "start": 3.223,
+      "end": 3.347
+    },
+    {
+      "text": "grass",
+      "char_start": 48,
+      "char_end": 53,
+      "start": 3.347,
+      "end": 3.681
+    },
+    {
+      "text": "are",
+      "char_start": 54,
+      "char_end": 57,
+      "start": 3.681,
+      "end": 3.821
+    },
+    {
+      "text": "generated",
+      "char_start": 58,
+      "char_end": 67,
+      "start": 3.821,
+      "end": 4.436
+    },
+    {
+      "text": "art",
+      "char_start": 68,
+      "char_end": 71,
+      "start": 4.436,
+      "end": 4.736
+    },
+    {
+      "text": "plates",
+      "char_start": 72,
+      "char_end": 78,
+      "start": 4.736,
+      "end": 5.726
+    },
+    {
+      "text": "The",
+      "char_start": 80,
+      "char_end": 83,
+      "start": 5.726,
+      "end": 5.857
+    },
+    {
+      "text": "clouds",
+      "char_start": 84,
+      "char_end": 90,
+      "start": 5.857,
+      "end": 6.398
+    },
+    {
+      "text": "drift",
+      "char_start": 91,
+      "char_end": 96,
+      "start": 6.398,
+      "end": 6.756
+    },
+    {
+      "text": "at",
+      "char_start": 97,
+      "char_end": 99,
+      "start": 6.756,
+      "end": 6.952
+    },
+    {
+      "text": "different",
+      "char_start": 100,
+      "char_end": 109,
+      "start": 6.952,
+      "end": 7.467
+    },
+    {
+      "text": "depths",
+      "char_start": 110,
+      "char_end": 116,
+      "start": 7.467,
+      "end": 8.28
+    },
+    {
+      "text": "so",
+      "char_start": 118,
+      "char_end": 120,
+      "start": 8.28,
+      "end": 8.534
+    },
+    {
+      "text": "the",
+      "char_start": 121,
+      "char_end": 124,
+      "start": 8.534,
+      "end": 8.661
+    },
+    {
+      "text": "picture",
+      "char_start": 125,
+      "char_end": 132,
+      "start": 8.661,
+      "end": 9.152
+    },
+    {
+      "text": "feels",
+      "char_start": 133,
+      "char_end": 138,
+      "start": 9.152,
+      "end": 9.554
+    },
+    {
+      "text": "alive",
+      "char_start": 139,
+      "char_end": 144,
+      "start": 9.554,
+      "end": 10.509
+    },
+    {
+      "text": "Our",
+      "char_start": 146,
+      "char_end": 149,
+      "start": 10.509,
+      "end": 10.727
+    },
+    {
+      "text": "cutout",
+      "char_start": 150,
+      "char_end": 156,
+      "start": 10.727,
+      "end": 11.21
+    },
+    {
+      "text": "character",
+      "char_start": 157,
+      "char_end": 166,
+      "start": 11.21,
+      "end": 11.831
+    },
+    {
+      "text": "blinks",
+      "char_start": 167,
+      "char_end": 173,
+      "start": 11.831,
+      "end": 12.659
+    },
+    {
+      "text": "bounces",
+      "char_start": 175,
+      "char_end": 182,
+      "start": 12.659,
+      "end": 13.514
+    },
+    {
+      "text": "and",
+      "char_start": 184,
+      "char_end": 187,
+      "start": 13.514,
+      "end": 13.73
+    },
+    {
+      "text": "talks",
+      "char_start": 188,
+      "char_end": 193,
+      "start": 13.73,
+      "end": 14.178
+    },
+    {
+      "text": "right",
+      "char_start": 194,
+      "char_end": 199,
+      "start": 14.178,
+      "end": 14.474
+    },
+    {
+      "text": "along",
+      "char_start": 200,
+      "char_end": 205,
+      "start": 14.474,
+      "end": 14.86
+    },
+    {
+      "text": "with",
+      "char_start": 206,
+      "char_end": 210,
+      "start": 14.86,
+      "end": 15.051
+    },
+    {
+      "text": "this",
+      "char_start": 211,
+      "char_end": 215,
+      "start": 15.051,
+      "end": 15.274
+    },
+    {
+      "text": "voice",
+      "char_start": 216,
+      "char_end": 221,
+      "start": 15.274,
+      "end": 16.207
+    },
+    {
+      "text": "Simple",
+      "char_start": 223,
+      "char_end": 229,
+      "start": 16.207,
+      "end": 16.66
+    },
+    {
+      "text": "layers",
+      "char_start": 230,
+      "char_end": 236,
+      "start": 16.66,
+      "end": 17.348
+    },
+    {
+      "text": "real",
+      "char_start": 238,
+      "char_end": 242,
+      "start": 17.348,
+      "end": 17.649
+    },
+    {
+      "text": "timing",
+      "char_start": 243,
+      "char_end": 249,
+      "start": 17.649,
+      "end": 18.210975056689342
+    }
+  ],
+  "voice": "en-us",
+  "engine": "eSpeak NG via espeakng-loader 0.2.4",
+  "timing": "word starts from synthesis engine; ends are next-word start or audio end",
+  "voice_quality": "offline synthetic demo voice; replace with supplied voiceover for production"
+}

@@ -12,6 +12,8 @@ Every linked MP4 was actually rendered. [results.json](results.json) records mea
 | Simple 3D | [Watch](3d/simple/video.mp4) | 3-second wave using a real weighted humanoid skeleton and IK |
 | Medium 3D | [Watch](3d/medium/video.mp4) | 4-second planted-foot walk, root travel and moving camera |
 | Hard 3D exercise | [Watch](3d/hard/video.mp4) | 4-second squat, reach, grasp and carry; hand-driven prop motion and camera change |
+| Talking scene with AI scenery | [Watch](talking-scene/render/video.mp4) | 19 seconds, 1280×720; generated sky/cloud/grass plates drifting at independent depths, PNGTuber cutout lip-synced to eSpeak word timings, blink cycles, timed captions |
+| PNGTuber interactive demo | [Open](pngtuber-demo/index.html) | Browser tester for the cutout: expression moods, blink-interval slider, voice-energy meter, auto-talk demo and mic-gated manual test |
 
 These difficulty labels are relative to the toolkit's exercises. The user's advanced film references require much more modeling, animation and production work.
 
@@ -22,6 +24,8 @@ These difficulty labels are relative to the toolkit's exercises. The user's adva
 - `reaction-story/asr-base/narration.json` preserves the recognized words. [The synchronization report](../reports/voiceover-sync.json) compares ASR estimates with known synthesis events.
 - The 2D source is `2d-character/scene.json`. `scene-clean.json` and `clean/video.mp4` retain a caption-free master for editing.
 - Each 3D folder includes `scene3d.json`, an editable `scene.blend`, and `rig-qa.json` where applicable. Rig reports evaluate real deformed mesh vertices, foot height and payload attachment.
+- The talking scene is assembled by `scripts/render_talking_scene.py` from `examples/assets/` plates (AI-generated, keyed and de-fringed by `scripts/prepare_talking_assets.py`). Its `render/inspection/` holds boundary-frame samples, `qa.json` and a contact sheet; `scene.json` is the editable source. The mouth-swap keyframes come from real eSpeak word timings in `speech/narration.json`.
+- The PNGTuber demo is a self-contained `index.html` (states embedded) — open it directly in a browser, allow microphone access for the manual test.
 - The explainer's `edit.json` records source in/out times, final-frame holds and captions. Its narration and frames are not inferred from a successful encoder exit alone.
 
 ## Reproduce

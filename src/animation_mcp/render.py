@@ -125,10 +125,16 @@ def inspect(video: Path, folder: Path, expected: Scene | None = None, frames=Non
                     indices.update([boundary-1, boundary, boundary+1])
     indices = sorted(x for x in indices if 0 <= x < count)
     # One sequential decode preserves exact frame indices (no approximate timestamp seeking).
-    expression = "+".join(f"eq(n,{i})" for i in indices)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vf", f"select='{expression}'",
-                    "-fps_mode", "vfr", str(folder/"sample-%04d.png")], check=True, timeout=180)
+    # Extraction is chunked because ffmpeg's expression parser cannot handle hundreds of
+    # chained terms in a single select filter.
     files = [folder/f"sample-{i+1:04d}.png" for i in range(len(indices))]
+    chunk = 64
+    for ci in range(0, len(indices), chunk):
+        part = indices[ci:ci+chunk]
+        expression = "+".join(f"eq(n,{i})" for i in part)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-vf", f"select='{expression}'",
+                        "-fps_mode", "vfr", "-start_number", str(ci+1), str(folder/"sample-%04d.png")],
+                       check=True, timeout=180)
     sheet = Image.new("RGB", (4*320, ((len(files)+3)//4)*204), "#111827")
     draw = ImageDraw.Draw(sheet)
     metrics = []
